@@ -1,4 +1,4 @@
-## Hello World!
+# Hello World!
 
 I have more than 10-year experience in software design and development, as well as research and development in computational intelligence. I have gained extensive experience and skills in various job positions while serving small-medium industries (SMIs) and semi-conductor manufacturers, and universities. These organisations include Multimedia Super Corridor (MSC)-based companies and universities in Malaysia as well as Singapore-based software development companies. In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
 
@@ -8,6 +8,7 @@ Please visit the following sections for my accomplishments.
 
 
 ## Publication
+
 [ORCiD](http://orcid.org/0000-0003-1748-1544),
 [Google Scholar](http://scholar.google.com.my/citations?user=bSb37M8AAAAJ&hl=en),
 [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55655843600),
@@ -42,6 +43,7 @@ Commencement Year: <br />Project Title  | Role and Description | Source of Fund
 2009: <br />**M**obile **D**esktop **G**rid ([MDG](https://github.com/choojun/mdg/wiki))        | Designer, developer and researcher       | Supported by <br />[Associate Professor Dr. Chan Huah Yong](https://cs.usm.my/index.php/faculty-member/172-chan-huah-yong-associate-professor-dr) and USM
 
 ## [Online Distance Learning](https://en.wikipedia.org/wiki/Distance_education) Course
+
 1. Visual Programming - with [Visual Basic .Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET)
 2. Data Structures and Algorithms - with [Java](https://www.oracle.com/java/)
 3. Operating Systems (OSs) - with types of OS
