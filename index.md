@@ -2,6 +2,8 @@ Hello World
 
 Welcome to ChooJun's web site!
 
+[VBTest version 1](https://github.com/choojun/VBTest/wiki)
+
 First Header | Second Header | Third 
 ------------ | ------------- | ------------
 Content from cell 1 | Content from cell 2 | aaaaaaa
