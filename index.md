@@ -18,6 +18,12 @@ Please visit the following sections for my accomplishments.
 [dblp](http://dblp2.uni-trier.de/pers/hd/t/Tan:Choo_Jun),
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
 [Semantic Scholar](https://academic.microsoft.com/author/2574491712).
+[YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
+
+
+## Award
+
+Please visit [LinkedIn](https://www.linkedin.com/in/choojun) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
 
 
 ## Project
@@ -41,9 +47,6 @@ Commencement Year: <br />Project Title  | Role and Description | Source of Fund
 
 Note that more details are available at [LinkedIn](https://www.linkedin.com/in/choojun).
 
-## Award
-
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
 
 ## [Online Distance Learning](https://en.wikipedia.org/wiki/Distance_education) Course
 
@@ -66,8 +69,5 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) and [Google Cloud T
 17. Industrial Training for SE, IS and DM - with industrial engagement
 18. Advanced Manufacturing - with [Arena simulation software](https://www.arenasimulation.com/)
 
-## Video clips 
-
-[YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 
 ## [Useful links](links)
