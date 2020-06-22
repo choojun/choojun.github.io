@@ -19,9 +19,6 @@ Please visit the following sections for my accomplishments.
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
 [Semantic Scholar](https://academic.microsoft.com/author/2574491712).
 
-[LinkedIn](https://www.linkedin.com/in/choojun),
-[YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA),
-[Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992).
 
 ## Project
 
@@ -41,6 +38,12 @@ Commencement Year: <br />Project Title  | Role and Description | Source of Fund
 2013: <br />Evolutionary Algorithm-Based **C**ircuit Opti**mizer** ([Cmizer](https://raw.githubusercontent.com/choojun/cmizer/wiki))        | Designer, developer, and researcher in a collaboration works of Universiti Malaysia Perlis (UniMAP) - Myreka Sdn Bhd (Myreka) - University of Science Malaysia (USM) - Deakin University (Deakin) Australia        | Supported by <br />Knowledge Transfer Program (KTP) Grant from the Ministry of Higher Education (MoHE) Malaysia, Dr. Neoh Siew Chin, Professor Dr. Lim Chee Peng
 2011: <br />USM [Extract](https://github.com/choojun/extract/wiki)        | Designer, developer and researcher         | Supported by <br />Professor Dr. Lim Chee Peng and USM
 2009: <br />**M**obile **D**esktop **G**rid ([MDG](https://github.com/choojun/mdg/wiki))        | Designer, developer and researcher       | Supported by <br />[Associate Professor Dr. Chan Huah Yong](https://cs.usm.my/index.php/faculty-member/172-chan-huah-yong-associate-professor-dr) and USM
+
+Note that more details are available at [LinkedIn](https://www.linkedin.com/in/choojun).
+
+## Award
+
+Please visit [LinkedIn](https://www.linkedin.com/in/choojun) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
 
 ## [Online Distance Learning](https://en.wikipedia.org/wiki/Distance_education) Course
 
@@ -62,5 +65,9 @@ Commencement Year: <br />Project Title  | Role and Description | Source of Fund
 16. Database Management (DM) Project
 17. Industrial Training for SE, IS and DM - with industrial engagement
 18. Advanced Manufacturing - with [Arena simulation software](https://www.arenasimulation.com/)
+
+## Video clips 
+
+[YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 
 ## [Useful links](links)
