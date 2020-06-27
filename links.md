@@ -1,4 +1,4 @@
-### Journals and Conferences:
+# Journals and Conferences:
 
 1. in [Evolutionary Computing](http://scholar.google.com.hk/citations?hl=en&view_op=search_venues&vq=Evolutionary+computing)
 2. in [Computer Vision and Pattern Recognition](http://scholar.google.com.hk/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
@@ -15,8 +15,7 @@
 * [C/C++](C-and-C-Plus-Plus)
 * [Java](Java)
 
-
-### Linux 
+# Linux 
 
 * [Linux commands](Linux-Commands)
 * [After Linux Setup](After-Linux-Setup)
