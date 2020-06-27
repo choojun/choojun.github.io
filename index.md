@@ -47,8 +47,8 @@ Commencement Year: <br />Project Title  | Role and Description | Source of Fund
 
 Note that more details are available at [LinkedIn](https://www.linkedin.com/in/choojun).
 
-
-## [Online Distance Learning](https://en.wikipedia.org/wiki/Distance_education) Course
+## Teaching
+### [Online Distance Learning](https://en.wikipedia.org/wiki/Distance_education) Course
 
 1. Visual Programming - with [Visual Basic .Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET)
 2. Data Structures and Algorithms - with [Java](https://www.oracle.com/java/)
