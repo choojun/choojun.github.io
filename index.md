@@ -1,3 +1,5 @@
+logo: [https://avatars0.githubusercontent.com/u/6356054?s=460&u=971a1cfdf052872d926d7c583f3625a5d9b702b1&v=4]
+
 # Hello World!
 
 I have more than 10-year experience in software design and development, as well as research and development in computational intelligence. I have gained extensive experience and skills in various job positions while serving small-medium industries (SMIs) and semi-conductor manufacturers, and universities. These organisations include Multimedia Super Corridor (MSC)-based companies and universities in Malaysia as well as Singapore-based software development companies. In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
