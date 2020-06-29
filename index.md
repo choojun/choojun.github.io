@@ -23,7 +23,7 @@ Please visit the following sections for my accomplishments.
 
 ## Award
 
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
+Please visit [LinkedIn](https://www.linkedin.com/in/choojun), [Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
 
 
 ## Project
