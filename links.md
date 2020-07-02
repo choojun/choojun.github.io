@@ -2,12 +2,13 @@
 
 1. in [Evolutionary Computing](http://scholar.google.com.hk/citations?hl=en&view_op=search_venues&vq=Evolutionary+computing)
 2. in [Computer Vision and Pattern Recognition](http://scholar.google.com.hk/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
-4. [TEC](https://mc.manuscriptcentral.com/tevc-ieee)
-6. [NCA](https://www.editorialmanager.com/ncaa/default.aspx)
-7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
-8. [IJAIT](https://www.editorialmanager.com/ijait/)
-9. [ASOC](https://ees.elsevier.com/asoc/)
-9. [COIN](https://mc.manuscriptcentral.com/coin)
+3. [TEC](https://mc.manuscriptcentral.com/tevc-ieee)
+4. [NC](https://ees.elsevier.com/neucom/)
+5. [ASOC](https://ees.elsevier.com/asoc/)
+6. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
+7. [IJAIT](https://www.editorialmanager.com/ijait/)
+8. [COIN](https://mc.manuscriptcentral.com/coin)
+9. [AI EDAM](https://mc.manuscriptcentral.com/aie)
 
 ### Programming:
 
