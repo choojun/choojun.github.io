@@ -9,6 +9,7 @@
 7. [IJAIT](https://www.editorialmanager.com/ijait/)
 8. [COIN](https://mc.manuscriptcentral.com/coin)
 9. [AI EDAM](https://mc.manuscriptcentral.com/aie)
+10. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
 
 ### Programming:
 
