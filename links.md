@@ -9,9 +9,10 @@
 7. [IJAIT](https://www.editorialmanager.com/ijait/)
 7. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
 7. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
-10. [COIN](https://mc.manuscriptcentral.com/coin)
 10. [AI EDAM](https://mc.manuscriptcentral.com/aie)
+10. [COIN](https://mc.manuscriptcentral.com/coin)
 10. [CYB](https://mc.manuscriptcentral.com/cyb-ieee)
+10. [JIFS](https://www.editorialmanager.com/jifs)
 
 ### Programming:
 
