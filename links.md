@@ -22,6 +22,9 @@
 * [C/C++](C-and-C-Plus-Plus)
 * [Java](Java)
 
+## Java:
+* [ZetCode](http://zetcode.com/all/)
+
 # Linux 
 
 * [Linux commands](Linux-Commands)
