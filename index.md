@@ -9,6 +9,7 @@ Please visit the following sections for my accomplishments.
 
 ## Publication
 
+Please visit
 [ORCiD](http://orcid.org/0000-0003-1748-1544),
 [Google Scholar](http://scholar.google.com.my/citations?user=bSb37M8AAAAJ&hl=en),
 [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55655843600),
@@ -19,14 +20,47 @@ Please visit the following sections for my accomplishments.
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
 [Semantic Scholar](https://academic.microsoft.com/author/2574491712).
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
+for the listing.
+
+## Award / Certification
+
+* 2001: IBM Certified Specialist - DB2 Universal Database
+* 2003: IBM Certified Database Associate - DB2 Universal Database
+* 2003: IBM Certified Database Administrator - DB2 Universal Database
+* 2009: Malaysia Champion in Open Jive Regional Challenge
+* 2009: Parasoft's Code Quality Challenge Award in Open Jive Regional Challenge
+* 2009: Sun MicroSystems Technology Award in Open Jive Regional Challenge
+* 2009: Sun MicroSystems Technology Award in Open Jive Grand Finals Challenge
+* 2010: Finalist in MSC Malaysia - Asia Pacific ICT Awards (APICTA)
+* 2011: IC Citizen - Certified Trainer
+* 2011: Silver Prize in 5th Open Source Software (OSS) World Challenge
+* 2012: Bronze Medal in 3rd Cyber International Genius Inventor Fair (CIGIF)
+* 2014: [MIMOS Prestigious Award (MPA)](https://www.mosti.gov.my/web/en/news/malam-anugerah-inovasi/)
+* 2016: Silver Medal for the Best Paper Award in Annual Conference of Asian Association of Open Universities (AAOU)
+* 2018: MBOT Graduate Technologist 
+* 2018: MBOT Professional Technologist (with carrying title Ts.)
+* 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) - Data Science on Google Cloud Platform (GCP): Machine Learning, GCP Application Development - Java, GCP BigQuery For Data Analysis, GCP Data Engineering, GCP Machine Learning APIs, GCP Scientific Data Processing, Google Cloud Solutions II: Data and Machine Learning, Data Science on the Google Cloud Platform, GCP Baseline: Data, ML, AI, GCP Baseline: Deploy & Develop, GCP Baseline: Infrastructure, GCP Essentials, NCAA March Madness: Bracketology with Google Cloud
+* Present:  [Reviewers of Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80)
+
+Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
 
-## Award
+## Research Project / Consultancy Work
 
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun), [Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80) and [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) for the listing.
-
-
-## Project
+* 2008 - 2009: [Mobile Desktop Grid (MDG)](https://github.com/choojun/mdg/wiki)
+* 2010 - 2011: [USM Extract](https://github.com/choojun/extract/wiki)
+* 2012 - 2013: [Evolutionary Algorithm-Based Circuit Optimizer (Cmizer)](https://github.com/choojun/cmizer/wiki)
+* 2015: [Electronic Circuit Optimization System (ECO-System)](https://github.com/choojun/ecosystem/wiki)
+* 2015 - 2017: A Soft Computing Modeling for Clustering
+* 2019 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
+* 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
+* 2016 - 2018: Study of Educational Data Mining
+* 2018: [Industry 4.0 technology workshop: Machine learning for Engineering Data Intelligence](https://github.com/choojun/2018workshop_ml/wiki)
+* 2018: [Workshop of Machine Learning for Data Intelligence](https://github.com/choojun/2018workshop_mlkl/wiki)
+* 2018: [Workshop of Intelligent Agent-Based Systems: From Principles to Implementation](https://github.com/choojun/2018workshop_ma/wiki)
+* 2018: [Workshop on Information Security in Supply Chain Management: Data leakage and machine learning](https://github.com/choojun/leakage/wiki)
+* 2019 - 2021: New Multi-Objective Optimization Design Technique using an Ensemble Micro GA Optimizer for Surface-Mounted PMSM in Electric Vehicle
+* 2019 - 2022: [Taiwan-Malaysia Overseas Research Center for Water Innovation and Sustainable Energy (WISE) project](https://www.nthuwise.com.tw/)
 
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
