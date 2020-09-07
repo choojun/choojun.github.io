@@ -61,7 +61,7 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 * 2018: MBOT Graduate Technologist 
 * 2018: MBOT Professional Technologist (with carrying title Ts.)
 * 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) - Data Science on Google Cloud Platform (GCP): Machine Learning, GCP Application Development - Java, GCP BigQuery For Data Analysis, GCP Data Engineering, GCP Machine Learning APIs, GCP Scientific Data Processing, Google Cloud Solutions II: Data and Machine Learning, Data Science on the Google Cloud Platform, GCP Baseline: Data, ML, AI, GCP Baseline: Deploy & Develop, GCP Baseline: Infrastructure, GCP Essentials, NCAA March Madness: Bracketology with Google Cloud
-* Present:  [Reviewers of Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80)
+* 2019:  [Reviewer of Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80)
 
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
