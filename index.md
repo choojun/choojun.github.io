@@ -32,8 +32,8 @@ for the listing.
 * 2015: [Electronic Circuit Optimization System (ECO-System)](https://github.com/choojun/ecosystem/wiki)
 * 2015 - 2017: A Soft Computing Modeling for Clustering
 * 2015 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
-* 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
 * 2016 - 2018: Study of Educational Data Mining
+* 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
 * 2018: [Industry 4.0 technology workshop: Machine learning for Engineering Data Intelligence](https://github.com/choojun/2018workshop_ml/wiki)
 * 2018: [Workshop of Machine Learning for Data Intelligence](https://github.com/choojun/2018workshop_mlkl/wiki)
 * 2018: [Workshop of Intelligent Agent-Based Systems: From Principles to Implementation](https://github.com/choojun/2018workshop_ma/wiki)
