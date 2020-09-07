@@ -54,7 +54,7 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 * 2012 - 2013: [Evolutionary Algorithm-Based Circuit Optimizer (Cmizer)](https://github.com/choojun/cmizer/wiki)
 * 2015: [Electronic Circuit Optimization System (ECO-System)](https://github.com/choojun/ecosystem/wiki)
 * 2015 - 2017: A Soft Computing Modeling for Clustering
-* 2019 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
+* 2015 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
 * 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
 * 2016 - 2018: Study of Educational Data Mining
 * 2018: [Industry 4.0 technology workshop: Machine learning for Engineering Data Intelligence](https://github.com/choojun/2018workshop_ml/wiki)
