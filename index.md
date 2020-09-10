@@ -47,9 +47,23 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 ## Award / Certification
 
 * 2019:  [Reviewer of Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80)
-* 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) - Data Science on Google Cloud Platform (GCP): Machine Learning, GCP Application Development - Java, GCP BigQuery For Data Analysis, GCP Data Engineering, GCP Machine Learning APIs, GCP Scientific Data Processing, Google Cloud Solutions II: Data and Machine Learning, Data Science on the Google Cloud Platform, GCP Baseline: Data, ML, AI, GCP Baseline: Deploy & Develop, GCP Baseline: Infrastructure, GCP Essentials, NCAA March Madness: Bracketology with Google Cloud
-* 2018: MBOT Professional Technologist (with carrying title Ts.)
-* 2018: MBOT Graduate Technologist 
+* 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992)
+    * Data Science on Google Cloud Platform (GCP): Machine Learning
+    * GCP Application Development - Java
+    * GCP BigQuery For Data Analysis
+    * GCP Data Engineering
+    * GCP Machine Learning APIs
+    * GCP Scientific Data Processing
+    * Google Cloud Solutions II: Data and Machine Learning
+    * Data Science on the Google Cloud Platform
+    * GCP Baseline: Data, ML, AI
+    * GCP Baseline: Deploy & Develop
+    * GCP Baseline: Infrastructure
+    * GCP Essentials
+    * NCAA March Madness: Bracketology with Google Cloud
+* 2018: Malaysia Board Of Technologists (MBOT)
+    * Professional Technologist (with carrying title Ts.)
+    * Graduate Technologist 
 * 2016: Silver Medal for the Best Paper Award in Annual Conference of Asian Association of Open Universities (AAOU)
 * 2014: [MIMOS Prestigious Award (MPA)](https://www.mosti.gov.my/web/en/news/malam-anugerah-inovasi/)
 * 2012: Bronze Medal in 3rd Cyber International Genius Inventor Fair (CIGIF)
@@ -57,9 +71,10 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 * 2011: IC Citizen - Certified Trainer
 * 2010: Finalist in MSC Malaysia - Asia Pacific ICT Awards (APICTA)
 * 2009: Sun MicroSystems Technology Award in Open Jive Grand Finals Challenge
-* 2009: Sun MicroSystems Technology Award in Open Jive Regional Challenge
-* 2009: Parasoft's Code Quality Challenge Award in Open Jive Regional Challenge
-* 2009: Malaysia Champion in Open Jive Regional Challenge
+* 2009: Open Jive Regional Challenge
+    * Sun MicroSystems Technology Award
+    * Parasoft's Code Quality Challenge Award
+    * Malaysia Champion
 * 2003: IBM Certified Database Administrator - DB2 Universal Database
 * 2003: IBM Certified Database Associate - DB2 Universal Database
 * 2001: IBM Certified Specialist - DB2 Universal Database
