@@ -2,7 +2,7 @@
 
 I have more than 10-year experience in software design and development, as well as research and development in computational intelligence. I have gained extensive experience and technical skills in various organizations, including Multimedia Super Corridor status companies in Malaysia and software development companies in Singapore. I have successfully developed a broad range of applications for serving small-medium industries, multi-national corporations and government agencies in the sectors of banking-finance, retail-commerce, logistic-sales, realty-development, production-manufacturing, and criminal-defence, which were deployed in Europe and Asia-Pacific.
 
-In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have acquired extensive research and development (R&D) experience in public and private universities, including [Universiti Sains Malaysia](https://www.usm.my/), [Universiti Malaya](https://www.um.edu.my/), and [Wawasan Open University](http://www.wou.edu.my/). I have published articles in high impact-factor journals and successfully secured collaborative grants between industry partners and universities. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
+In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have acquired extensive research and development experience in public and private universities, including [Universiti Sains Malaysia](https://www.usm.my/), [Universiti Malaya](https://www.um.edu.my/), and [Wawasan Open University](http://www.wou.edu.my/). I have published articles in high impact-factor journals and successfully secured collaborative grants between industry partners and universities. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
 
 My research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems.
 
@@ -26,42 +26,43 @@ for the listing.
 
 ## Research Project / Consultancy Work
 
-* 2008 - 2009: [Mobile Desktop Grid (MDG)](https://github.com/choojun/mdg/wiki)
-* 2010 - 2011: [USM Extract](https://github.com/choojun/extract/wiki)
-* 2012 - 2013: [Evolutionary Algorithm-Based Circuit Optimizer (Cmizer)](https://github.com/choojun/cmizer/wiki)
-* 2015: [Electronic Circuit Optimization System (ECO-System)](https://github.com/choojun/ecosystem/wiki)
-* 2015 - 2017: A Soft Computing Modeling for Clustering
-* 2015 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
-* 2016 - 2018: Study of Educational Data Mining
-* 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
-* 2018: [Industry 4.0 technology workshop: Machine learning for Engineering Data Intelligence](https://github.com/choojun/2018workshop_ml/wiki)
-* 2018: [Workshop of Machine Learning for Data Intelligence](https://github.com/choojun/2018workshop_mlkl/wiki)
-* 2018: [Workshop of Intelligent Agent-Based Systems: From Principles to Implementation](https://github.com/choojun/2018workshop_ma/wiki)
-* 2018: [Workshop on Information Security in Supply Chain Management: Data leakage and machine learning](https://github.com/choojun/leakage/wiki)
-* 2019 - 2021: New Multi-Objective Optimization Design Technique using an Ensemble Micro GA Optimizer for Surface-Mounted PMSM in Electric Vehicle
 * 2019 - 2022: [Taiwan-Malaysia Overseas Research Center for Water Innovation and Sustainable Energy (WISE) project](https://www.nthuwise.com.tw/)
+* 2019 - 2021: New Multi-Objective Optimization Design Technique using an Ensemble Micro GA Optimizer for Surface-Mounted PMSM in Electric Vehicle
+* 2018: [Workshop on Information Security in Supply Chain Management: Data leakage and machine learning](https://github.com/choojun/leakage/wiki)
+* 2018: [Workshop of Intelligent Agent-Based Systems: From Principles to Implementation](https://github.com/choojun/2018workshop_ma/wiki)
+* 2018: [Workshop of Machine Learning for Data Intelligence](https://github.com/choojun/2018workshop_mlkl/wiki)
+* 2018: [Industry 4.0 technology workshop: Machine learning for Engineering Data Intelligence](https://github.com/choojun/2018workshop_ml/wiki)
+* 2016: [Career Path Modelling (CPM) for human resource management (MyFuture)](https://github.com/choojun/myfuture/wiki)
+* 2016 - 2018: Study of Educational Data Mining
+* 2015 - 2019: [A novel approach for prioritisation of product quality improvement in a complex manufacturing environment](https://github.com/choojun/ariz/wiki)
+* 2015 - 2017: A Soft Computing Modeling for Clustering
+* 2015: [Electronic Circuit Optimization System (ECO-System)](https://github.com/choojun/ecosystem/wiki)
+* 2012 - 2013: [Evolutionary Algorithm-Based Circuit Optimizer (Cmizer)](https://github.com/choojun/cmizer/wiki)
+* 2010 - 2011: [USM Extract](https://github.com/choojun/extract/wiki)
+* 2008 - 2009: [Mobile Desktop Grid (MDG)](https://github.com/choojun/mdg/wiki)
+
 
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
 ## Award / Certification
 
-* 2001: IBM Certified Specialist - DB2 Universal Database
-* 2003: IBM Certified Database Associate - DB2 Universal Database
-* 2003: IBM Certified Database Administrator - DB2 Universal Database
-* 2009: Malaysia Champion in Open Jive Regional Challenge
-* 2009: Parasoft's Code Quality Challenge Award in Open Jive Regional Challenge
-* 2009: Sun MicroSystems Technology Award in Open Jive Regional Challenge
-* 2009: Sun MicroSystems Technology Award in Open Jive Grand Finals Challenge
-* 2010: Finalist in MSC Malaysia - Asia Pacific ICT Awards (APICTA)
-* 2011: IC Citizen - Certified Trainer
-* 2011: Silver Prize in 5th Open Source Software (OSS) World Challenge
-* 2012: Bronze Medal in 3rd Cyber International Genius Inventor Fair (CIGIF)
-* 2014: [MIMOS Prestigious Award (MPA)](https://www.mosti.gov.my/web/en/news/malam-anugerah-inovasi/)
-* 2016: Silver Medal for the Best Paper Award in Annual Conference of Asian Association of Open Universities (AAOU)
-* 2018: MBOT Graduate Technologist 
-* 2018: MBOT Professional Technologist (with carrying title Ts.)
-* 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) - Data Science on Google Cloud Platform (GCP): Machine Learning, GCP Application Development - Java, GCP BigQuery For Data Analysis, GCP Data Engineering, GCP Machine Learning APIs, GCP Scientific Data Processing, Google Cloud Solutions II: Data and Machine Learning, Data Science on the Google Cloud Platform, GCP Baseline: Data, ML, AI, GCP Baseline: Deploy & Develop, GCP Baseline: Infrastructure, GCP Essentials, NCAA March Madness: Bracketology with Google Cloud
 * 2019:  [Reviewer of Elsevier](https://www.reviewerrecognition.elsevier.com/#/profile/c7fed78c-76e4-4f7f-9c75-9ca13e887e80)
+* 2019: [Google Cloud Training](https://google.qwiklabs.com/public_profiles/5f90c871-d406-4010-8f69-9fe1bec85992) - Data Science on Google Cloud Platform (GCP): Machine Learning, GCP Application Development - Java, GCP BigQuery For Data Analysis, GCP Data Engineering, GCP Machine Learning APIs, GCP Scientific Data Processing, Google Cloud Solutions II: Data and Machine Learning, Data Science on the Google Cloud Platform, GCP Baseline: Data, ML, AI, GCP Baseline: Deploy & Develop, GCP Baseline: Infrastructure, GCP Essentials, NCAA March Madness: Bracketology with Google Cloud
+* 2018: MBOT Professional Technologist (with carrying title Ts.)
+* 2018: MBOT Graduate Technologist 
+* 2016: Silver Medal for the Best Paper Award in Annual Conference of Asian Association of Open Universities (AAOU)
+* 2014: [MIMOS Prestigious Award (MPA)](https://www.mosti.gov.my/web/en/news/malam-anugerah-inovasi/)
+* 2012: Bronze Medal in 3rd Cyber International Genius Inventor Fair (CIGIF)
+* 2011: Silver Prize in 5th Open Source Software (OSS) World Challenge
+* 2011: IC Citizen - Certified Trainer
+* 2010: Finalist in MSC Malaysia - Asia Pacific ICT Awards (APICTA)
+* 2009: Sun MicroSystems Technology Award in Open Jive Grand Finals Challenge
+* 2009: Sun MicroSystems Technology Award in Open Jive Regional Challenge
+* 2009: Parasoft's Code Quality Challenge Award in Open Jive Regional Challenge
+* 2009: Malaysia Champion in Open Jive Regional Challenge
+* 2003: IBM Certified Database Administrator - DB2 Universal Database
+* 2003: IBM Certified Database Associate - DB2 Universal Database
+* 2001: IBM Certified Specialist - DB2 Universal Database
 
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
