@@ -2,7 +2,7 @@
 
 I have more than 10-year experience in software design and development, as well as research and development in computational intelligence. I have gained extensive experience and technical skills in various organizations, including Multimedia Super Corridor status companies in Malaysia and software development companies in Singapore. I have successfully developed a broad range of applications for serving small-medium industries, multi-national corporations and government agencies in the sectors of banking-finance, retail-commerce, logistic-sales, realty-development, production-manufacturing, and criminal-defence, which were deployed in Europe and Asia-Pacific.
 
-In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have acquired extensive research and development experience in public and private universities, including [Universiti Sains Malaysia](https://www.usm.my/), [Universiti Malaya](https://www.um.edu.my/), and [Wawasan Open University](http://www.wou.edu.my/). I have published articles in high impact-factor journals and successfully secured collaborative grants between industry partners and universities. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
+In addition to my industrial experience, I'm also an academic staff at a local university in Malaysia. I have acquired extensive research and development experience in public and private universities, including [Universiti Sains Malaysia](https://www.usm.my/), [Universiti Malaya](https://www.um.edu.my/), and [Wawasan Open University](http://www.wou.edu.my/tan-choo-jun). I have published articles in high impact-factor journals and successfully secured collaborative grants between industry partners and universities. I have substantial experience in conducting classes and serving as learning advisor for undergraduate and post-graduate students.
 
 My research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems.
 
@@ -42,7 +42,7 @@ for the listing.
 * 2008 - 2009: [Mobile Desktop Grid (MDG)](https://github.com/choojun/mdg/wiki)
 
 
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
+Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for further details.
 
 ## Award / Certification
 
@@ -109,6 +109,6 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-_Knowledge can only become wisdom when we fully comprehend and internalise it. This is just the beginning of the journey. There are lots of things to learn in this exciting journey!_
+_Knowledge can only become wisdom when we fully comprehend and internalise it. Everyday is just like the beginning of the journey. There are lots of things to learn in this exciting journey!_
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
