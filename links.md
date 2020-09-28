@@ -4,17 +4,18 @@
 2. in [Computer Vision and Pattern Recognition](http://scholar.google.com.hk/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
 3. [TEC](https://mc.manuscriptcentral.com/tevc-ieee)
 4. [NC](https://ees.elsevier.com/neucom/)
-5. [ASOC](https://ees.elsevier.com/asoc/)
-6. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
-7. [IJAIT](https://www.editorialmanager.com/ijait/)
-7. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
-7. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
+7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
+8. [IJAIT](https://www.editorialmanager.com/ijait/)
+8. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
+8. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
 10. [AI EDAM](https://mc.manuscriptcentral.com/aie)
 10. [MICROC](https://www.evise.com/profile/#/MICROC/login)
 10. [RENE](https://ees.elsevier.com/rene/)
 10. [COIN](https://mc.manuscriptcentral.com/coin)
 10. [CYB](https://mc.manuscriptcentral.com/cyb-ieee)
 10. [JIFS](https://www.editorialmanager.com/jifs)
+5. [ASOC](https://ees.elsevier.com/asoc/)
+6. [SOCO](https://www.editorialmanager.com/soco)
 
 ### Programming:
 
