@@ -123,5 +123,5 @@
 * [SP](https://staffportal.wou.edu.my/)
 * [LMS](http://lms.wou.edu.my/)
 * [LMS-i](http://lms-i.wou.edu.my/)
-* [LMS-ocl(https://lms-oncampus.wou.edu.my)
+* [LMS-ocl](https://lms-oncampus.wou.edu.my)
 * [FL-ODL](https://flexlearn.wou.edu.my/)
