@@ -98,6 +98,12 @@
 * [Neural Networks and Deep Learning - Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
 * [Code of Predictive Analytics with TensorFlow](https://github.com/PacktPublishing/Predictive-Analytics-with-TensorFlow)
 
+### Middleware Links
+* [IBM Watson Studio Desktop](https://www.ibm.com/products/watson-studio-desktop/pricing) 
+* [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/)
+* [IBM Academic Initiative](https://my15.digitalexperience.ibm.com/b73a5759-c6a6-4033-ab6b-d9d4f9a6d65b/dxsites/151914d1-03d2-48fe-97d9-d21166848e65/home)
+* [Microsoft .NET API](https://docs.microsoft.com/en-us/dotnet/api/)
+* [Java SE API](https://docs.oracle.com/en/java/javase/index.html)
 
 ### USM Links
 
@@ -107,11 +113,7 @@
 * Mathematica Activation URL for [USM student only](https://user.wolfram.com/portal/requestAK/506f8a2585f11524c0d64de6d0589e4f427ba1af)
 
 ### wou Links
-* [IBM Watson Studio Desktop](https://www.ibm.com/products/watson-studio-desktop/pricing) 
-* [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/)
-* [IBM Academic Initiative](https://my15.digitalexperience.ibm.com/b73a5759-c6a6-4033-ab6b-d9d4f9a6d65b/dxsites/151914d1-03d2-48fe-97d9-d21166848e65/home)
-* [Microsoft .NET API](https://docs.microsoft.com/en-us/dotnet/api/)
-* [Java SE API](https://docs.oracle.com/en/java/javase/index.html)
+* [Library](https://woulibrary.wou.edu.my/)
 * [Advanced Standing](https://asat.wou.edu.my)
 * [APEL-A](https://apel.wou.edu.my)
 * [FL-ODL](https://flexlearn.wou.edu.my/)
