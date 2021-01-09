@@ -113,24 +113,17 @@
 * Mathematica Activation URL for [USM student only](https://user.wolfram.com/portal/requestAK/506f8a2585f11524c0d64de6d0589e4f427ba1af)
 
 ### wou Links
-* [Library](https://woulibrary.wou.edu.my/)
-* [Advanced Standing](https://asat.wou.edu.my)
-* [APEL-A](https://apel.wou.edu.my)
-* [FlexLearn](https://flexlearn.wou.edu.my/)
-* [LMS](http://lms.wou.edu.my/)
-* [LMS-i](http://lms-i.wou.edu.my/)
-* [LMS-ocl](https://lms-oncampus.wou.edu.my)
-* [OAS](https://assignment.wou.edu.my/)
-* [OAS-ocl](https://oas-oncampus.wou.edu.my)
-* [OAS-ODLi](https://oas-i.wou.edu.my/)
-* [OLP](https://olp-oncampus.wou.edu.my/)
-* [OTP](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)
-* [Neuron](https://neuron.wou.edu.my/)
-* [NewSIS-ODL](http://newsis.wou.edu.my/)
-* [NewSIS-ODLi](https://exam-i.wou.edu.my/)
-* [WR-ODL](https://woureport.wou.edu.my/)
-* [WR-OCL](https://woureport-oncampus.wou.edu.my/)
-* [WR-ODLi](https://woureport-i.wou.edu.my/reports/)
-* [SP](https://staffportal.wou.edu.my/)
+
+| Website      | Option 1 | Option 2 | Option 3 |
+| ----------- | ----------- | ----------- | ----------- |
+| FlexLearn   | [ODL-ODLi](https://flexlearn.wou.edu.my/) |  |  |
+| LMS   | [ODL](http://lms.wou.edu.my/) | [ODL-i](http://lms-i.wou.edu.my/)  | [OCL](https://lms-oncampus.wou.edu.my) |
+| OAS   | [ODL](https://assignment.wou.edu.my/) | [ODLi](https://oas-i.wou.edu.my/) | [OCL](https://oas-oncampus.wou.edu.my) |
+| NewSIS   | [ODL](http://newsis.wou.edu.my/) | [ODLi](https://exam-i.wou.edu.my/) |  |
+| Neuron   | [ODL](https://neuron.wou.edu.my/) |  |  |
+| WebReport   | [ODL](https://woureport.wou.edu.my/) | [ODLi](https://woureport-i.wou.edu.my/reports/) | [OCL](https://woureport-oncampus.wou.edu.my/) |
+| Etc   | [OLP of ODLi-OCL](https://olp-oncampus.wou.edu.my/) | [APEL-A](https://apel.wou.edu.my) | [Advanced Standing](https://asat.wou.edu.my) |
+| Etc  | [ODL](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp) | [SP](https://staffportal.wou.edu.my/) | [Library](https://woulibrary.wou.edu.my/) |
+
 
 
