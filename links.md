@@ -112,16 +112,23 @@
 * [IBM Academic Initiative](https://my15.digitalexperience.ibm.com/b73a5759-c6a6-4033-ab6b-d9d4f9a6d65b/dxsites/151914d1-03d2-48fe-97d9-d21166848e65/home)
 * [Microsoft .NET API](https://docs.microsoft.com/en-us/dotnet/api/)
 * [Java SE API](https://docs.oracle.com/en/java/javase/index.html)
+* [Advanced Standing]{https://asat.wou.edu.my}
+* [APEL-A]{https://apel.wou.edu.my}
+* [FL-ODL](https://flexlearn.wou.edu.my/)
+* [LMS](http://lms.wou.edu.my/)
+* [LMS-i](http://lms-i.wou.edu.my/)
+* [LMS-ocl](https://lms-oncampus.wou.edu.my)
 * [OAS](https://assignment.wou.edu.my/)
 * [OAS-ocl](https://oas-oncampus.wou.edu.my)
 * [OAS-ODLi](https://oas-i.wou.edu.my/)
 * [OLP](https://olp-oncampus.wou.edu.my/)
 * [OTP](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)
+* [Neuron]{https://neuron.wou.edu.my}
+* [NewSIS-ODL]{http://newsis.wou.edu.my}
+* [NewSIS-ODLi]{https://exam-i.wou.edu.my}
 * [WR-ODL](https://woureport.wou.edu.my/)
 * [WR-OCL](https://woureport-oncampus.wou.edu.my/)
 * [WR-ODLi](https://woureport-i.wou.edu.my/reports/)
 * [SP](https://staffportal.wou.edu.my/)
-* [LMS](http://lms.wou.edu.my/)
-* [LMS-i](http://lms-i.wou.edu.my/)
-* [LMS-ocl](https://lms-oncampus.wou.edu.my)
-* [FL-ODL](https://flexlearn.wou.edu.my/)
+
+
