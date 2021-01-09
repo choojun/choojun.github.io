@@ -123,7 +123,7 @@
 | Neuron   | [ODL](https://neuron.wou.edu.my/) |  |  |
 | WebReport   | [ODL](https://woureport.wou.edu.my/) | [ODLi](https://woureport-i.wou.edu.my/reports/) | [OCL](https://woureport-oncampus.wou.edu.my/) |
 | Etc   | [OLP of ODLi-OCL](https://olp-oncampus.wou.edu.my/) | [APEL-A](https://apel.wou.edu.my) | [Advanced Standing](https://asat.wou.edu.my) |
-| Etc  | [OTP](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [Library](https://woulibrary.wou.edu.my/) | [SP](https://staffportal.wou.edu.my/)  |
+| Etc  | [OTP](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [Library](https://woulibrary.wou.edu.my/) | [Staff Portal](https://staffportal.wou.edu.my/)  |
 
 
 
