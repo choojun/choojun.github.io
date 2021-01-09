@@ -113,7 +113,7 @@
 * Mathematica Activation URL for [USM student only](https://user.wolfram.com/portal/requestAK/506f8a2585f11524c0d64de6d0589e4f427ba1af)
 
 ### wou Links
-![Visit link](https://choojun.github.io/woulinks)
+[Visit link](https://choojun.github.io/woulinks)
 
 
 
