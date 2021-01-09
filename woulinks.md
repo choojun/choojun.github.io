@@ -1,4 +1,3 @@
-[![WOU](https://images.squarespace-cdn.com/content/55371ac3e4b08f12059e3112/1431531294008-PMYF4UDV7MYNWUB61L57/WOU+Logo.jpg?content-type=image%2Fjpeg =50x)]()
 
 | Website      |  1 |  2 |  3 |
 | ----------- | ----------- | ----------- | ----------- |
