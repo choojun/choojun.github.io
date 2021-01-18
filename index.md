@@ -19,7 +19,7 @@ Please visit
 [dblp](http://dblp.dagstuhl.de/pers/hd/t/Tan:Choo_Jun),
 [dblp](http://dblp2.uni-trier.de/pers/hd/t/Tan:Choo_Jun),
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
-[Semantic Scholar](https://academic.microsoft.com/author/2574491712).
+[Microsoft Academic](https://academic.microsoft.com/author/2574491712).
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 for the listing.
 
