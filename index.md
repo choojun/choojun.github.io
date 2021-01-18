@@ -16,7 +16,6 @@ Please visit
 [Google Scholar](http://scholar.google.com.my/citations?user=bSb37M8AAAAJ&hl=en),
 [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55655843600),
 [Publons](https://publons.com/researcher/2461459/choo-jun-tan/metrics/),
-[Mendeley](https://www.mendeley.com/profiles/choo-jun-tan/),
 [dblp](http://dblp.dagstuhl.de/pers/hd/t/Tan:Choo_Jun),
 [dblp](http://dblp2.uni-trier.de/pers/hd/t/Tan:Choo_Jun),
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
