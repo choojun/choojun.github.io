@@ -86,6 +86,7 @@
 * [Google Translate](http://translate.google.com.my/?hl=en#auto/zh-TW/)
 * [Exchange Rate](http://www.bnm.gov.my/index.php?ch=statistic&pg=stats_exchangerates)
 * [Stephen's Thesis Development and Writing Tips](http://www.ccs.neu.edu/home/intille/teaching/advising/tips.htm)
+* [HRDF e-LATiH](https://www.elatih.com/)
 * [Malaysia teaching permit](https://eipts.mohe.gov.my/eipts/)
 * [Malaysia grants portal](http://mygrants.gov.my)
 * [MBOT](https://www.mbot.org.my/secure/login/)
