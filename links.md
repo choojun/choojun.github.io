@@ -14,7 +14,7 @@
 20. [MICROC](https://www.editorialmanager.com/microc/default.aspx)
 20. [CYB](https://mc.manuscriptcentral.com/cyb-ieee)
 20. [JIFS](https://www.editorialmanager.com/jifs)
-20. [ASOC](https://ees.elsevier.com/asoc/)
+20. [ASOC](https://www.editorialmanager.com/asoc)
 20. [SOCO](https://www.editorialmanager.com/soco)
 
 ### Programming:
