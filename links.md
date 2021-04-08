@@ -16,6 +16,7 @@
 20. [JIFS](https://www.editorialmanager.com/jifs)
 20. [ASOC](https://www.editorialmanager.com/asoc)
 20. [SOCO](https://www.editorialmanager.com/soco)
+20. [NPL](https://www.editorialmanager.com/nepl)
 
 ### Programming:
 
