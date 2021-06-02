@@ -8,6 +8,6 @@
 | Neuron   | [ODL](https://neuron.wou.edu.my/) |  |  |
 | WebReport   | [ODL](https://woureport.wou.edu.my/) | [ODLi](https://woureport-i.wou.edu.my/reports/) | [OCL](https://woureport-oncampus.wou.edu.my/) |
 | OTP  | [ODL](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [ODLi](https://oas-oncampus.wou.edu.my/olp/onlinePaymentVerifiedODLI.asp) |   |
-| Etc  | | [APEL-A](https://apel.wou.edu.my) | [ASAT](https://asat.wou.edu.my) |
+| Etc  | [stdsharepoint](https://studentwouedu.sharepoint.com/) | [APEL-A](https://apel.wou.edu.my) | [ASAT](https://asat.wou.edu.my) |
 | Etc  | | [Library](https://woulibrary.wou.edu.my/) | [Staff Portal](https://staffportal.wou.edu.my/)  |
 
