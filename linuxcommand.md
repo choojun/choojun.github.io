@@ -264,3 +264,23 @@ Use dmg2img, rename the file extension from IMG to ISO, and Brasero will recogni
  # Fix it by issuing the following command
  sudo chsh -s /bin/bash <username>
 ```
+
+
+### Linux in SSD Drive
+
+When you delete a file on an old, magnetic hard drive, the computer simply marks that file as deleted. The file’s data sticks around on the hard drive — that’s why deleted files can be recovered. The computer will eventually overwrite the deleted files when it overwrites their sectors with new data.
+
+Solid-state drives (SSDs) work differently. Whenever you write a file to an SSD, the computer must first erase any data in the sectors it’s writing the data to. It can’t just “overwrite” the sectors in one operation — it must first clear them, then write to the empty sectors.
+
+This means that an SSD will slow down over time. Writing to the SSD’s sectors will be quick the first time. After you delete some files and try to write to it again, it will take longer. With TRIM enabled, the operating system tells the SSD each time it deletes a file. The drive can then erase the sectors containing the file’s contents, so writing to the sectors will be quick in the future.
+
+In other words, if you don’t use TRIM, your SSD will slow down over time. That’s why modern operating systems, including Windows 7+, Mac OS X 10.6.8+, and Android 4.3+ use TRIM. TRIM was implemented in Linux back in December 2008, but Ubuntu isn’t using it by default. The real reason Ubuntu doesn’t TRIM SSDs by default is because the Linux kernel’s implementation of TRIM is slow and results in poor performance in normal use. On Windows 7 and 8, Windows sends a TRIM command each time it deletes a file, telling the drive to immediately delete the bits of the file. Linux supports this when file systems are mounted with the “discard” option. However, Ubuntu — and other distributions — don’t do this by default for performance reasons. To TRIM your SSD on Ubuntu, simply open a terminal and run the following command:
+```
+ sudo fstrim -v /
+```
+To check your SSD drive supported TRIM:
+```
+ sudo hdparm -I /dev/sda | grep "TRIM supported"
+```
+Source: http://www.howtogeek.com/176978/ubuntu-doesnt-trim-ssds-by-default-why-not-and-how-to-enable-it-yourself/
+
