@@ -241,6 +241,7 @@ Use dmg2img, rename the file extension from IMG to ISO, and Brasero will recogni
 
 ### cd command
  Use “cd -” to toggle between the last two directories
+ 
  Use “shopt -s cdspell” to automatically correct mistyped directory names on cd
 
 
