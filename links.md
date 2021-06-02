@@ -40,7 +40,7 @@
 * [Adobe Air in Ubuntu](Adobe-Air-in-Ubuntu)
 * [Adobe Flash Plugin in Fedora](Adobe-Flash-Plugin-in-Fedora)
 * [Adobe Flash Plugin in Ubuntu](Adobe-Flash-Plugin-in-Ubuntu) 
-* [Adobe Acrobat Reader in Fedora](https://github.com/choojun/choojun.github.io/blob/master/AdobeAcrobatReaderInFedora)
+* [Adobe Acrobat Reader in Fedora](AdobeAcrobatReaderInFedora)
 * [Webmin](http://doxfer.webmin.com/Webmin/Installation): a web-based application that simplifies the process of managing a Linux or Unix system
 * [USB Media for Fedora Installation](USB-Media-for-Fedora-Installation)
 * [Realplayer in Linux](Realplayer-in-Linux)
