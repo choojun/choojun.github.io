@@ -8,8 +8,3 @@ sudo yum install AdobeReader_enu
 ```
 
 
-```
-var add2 = function(number) {
-  return number + 2;
-}
-```
