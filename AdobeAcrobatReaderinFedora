@@ -6,3 +6,10 @@ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 sudo yum install AdobeReader_enu
 ```
+
+
+```
+var add2 = function(number) {
+  return number + 2;
+}
+```
