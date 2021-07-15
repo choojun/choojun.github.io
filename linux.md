@@ -29,7 +29,7 @@
  java -version
  javac -version
  javaws -version
- 5. Enable Java in a web browser (Google Chrome and Mozilla Firefox) on Ubuntu Linux, remore more at URL https://java.com/en/download/help/enable_browser_ubuntu.xml
+ 6. Enable Java in a web browser (Google Chrome and Mozilla Firefox) on Ubuntu Linux, remore more at URL https://java.com/en/download/help/enable_browser_ubuntu.xml
  For Mozilla Firefox
  a. Create a directory called plugins if you do not have it. 
  sudo mkdir -p /usr/lib/firefox-addons/plugins
@@ -38,6 +38,17 @@
  c. Create a symbolic link
  sudo ln -s /usr/lib/jvm/jdk1.8.0_251/jre/lib/amd64/libnpjp2.so
  d. Restart your browser and test it with URL https://java.com/en/download/testjava.jsp
+ 7. Setup JupyterHub
+ sudo apt update
+ sudo apt install python3-pip python3-dev
+ sudo apt-get install npm nodejs
+ sudo python3 -m pip install jupyterhub
+ sudo npm install -g configurable-http-proxy
+ sudo python3 -m pip install notebook
+ # To start the Hub server, run the command:
+ jupyterhub
+ # To allow multiple users to sign in to the Hub server, you must start jupyterhub as a privileged user, such as root:
+ sudo jupyterhub
 ```
 
 ### Ubuntu 18.04
