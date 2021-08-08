@@ -1,24 +1,23 @@
-# Journals and Conferences:
+### Journals and Conferences:
 
 1. in [Evolutionary Computing](http://scholar.google.com.hk/citations?hl=en&view_op=search_venues&vq=Evolutionary+computing)
 2. in [Computer Vision and Pattern Recognition](http://scholar.google.com.hk/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
-3. [TEC](https://mc.manuscriptcentral.com/tevc-ieee)
-4. [EC](https://www.editorialmanager.com/ecj)
-5. [NC](https://ees.elsevier.com/neucom/)
-8. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
-8. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
-8. [IJAIT](https://www.editorialmanager.com/ijait/)
-10. [AI EDAM](https://mc.manuscriptcentral.com/aie)
-10. [COIN](https://mc.manuscriptcentral.com/coin)
-11. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
-12. [RENE](https://ees.elsevier.com/rene/)
-20. [MICROC](https://www.editorialmanager.com/microc/default.aspx)
-20. [CYB](https://mc.manuscriptcentral.com/cyb-ieee)
-20. [JIFS](https://www.editorialmanager.com/jifs)
-20. [NPL](https://www.editorialmanager.com/nepl)
-20. [ASOC](https://www.editorialmanager.com/asoc)
-20. [SOCO](https://www.editorialmanager.com/soco)
 
+
+|   |   |   |   | 
+|---|---|---|---|
+| [TEC](https://mc.manuscriptcentral.com/tevc-ieee)  | [EC](https://www.editorialmanager.com/ecj)  |  [CYB](https://mc.manuscriptcentral.com/cyb-ieee) |  [ASOC](https://www.editorialmanager.com/asoc)  |
+| [NC](https://ees.elsevier.com/neucom/)  | [SOCO](https://www.editorialmanager.com/soco)  | [NPL](https://www.editorialmanager.com/nepl) |   |  
+|   |   |   |   |  
+
+
+1. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
+2. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
+3. [IJAIT](https://www.editorialmanager.com/ijait/)
+4. [AI EDAM](https://mc.manuscriptcentral.com/aie)
+5. [COIN](https://mc.manuscriptcentral.com/coin)
+6. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
+7. [JIFS](https://www.editorialmanager.com/jifs)
 
 ### Programming and Database:
 
@@ -26,7 +25,7 @@
 * [C/C++](cpp.md)
 * [Java](java.md)
 * [TensorFlow](tensorflow.md)
-* [Gaussian](gaussian.md)
+* [Gaussian](gaussian.md): an electronic structure modeling application, and for more detail see URL http://www.gaussian.com/
 * [MySQL](mysql.md)
 * [Tomcat](tomcat.md)
 * [VMware](vmware.md)
@@ -35,42 +34,30 @@
 * [Java-based Stochastic Gradient Descent](stochasticgradientdescent.md)
 * [Microsoft Azure Machine Learning Studio](azurestudio.md)
 
-## Java:
+### Middleware Links
+* [IBM Watson Studio Desktop](https://www.ibm.com/products/watson-studio-desktop/pricing) 
+* [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/)
+* [IBM Academic Initiative](https://my15.digitalexperience.ibm.com/b73a5759-c6a6-4033-ab6b-d9d4f9a6d65b/dxsites/151914d1-03d2-48fe-97d9-d21166848e65/home)
+* [Microsoft .NET API](https://docs.microsoft.com/en-us/dotnet/api/)
+* [Java SE API](https://docs.oracle.com/en/java/javase/index.html)
+* [ZetCode](http://zetcode.com/all/)
 
-
-# Linux, Unix and Mac
+### Linux, Linux Cluster, Unix and Mac
 
 * [Linux commands](linuxcommand.md)
 * [After Linux Setup](linux.md)
-* [Rocks Cluster](rockscluster.md)
+* [Rocks Cluster](rockscluster.md): an open-source Linux cluster distribution that enables end users to easily build computational clusters, grid endpoints and visualization tiled-display walls.
 * [UBuntu Cluster](ubuntucluster.md)
+* Mathematica with Cluster resources, see http://reference.wolfram.com/mathematica/ParallelTools/tutorial/Overview.html
+* [Virtual Gid Computing](virtualgidcomputing.md): a virtual grid computing using peer-to-peer approach, read more at URL http://boinc.berkeley.edu/trac/wiki/ProjectMain.
 * [Solaris](solaris.md)
 * [USB Media and Fedora](usbmedia.md)
 * [DLink DNS-323/DNS-343](dlink.md)
 * [RealPlayer and Linux](realplayer.md)
 * [Video and Audio Conversion in Linux](videoaudio.md)
+* [Webmin](http://doxfer.webmin.com/Webmin/Installation): a web-based application that simplifies the process of managing a Linux or Unix system
 * [Mac](mac.md)
 
-
-
-* [Linux in SSD drive](Linux-in-SSD-Drive)
-* [Video and Audio Conversion](Video-and-Audio-Conversion)
-* [Adobe Air in Ubuntu](Adobe-Air-in-Ubuntu)
-* [Adobe Flash Plugin in Fedora](Adobe-Flash-Plugin-in-Fedora)
-* [Adobe Flash Plugin in Ubuntu](Adobe-Flash-Plugin-in-Ubuntu) 
-* [Adobe Acrobat Reader in Fedora](AdobeAcrobatReaderInFedora)
-* [Webmin](http://doxfer.webmin.com/Webmin/Installation): a web-based application that simplifies the process of managing a Linux or Unix system
-* [USB Media for Fedora Installation](USB-Media-for-Fedora-Installation)
-* [Realplayer in Linux](Realplayer-in-Linux)
-
-
-### Linux Cluster Server
-
-* [Rocks Cluster](Rocks-Cluster): an open-source Linux cluster distribution that enables end users to easily build computational clusters, grid endpoints and visualization tiled-display walls.
-* [Gaussian 03 in Rocks Cluster](Gaussian-03): an electronic structure modeling application, and for more detail see URL http://www.gaussian.com/
-* [Ubuntu Cluster](Ubuntu-Cluster)
-* Using Mathematica with Cluster resources, see http://reference.wolfram.com/mathematica/ParallelTools/tutorial/Overview.html
-* Virtual Gid Computing: a virtual grid computing using peer-to-peer approach, read more at URL http://boinc.berkeley.edu/trac/wiki/ProjectMain. Say u dun like cloud computing, and the alternative for u is this virtual grid computing. It is another option u can consider for **grepping** more resources. I come across this [Volunteer computing](http://boinc.berkeley.edu/trac/wiki/VolunteerComputing), BONIC (a opensource server that can be setup) at URL http://boinc.berkeley.edu/projects.php, and saw them hosted a few Quantum computing and Biology projects. It uses the [Virtual Campus Super computer Center](http://boinc.berkeley.edu/trac/wiki/VirtualCampusSupercomputerCenter) concept to gather more computational resources (including lab machines, desktop and laptops belonging to faculty, staff, and students, and home PCs belonging to university and the public). Those volunteers' machine just need to install the [client](http://boinc.berkeley.edu/download.php) and the BONIC server can "tab" their machine's resources (imaging during university's semester break, and they are **tabbing** all PC in main campus.... it is going to be a lot lot resources, hahaha!). **But i foresee one problem for those who are non-compueter science backgroud** where u need to write BONIC application in order to make use those **donated** resources regardless any operating system from volunteers. It supports [multi-thread](http://boinc.berkeley.edu/trac/wiki/AppMultiThread), and your program that require GPU (example [1](http://boinc.berkeley.edu/trac/wiki/AppCoprocessor) and [2](http://boinc.berkeley.edu/trac/wiki/CudaApps)) which all in C, or [Java](http://boinc.berkeley.edu/trac/wiki/JavaApps), [Fortran](http://boinc.berkeley.edu/trac/wiki/FortranApps) too! More important is your application can make use specifically Cuda or [OpenCL](http://boinc.berkeley.edu/trac/wiki/GPUApp). Once done yr program development, submit yr job ( example [simple Job](http://boinc.berkeley.edu/trac/wiki/SingleJob) or [remote Job](http://boinc.berkeley.edu/trac/wiki/RemoteJob) ) to BONIC server for execution. The requirement to setup a BONIC server is available at URL http://boinc.berkeley.edu/trac/wiki/ServerIntro. 
 
 ### Links 
 
@@ -85,29 +72,24 @@
 * [Dictionary](http://dictionary.reference.com/)
 * [LaTex](http://en.wikibooks.org/wiki/LaTeX/)
 * [Math Symbols](http://en.wikipedia.org/wiki/Table_of_mathematical_symbols)
-* [ZetCode](http://zetcode.com/all/)
 * [Google Translate](http://translate.google.com.my/?hl=en#auto/zh-TW/)
 * [Exchange Rate](http://www.bnm.gov.my/index.php?ch=statistic&pg=stats_exchangerates)
 * [Stephen's Thesis Development and Writing Tips](http://www.ccs.neu.edu/home/intille/teaching/advising/tips.htm)
+* [TZ](http://203.64.78.182/scaswebadmin/annoclaslist.aspx)
+
 * [HRDF e-LATiH](https://www.elatih.com/)
 * [Malaysia teaching permit](https://eipts.mohe.gov.my/eipts/)
 * [Malaysia grants portal](http://mygrants.gov.my)
 * [MBOT](https://www.mbot.org.my/secure/login/)
 * [Technology and Technical Accreditation Secretariat (TTAS) MBOT](http://e-papp.ttasmbot.org.my)
 * [MQA Forms](http://www.mqa.gov.my/portalmqav3/red/en/pubs_form.cfm)
-* [TZ](http://203.64.78.182/scaswebadmin/annoclaslist.aspx)
 
-## Book
+
+### Book
 * [Deep Learning - Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
 * [Neural Networks and Deep Learning - Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
 * [Code of Predictive Analytics with TensorFlow](https://github.com/PacktPublishing/Predictive-Analytics-with-TensorFlow)
 
-### Middleware Links
-* [IBM Watson Studio Desktop](https://www.ibm.com/products/watson-studio-desktop/pricing) 
-* [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/)
-* [IBM Academic Initiative](https://my15.digitalexperience.ibm.com/b73a5759-c6a6-4033-ab6b-d9d4f9a6d65b/dxsites/151914d1-03d2-48fe-97d9-d21166848e65/home)
-* [Microsoft .NET API](https://docs.microsoft.com/en-us/dotnet/api/)
-* [Java SE API](https://docs.oracle.com/en/java/javase/index.html)
 
 ### USM Links
 
