@@ -54,6 +54,7 @@ jupyter notebook
 
 sudo python3 -m pip install --upgrade tensorflow
 sudo python3 -m pip install bazel matplotlib pandas NumPy SciPy sklearn
+sudo python3 -m pip install dit vector point
 
 ```
 
