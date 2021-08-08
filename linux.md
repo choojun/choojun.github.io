@@ -49,6 +49,12 @@
  jupyterhub
  # To allow multiple users to sign in to the Hub server, you must start jupyterhub as a privileged user, such as root:
  sudo jupyterhub
+ # run jupyter notebook
+jupyter notebook
+
+sudo python3 -m pip install --upgrade tensorflow
+sudo python3 -m pip install bazel matplotlib pandas NumPy SciPy sklearn
+
 ```
 
 ### Ubuntu 18.04
