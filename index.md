@@ -32,7 +32,7 @@ Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for further details
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
 
 ## Teaching Courses
-### for open [distance learning](https://en.wikipedia.org/wiki/Distance_education) and on-campus face-to-face learning
+for open [distance learning](https://en.wikipedia.org/wiki/Distance_education) and on-campus face-to-face learning
 
 1. Visual Programming - with [Visual Basic .Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET)
 2. Data Structures and Algorithms - with [Java](https://www.oracle.com/java/)
