@@ -77,12 +77,7 @@
 * [Stephen's Thesis Development and Writing Tips](http://www.ccs.neu.edu/home/intille/teaching/advising/tips.htm)
 * [TZ](http://203.64.78.182/scaswebadmin/annoclaslist.aspx)
 
-* [HRDF e-LATiH](https://www.elatih.com/)
-* [Malaysia teaching permit](https://eipts.mohe.gov.my/eipts/)
-* [Malaysia grants portal](http://mygrants.gov.my)
-* [MBOT](https://www.mbot.org.my/secure/login/)
-* [Technology and Technical Accreditation Secretariat (TTAS) MBOT](http://e-papp.ttasmbot.org.my)
-* [MQA Forms](http://www.mqa.gov.my/portalmqav3/red/en/pubs_form.cfm)
+
 
 
 ### Book
@@ -99,7 +94,13 @@
 * Mathematica Activation URL for [USM student only](https://user.wolfram.com/portal/requestAK/506f8a2585f11524c0d64de6d0589e4f427ba1af)
 
 ### wou Links
-[Visit link](https://choojun.github.io/woulinks)
+* [HRDF e-LATiH](https://www.elatih.com/)
+* [Malaysia teaching permit](https://eipts.mohe.gov.my/eipts/)
+* [Malaysia grants portal](http://mygrants.gov.my)
+* [MBOT](https://www.mbot.org.my/secure/login/)
+* [Technology and Technical Accreditation Secretariat (TTAS) MBOT](http://e-papp.ttasmbot.org.my)
+* [MQA Forms](http://www.mqa.gov.my/portalmqav3/red/en/pubs_form.cfm)
+* [wou](https://choojun.github.io/woulinks)
 
 
 
