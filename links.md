@@ -15,27 +15,45 @@
 20. [MICROC](https://www.editorialmanager.com/microc/default.aspx)
 20. [CYB](https://mc.manuscriptcentral.com/cyb-ieee)
 20. [JIFS](https://www.editorialmanager.com/jifs)
+20. [NPL](https://www.editorialmanager.com/nepl)
 20. [ASOC](https://www.editorialmanager.com/asoc)
 20. [SOCO](https://www.editorialmanager.com/soco)
-20. [NPL](https://www.editorialmanager.com/nepl)
 
-### Programming:
 
-* [Latex](Latex)
-* [C/C++](C-and-C-Plus-Plus)
-* [Java](Java)
+### Programming and Database:
+
+* [Latex](latex.md)
+* [C/C++](cpp.md)
+* [Java](java.md)
+* [TensorFlow](tensorflow.md)
+* [Gaussian](gaussian.md)
+* [MySQL](mysql.md)
+* [Tomcat](tomcat.md)
+* [VMware](vmware.md)
+* [Git](git.md)
+* [Java-based Secure Library](securelibrary.md)
+* [Java-based Stochastic Gradient Descent](stochasticgradientdescent.md)
+* [Microsoft Azure Machine Learning Studio](azurestudio.md)
 
 ## Java:
-* [ZetCode](http://zetcode.com/all/)
 
-# Linux 
+
+# Linux, Unix and Mac
 
 * [Linux commands](linuxcommand.md)
-* [After Linux Setup](After-Linux-Setup)
-* [MySQL Administration](MySQL-Administration)
+* [After Linux Setup](linux.md)
+* [Rocks Cluster](rockscluster.md)
+* [UBuntu Cluster](ubuntucluster.md)
+* [Solaris](solaris.md)
+* [USB Media and Fedora](usbmedia.md)
+* [DLink DNS-323/DNS-343](dlink.md)
+* [RealPlayer and Linux](realplayer.md)
+* [Video and Audio Conversion in Linux](videoaudio.md)
+* [Mac](mac.md)
+
+
+
 * [Linux in SSD drive](Linux-in-SSD-Drive)
-* [VMware Administration](VMware-Administration)
-* [Tomcat Administration](Tomcat-Administration)
 * [Video and Audio Conversion](Video-and-Audio-Conversion)
 * [Adobe Air in Ubuntu](Adobe-Air-in-Ubuntu)
 * [Adobe Flash Plugin in Fedora](Adobe-Flash-Plugin-in-Fedora)
@@ -45,14 +63,6 @@
 * [USB Media for Fedora Installation](USB-Media-for-Fedora-Installation)
 * [Realplayer in Linux](Realplayer-in-Linux)
 
-### Unix
-
-* [Solaris](Solaris)
-
-### Etc
-
-* [DLink Network Storage](DLink-Network-Storage)
-* [Git](Git)
 
 ### Linux Cluster Server
 
@@ -64,27 +74,18 @@
 
 ### Links 
 
-* [IEEE](http://ieeexplore.ieee.org.ezproxy.lib.monash.edu.au/Xplore/home.jsp)
-* [TEC](http://ieeexplore.ieee.org.ezproxy.lib.monash.edu.au/xpl/RecentIssue.jsp?punumber=4235)
-* [PAMI](http://ieeexplore.ieee.org.ezproxy.lib.monash.edu.au/xpl/RecentIssue.jsp?punumber=34)
-* [MIT EC](http://dl.acm.org.ezproxy.lib.monash.edu.au/citation.cfm?id=J277&picked=prox)
-* [CEC](http://ieeexplore.ieee.org.ezproxy.lib.monash.edu.au/xpl/mostRecentIssue.jsp?punumber=6241678)
-* [EMCO](http://link.springer.com.ezproxy.lib.monash.edu.au/book/10.1007/978-3-642-37140-0)
-* [EJOR](http://www.sciencedirect.com.ezproxy.lib.monash.edu.au/science/journal/03772217)
-* [CVPR](http://ieeexplore.ieee.org.ezproxy.lib.monash.edu.au/xpl/conhome.jsp?punumber=1000147)
-* [MonashLib](http://search.lib.monash.edu/primo_library/libweb/action/search.do?vid=MON)
 * [SpringLink](http://link.springer.com.ezproxy.lib.monash.edu.au/)
 * [Science](http://www.sciencemag.org.ezproxy.lib.monash.edu.au/journals)
 * [Nature](http://www.nature.com.ezproxy.lib.monash.edu.au/nature/archive/index.html)
 * [Thomson Reuters JCR](https://jcr-incites-thomsonreuters-com.ezproxy.lib.monash.edu.au/JCRMasterSearchAction.action)
+* [MonashLib](http://search.lib.monash.edu/primo_library/libweb/action/search.do?vid=MON)
 * [Dataset](https://www.kdnuggets.com/datasets/index.html)
 * [Meta Analysis Calculators](http://www.lyonsmorris.com/ma1/)
 * [Free Statistics Calculators](http://www.danielsoper.com/statcalc3/)
-* [Google Scholar](http://scholar.google.com.my/schhp)
 * [Dictionary](http://dictionary.reference.com/)
-* [OxfordDic](http://www.oed.com.ezproxy.lib.monash.edu.au/)
 * [LaTex](http://en.wikibooks.org/wiki/LaTeX/)
 * [Math Symbols](http://en.wikipedia.org/wiki/Table_of_mathematical_symbols)
+* [ZetCode](http://zetcode.com/all/)
 * [Google Translate](http://translate.google.com.my/?hl=en#auto/zh-TW/)
 * [Exchange Rate](http://www.bnm.gov.my/index.php?ch=statistic&pg=stats_exchangerates)
 * [Stephen's Thesis Development and Writing Tips](http://www.ccs.neu.edu/home/intille/teaching/advising/tips.htm)
