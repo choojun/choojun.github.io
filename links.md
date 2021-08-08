@@ -30,7 +30,7 @@
 
 # Linux 
 
-* [Linux commands](Linux-Commands)
+* [Linux commands](linuxcommand.md)
 * [After Linux Setup](After-Linux-Setup)
 * [MySQL Administration](MySQL-Administration)
 * [Linux in SSD drive](Linux-in-SSD-Drive)
