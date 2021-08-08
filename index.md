@@ -23,7 +23,7 @@ Please visit
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 for the listing.
 
-## Research Project / Consultancy Work
+## Research / Consultancy Project
 
 Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for further details.
 
