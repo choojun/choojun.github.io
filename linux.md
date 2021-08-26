@@ -52,9 +52,21 @@
  # run jupyter notebook
 jupyter notebook
 
-sudo python3 -m pip install --upgrade tensorflow
+sudo python3 -m pip install --upgrade tensorflow launchpadlib 
 sudo python3 -m pip install bazel matplotlib pandas NumPy SciPy sklearn
 sudo python3 -m pip install dit vector point
+
+Bazel (latest version)
+pip/pip3 (latest version for Python 2 and 3 respectively)
+matplotlib (latest version)
+pandas (latest version)
+NumPy (latest version)
+SciPy (latest version)
+sklearn (latest version)
+yahoo_fiance (latest version)
+Bazel(latest version)
+CUDA (latest version)
+CuDNN (latest version)
 
 ```
 
