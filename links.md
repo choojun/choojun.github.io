@@ -12,12 +12,13 @@
 
 
 1. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
-2. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
-3. [IJAIT](https://www.editorialmanager.com/ijait/)
-4. [AI EDAM](https://mc.manuscriptcentral.com/aie)
-5. [COIN](https://mc.manuscriptcentral.com/coin)
-6. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
-7. [JIFS](https://www.editorialmanager.com/jifs)
+2. [TETCI](https://mc.manuscriptcentral.com/tetci-ieee)
+3. [TAI](https://mc.manuscriptcentral.com/tai-ieee)
+4. [IJAIT](https://www.editorialmanager.com/ijait/)
+5. [AI EDAM](https://mc.manuscriptcentral.com/aie)
+6. [COIN](https://mc.manuscriptcentral.com/coin)
+7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
+8. [JIFS](https://www.editorialmanager.com/jifs)
 
 ### Programming and Database:
 
