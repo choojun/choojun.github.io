@@ -19,6 +19,7 @@
 6. [COIN](https://mc.manuscriptcentral.com/coin)
 7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
 8. [JIFS](https://www.editorialmanager.com/jifs)
+9. [Springer KAIS](https://www.editorialmanager.com/kais/)
 
 ### Programming and Database:
 
