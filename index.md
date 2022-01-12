@@ -52,8 +52,8 @@ for open [distance learning](https://en.wikipedia.org/wiki/Distance_education) a
 17. Web Database Application - with [PHP](https://www.php.net/), [MySQL](https://dev.mysql.com/), [HTTPD](https://httpd.apache.org/)
 18. Web Development and Deployment - with [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), [wireframe](https://en.wikipedia.org/wiki/Website_wireframe)
 19. Intelligent Systems for Decision Support
-20. Final Project of various Programme, including i) Software Engineering, ii) Information System, iii) Computer System and Network, iv) Database Management
-22. Industrial Training for SE, IS and DM - with industrial engagement
+20. Final Project of various Programme, including i) Software Engineering (SE), ii) Information System (IS), iii) Computer System and Network (CSN), iv) Database Management (DM)
+22. Industrial Training for SE, IS, CSN and DM - with industrial engagement
 23. Advanced Manufacturing - with [Arena simulation software](https://www.arenasimulation.com/)
 
 
