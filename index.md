@@ -4,7 +4,7 @@ I have more than 15 years of experience in software design and development in in
 
 I received my PhD degrees in 2014, with research in the area of computational intelligence. I have acquired extensive R&D experience in public and private universities, including [Universiti Sains Malaysia (USM)](https://www.usm.my/), [Universiti Malaya (UM)](https://www.um.edu.my/), and [Wawasan Open University (WOU)](http://www.wou.edu.my/tan-choo-jun). Beside as an invited scientist on the clean water and sustainable energy project, I have published articles in impact-factor journals and secured collaboration grants between industry partners and universities.
 
-To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems. I have published articles in high impact-factor journals and successfully secured collaborative grants between industry partners and universities through research projects.
+To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems. I have published at least eleven indexed articles in the [Web of Science (WOS) core collection](https://publons.com/researcher/2461459/choo-jun-tan/publications/) and successfully secured collaborative grants between industry partners and universities through research projects.
 
 Please visit the following sections for my accomplishments.
 
