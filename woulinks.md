@@ -10,4 +10,4 @@
 | OTP  | [ODL](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [ODLi](https://oas-oncampus.wou.edu.my/olp/onlinePaymentVerifiedODLI.asp) |   |
 | Etc  | [stdsharepoint](https://studentwouedu.sharepoint.com/) | [APEL-A](https://apel.wou.edu.my) | [ASAT](https://asat.wou.edu.my) |
 | Etc  | [eHRMS](https://ehrms.wou.edu.my/) | [Library](https://woulibrary.wou.edu.my/) | [Staff Portal](https://staffportal.wou.edu.my/)  |
-| Etc  | [Research Repository]([https://ehrms.wou.edu.my/](https://staffportal.wou.edu.my/research_repository.html)) |   |   |
+| Etc  | [Research Repository](https://staffportal.wou.edu.my/research_repository.html) |   |   |
