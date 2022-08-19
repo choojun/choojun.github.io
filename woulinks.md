@@ -7,7 +7,7 @@
 | NewSIS   | [ODL](http://newsis.wou.edu.my/) | [ODLi](https://exam-i.wou.edu.my/) |  |
 | Neuron   | [ODL/ODLi/OCL](https://neuron.wou.edu.my/) |  |  |
 | WebReport   | [ODL](https://woureport.wou.edu.my/) | [ODLi](https://woureport-i.wou.edu.my/reports/) | [OCL](https://woureport-oncampus.wou.edu.my/) |
-| OTP  | [ODL Project](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [ODLi Course](https://oas-oncampus.wou.edu.my/olp/onlinePaymentVerifiedODLI.asp) [ODLi Project](https://oas-oncampus.wou.edu.my/olp/onlineProjectPaymentVerifiedODLI.asp) |   |
+| OTP  | [ODL Project](https://assignment.wou.edu.my/otp/onlineTutorProjectSupervisorSST.asp)| [ODLi Course](https://oas-oncampus.wou.edu.my/olp/onlinePaymentVerifiedODLI.asp), [ODLi Project](https://oas-oncampus.wou.edu.my/olp/onlineProjectPaymentVerifiedODLI.asp) |   |
 | Etc  | [stdsharepoint](https://studentwouedu.sharepoint.com/) | [APEL-A](https://apel.wou.edu.my) | [ASAT](https://asat.wou.edu.my) |
 | Etc  | [eHRMS](https://ehrms.wou.edu.my/) | [Library](https://woulibrary.wou.edu.my/) | [Staff Portal](https://staffportal.wou.edu.my/)  |
 | Etc  | [Research Repository](https://staffportal.wou.edu.my/research_repository.html) |   |   |
