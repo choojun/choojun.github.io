@@ -23,42 +23,7 @@ Please visit
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 for the listing.
 
-<%--
 
-## Research / Consultancy Project
-
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for further details.
-
-## Award / Certification
-
-Please visit [LinkedIn](https://www.linkedin.com/in/choojun) for more details.
-
-## Teaching Courses
-for open [distance learning](https://en.wikipedia.org/wiki/Distance_education) and on-campus face-to-face learning
-
-1. Visual Programming - with [Visual Basic .Net](https://en.wikipedia.org/wiki/Visual_Basic_.NET)
-2. Programming Fundamentals - with [Java](https://www.oracle.com/java/)
-3. Operating Systems (OSs) - with types of OS
-4. Data Structures and Algorithms - with [Java](https://www.oracle.com/java/)
-5. Information Systems Management
-6. Introduction and Advanced Electronic Commerce
-7. IT Infrastructure
-8. Enterprise Architecture
-10. Network Application - with [Wireshark](https://www.wireshark.org/), [Huawei eNSP](https://support.huawei.com/enterprise/en/management-system/ensp-pid-9017384)
-11. Software Engineering - with [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
-12. Software Requirement and Specification -with [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
-13. Software Project Management - with [Gantt chart](https://en.wikipedia.org/wiki/Gantt_chart), [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
-14. Software Reliability and Quality Assurance - with [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
-15. Software Scalability and Re-engineering
-16. System Analysis and Design
-17. Web Database Application - with [PHP](https://www.php.net/), [MySQL](https://dev.mysql.com/), [HTTPD](https://httpd.apache.org/)
-18. Web Development and Deployment - with [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/css/), [wireframe](https://en.wikipedia.org/wiki/Website_wireframe)
-19. Intelligent Systems for Decision Support
-20. Final Project of various Programme, including i) Software Engineering (SE), ii) Information System (IS), iii) Computer System and Network (CSN), iv) Database Management (DM)
-22. Industrial Training for SE, IS, CSN and DM - with industrial engagement
-23. Advanced Manufacturing - with [Arena simulation software](https://www.arenasimulation.com/)
-
---%>
 
 ## [Useful links](links)
 
