@@ -6,7 +6,7 @@ I received my PhD degrees in 2014, with research in the area of computational in
 
 To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems. I have published several indexed articles in the [Web of Science (WOS) core collection](https://publons.com/researcher/2461459/choo-jun-tan/publications/) and successfully secured collaborative grants between industry partners and universities through research projects.
 
-Please visit the following sections for my accomplishments.
+
 
 
 ## Publication
