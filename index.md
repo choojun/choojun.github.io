@@ -30,6 +30,8 @@ for the listing.
 ## [WOU links](woulinks)
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
-_Knowledge can only become wisdom when we fully comprehend and internalise it. Everyday is just like the beginning of the journey. There are lots of things to learn in this exciting journey!_
+_Knowledge can only become wisdom when we fully comprehend and internalise it._
+
+_Everyday is just like the beginning of the journey. There are lots of things to learn in this exciting journey!_
 
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
