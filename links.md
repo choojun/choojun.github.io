@@ -60,6 +60,11 @@
 * [Webmin](http://doxfer.webmin.com/Webmin/Installation): a web-based application that simplifies the process of managing a Linux or Unix system
 * [Mac](mac.md)
 
+### Book
+* [Deep Learning - Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
+* [Neural Networks and Deep Learning - Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
+* [Code of Predictive Analytics with TensorFlow](https://github.com/PacktPublishing/Predictive-Analytics-with-TensorFlow)
+
 
 ### Links 
 
@@ -79,30 +84,18 @@
 * [Stephen's Thesis Development and Writing Tips](http://www.ccs.neu.edu/home/intille/teaching/advising/tips.htm)
 * [TZ](http://203.64.78.182/scaswebadmin/annoclaslist.aspx)
 
-
-
-
-### Book
-* [Deep Learning - Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
-* [Neural Networks and Deep Learning - Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
-* [Code of Predictive Analytics with TensorFlow](https://github.com/PacktPublishing/Predictive-Analytics-with-TensorFlow)
-
-
-### USM Links
-
 * [Thomson Reuters JCR at usm](https://jcr.incites.thomsonreuters.com/)
 * [USMLib](http://www.lib.usm.my/index.php/ms/)
 * [USM E-journals](http://atoz.ebsco.com/titles.asp?Id=3777&uc=Admin&sid=10425351&TabID=2)
 * Mathematica Activation URL for [USM student only](https://user.wolfram.com/portal/requestAK/506f8a2585f11524c0d64de6d0589e4f427ba1af)
 
-### wou Links
 * [HRDF e-LATiH](https://www.elatih.com/)
 * [Malaysia teaching permit](https://eipts.mohe.gov.my/eipts/)
 * [Malaysia grants portal](http://mygrants.gov.my)
 * [MBOT](https://www.mbot.org.my/secure/login/)
 * [Technology and Technical Accreditation Secretariat (TTAS) MBOT](http://e-papp.ttasmbot.org.my)
 * [MQA Forms](http://www.mqa.gov.my/portalmqav3/red/en/pubs_form.cfm)
-* [wou](https://choojun.github.io/woulinks)
+
 
 
 
