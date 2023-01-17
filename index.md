@@ -23,7 +23,6 @@ for the listing.
 
 ## [Useful links](links)
 
-## [WOU links](woulinks)
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 
 _Knowledge can only become wisdom when we fully comprehend and internalise it._
