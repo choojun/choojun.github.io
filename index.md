@@ -1,6 +1,6 @@
 # Hello World!
 
-To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications to multi-objective optimisation problems. I have published several indexed articles in the [Web of Science (WOS)](https://www.webofscience.com/wos/author/rid/O-6251-2014).
+To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications. I have published several indexed articles, as listed in the [Web of Science (WOS)](https://www.webofscience.com/wos/author/rid/O-6251-2014).
 
 Happy reading!
 
@@ -17,7 +17,7 @@ Please visit
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
 [Academia](https://wou-my.academia.edu/ChooJunTan),
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
-for the listing.
+for more listing.
 
 
 
