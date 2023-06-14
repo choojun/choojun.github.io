@@ -7,7 +7,7 @@
 |   |   |   |   | 
 |---|---|---|---|
 | [TEC](https://mc.manuscriptcentral.com/tevc-ieee)  | [EC](https://www.editorialmanager.com/ecj)  |  [CYB](https://mc.manuscriptcentral.com/cyb-ieee) |  [ASOC](https://www.editorialmanager.com/asoc)  |
-| [NC](https://ees.elsevier.com/neucom/)  | [SOCO](https://www.editorialmanager.com/soco)  | [NPL](https://www.editorialmanager.com/nepl) |   |  
+| [NC](https://ees.elsevier.com/neucom/)  | [SOCO](https://www.editorialmanager.com/soco)  | [NPL](https://www.editorialmanager.com/nepl) | [KnoSys](https://www.editorialmanager.com/knosys/)  |  
 |   |   |   |   |  
 
 
