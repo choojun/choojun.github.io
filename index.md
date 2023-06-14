@@ -15,7 +15,7 @@ Please visit
 [dblp](http://dblp.dagstuhl.de/pers/hd/t/Tan:Choo_Jun),
 [dblp](http://dblp2.uni-trier.de/pers/hd/t/Tan:Choo_Jun),
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
-[Academia](https://wou-my.academia.edu/ChooJunTan),
+[Academia](https://independent.academia.edu/ChooJunTan),
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
 for more listing.
 
