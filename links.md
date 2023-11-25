@@ -23,6 +23,7 @@
 
 ### Programming and Database:
 
+* [Quarkus](quarkus.md)
 * [Latex](latex.md)
 * [C/C++](cpp.md)
 * [Java](java.md)
@@ -46,6 +47,7 @@
 
 ### Linux, Linux Cluster, Unix and Mac
 
+* [Microsot Windows Subsystem for Linux](wsl.md)
 * [Linux commands](linuxcommand.md)
 * [After Linux Setup](linux.md)
 * [Rocks Cluster](rockscluster.md): an open-source Linux cluster distribution that enables end users to easily build computational clusters, grid endpoints and visualization tiled-display walls.
