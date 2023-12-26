@@ -187,34 +187,36 @@ $ sudo apt install python3
 $ sudo apt install python3-dev
 $ sudo apt install python3-wheel
 
-# Check current python versions and symlinks
-$ ls -l /usr/bin/python* 
-~~~~
 
-6. Set environment variables by editing your ~/.bashrc file:
+6. Check current python versions and symlinks
+~~~
+$ ls -l /usr/bin/python* 
+~~~
+
+7. Set environment variables by editing your ~/.bashrc file:
 ~~~
 $ sudo nano ~/.bashrc
 ~~~
 
-Set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
+8. In ~/.bashrc file, set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
 ~~~
 alias python=python3
 ~~~
 
-Add the following lines at the end of the file based on the python3.x from your installation:
+9. In ~/.bashrc file, add the following lines at the end of the file based on the python3.x from your installation:
 ~~~
 export CPATH=/usr/include/python3.10m:$CPATH
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 ~~~
 
-7. Save the file.
+10. Save the file.
 
-8. Source the file:
+11. Source the file:
 ~~~
 $ source ~/.bashrc
 ~~~
 
-7. Install pip
+12. Install pip
 ~~~
 $ sudo apt update
 $ sudo apt install python3-pip
