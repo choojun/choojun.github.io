@@ -68,3 +68,51 @@ sudo shutdown –r 0
 
 
 
+
+### C. Backup the Distro on WSL
+
+1. In Power Shell, list the installed distro on WSL with the following command. Note that you need to know the exact name to create a backup
+~~~
+wsl –l -v
+~~~
+
+2. Change the directory that you want to save your backup with command ‘cd’. At the destination of directory, perform the following command to export the distribution of distro with Power Shell.
+~~~
+wsl --export (distribution) (filename.tar)
+    e.g. wsl --export Ubuntu-22.04 my-backup-Ubuntu-22.04.tar
+~~~
+
+3. Alternatively, instead of using ‘cd’ to get to the destination directory, you may specify the file location and filename as part of export process in the Power Shell as follows.
+~~~
+wsl --export (distribution) (file location with filename.tar)
+    e.g. wsl --export Ubuntu-22.04 c:/Users/choojun/Documents/wsl/my-backup-Ubuntu-22.04.tar
+~~~
+
+
+
+
+### D. Restore (Import) the Distro on WSL
+
+1. In Power Shell, list the installed distro on WSL before removing the same / targeted instance. Note that you need to know the exact name for this process, especially those who wants to restore it at some point on the same PC or on those PC with the same name for distribution of distro. Note that the 'unregister' command will unregister the distribution from WSL and deletes the root filesystems.
+~~~
+wsl –l –v
+wsl --unregister (targeted distribution)
+~~~
+
+2. Import the distribution of distro with Power Shell. Note that you may import the same distribution of distro into multiple install location, and this is good to facilitate your software development and testing purposes.
+~~~
+wsl --import (distribution) (*install location) (filename.tar)
+    e.g. wsl --import Ubuntu-22.04-test1 c:/Users/choojun/Documents/wsl/Ubuntu-22.04-test1 c:/Users/choojun/Documents/wsl/my-backup-Ubuntu-22.04.tar
+~~~
+
+3. In Power Shell, verify the distro has been imported correctly.
+~~~
+wsl –l -v
+~~~
+
+4. The beauty of using both export and import commands is that you can quickly and easily setup the same environment on multiple machines or setup multiple distros in the same machine. Your users and passwords will be retained, including anything you have installed using the package manager.
+
+
+
+
+
