@@ -120,37 +120,109 @@ wsl –l -v
 
 Note:
 1. Throughout our practical, we will assume that the Hadoop user name is hduser.
-2. The first time that you launch your WSL Linux distro (i.e. Ubuntu 18.04), you will be prompted to create a default user account. You may choose to either 
+2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
     * name the default user account as hduser, or 
     * create a separate user account named hduser.
 
-3.	Create a new group named hadoop
+### D1. Setup User Environment
+1.	Create a new group named hadoop
 ~~~
 $ sudo addgroup hadoop
 ~~~
 
-4.	Create a new user account named hduser (if applicable)
+2.	Create a new user account named hduser (if applicable)
 Add the new user:
 ~~~
 $ sudo adduser hduser
 ~~~
 
-5. Grant the user sudo privileges
+3. Grant the user sudo privileges
 ~~~
 $ sudo usermod -aG sudo hduser
 ~~~
 
-6.	Add hduser to the hadoop group
+4.	Add hduser to the hadoop group
 ~~~
 $ sudo usermod -a -G hadoop hduser
 ~~~
 
-7.	Switch to the user account hduser (if applicable)
+5.	Switch to the user account hduser (if applicable)
 ~~~
 $ su - hduser
 ~~~
 
-8.	If you want to go back to your original user session
+6.	If you want to go back to your original user session
 ~~~
 $ exit
 ~~~
+
+### D2. Setup Operating System Environment
+1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser.
+
+2. Check if ssh has been installed
+~~~
+$ service ssh status
+~~~
+
+3. If ssh has not been installed, install ssh
+~~~
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install ssh
+~~~
+
+4. Install pdsh
+~~~
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install pdsh
+~~~
+
+5. Install Python (if necessary)
+~~~
+$ python --version 
+$ sudo apt install software-properties-common
+$ sudo apt update
+$ sudo apt install python3
+$ sudo apt install python3-dev
+$ sudo apt install python3-wheel
+
+# Check current python versions and symlinks
+$ ls -l /usr/bin/python* 
+~~~~
+
+6. Set environment variables by editing your ~/.bashrc file:
+~~~
+$ sudo nano ~/.bashrc
+~~~
+
+Set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
+~~~
+alias python=python3
+~~~
+
+Add the following lines at the end of the file based on the python3.x from your installation:
+~~~
+export CPATH=/usr/include/python3.10m:$CPATH
+export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+~~~
+
+7. Save the file.
+
+8. Source the file:
+~~~
+$ source ~/.bashrc
+~~~
+
+7. Install pip
+~~~
+$ sudo apt update
+$ sudo apt install python3-pip
+$ pip3 --version
+$ sudo pip3 install --upgrade pip
+~~~~
+
+
+
+
+
