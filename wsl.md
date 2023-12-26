@@ -33,7 +33,7 @@ Locate your administrator username and password after reboot and before first us
 
 
 
-### B. Running Ubuntu on WSL
+## B. Running Ubuntu on WSL
 
 1. Suppose that the required distro as default, run the following command with Power Shell.
 ~~~
@@ -69,7 +69,7 @@ sudo shutdown –r 0
 
 
 
-### C. Backup the Distro on WSL
+## C. Backup the Distro on WSL
 
 1. In Power Shell, list the installed distro on WSL with the following command. Note that you need to know the exact name to create a backup
 ~~~
@@ -91,7 +91,7 @@ wsl --export (distribution) (file location with filename.tar)
 
 
 
-### D. Restore (Import) the Distro on WSL
+## D. Restore (Import) the Distro on WSL
 
 1. In Power Shell, list the installed distro on WSL before removing the same / targeted instance. Note that you need to know the exact name for this process, especially those who wants to restore it at some point on the same PC or on those PC with the same name for distribution of distro. Note that the 'unregister' command will unregister the distribution from WSL and deletes the root filesystems.
 ~~~
@@ -114,5 +114,43 @@ wsl –l -v
 
 
 
+-----------------------------------------------------------
 
+## D. Hadoop Installation and Configuration
 
+Note:
+1. Throughout our practical, we will assume that the Hadoop user name is hduser.
+2. The first time that you launch your WSL Linux distro (i.e. Ubuntu 18.04), you will be prompted to create a default user account. You may choose to either 
+    * name the default user account as hduser, or 
+    * create a separate user account named hduser.
+
+3.	Create a new group named hadoop
+~~~
+$ sudo addgroup hadoop
+~~~
+
+4.	Create a new user account named hduser (if applicable)
+Add the new user:
+~~~
+$ sudo adduser hduser
+~~~
+
+5. Grant the user sudo privileges
+~~~
+$ sudo usermod -aG sudo hduser
+~~~
+
+6.	Add hduser to the hadoop group
+~~~
+$ sudo usermod -a -G hadoop hduser
+~~~
+
+7.	Switch to the user account hduser (if applicable)
+~~~
+$ su - hduser
+~~~
+
+8.	If you want to go back to your original user session
+~~~
+$ exit
+~~~
