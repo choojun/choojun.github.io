@@ -116,7 +116,7 @@ wsl –l -v
 
 -----------------------------------------------------------
 
-## D. Hadoop Installation and Configuration
+## E. Hadoop Installation and Configuration
 
 Note:
 1. Throughout our practical, we will assume that the Hadoop user name is hduser.
@@ -124,7 +124,7 @@ Note:
     * name the default user account as hduser, or 
     * create a separate user account named hduser.
 
-### D1. Setup User Environment
+### E1. Setup User Environment
 1.	Create a new group named hadoop
 ~~~
 $ sudo addgroup hadoop
@@ -156,7 +156,7 @@ $ su - hduser
 $ exit
 ~~~
 
-### D2. Setup Operating System Environment
+### E2. Setup Operating System Environment
 1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser.
 
 2. Check if ssh has been installed
