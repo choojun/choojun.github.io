@@ -209,7 +209,7 @@ export CPATH=/usr/include/python3.10m:$CPATH
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 ~~~
 
-10. Save the file.
+10. Save the ~/.bashrc file.
 
 11. Source the file:
 ~~~
