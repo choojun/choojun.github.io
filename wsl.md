@@ -224,10 +224,107 @@ $ pip3 --version
 $ sudo pip3 install --upgrade pip
 ~~~~
 
+13. Check which Java version is installed in the distro
+~~~
+$ java -version
+~~~
+
+14. Install targeted OpenJDK
+~~~
+$ sudo apt-get install openjdk-8-jdk
+~~~
+> After this, check if the correct version of Java is installed.
 
 
-## A. Remove/Setup WSL in Windows 10
-cc
+
+
+
+### E3. Setup SSH and PDSH
+Note:
+Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
+
+1. Check if the SSH service is running
+~~~
+$ service ssh status
+~~~
+> WSL does not automatically start sshd.
+
+2. Start SSH
+~~~
+$ sudo service ssh start
+~~~
+> WSL does not automatically start sshd.
+
+3. Open the SSH port (if necessary)
+~~~
+$ sudo ufw allow ssh
+~~~
+> Ubuntu comes with a firewall configuration tool, known as UFW. If the firewall is enabled on your system, make sure to open the SSH port.
+
+4. Reload SSH
+~~~
+$ sudo /etc/init.d/ssh reload
+~~~
+
+5. Modify pdsh’s default rcmd to ssh, by checking your pdsh default rcmd rsh:
+~~~
+$ pdsh -q -w localhost
+~~~
+
+6. Modify pdsh’s default rcmd to ssh, by adding the following command  to ~/.bashrc file
+~~~
+export PDSH_RCMD_TYPE=ssh
+~~~
+
+7. Run the following command to ensure the settings applied.
+~~~
+$ source ~/.bashrc
+~~~
+
+
+
+### E4. Disable IPv6
+1. Edit the /etc/sysctl.conf file with the following command.
+~~~
+$ sudo nano /etc/sysctl.conf
+~~~
+
+2. Add the following lines to the end of the sysctl.conf file:
+~~~
+# disable ipv6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+~~~
+
+3. To reload the /etc/sysctl.conf settings, issue the following command.
+~~~
+$ sudo sysctl -p
+~~~
+
+4. Check if IPv6 has been successfully disabled
+~~~
+$ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+~~~
+> Note: 0 means IPv6 is enabled; 1 means IPv6 is disabled.
+
+5. Suppose that IPv6 is still enabled after rebooting, you must carry out the following:
+
+   - Create (with root privileges) the file /etc/rc.local 
+   ~~~
+   $ sudo nano /etc/rc.local
+   ~~~
+   - Insert the following into the file /etc/rc.local:
+   ~~~
+   #!/bin/bash
+   /etc/sysctl.d
+   /etc/init.d/procps restart
+   exit 0
+   ~~~
+   - Make the file executable
+   ~~~
+   sudo chmod 755 /etc/rc.local
+   ~~~
 
 ### A1. Setup User Environment
 ### A2. Setup User Environment
