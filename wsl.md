@@ -306,7 +306,8 @@ $ sudo sysctl -p
 ~~~
 $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 ~~~
-> Note: 0 means IPv6 is enabled; 1 means IPv6 is disabled.
+> [!NOTE]
+> 0 means IPv6 is enabled; 1 means IPv6 is disabled.
 
 5. Suppose that IPv6 is still enabled after rebooting, you must carry out the following:
 
@@ -366,4 +367,5 @@ cc
 ### A2. Setup User Environment
 ### A3. Setup User Environment
 
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
