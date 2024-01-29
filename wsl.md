@@ -2,7 +2,7 @@
 
 ## A. Remove/Setup WSL in Windows 10
 
-1. Find Settings --> Apps --> Optional features 
+1. Find Settings --> Apps --> Optional features.
 Suppose that your PC accessible to Internet (for huge files downloading).
 Click on the More Windows features under the Related settings section.
 Click (for setup) or unclick (for remove) all items Hyper-V, Windows Hypervisor Platform and Windows Subsystem for Linux.
@@ -15,7 +15,7 @@ Click (for setup) or unclick (for remove) all items Hyper-V, Windows Hypervisor 
 wsl --update
 (restart PC)
 
-wsl –list --online
+wsl –-list --online
 
 wsl --install -d UBuntu-xx.xx
 (restart PC)
@@ -157,7 +157,7 @@ $ exit
 ~~~
 
 ### E2. Setup Operating System Environment
-1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser.
+1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user sudoer, i.e., NOT the created hduser.
 
 2. Check if ssh has been installed
 ~~~
@@ -180,7 +180,7 @@ $ sudo apt install pdsh
 
 5. Install Python (if necessary)
 ~~~
-$ python --version 
+$ python3 --version 
 $ sudo apt install software-properties-common
 $ sudo apt update
 $ sudo apt install python3
