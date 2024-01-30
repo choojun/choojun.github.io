@@ -44,7 +44,7 @@ wsl ~
 ~~~
 wsl –l -v
 wsl –d <distro name> -u <created user in distro>
-    e.g. wsl –d Ubuntu-22.04 –u choojun
+    e.g. wsl –d Ubuntu-22.04 –u tarumt
 ~~~
 
 3. You may set the targeted distro as default with commands as follows.
@@ -119,7 +119,7 @@ wsl –l -v
 ## E. Hadoop Installation and Configuration
 
 Note:
-1. Throughout our practical, we will assume that the Hadoop user name is hduser.
+1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
     * name the default user account as hduser, or 
     * create a separate user account named hduser.
@@ -157,7 +157,7 @@ $ exit
 ~~~
 
 ### E2. Setup Operating System Environment
-1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user sudoer, i.e., NOT the created hduser.
+1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser ~~i.e., NOT the created hduser but tarumt~~
 
 2. Check if ssh has been installed
 ~~~
