@@ -14,10 +14,13 @@ Click (for setup) or unclick (for remove) the following items
 
 3. Restart PC
 
-4. Suppose that your PC accessible to Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in Windows Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx.
+4. Suppose that your PC accessible to Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.
+
+
+
 
 > [!NOTE]  
-> Optionally, you may run the PowerShell as Administrator, and issue the following command to setup the required Ubuntu distro
+> To set up the required Ubuntu distro (same version), run the following commands in PowerShell as administrator.
 >
 > ~~~
 > wsl --update
