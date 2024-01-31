@@ -2,7 +2,7 @@
 
 ## A. Remove/Setup WSL in Windows 10
 
-1. Find Settings --> Apps --> Apps & features --> Programs and Features --> Turn Windows features on or off, **OR** find Settings --> System -->  Optional features --> More Windows features --> Turn Windows features on or off.
+1. Find Settings --> Apps --> Apps & features --> Programs and Features --> Turn Windows features on or off, or find Settings --> System -->  Optional features --> More Windows features --> Turn Windows features on or off.
 
 2. Suppose that your PC has accessible to Internet (for huge files downloading) and Windows has updated to latest patches (e.g., version 22H2 for Windows 10).
 Click on the More Windows features under the Related settings section.
@@ -14,27 +14,30 @@ Click (for setup) or unclick (for remove) the following items
 
 3. Restart PC
 
-4. Suppose that your PC accessible to Internet (for huge files downloading), run the PowerShell as Administrator, and run the following command for setup the required Ubuntu distro
+4. Suppose that your PC accessible to Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in Windows Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx.
 
-~~~
-wsl --update
-(restart PC)
+> [!NOTE]  
+> Optionally, you may run the PowerShell as Administrator, and issue the following command to setup the required Ubuntu distro
+>
+> ~~~
+> wsl --update
+> (restart PC)
+>
+> wsl –-list --online
+>
+> wsl --install -d UBuntu-xx.xx
+> (restart PC)
+> ~~~
+>
+> You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. 
+>
+> ![image](https://github.com/choojun/choojun.github.io/assets/6356054/e6259ec4-76fa-48a4-ab5f-0ba0b0b524c4)
+>
+> Locate your administrator username and password after reboot and before first use.
+>
+> ![image](https://github.com/choojun/choojun.github.io/assets/6356054/7c24254b-a6c5-45a4-9973-6bace4969717)
 
-wsl –-list --online
-
-wsl --install -d UBuntu-xx.xx
-(restart PC)
-~~~
-
-You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. 
-
-![image](https://github.com/choojun/choojun.github.io/assets/6356054/e6259ec4-76fa-48a4-ab5f-0ba0b0b524c4)
-
-Locate your administrator username and password after reboot and before first use.
-
-![image](https://github.com/choojun/choojun.github.io/assets/6356054/7c24254b-a6c5-45a4-9973-6bace4969717)
-
-
+5. Restart PC
 
 
 
@@ -371,6 +374,22 @@ cc
 ### J1. Setup ...
 ### J2. Setup ...
 ### J3. Setup ...
+
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
