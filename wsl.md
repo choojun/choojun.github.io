@@ -2,10 +2,15 @@
 
 ## A. Remove/Setup WSL in Windows 10
 
-1. Find Settings --> Apps --> Optional features.
-Suppose that your PC accessible to Internet (for huge files downloading).
+1. Find Settings --> Apps --> Apps & features --> Programs and Features --> Turn Windows features on or off, **OR** find Settings --> System -->  Optional features --> More Windows features --> Turn Windows features on or off.
+
+2. Suppose that your PC has accessible to Internet (for huge files downloading) and Windows has updated to latest patches (e.g., version 22H2 for Windows 10).
 Click on the More Windows features under the Related settings section.
-Click (for setup) or unclick (for remove) all items Hyper-V, Windows Hypervisor Platform and Windows Subsystem for Linux.
+Click (for setup) or unclick (for remove) the following items
+    - Hyper-V
+    - Virtual Machine Platform
+    - Windows Hypervisor Platform
+    - Windows Subsystem for Linux.
 
 3. Restart PC
 
