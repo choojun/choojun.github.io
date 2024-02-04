@@ -251,8 +251,9 @@ $ sudo apt-get install openjdk-8-jdk
 
 
 ### E3. Setup SSH and PDSH
-Note:
-Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
+Run the following commands from Ubuntu with user hduser
+> [!NOTE]
+> Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
 
 1. Check if the SSH service is running
 ~~~
