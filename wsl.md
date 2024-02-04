@@ -227,7 +227,7 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 $ source ~/.bashrc
 ~~~
 
-12. Install pip
+12. Install pip (if necessary)
 ~~~
 $ sudo apt update
 $ sudo apt install python3-pip
