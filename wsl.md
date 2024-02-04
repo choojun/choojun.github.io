@@ -299,6 +299,8 @@ $ source ~/.bashrc
 
 
 ### E4. Disable IPv6
+Run the following commands from Ubuntu with user hduser
+
 1. Edit the /etc/sysctl.conf file with the following command.
 ~~~
 $ sudo nano /etc/sysctl.conf
