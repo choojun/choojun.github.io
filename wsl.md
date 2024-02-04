@@ -204,9 +204,9 @@ $ sudo apt install python3-wheel
 $ ls -l /usr/bin/python* 
 ~~~
 
-7. Set environment variables by editing your ~/.bashrc file:
+7. Set environment variables by editing your ~/.bashrc file (for hduser):
 ~~~
-$ sudo nano ~/.bashrc
+$ nano ~/.bashrc
 ~~~
 
 8. In ~/.bashrc file, set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
