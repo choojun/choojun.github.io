@@ -344,17 +344,51 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
    sudo chmod 755 /etc/rc.local
    ~~~
 
-### E5. Setup ...
-### E6. Setup ...
-### E7. Setup ...
 
-
-## F. Remove/Setup 
+## F. Install Hadoop
 cc
 
 ### F1. Setup ...
 ### F2. Setup ...
 ### F3. Setup ...
+
+
+> [!CAUTION] 
+> At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
+> 1. Start ssh,
+> ~~~
+> $ sudo service ssh start
+> ~~~
+> 2. Login as hduser or switch account to hduser,
+> ~~~
+> $ su - hduser
+> ~~~
+> 3. Start the HDFS service, and
+> ~~~
+> $ sbin/start-dfs.sh
+> ~~~
+> 4. Start the Yarn service.
+> ~~~
+> $ sbin/start-yarn.sh
+> ~~~
+
+> [!CAUTION] 
+> At the end of the practical
+> 1. Stop the YARN service,
+> ~~~
+> $ sbin/stop-yarn.sh
+> ~~~
+> 2. Stop the HDFS service,
+> ~~~
+> $ sbin/stop-dfs.sh
+> ~~~
+> 3. Exit from your user account(s), and 
+> ~~~
+> exit
+> ~~~
+> 4. Issue command top to examine all expected services terminated. 
+
+
 
 ## G. Remove/Setup 
 cc
