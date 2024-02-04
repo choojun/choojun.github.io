@@ -345,12 +345,54 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
    ~~~
 
 
-## F. Install Hadoop
-cc
+## E5. Install Hadoop
+1. Switch to the hduser account
 
-### F1. Setup ...
-### F2. Setup ...
-### F3. Setup ...
+2. Download the Hadoop binary
+Find the appropriate Hadoop binary from the Hadoop releases page.
+> [!CAUTION]
+> We will use Hadoop 3.3.6 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
+~~~
+$ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
+~~~
+> [!TIP]
+> Or, you may copy the downloaded tar.gz file manually to destination ~/hduser/
+
+3.	Untar the file
+~~~
+$ tar -xvzf hadoop-3.3.6.tar.gz
+~~~
+
+4.	Rename the folder as hadoop3
+~~~
+$ mv hadoop-3.3.6 hadoop3
+$ sudo chown -R hduser:hadoop hadoop3
+$ sudo chmod g+w -R hadoop3
+~~~
+
+## E5. X.	Configure passphraseless ssh for Hadoop
+1. Ensure that you are login with the hduser 
+
+2. Ensure that you can SSH to the localhost in Ubuntu
+
+3. To ssh to localhost without a passphrase, run the following command to initialize your private and public keys:
+~~~
+$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+$ chmod 0600 ~/.ssh/authorized_keys
+~~~
+
+4. Test the configuration
+~~~
+$ ssh localhost
+~~~
+> [!NOTE]
+> Exit the ssh by issuing command exit.
+
+
+### E1. Setup ...
+### E2. Setup ...
+### E3. Setup ...
 
 
 > [!CAUTION] 
@@ -388,6 +430,13 @@ cc
 > ~~~
 > 4. Issue command top to examine all expected services terminated
 
+
+## F. Remove/Setup 
+cc
+
+### F1. Setup ...
+### F2. Setup ...
+### F3. Setup ...
 
 
 ## G. Remove/Setup 
