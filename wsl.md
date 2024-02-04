@@ -259,18 +259,21 @@ Run the following commands from Ubuntu with user hduser
 ~~~
 $ service ssh status
 ~~~
+> [!NOTE]
 > WSL does not automatically start sshd.
 
 2. Start SSH
 ~~~
 $ sudo service ssh start
 ~~~
+> [!NOTE]
 > WSL does not automatically start sshd.
 
 3. Open the SSH port (if necessary)
 ~~~
 $ sudo ufw allow ssh
 ~~~
+> [!NOTE]
 > Ubuntu comes with a firewall configuration tool, known as UFW. If the firewall is enabled on your system, make sure to open the SSH port.
 
 4. Reload SSH
