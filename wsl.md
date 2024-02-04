@@ -370,7 +370,7 @@ $ sudo chown -R hduser:hadoop hadoop3
 $ sudo chmod g+w -R hadoop3
 ~~~
 
-## E5. X.	Configure passphraseless ssh for Hadoop
+## E6. Configure passphraseless ssh for Hadoop
 1. Ensure that you are login with the hduser 
 
 2. Ensure that you can SSH to the localhost in Ubuntu
@@ -388,6 +388,52 @@ $ ssh localhost
 ~~~
 > [!NOTE]
 > Exit the ssh by issuing command exit.
+
+## E7. Configure Pseudo-distributed Mode for Hadoop
+1. Ensure that you are login with the hduser 
+
+2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
+~~~
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export HADOOP_HOME=/home/hduser/hadoop3
+export PATH=$PATH:$HADOOP_HOME/bin
+~~~
+
+3. Source the file:
+~~~
+$ source ~/.bashrc
+~~~
+
+4. Change directory to the Hadoop folder
+~~~
+$ cd hadoop3
+~~~
+
+5. Edit the etc/hadoop/hadoop-env.sh file by uncomment and set the environment variables as follows.
+~~~
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
+~~~
+
+6. Verify if the installation was successful
+~~~
+$ hadoop
+~~~
+> [!NOTE]  
+> Running the above command should display various options.
+
+7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
+~~~
+<configuration>
+  <property>
+       <name>fs.defaultFS</name>
+       <value>hdfs://localhost:9000</value>
+   </property>
+</configuration>
+~~~
+
+
 
 
 ### E1. Setup ...
