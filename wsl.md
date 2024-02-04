@@ -460,11 +460,11 @@ $ hadoop
 ~~~
 <configuration>
     <property>
-        	<name>yarn.nodemanager.aux-services</name>
-        	<value>mapreduce_shuffle</value>
+            <name>yarn.nodemanager.aux-services</name>
+            <value>mapreduce_shuffle</value>
     </property>
     <property>
- 		    <name>yarn.nodemanager.env-whitelist</name>    
+            <name>yarn.nodemanager.env-whitelist</name>    
 <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
     </property>
     <property>
@@ -472,13 +472,81 @@ $ hadoop
            <value>127.0.0.1:8032</value>
     </property>
 </configuration>
-
 ~~~
 
-### E1. Setup ...
-### E2. Setup ...
-### E3. Setup ...
+11. Format the namenode 
+~~~
+$ bin/hdfs namenode -format
+~~~
 
+12. Start the Distributed File System (DFS) service
+~~~
+$ sbin/start-dfs.sh
+~~~
+> Start the NameNode and DataNode daemons
+~~~
+$ jps
+~~~
+> Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
+> ~~~
+> DataNode
+> SecondaryNameNode
+> Jps
+> NameNode
+> ~~~
+> Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
+
+13. Start the Yarn service
+~~~
+$ sbin/start-yarn.sh
+~~~
+> Start the Yarn daemon
+~~~
+$ jps
+~~~
+> Check the status. If the Yarn services are initiated successfully, you should see six processes.
+> ~~~
+> ResourceManager
+> NodeManager
+> ~~~
+> Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8080/
+
+14. Create HDFS directories required to execute MapReduce jobs
+~~~
+$ hdfs dfs -mkdir /user
+$ hdfs dfs -mkdir /user/hduser
+~~~
+
+## E8. Run a MapReduce Job in Hadoop
+1. Ensure that you are login with the hduser 
+
+2. Copy the input files into the distributed file system
+~~~
+$ hdfs dfs -mkdir input
+$ hdfs dfs -put etc/hadoop/*.xml input
+~~~
+
+3. Run a MapReduce job from an example
+~~~
+$ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep input output 'dfs[a-z.]+'
+~~~
+
+4. View the output files on the distributed system
+~~~
+$ hdfs dfs -cat output/*
+~~~
+> Sample output:
+> Output:
+> 1       dfsadmin
+> 1       dfs.replication
+
+5. Stop all the daemons
+~~~
+$ sbin/stop-yarn.sh
+$ sbin/stop-dfs.sh
+~~~
+
+6. Logout from the hduser account and your tarumt account.
 
 > [!CAUTION] 
 > At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
