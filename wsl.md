@@ -286,7 +286,7 @@ $ sudo /etc/init.d/ssh reload
 $ pdsh -q -w localhost
 ~~~
 
-6. Modify pdsh’s default rcmd to ssh, by adding the following command  to ~/.bashrc file
+6. Modify pdsh’s default rcmd to ssh, by adding the following command  to ~/.bashrc file (for hduser)
 ~~~
 export PDSH_RCMD_TYPE=ssh
 ~~~
