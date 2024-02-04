@@ -129,11 +129,11 @@ wsl –l -v
 
 ## E. Hadoop Installation and Configuration
 
-Note:
-1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
-2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
-    * name the default user account as hduser, or 
-    * create a separate user account named hduser.
+> [!IMPORTANT]  
+> 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
+> 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
+>    * name the default user account as hduser, or 
+>    * create a separate user account named hduser.
 
 ### E1. Setup User Environment
 1.	Create a new group named hadoop
@@ -168,7 +168,7 @@ $ exit
 ~~~
 
 ### E2. Setup Operating System Environment
-1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser ~~i.e., NOT the created hduser but tarumt~~
+1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser
 
 2. Check if ssh has been installed
 ~~~
