@@ -419,44 +419,44 @@ $ ssh localhost
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
  ~~~
-<configuration>
-   <property>
+    <configuration>
+      <property>
         <name>dfs.replication</name>
         <value>1</value>
-    </property>
-</configuration>
+      </property>
+    </configuration>
  ~~~
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
  ~~~
-<configuration>
-    <property>
+    <configuration>
+      <property>
    	    <name>mapreduce.framework.name</name>
     	<value>yarn</value>
-    </property>
-    <property>  
+      </property>
+      <property>  
         <name>mapreduce.application.classpath</name>      
         <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
-    </property>
-</configuration>
+      </property>
+    </configuration>
  ~~~
 
 10. Edit the etc/hadoop/yarn-site.xml file by adding the following configuration.
  ~~~
-<configuration>
-    <property>
+    <configuration>
+      <property>
             <name>yarn.nodemanager.aux-services</name>
             <value>mapreduce_shuffle</value>
-    </property>
-    <property>
+      </property>
+      <property>
             <name>yarn.nodemanager.env-whitelist</name>    
-<value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
-    </property>
-    <property>
+            <value>JAVA_HOME, HADOOP_COMMON_HOME, HADOOP_HDFS_HOME, HADOOP_CONF_DIR, CLASSPATH_PREPEND_DISTCACHE, HADOOP_YARN_HOME, HADOOP_MAPRED_HOME</value>
+      </property>
+      <property>
            <name>yarn.resourcemanager.address</name>
            <value>127.0.0.1:8032</value>
-    </property>
-</configuration>
+      </property>
+    </configuration>
  ~~~
 
 11. Format the namenode 
