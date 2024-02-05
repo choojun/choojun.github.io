@@ -520,7 +520,6 @@ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep
 ~~~bash
 $ hdfs dfs -cat output/*
 ~~~
-
 > Output:
 > 1       dfsadmin
 > 1       dfs.replication
@@ -532,7 +531,7 @@ $ sbin/stop-dfs.sh
 ~~~
 
 6. Logout from the hduser account and your tarumt account.
-> At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
+7. At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
 > 1. Login as hduser or switch account to hduser
 > ~~~bash
 > $ su - hduser
@@ -550,7 +549,7 @@ $ sbin/stop-dfs.sh
 > $ sbin/start-yarn.sh
 > ~~~
 
-> At the end of the practical
+8. At the end of the practical
 > 1. Stop the YARN service
 > ~~~bash
 > $ sbin/stop-yarn.sh
