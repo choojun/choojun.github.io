@@ -362,7 +362,6 @@ $ sudo chmod g+w -R hadoop3
 2. Ensure that you can SSH to the localhost in Ubuntu
 
 3. To ssh to localhost without a passphrase, run the following command to initialize your private and public keys:
-
 ~~~
 $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
@@ -370,7 +369,6 @@ $ chmod 0600 ~/.ssh/authorized_keys
 ~~~
 
 4. Test the configuration
-
 ~~~
 $ ssh localhost
 ~~~
