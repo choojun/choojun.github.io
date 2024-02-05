@@ -387,7 +387,6 @@ $ ssh localhost
 1. Ensure that you are login with the hduser 
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
-
 ~~~
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/home/hduser/hadoop3
@@ -395,19 +394,16 @@ export PATH=$PATH:$HADOOP_HOME/bin
 ~~~
 
 3. Source the file:
-
 ~~~
 $ source ~/.bashrc
 ~~~
 
 4. Change directory to the Hadoop folder
-
 ~~~
 $ cd hadoop3
 ~~~
 
 5. Edit the etc/hadoop/hadoop-env.sh file by uncomment and set the environment variables as follows.
-
 ~~~
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
@@ -415,14 +411,12 @@ export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
 ~~~
 
 6. Verify if the installation was successful
-
 ~~~
 $ hadoop
 ~~~
 > Running the above command should display various options.
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
-
 ~~~
 <configuration>
   <property>
@@ -433,7 +427,6 @@ $ hadoop
 ~~~
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
-
 ~~~
 <configuration>
    <property>
@@ -444,7 +437,6 @@ $ hadoop
 ~~~
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
-
 ~~~
 <configuration>
     <property>
@@ -459,7 +451,6 @@ $ hadoop
 ~~~
 
 10. Edit the etc/hadoop/yarn-site.xml file by adding the following configuration.
-
 ~~~
 <configuration>
     <property>
@@ -478,23 +469,19 @@ $ hadoop
 ~~~
 
 11. Format the namenode 
-
 ~~~
 $ bin/hdfs namenode -format
 ~~~
 
 12. Start the Distributed File System (DFS) service
-
 ~~~
 $ sbin/start-dfs.sh
 ~~~
-
 > Start the NameNode and DataNode daemons
 
 ~~~
 $ jps
 ~~~
-
 > Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
 > ~~~
 > DataNode
@@ -505,17 +492,14 @@ $ jps
 > Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
 
 13. Start the Yarn service
-
 ~~~
 $ sbin/start-yarn.sh
 ~~~
-
 > Start the Yarn daemon
 
 ~~~
 $ jps
 ~~~
-
 > Check the status. If the Yarn services are initiated successfully, you should see six processes.
 > ~~~
 > ResourceManager
@@ -524,7 +508,6 @@ $ jps
 > Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8080/
 
 14. Create HDFS directories required to execute MapReduce jobs
-
 ~~~
 $ hdfs dfs -mkdir /user
 $ hdfs dfs -mkdir /user/hduser
