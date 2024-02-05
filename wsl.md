@@ -417,7 +417,7 @@ $ ssh localhost
  > Running the above command should display various options.
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
- ~~~
+ ~~~xml
 <configuration>
   <property>
        <name>fs.defaultFS</name>
