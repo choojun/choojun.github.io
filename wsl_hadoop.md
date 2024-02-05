@@ -197,7 +197,7 @@ $ sbin/stop-dfs.sh
 
 6. Logout from the hduser account and your tarumt account.
 
-## E8. Attention: At the beginning of all future practical
+## E9. Attention: At the beginning of all future practical
 1. Login as hduser or switch account to hduser
 ~~~bash
 $ su - hduser
@@ -218,7 +218,7 @@ $ sbin/start-dfs.sh
 $ sbin/start-yarn.sh
 ~~~
 
-## E9. Attention: At the end of all future practical
+## E10. Attention: At the end of all future practical
 1. Stop the YARN service
 ~~~bash
 $ sbin/stop-yarn.sh
