@@ -502,7 +502,7 @@ $ ssh localhost
  $ hdfs dfs -mkdir /user/hduser
  ~~~
 
-## E8. Run a MapReduce Job in Hadoop
+## E8. Run a sample MapReduce Job in Hadoop
 1. Ensure that you are login with the hduser 
 
 2. Copy the input files into the distributed file system
@@ -531,38 +531,45 @@ $ sbin/stop-dfs.sh
 ~~~
 
 6. Logout from the hduser account and your tarumt account.
-7. At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
-> 1. Login as hduser or switch account to hduser
-> ~~~bash
-> $ su - hduser
-> ~~~
-> 2. Start ssh,
-> ~~~bash
-> $ sudo service ssh start
-> ~~~
-> 3. Start the HDFS service
-> ~~~bash
-> $ sbin/start-dfs.sh
-> ~~~
-> 4. Start the Yarn service
-> ~~~bash
-> $ sbin/start-yarn.sh
-> ~~~
 
-8. At the end of the practical
-> 1. Stop the YARN service
-> ~~~bash
-> $ sbin/stop-yarn.sh
-> ~~~
-> 2. Stop the HDFS service
-> ~~~bash
-> $ sbin/stop-dfs.sh
-> ~~~
-> 3. Exit from your user account(s) 
-> ~~~bash
-> exit
-> ~~~
-> 4. Issue command top to examine all expected services terminated
+## E8. Attention: At the beginning of all future practical, remember to carry out the following steps in Ubuntu
+1. Login as hduser or switch account to hduser
+~~~bash
+$ su - hduser
+~~~
+
+2. Start ssh,
+~~~bash
+$ sudo service ssh start
+~~~
+
+3. Start the HDFS service
+~~~bash
+$ sbin/start-dfs.sh
+~~~
+
+4. Start the Yarn service
+~~~bash
+$ sbin/start-yarn.sh
+~~~
+
+## E9. Attention: At the end of all future practical, remember to carry out the following steps in Ubuntu
+1. Stop the YARN service
+~~~bash
+$ sbin/stop-yarn.sh
+~~~
+
+2. Stop the HDFS service
+~~~bash
+$ sbin/stop-dfs.sh
+~~~
+
+3. Exit from your user account(s) 
+~~~bash
+exit
+~~~
+
+4. Issue command top to examine all expected services terminated
 
 
 ## F. Remove/Setup 
