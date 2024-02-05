@@ -506,27 +506,26 @@ $ ssh localhost
 1. Ensure that you are login with the hduser 
 
 2. Copy the input files into the distributed file system
-~~~
+~~~console
 $ hdfs dfs -mkdir input
 $ hdfs dfs -put etc/hadoop/*.xml input
 ~~~
 
 3. Run a MapReduce job from an example
-~~~
+~~~console
 $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep input output 'dfs[a-z.]+'
 ~~~
 
 4. View the output files on the distributed system
-~~~
+~~~console
 $ hdfs dfs -cat output/*
-~~~
-> Sample output:
+~~~console
 > Output:
 > 1       dfsadmin
 > 1       dfs.replication
 
 5. Stop all the daemons
-~~~
+~~~console
 $ sbin/stop-yarn.sh
 $ sbin/stop-dfs.sh
 ~~~
