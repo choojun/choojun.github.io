@@ -519,7 +519,8 @@ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep
 4. View the output files on the distributed system
 ~~~bash
 $ hdfs dfs -cat output/*
-~~~bash
+~~~
+
 > Output:
 > 1       dfsadmin
 > 1       dfs.replication
@@ -548,6 +549,7 @@ $ sbin/stop-dfs.sh
 > ~~~bash
 > $ sbin/start-yarn.sh
 > ~~~
+
 > At the end of the practical
 > 1. Stop the YARN service
 > ~~~bash
