@@ -334,8 +334,11 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
    ~~~
 
 
-Proceed to steps:
-1. [E5: Install Hadoop] (wsl_hadoop)
+
+## [E5: Install Hadoop](wsl_hadoop)
+## [E5: Install Hadoop](wsl_hadoop)
+
+
 
 
 ## F. Remove/Setup 
