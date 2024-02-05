@@ -19,7 +19,6 @@ Click (for setup) or unclick (for remove) the following items
 
 
 
-> [!NOTE]  
 > To set up the required Ubuntu distro (same version), run the following commands in PowerShell as administrator.
 >
 > ~~~
@@ -128,8 +127,7 @@ wsl –l -v
 -----------------------------------------------------------
 
 ## E. Hadoop Installation and Configuration
-
-> [!IMPORTANT]  
+ 
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
 >    * name the default user account as hduser, or 
@@ -252,28 +250,24 @@ $ sudo apt-get install openjdk-8-jdk
 
 ### E3. Setup SSH and PDSH
 Run the following commands from Ubuntu with user hduser
-> [!NOTE]
 > Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
 
 1. Check if the SSH service is running
 ~~~
 $ service ssh status
 ~~~
-> [!NOTE]
 > WSL does not automatically start sshd.
 
 2. Start SSH
 ~~~
 $ sudo service ssh start
 ~~~
-> [!NOTE]
 > WSL does not automatically start sshd.
 
 3. Open the SSH port (if necessary)
 ~~~
 $ sudo ufw allow ssh
 ~~~
-> [!NOTE]
 > Ubuntu comes with a firewall configuration tool, known as UFW. If the firewall is enabled on your system, make sure to open the SSH port.
 
 4. Reload SSH
@@ -323,7 +317,6 @@ $ sudo sysctl -p
 ~~~
 $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 ~~~
-> [!NOTE]
 > 0 means IPv6 is enabled; 1 means IPv6 is disabled.
 
 5. Suppose that IPv6 is still enabled after rebooting, you must carry out the following:
@@ -349,15 +342,11 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 1. Switch to the hduser account
 
 2. Download the Hadoop binary by finding the appropriate Hadoop binary from the Hadoop releases page.
-
-> [!CAUTION]
 > We will use Hadoop 3.3.6 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
 
 ~~~
 $ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
 ~~~
-
-> [!TIP]
 > Or, you may copy the downloaded tar.gz file manually to destination ~/hduser/
 
 3.	Untar the file
@@ -392,8 +381,6 @@ $ chmod 0600 ~/.ssh/authorized_keys
 ~~~
 $ ssh localhost
 ~~~
-
-> [!NOTE]
 > Exit the ssh by issuing command exit.
 
 ## E7. Configure Pseudo-distributed Mode for Hadoop
@@ -432,8 +419,6 @@ export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
 ~~~
 $ hadoop
 ~~~
-
-> [!NOTE]  
 > Running the above command should display various options.
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
@@ -580,8 +565,6 @@ $ sbin/stop-dfs.sh
 ~~~
 
 6. Logout from the hduser account and your tarumt account.
-
-> [!CAUTION] 
 > At the beginning of all future practical, remember to carry out the following steps in Ubuntu:
 > 1. Login as hduser or switch account to hduser
 > ~~~
@@ -599,8 +582,6 @@ $ sbin/stop-dfs.sh
 > ~~~
 > $ sbin/start-yarn.sh
 > ~~~
-
-> [!CAUTION] 
 > At the end of the practical
 > 1. Stop the YARN service
 > ~~~
