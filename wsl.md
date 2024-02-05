@@ -387,21 +387,21 @@ $ ssh localhost
 1. Ensure that you are login with the hduser 
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
-~~~
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export HADOOP_HOME=/home/hduser/hadoop3
-export PATH=$PATH:$HADOOP_HOME/bin
-~~~
+ ~~~
+ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ export HADOOP_HOME=/home/hduser/hadoop3
+ export PATH=$PATH:$HADOOP_HOME/bin
+ ~~~
 
 3. Source the file:
-~~~
-$ source ~/.bashrc
-~~~
+ ~~~
+ $ source ~/.bashrc
+ ~~~
 
 4. Change directory to the Hadoop folder
-~~~
-$ cd hadoop3
-~~~
+ ~~~
+ $ cd hadoop3
+ ~~~
 
 5. Edit the etc/hadoop/hadoop-env.sh file by uncomment and set the environment variables as follows.
 ~~~
