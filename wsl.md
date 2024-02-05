@@ -418,7 +418,7 @@ $ ssh localhost
  ~~~
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
- ~~~
+ ~~~xml
     <configuration>
       <property>
         <name>dfs.replication</name>
@@ -428,7 +428,7 @@ $ ssh localhost
  ~~~
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
- ~~~
+ ~~~xml
     <configuration>
       <property>
    	    <name>mapreduce.framework.name</name>
@@ -442,7 +442,7 @@ $ ssh localhost
  ~~~
 
 10. Edit the etc/hadoop/yarn-site.xml file by adding the following configuration.
- ~~~
+ ~~~xml
     <configuration>
       <property>
             <name>yarn.nodemanager.aux-services</name>
