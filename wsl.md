@@ -32,11 +32,10 @@ Click (for setup) or unclick (for remove) the following items
 >
 > ![image](https://github.com/choojun/choojun.github.io/assets/6356054/e6259ec4-76fa-48a4-ab5f-0ba0b0b524c4)
 >
-> Locate your administrator username and password after reboot and before first use.
+> Locate your administrator username and password, after reboot and before first use.
 >
 > ![image](https://github.com/choojun/choojun.github.io/assets/6356054/7c24254b-a6c5-45a4-9973-6bace4969717)
 
-5. Restart PC
 
 
 
@@ -340,20 +339,17 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 
 2. Download the Hadoop binary by finding the appropriate Hadoop binary from the Hadoop releases page.
 > We will use Hadoop 3.3.6 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
-
 ~~~
 $ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
 ~~~
 > Or, you may copy the downloaded tar.gz file manually to destination ~/hduser/
 
 3.	Untar the file
-
 ~~~
 $ tar -xvzf hadoop-3.3.6.tar.gz
 ~~~
 
 4.	Rename the folder as hadoop3
-
 ~~~
 $ mv hadoop-3.3.6 hadoop3
 $ sudo chown -R hduser:hadoop hadoop3
