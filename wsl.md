@@ -404,40 +404,40 @@ $ ssh localhost
  ~~~
 
 5. Edit the etc/hadoop/hadoop-env.sh file by uncomment and set the environment variables as follows.
-~~~
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
-~~~
+ ~~~
+ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+ export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
+ ~~~
 
 6. Verify if the installation was successful
-~~~
-$ hadoop
-~~~
-> Running the above command should display various options.
+ ~~~
+ $ hadoop
+ ~~~
+ > Running the above command should display various options.
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
-~~~
+ ~~~
 <configuration>
   <property>
        <name>fs.defaultFS</name>
        <value>hdfs://localhost:9000</value>
    </property>
 </configuration>
-~~~
+ ~~~
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
-~~~
+ ~~~
 <configuration>
    <property>
         <name>dfs.replication</name>
         <value>1</value>
     </property>
 </configuration>
-~~~
+ ~~~
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
-~~~
+ ~~~
 <configuration>
     <property>
    	    <name>mapreduce.framework.name</name>
@@ -448,10 +448,10 @@ $ hadoop
         <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
     </property>
 </configuration>
-~~~
+ ~~~
 
 10. Edit the etc/hadoop/yarn-site.xml file by adding the following configuration.
-~~~
+ ~~~
 <configuration>
     <property>
             <name>yarn.nodemanager.aux-services</name>
@@ -466,52 +466,50 @@ $ hadoop
            <value>127.0.0.1:8032</value>
     </property>
 </configuration>
-~~~
+ ~~~
 
 11. Format the namenode 
-~~~
-$ bin/hdfs namenode -format
-~~~
+ ~~~
+ $ bin/hdfs namenode -format
+ ~~~
 
 12. Start the Distributed File System (DFS) service
-~~~
-$ sbin/start-dfs.sh
-~~~
-> Start the NameNode and DataNode daemons
-
-~~~
-$ jps
-~~~
-> Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
-> ~~~
-> DataNode
-> SecondaryNameNode
-> Jps
-> NameNode
-> ~~~
-> Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
+ ~~~
+ $ sbin/start-dfs.sh
+ ~~~
+ > Start the NameNode and DataNode daemons
+ ~~~
+ $ jps
+ ~~~
+ > Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
+ > ~~~
+ > DataNode
+ > SecondaryNameNode
+ > Jps
+ > NameNode
+ > ~~~
+ > Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
 
 13. Start the Yarn service
-~~~
-$ sbin/start-yarn.sh
-~~~
-> Start the Yarn daemon
-
-~~~
-$ jps
-~~~
-> Check the status. If the Yarn services are initiated successfully, you should see six processes.
-> ~~~
-> ResourceManager
-> NodeManager
-> ~~~
-> Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8080/
+ ~~~
+ $ sbin/start-yarn.sh
+ ~~~
+ > Start the Yarn daemon
+ ~~~
+ $ jps
+ ~~~
+ > Check the status. If the Yarn services are initiated successfully, you should see six processes.
+ > ~~~
+ > ResourceManager
+ > NodeManager
+ > ~~~
+ > Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8080/
 
 14. Create HDFS directories required to execute MapReduce jobs
-~~~
-$ hdfs dfs -mkdir /user
-$ hdfs dfs -mkdir /user/hduser
-~~~
+ ~~~
+ $ hdfs dfs -mkdir /user
+ $ hdfs dfs -mkdir /user/hduser
+ ~~~
 
 ## E8. Run a MapReduce Job in Hadoop
 1. Ensure that you are login with the hduser 
