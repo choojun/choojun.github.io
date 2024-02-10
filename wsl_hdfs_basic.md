@@ -32,12 +32,19 @@ $ hdfs dfs -cat shakespeare.txt | less
 ~~~
 > Use the arrow keys to navigate the file. Type q to quit.
 
-5.	Copy a file from the distributed file system to the local file system.
+5.	Copy a file from the distributed file system to the local file system
 ~~~
 $ hdfs dfs -get shakespeare.txt ./shakespeare-dfs.txt
 ~~~
 
-
+6.	To change the permission of the file shakespeare.txt to 664
+~~~
+$ hdfs dfs -chmod 664 shakespeare.txt 
+~~~
+> 664 is an octal representation of the flags to set for the permission triple. The above statement  changes the permissions to -rw-rw-r--
+> 6 is 110, which means read and write, but not execute
+> 7 is 111, which means complete permissions
+> 4 is 100, which means read-only
 
 ## F2. Exercise 2
 1.	To view the contents of your current directory
@@ -122,7 +129,7 @@ $ hdfs dfs -ls testHDFS/
 $ hdfs dfs -rm -r testhdfs
 $ hdfs dfs -ls
 ~~~
-> In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chmod, chown, cp, du, mkdir, stat, tail
+> In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chown, cp, du, mkdir, stat, tail
 
 
 
