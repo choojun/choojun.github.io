@@ -97,7 +97,7 @@ $ ssh localhost
     <configuration>
       <property>
    	    <name>mapreduce.framework.name</name>
-    	<value>yarn</value>
+    	   <value>yarn</value>
       </property>
       <property>  
         <name>mapreduce.application.classpath</name>      
