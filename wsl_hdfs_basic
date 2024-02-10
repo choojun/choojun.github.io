@@ -3,7 +3,7 @@
 > 1. This practical introduces the basic Hadoop Distributed File System (HDFS) operations. 
 > 2. The HDFS shell is invoked using 
 > ~~~
->  $ hdfs dfs <args> 
+>  $ hdfs dfs <args>  
 > ~~~
 
 ## F1. Setup User Environment
