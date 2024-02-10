@@ -36,6 +36,11 @@ $ hdfs dfs -cat shakespeare.txt | less
 ~~~
 $ hdfs dfs -get shakespeare.txt ./shakespeare-dfs.txt
 ~~~
+> In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
+
+
+
+
 
 
 
