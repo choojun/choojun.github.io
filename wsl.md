@@ -4,8 +4,8 @@
 
 1. Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, or find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
 
-2. Suppose that your PC has accessible to Internet (for huge files downloading) and Windows has updated to latest patches (e.g., version 22H2 for Windows 10).
-Click (for setup) or unclick (for remove) the following items
+2. Suppose that your PC has accessible to Internet (for huge files downloading), and Windows has updated to latest patches (e.g., version 22H2 and later for Windows 10).
+Click (for setup) or unclick (for remove) the following items (if available)
     - Hyper-V
     - Virtual Machine Platform
     - Windows Hypervisor Platform
