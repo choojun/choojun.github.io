@@ -36,7 +36,93 @@ $ hdfs dfs -cat shakespeare.txt | less
 ~~~
 $ hdfs dfs -get shakespeare.txt ./shakespeare-dfs.txt
 ~~~
-> In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chmod, chown, cp, du, ls, mkdir, mv, rm, stat, tail
+
+
+
+## F2. Execise 2
+1.	To view the contents of your current directory
+~~~
+$ hdfs dfs -ls
+~~~
+
+2.	To view the contents of a non-empty directory
+~~~
+$ hdfs dfs -ls /user
+~~~
+
+3.	To create a test directory, e.g., testHDFS. Note that it will appear within the HDFS.
+~~~
+$ hdfs dfs -mkdir testHDFS
+~~~
+
+4.	Now you must verify that the created directory by listing your HDFS. You should see the testHDFS directory listed, if it is created at the home directory of hduser.
+~~~
+$ hdfs dfs -ls /user/hduser
+~~~
+
+5.	Create a file, which you wish to copy from local file system to HDFS
+~~~
+$ echo "HDFS test file" >> testFile
+~~~
+
+6.	Note that that is going to create a new file named testFile, including the characters HDFS test file. To verify this, input:
+~~~
+$ ls
+~~~
+
+7.	To verify that the file was created
+~~~
+$ cat testFile
+~~~
+
+8.	To copy the file to HDFS from Linux local file system into HDFS
+~~~
+$ hdfs dfs -copyFromLocal testFile
+~~~
+> Note that you have to use the command -copyFromLocal. The command -cp is used to copy files within HDFS.
+
+9.	Now you need to confirm that the file has been copied over correctly
+~~~
+$ hdfs dfs -ls
+$ hdfs dfs -cat testFile
+~~~
+
+10.	Now you can move it into the testHDFS directory you have already created
+~~~
+$ hdfs dfs -mv testFile testHDFS
+$ hdfs dfs -ls
+$ hdfs dfs -ls testHDFS/
+~~~
+> The first command moved your testFile from the HDFS home directory into the test one you created. The second command of this command then shows us that it's no longer in the HDFS home directory, and the third command confirms that it's now been moved to the test HDFS directory.
+
+11.	To copy a file
+~~~
+$ hdfs dfs -cp testHDFS/testFile testHDFS/testFile2
+$ hdfs dfs -ls testHDFS/
+~~~
+
+12.	Checking disk space is useful when you're using HDFS. It can be identified with the following command
+~~~
+$ hdfs dfs -du
+~~~
+
+13.	To view how much space is available in HDFS across the Hadoop cluster
+~~~
+$ hdfs dfs -df
+~~~
+
+14.	To to delete a file or directory in the HDFS
+~~~
+$ hdfs dfs -rm testHDFS/testFile
+$ hdfs dfs -ls testHDFS/
+~~~
+
+15.	You will observe that you still have the testHDFS directory and testFile2 leftover that you created. Remove the directory with the following command
+~~~
+$ hdfs dfs -rm -r testhdfs
+$ hdfs dfs -ls
+~~~
+> In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chmod, chown, cp, du, mkdir, stat, tail
 
 
 
