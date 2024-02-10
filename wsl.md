@@ -125,7 +125,7 @@ wsl –l -v
 ## F. [HDFS Basic File Operations](wsl_hdfs_basic)
 
 
-
+-----------------------------------------------------------
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
