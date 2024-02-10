@@ -94,16 +94,16 @@ $ ssh localhost
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
  ~~~xml
-    <configuration>
-      <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
-      </property>
-      <property>  
-        <name>mapreduce.application.classpath</name>
-        <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*: $HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
-      </property>
-    </configuration>
+ <configuration>
+   <property>
+     <name>mapreduce.framework.name</name>
+     <value>yarn</value>
+   </property>
+   <property>  
+     <name>mapreduce.application.classpath</name>
+     <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*: $HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+    </property>
+  </configuration>
  ~~~
 
 10. Edit the etc/hadoop/yarn-site.xml file by adding the following configuration.
