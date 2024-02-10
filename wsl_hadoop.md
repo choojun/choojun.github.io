@@ -100,8 +100,8 @@ $ ssh localhost
         <value>yarn</value>
       </property>
       <property>  
-        <name>mapreduce.application.classpath</name>      
- <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+        <name>mapreduce.application.classpath</name>
+        <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*: $HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
       </property>
     </configuration>
  ~~~
