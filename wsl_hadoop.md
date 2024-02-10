@@ -74,12 +74,12 @@ $ ssh localhost
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
  ~~~xml
-<configuration>
- <property>
-    <name>fs.defaultFS</name>
-    <value>hdfs://localhost:9000</value>
-  </property>
-</configuration>
+  <configuration>
+   <property>
+     <name>fs.defaultFS</name>
+     <value>hdfs://localhost:9000</value>
+   </property>
+  </configuration>
  ~~~
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
