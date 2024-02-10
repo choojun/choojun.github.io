@@ -5,6 +5,7 @@
 >    * name the default user account as tarumt, and 
 >    * create a separate user account named hduser.
 > 3. Read more on Hadoop at URL https://en.wikipedia.org/wiki/Apache_Hadoop
+> 4. The NameNode is the hardware that contains the GNU/Linux operating system and software. The Hadoop distributed file system acts as the master server and can manage the files, control a client's access to files, and overseas file operating processes such as renaming, opening, and closing files. A DataNode is hardware having the GNU/Linux operating system and DataNode software. For every node in a HDFS cluster, you will locate a DataNode. These nodes help to control the data storage of their system as they can perform operations on the file systems if the client requests, and also create, replicate, and block files when the NameNode instructs.   ![hdfsarchitecture-image](https://github.com/choojun/choojun.github.io/assets/6356054/347b07e8-385f-416d-9371-e43407251f74)
 
 ## E1. Setup User Environment
 1.	Create a new group named hadoop
