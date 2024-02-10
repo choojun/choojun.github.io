@@ -2,7 +2,7 @@
  
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
->    * name the default user account as hduser, or 
+>    * name the default user account as tarumt, and 
 >    * create a separate user account named hduser.
 
 ### E1. Setup User Environment
