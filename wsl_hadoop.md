@@ -160,7 +160,7 @@ $ ssh localhost
  > ResourceManager
  > NodeManager
  > ~~~
- > Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8080/
+ > Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8088/
 
 14. Create HDFS directories required to execute MapReduce jobs
  ~~~
