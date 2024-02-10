@@ -41,10 +41,10 @@ $ hdfs dfs -get shakespeare.txt ./shakespeare-dfs.txt
 ~~~
 $ hdfs dfs -chmod 664 shakespeare.txt 
 ~~~
-> 664 is an octal representation of the flags to set for the permission triple. The above statement  changes the permissions to -rw-rw-r--
-> 6 is 110, which means read and write, but not execute
-> 7 is 111, which means complete permissions
-> 4 is 100, which means read-only
+> 664 is an octal representation of the flags to set for the permission triple. The above statement  changes the permissions to -rw-rw-r--.  
+> 6 is 110, which means read and write, but not execute.  
+> 7 is 111, which means complete permissions.  
+> 4 is 100, which means read-only.  
 
 ## F2. Exercise 2
 1.	To view the contents of your current directory
