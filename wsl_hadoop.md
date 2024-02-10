@@ -84,12 +84,12 @@ $ ssh localhost
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
  ~~~xml
- <configuration>
-   <property>
-     <name>dfs.replication</name>
-     <value>1</value>
-   </property>
- </configuration>
+   <configuration>
+     <property>
+       <name>dfs.replication</name>
+       <value>1</value>
+     </property>
+   </configuration>
  ~~~
 
 9. Edit the etc/hadoop/mapred-site.xml file by adding the following configuration.
