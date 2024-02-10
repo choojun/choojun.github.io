@@ -128,6 +128,7 @@ $ ssh localhost
  ~~~
  $ bin/hdfs namenode -format
  ~~~
+ > Running the above command should display information on formating the namenode of Hadoop with installed Java. You should observe the namenode formated and terminated without any error. 
 
 12. Start the Distributed File System (DFS) service
  ~~~
