@@ -122,7 +122,7 @@ wsl –l -v
 -----------------------------------------------------------
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
-
+## F. [HDFS Basic File Operations](wsl_hdfs_basic)
 
 
 
