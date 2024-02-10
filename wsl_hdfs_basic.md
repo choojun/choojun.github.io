@@ -10,7 +10,7 @@
 >  $ hdfs dfs -help
 > ~~~
 
-## F1. Execise 1
+## F1. Exercise 1
 1.	Download a file with file ID 122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v from Google Drive
 ~~~
 $ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v' -O shakespeare.txt
@@ -39,7 +39,7 @@ $ hdfs dfs -get shakespeare.txt ./shakespeare-dfs.txt
 
 
 
-## F2. Execise 2
+## F2. Exercise 2
 1.	To view the contents of your current directory
 ~~~
 $ hdfs dfs -ls
