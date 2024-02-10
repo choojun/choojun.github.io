@@ -1,11 +1,11 @@
-## E. Hadoop Installation and Configuration
+# E. Hadoop Installation and Configuration
  
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
 >    * name the default user account as tarumt, and 
 >    * create a separate user account named hduser.
 
-### E1. Setup User Environment
+## E1. Setup User Environment
 1.	Create a new group named hadoop
 ~~~
 $ sudo addgroup hadoop
@@ -37,7 +37,7 @@ $ su - hduser
 $ exit
 ~~~
 
-### E2. Setup Operating System Environment
+## E2. Setup Operating System Environment
 1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser
 
 2. Check if ssh has been installed
@@ -120,7 +120,7 @@ $ sudo apt-get install openjdk-8-jdk
 
 
 
-### E3. Setup SSH and PDSH
+## E3. Setup SSH and PDSH
 Run the following commands from Ubuntu with user hduser
 > Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
 
@@ -164,7 +164,7 @@ $ source ~/.bashrc
 
 
 
-### E4. Disable IPv6
+## E4. Disable IPv6
 Run the following commands from Ubuntu with user hduser
 
 1. Edit the /etc/sysctl.conf file with the following command.
