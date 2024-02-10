@@ -4,6 +4,7 @@
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
 >    * name the default user account as tarumt, and 
 >    * create a separate user account named hduser.
+> 3. Read more on Hadoop at URL https://en.wikipedia.org/wiki/Apache_Hadoop
 
 ## E1. Setup User Environment
 1.	Create a new group named hadoop
