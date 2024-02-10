@@ -74,12 +74,12 @@ $ ssh localhost
 
 7. Edit the etc/hadoop/core-site.xml file by adding the following configuration.
  ~~~xml
- <configuration>
+  <configuration>
    <property>
      <name>fs.defaultFS</name>
      <value>hdfs://localhost:9000</value>
    </property>
- </configuration>
+  </configuration>
  ~~~
 
 8. Edit the etc/hadoop/hdfs-site.xml file by adding the following configuration.
@@ -101,7 +101,7 @@ $ ssh localhost
    </property>
    <property>  
      <name>mapreduce.application.classpath</name>
-     <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+     <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*: $HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
     </property>
   </configuration>
  ~~~
