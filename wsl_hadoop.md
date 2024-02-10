@@ -1,3 +1,214 @@
+## E. Hadoop Installation and Configuration
+ 
+> 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
+> 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
+>    * name the default user account as hduser, or 
+>    * create a separate user account named hduser.
+
+### E1. Setup User Environment
+1.	Create a new group named hadoop
+~~~
+$ sudo addgroup hadoop
+~~~
+
+2.	Create a new user account named hduser (if applicable)
+Add the new user:
+~~~
+$ sudo adduser hduser
+~~~
+
+3. Grant the user sudo privileges
+~~~
+$ sudo usermod -aG sudo hduser
+~~~
+
+4.	Add hduser to the hadoop group
+~~~
+$ sudo usermod -a -G hadoop hduser
+~~~
+
+5.	Switch to the user account hduser (if applicable)
+~~~
+$ su - hduser
+~~~
+
+6.	If you want to go back to your original user session
+~~~
+$ exit
+~~~
+
+### E2. Setup Operating System Environment
+1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser
+
+2. Check if ssh has been installed
+~~~
+$ service ssh status
+~~~
+
+3. If ssh has not been installed, install ssh
+~~~
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install ssh
+~~~
+
+4. Install pdsh
+~~~
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install pdsh
+~~~
+
+5. Install Python (if necessary)
+~~~
+$ python3 --version 
+$ sudo apt install software-properties-common
+$ sudo apt update
+$ sudo apt install python3
+$ sudo apt install python3-dev
+$ sudo apt install python3-wheel
+~~~
+
+6. Check current python versions and symlinks
+~~~
+$ ls -l /usr/bin/python* 
+~~~
+
+7. Set environment variables by editing your ~/.bashrc file (for hduser):
+~~~
+$ nano ~/.bashrc
+~~~
+
+8. In ~/.bashrc file, set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
+~~~
+alias python=python3
+~~~
+
+9. In ~/.bashrc file, add the following lines at the end of the file based on the python3.x from your installation:
+~~~
+export CPATH=/usr/include/python3.10m:$CPATH
+export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+~~~
+
+10. Save the ~/.bashrc file.
+
+11. Source the file:
+~~~
+$ source ~/.bashrc
+~~~
+
+12. Install pip (if necessary)
+~~~
+$ sudo apt update
+$ sudo apt install python3-pip
+$ pip3 --version
+$ sudo pip3 install --upgrade pip
+~~~~
+
+13. Check which Java version is installed in the distro
+~~~
+$ java -version
+~~~
+
+14. Install targeted OpenJDK
+~~~
+$ sudo apt-get install openjdk-8-jdk
+~~~
+> After this, check if the correct version of Java is installed.
+
+
+
+
+
+### E3. Setup SSH and PDSH
+Run the following commands from Ubuntu with user hduser
+> Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
+
+1. Check if the SSH service is running
+~~~
+$ service ssh status
+~~~
+> WSL does not automatically start sshd.
+
+2. Start SSH
+~~~
+$ sudo service ssh start
+~~~
+> WSL does not automatically start sshd.
+
+3. Open the SSH port (if necessary)
+~~~
+$ sudo ufw allow ssh
+~~~
+> Ubuntu comes with a firewall configuration tool, known as UFW. If the firewall is enabled on your system, make sure to open the SSH port.
+
+4. Reload SSH
+~~~
+$ sudo /etc/init.d/ssh reload
+~~~
+
+5. Modify pdsh’s default rcmd to ssh, by checking your pdsh default rcmd rsh:
+~~~
+$ pdsh -q -w localhost
+~~~
+
+6. Modify pdsh’s default rcmd to ssh, by adding the following command  to ~/.bashrc file (for hduser)
+~~~
+export PDSH_RCMD_TYPE=ssh
+~~~
+
+7. Run the following command to ensure the settings applied.
+~~~
+$ source ~/.bashrc
+~~~
+
+
+
+### E4. Disable IPv6
+Run the following commands from Ubuntu with user hduser
+
+1. Edit the /etc/sysctl.conf file with the following command.
+~~~
+$ sudo nano /etc/sysctl.conf
+~~~
+
+2. Add the following lines to the end of the sysctl.conf file:
+~~~
+# disable ipv6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+~~~
+
+3. To reload the /etc/sysctl.conf settings, issue the following command.
+~~~
+$ sudo sysctl -p
+~~~
+
+4. Check if IPv6 has been successfully disabled
+~~~
+$ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+~~~
+> 0 means IPv6 is enabled; 1 means IPv6 is disabled.
+
+5. Suppose that IPv6 is still enabled after rebooting, you must carry out the following:
+
+   - Create (with root privileges) the file /etc/rc.local 
+   ~~~
+   $ sudo nano /etc/rc.local
+   ~~~
+   - Insert the following into the file /etc/rc.local:
+   ~~~
+   #!/bin/bash
+   /etc/sysctl.d
+   /etc/init.d/procps restart
+   exit 0
+   ~~~
+   - Make the file executable
+   ~~~
+   sudo chmod 755 /etc/rc.local
+   ~~~
+
 
 ## E5. Install Hadoop
 1. Switch to the hduser account
