@@ -123,7 +123,7 @@ wsl –l -v
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
 ## F. [HDFS Basic File Operations](wsl_hdfs_basic)
-## G. [Apache Spark and PySpark](wsl_pyspark)
+## G. [PySpark](wsl_pyspark)
 
 -----------------------------------------------------------
 
