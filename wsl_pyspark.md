@@ -34,8 +34,7 @@ source ~/.bashrc
 ~~~
 pyspark
 ~~~
-> To exit the pyspark shell:
-> >>> exit()
+> To exit the pyspark shell with command exit()
 
 
 
