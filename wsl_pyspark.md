@@ -306,18 +306,18 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 >>> parking.first()
 >>> parking.createOrReplaceTempView("parking")
 >>> parking.show()
->>> aggr_by_type = sqlContext.sql("SELECT primetype, secondtype, count(1) AS count, round(avg(regcap), 0) AS avg_spaces  FROM parking GROUP BY primetype, secondtype HAVING trim(primetype) != '' ORDER BY count DESC")
+>>> aggr_by_type = sqlContext.sql("SELECT primetype, secondtype, count(1) AS count, round(avg(regcap), 0) AS avg_spaces FROM parking GROUP BY primetype, secondtype HAVING trim(primetype) !='' ORDER BY count DESC")
 ~~~
 ~~~bash
 >>> aggr_by_type.show()
 >>> parking.describe("regcap", "valetcap", "mccap").show()
 >>> parking.stat.crosstab("owner", "primetype").show()
-
 >>> parking = parking.withColumnRenamed('regcap', 'regcap_old')
 >>> parking = parking.withColumn('regcap', parking['regcap_old'].cast('int'))
 >>> parking = parking.drop('regcap_old')
 >>> parking.printSchema()
-
+~~~
+~~~bash
 >>> def convert_column(df, col, new_type):
 ...     old_col = '%s_old' % col
 ...     df = df.withColumnRenamed(col, old_col)
@@ -325,11 +325,11 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ...     df = df.drop(old_col)
 ...     return df
 ...
-
 >>> parking = convert_column(parking, 'valetcap', 'int')
 >>> parking = convert_column(parking, 'mccap', 'int')
 >>> parking.printSchema()
-
+~~~
+~~~bash
 >>> import reverse_geocoder as rg
 >>> def to_city(location):
 ...	name = 'N/A'
