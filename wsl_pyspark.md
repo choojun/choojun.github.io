@@ -249,7 +249,20 @@ $ hdfs dfs -put SparkApp/ontime
 $ sudo cp app.py app2.py
 ~~~
 
-
+3.	Modify the file path in app.py as follows
+~~~
+\# Load the airlines lookup dictionary
+airlines = dict(sc.textFile("file:///home/hduser/SparkApp/ontime/airlines.csv").map(split).collect())
+\# Read the CSV data into an RDD
+flights = sc.textFile("file:///home/hduser/SparkApp/ontime/flights.csv").map(split).map(parse)
+~~~
+to
+~~~
+\# Load the airlines lookup dictionary
+airlines = dict(sc.textFile("ontime/airlines.csv").map(split).collect())
+\# Read the CSV data into an RDD
+flights = sc.textFile("ontime/flights.csv").map(split).map(parse)
+~~~
 
 5.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
 ~~~
