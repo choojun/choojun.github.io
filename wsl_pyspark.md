@@ -1,7 +1,7 @@
 # G. PySpark
  
 > 1. Spark is an in-memory distributed computing engine especially designed for the Hadoop cluster. 
-> 2. Read more on Apache Spark at URL https://en.wikipedia.org/wiki/Apache_Spark
+> 2. Read more on Apache Spark at URLs https://spark.apache.org/ and https://en.wikipedia.org/wiki/Apache_Spark
 
 ## G1. Installation and Configuration
 1.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
