@@ -251,9 +251,9 @@ $ sudo cp app.py app2.py
 
 3.	Modify the file path in app.py as follows
 ~~~
-\\# Load the airlines lookup dictionary
+ \\# Load the airlines lookup dictionary
 airlines = dict(sc.textFile("file:///home/hduser/SparkApp/ontime/airlines.csv").map(split).collect())
-\\# Read the CSV data into an RDD
+ \\# Read the CSV data into an RDD
 flights = sc.textFile("file:///home/hduser/SparkApp/ontime/flights.csv").map(split).map(parse)
 ~~~
 to
