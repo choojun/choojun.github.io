@@ -8,39 +8,39 @@
 
 ## G1. Installation and Configuration
 1.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
-~~~
+~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
 2.	Uncompress the file
-~~~
+~~~bash
 $ tar -xvzf spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
 3.	Rename the Spark folder as spark
-~~~
+~~~bash
 $ mv spark-3.5.0-bin-hadoop3-scala2.13 spark
 ~~~
 
 4.	Edit the file ~/.bashrc with the the following lines
-~~~
+~~~bash
 export SPARK_HOME=/home/hduser/spark
 export PATH=$SPARK_HOME/bin:$PATH
 ~~~
 
 5.	Re-load the environment
-~~~
+~~~bash
 source ~/.bashrc
 ~~~
 
 5.	Launch the PySpark interactive shell/interpreter
-~~~
+~~~bash
 pyspark
 ~~~
 > To exit the pyspark shell with command exit()
 
 6. To minimize the verbosity of Spark , you need to configure the settings of log4j after duplicating the template file (optional).
-~~~
+~~~bash
 $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.properties
 ~~~
 > Edit the newly created log4j file, by replacing every occurrence of INFO with WARN, e.g.
@@ -51,7 +51,7 @@ $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.propert
 ## G2. Using the PySpark Interactive Shell - Word Count 
 1.	Launch PySpark’s interactive shell using user hduser
 2.	Create an Resilient Distributed Dataset (RDD) with data from a text file. It transforms the RDD to implement the word count application using Spark.
-~~~
+~~~bash
 >>> text = sc.textFile("shakespeare.txt")
 >>> print(text)
 >>> from operator import add
