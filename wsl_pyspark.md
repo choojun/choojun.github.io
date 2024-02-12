@@ -287,12 +287,12 @@ $ pip3 install reverse_geocoder
 4.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/sparksql /home/hduser
-$ sudo chown hduser:hduser /home/hduser/sparksql
+$ sudo chown hduser:hduser -R /home/hduser/sparksql
 ~~~
 
 5.	Change directory to the sparksql folder, and review the code in wordcount.py
 ~~~bash
-$ cd /home/hduser/sparksql/data
+$ cd ~/sparksql/data
 $ hdfs dfs -mkdir data
 $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ~~~
@@ -352,7 +352,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 
 
-## G8. PySpark and Jupyter Notebook
+## G8. Spark SQL and Jupyter Notebook
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
 2. Read more from URLs https://jupyter.org/ and https://en.wikipedia.org/wiki/Project_Jupyter
 
@@ -362,6 +362,7 @@ $ cd ~
 $ pip3 install jupyter
 $ pip3 install jupyter-server
 $ pip3 install pyspark
+$ pip3 install pyarrow
 ~~~
 
 4. Edit the file .bashrc by adding an alias to launch Jupyter
@@ -374,7 +375,20 @@ alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
 $ source ~/.bashrc
 ~~~
 
-6. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
+6. Copy the Jupyter notebook /home/hduser/sparksql/Practical3c_SparkSQL_and_DataFrames.ipynb to the home directory of hduser
+~~~bash
+$ source ~/.bashrc
+~~~
+
+6.	Make the Jupyter notebook the C:\de\sparksql folder in the local hduser’s home directory
+~~~bash
+$ sudo cp -r /mnt/c/de/sparksql /home/hduser
+$ sudo chown hduser:hduser /home/hduser/sparksql
+~~~
+
+
+
+7. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
 ~~~bash
 $ cd ~
 $ jupyter notebook --port=8888 --no-browser
