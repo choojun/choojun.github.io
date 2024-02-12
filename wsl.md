@@ -117,7 +117,7 @@ wsl –l -v
 
 4. The beauty of using both export and import commands is that you can quickly and easily setup the same environment on multiple machines or setup multiple distros in the same machine. Your users and passwords will be retained, including anything you have installed using the package manager.
 
-
+5. Note that your PC need to have at least **16GB RAM** with **CPU virtualization enabled** and **internet access** for the rest of exercises.
 
 -----------------------------------------------------------
 
