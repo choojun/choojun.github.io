@@ -2,18 +2,23 @@
 
 ## A. Remove/Setup WSL in Windows 10
 
-1. Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, or find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
+1. Hardware requirements: your PC need to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.  
+Software reqirements:
+   - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
+   - Find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
 
-2. Suppose that your PC has accessible to Internet (for huge files downloading), and Windows has updated to latest patches (e.g., version 22H2 and later for Windows 10).
+
+
+3. Suppose that your PC has accessible to Internet (for huge files downloading), and Windows has updated to latest patches (e.g., version 22H2 and later for Windows 10).
 Click (for setup) or unclick (for remove) the following items (if available)
     - Hyper-V
     - Virtual Machine Platform
     - Windows Hypervisor Platform
     - Windows Subsystem for Linux.
 
-3. Restart PC
+4. Restart PC
 
-4. Suppose that your PC accessible to Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.   
+5. Suppose that your PC accessible to Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.   
 ![ubuntu](https://github.com/choojun/choojun.github.io/assets/6356054/d2a117c5-2471-4834-8cf2-d461ed3fbb5c)
 > To set up the required Ubuntu distro (same version), run the following commands in PowerShell as administrator.
 >
@@ -117,7 +122,6 @@ wsl –l -v
 
 4. The beauty of using both export and import commands is that you can quickly and easily setup the same environment on multiple machines or setup multiple distros in the same machine. Your users and passwords will be retained, including anything you have installed using the package manager.
 
-5. Note that your PC need to have at least **16GB RAM (or more)** with **CPU virtualization enabled** and **internet access** for the rest of exercises.
 
 -----------------------------------------------------------
 
