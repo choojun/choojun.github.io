@@ -389,4 +389,4 @@ $ jupyter notebook --port=8888 --no-browser
 $ pip3 uninstall traitlets
 $ pip3 install traitlets==5.9.0
 ~~~
-
+> To terminate the Jupyter notebook server with Ctrl-C
