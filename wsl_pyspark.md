@@ -311,6 +311,8 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
                               "GROUP BY primetype, secondtype " +
                               "HAVING trim(primetype) != '' " +
                               "ORDER BY count DESC")
+~~~
+~~~bash
 >>> aggr_by_type.show()
 >>> parking.describe("regcap", "valetcap", "mccap").show()
 >>> parking.stat.crosstab("owner", "primetype").show()
