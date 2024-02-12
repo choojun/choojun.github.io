@@ -185,6 +185,38 @@ or
 
 2.	Find the lexicographically largest word in a sentence
 ~~~
-
-
+>>> def findLargestWord(x, y):
+...     if x > y:
+...             return x
+...     else:
+...             return y
+...
+>>> words_RDD.reduce(findLargestWord)
 ~~~
+
+3.	Find the lexicographically smallest word in a sentence using lambda expression
+~~~
+>>> words_RDD.reduce(lambda w, v: w if w < v else v)
+~~~
+
+4.	Count the number of lines in a text file with certain letters. Note the cache() function pulls data sets into a cluster-wide in-memory cache, which is very useful when data is accessed repeatedly
+~~~
+>>> logFile = "file:///home/hduser/shakespeare.txt"
+>>> logData = sc.textFile(logFile).cache()
+>>> number_of_w = logData.filter(lambda s:'w' in s).count()
+>>> number_of_c = logData.filter(lambda s:'c' in s).count()
+>>> print("Lines with 'c':{}, lines with 'w':{}".format(number_of_c, number_of_w))
+~~~
+
+
+
+
+## G5. Using the PySpark Interactive Shell - Word Count (SparkApp)
+1.	Make a copy of the C:\de\SparkApp folder in the local hduser’s home directory
+~~~
+$ sudo cp -r /mnt/c/de/SparkApp /home/hduser
+~~~
+
+
+
+
