@@ -36,17 +36,19 @@ pyspark
 ~~~
 > To exit the pyspark shell with command exit()
 
-6. To minimize the verbosity of Spark, you need to configure the settings of log4j after duplicating the template file.
+6. To minimize the verbosity of Spark , you need to configure the settings of log4j after duplicating the template file (optional).
 ~~~
 $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.properties
 ~~~
-> Edit the newly created log4j file (optional), by replacing every occurrence of INFO with WARN, e.g.
+> Edit the newly created log4j file, by replacing every occurrence of INFO with WARN, e.g.
 > rootLogger.level = warn  
 > rootLogger.appenderRef.stdout.ref = console  
 
 
-## G2. Installation and Configuration
-1.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
+## G2. Using the PySpark Interactive Shell - Word Count 
+1.	Launch PySpark’s interactive shell using user hduser
+2.	Create an Resilient Distributed Dataset (RDD) with data from a text file
 ~~~
-$ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
+>>> text = sc.textFile("shakespeare.txt")
+>>> print(text)
 ~~~
