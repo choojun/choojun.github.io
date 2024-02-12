@@ -375,14 +375,15 @@ alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
 $ source ~/.bashrc
 ~~~
 
-6. Copy the Jupyter notebook /home/hduser/sparksql/Practical3c_SparkSQL_and_DataFrames.ipynb to the home directory of hduser
+6.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory (optional)
 ~~~bash
-$ cp /home/hduser/sparksql/Practical3c_SparkSQL_and_DataFrames.ipynb ~/
+$ sudo cp -r /mnt/c/de/sparksql /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/sparksql
 ~~~
 
 7. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
 ~~~bash
-$ cd ~
+$ cd ~/sparksql
 $ jupyter notebook --port=8888 --no-browser
 ~~~
 > Suppose that you have error: No module named 'jupyter_server.contents', try to switch the traitlets
