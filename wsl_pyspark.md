@@ -363,6 +363,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 3. Login as hduser, and install the Jupyter notebook, and PySpark (tested 3.5.0) packages 
 ~~~bash
+$ cd ~
 $ pip3 install jupyter
 $ pip3 install jupyter-server
 $ pip3 install pyspark
@@ -374,16 +375,17 @@ alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
 ~~~
 
 5. Update your bash profile
-~~~
+~~~bash
 $ source ~/.bashrc
 ~~~
 
 6. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
-~~~
+~~~bash
+$ cd ~
 $ jupyter notebook --port=8888 --no-browser
 ~~~
 > Suppose that you have error: No module named 'jupyter_server.contents', try to switch the traitlets
-~~~
+~~~bash
 $ pip3 uninstall traitlets
 $ pip3 install traitlets==5.9.0
 ~~~
