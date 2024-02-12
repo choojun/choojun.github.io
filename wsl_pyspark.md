@@ -1,4 +1,4 @@
-# G. Spark, PySpark and Spark SQL
+# G. Spark, PySpark, Spark SQL and Jupyter Notebook
  
 > 1. Spark is an in-memory distributed computing engine especially designed for the Hadoop cluster. 
 > 2. Read more on Apache Spark at URLs https://spark.apache.org and https://en.wikipedia.org/wiki/Apache_Spark
@@ -275,29 +275,29 @@ $ spark-submit app.py
 ## G7. Spark SQL
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical covers the Spark SQL API, which runs as a library on top of Spark’s Core engine and APIs. The Spark SQL API may be accessed using the same programming interface that was used for Spark’s RDD APIs  
 ![sparksql](https://github.com/choojun/choojun.github.io/assets/6356054/538f24de-c002-44a0-8b57-e17b107ce1c8)
+2. Read more on Apache Spark at URLs https://spark.apache.org/sql/ and https://en.wikipedia.org/wiki/Apache_Spark#Spark_SQL
 
-
-2. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
+3. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
 ~~~bash
 $ sudo apt install jupyter-notebook
 $ pip3 install pandas
 $ pip3 install reverse_geocoder
 ~~~
 
-3.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
+4.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/sparksql /home/hduser
 $ sudo chown hduser:hduser /home/hduser/sparksql
 ~~~
 
-4.	Change directory to the sparksql folder, and review the code in wordcount.py
+5.	Change directory to the sparksql folder, and review the code in wordcount.py
 ~~~bash
 $ cd /home/hduser/sparksql/data
 $ hdfs dfs -mkdir data
 $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ~~~
 
-5.	Launch the PySpark interactive shell/interpreter, and try the following codes
+6.	Launch the PySpark interactive shell/interpreter, and try the following codes
 ~~~bash
 >>> from pyspark.sql import SQLContext
 >>> sqlContext = SparkSession.builder.getOrCreate()
@@ -354,4 +354,37 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 >>> sfmta_pandas.groupby(['location_1'])['regcap'].mean().nlargest(20)
 ~~~
 > Suppose that your installed Spark does not need to have the hdfs directory path (hdfs://localhost:9000/user/hduser/) explicitly indicated. E.g., it may be run as: parking = sqlContext.read.json("data/sf_parking_clean.json")
+
+
+
+## G8. PySpark and Jupyter Notebook
+1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
+2. Read more from URLs https://jupyter.org/ and https://en.wikipedia.org/wiki/Project_Jupyter
+
+3. Login as hduser, and install the Jupyter notebook, and PySpark (tested 3.5.0) packages 
+~~~bash
+$ pip3 install jupyter
+$ pip3 install jupyter-server
+$ pip3 install pyspark
+~~~
+
+4. Edit the file .bashrc by adding an alias to launch Jupyter
+~~~bash
+alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
+~~~
+
+5. Update your bash profile
+~~~
+$ source ~/.bashrc
+~~~
+
+6. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
+~~~
+$ jupyter notebook --port=8888 --no-browser
+~~~
+> Suppose that you have error: No module named 'jupyter_server.contents', try to switch the traitlets
+~~~
+$ pip3 uninstall traitlets
+$ pip3 install traitlets==5.9.0
+~~~
 
