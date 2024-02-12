@@ -41,8 +41,8 @@ pyspark
 $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.properties
 ~~~
 > Edit the newly created log4j file (optional), by replacing every occurrence of INFO with WARN, e.g.
-> rootLogger.level = warn
-> rootLogger.appenderRef.stdout.ref = console
+> rootLogger.level = warn  
+> rootLogger.appenderRef.stdout.ref = console  
 
 
 ## G2. Installation and Configuration
