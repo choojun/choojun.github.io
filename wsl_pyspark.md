@@ -354,7 +354,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 ## G8. Spark SQL and Jupyter Notebook
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
-2. Read more from URLs https://jupyter.org/ and https://en.wikipedia.org/wiki/Project_Jupyter
+2. Read more from URLs https://jupyter.org/ , https://en.wikipedia.org/wiki/Project_Jupyter and https://spark.apache.org/docs/latest/sql-programming-guide.html
 
 3. Login as hduser, and install the Jupyter notebook, PySpark (tested 3.5.0) and PyArrow packages 
 ~~~bash
