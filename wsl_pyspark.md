@@ -393,6 +393,6 @@ $ pip3 install traitlets==5.9.0
 ~~~
 > To terminate the Jupyter notebook server with Ctrl-C
 
-8. Open up the Practical3c_SparkSQL_and_DataFrames.ipynb notebook and do the exercises there.
+8. Open up the Practical3c_SparkSQL_and_DataFrames.ipynb notebook and do the Spark SQL exercises there.
 
 
