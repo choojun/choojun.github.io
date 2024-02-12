@@ -327,7 +327,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ...
 >>> parking = convert_column(parking, 'valetcap', 'int')
 >>> parking = convert_column(parking, 'mccap', 'int')
->>> parking.printSchema()
+>>> parking.printSchema()  
 ~~~
 ~~~bash
 >>> import reverse_geocoder as rg
@@ -336,17 +336,14 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ...	r = rg.search((location.latitude, location.longitude))
 ...	if r != None:
 ...		name = r[0]['name']
-...	return name
-
+...	return name  
 >>> from pyspark.sql.functions import udf
 >>> from pyspark.sql.types import StringType
 >>> location_to_city=udf(to_city, StringType())
-
 >>> sfmta_parking = parking.filter(parking.owner == 'SFMTA') \
 ...	.select("location_1", "primetype", "landusetyp", "garorlot", "regcap", "valetcap", "mccap") \
 ...	.withColumn("location_1", location_to_city("location_1")) \
 ...	.sort("regcap", ascending=False)
-
 >>> sfmta_parking.show()
 >>> sfmta_pandas = sfmta_parking.filter(sfmta_parking.location_1 != 'N/A').toPandas()
 >>> sfmta_pandas.groupby(['location_1'])['regcap'].mean().nlargest(20)
