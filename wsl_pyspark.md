@@ -3,6 +3,7 @@
 > 1. Spark is an in-memory distributed computing engine especially designed for the Hadoop cluster. 
 > 2. Read more on Apache Spark at URLs https://spark.apache.org and https://en.wikipedia.org/wiki/Apache_Spark
 > 3. [SparkApp.zip](https://github.com/choojun/choojun.github.io/files/14237887/SparkApp.zip)
+> 4. [sparksql.zip](https://github.com/choojun/choojun.github.io/files/14238380/sparksql.zip)
 
 
 ## G1. Installation and Configuration
@@ -275,11 +276,82 @@ $ spark-submit app.py
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical covers the Spark SQL API, which runs as a library on top of Spark’s Core engine and APIs. The Spark SQL API may be accessed using the same programming interface that was used for Spark’s RDD APIs  
 ![sparksql](https://github.com/choojun/choojun.github.io/assets/6356054/538f24de-c002-44a0-8b57-e17b107ce1c8)
 
-2. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
+
+3. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
 ~~~
 $ sudo apt install jupyter-notebook
 $ pip3 install pandas
 $ pip3 install reverse_geocoder
+~~~
+
+3.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
+~~~
+$ sudo cp -r /mnt/c/de/sparksql /home/hduser
+$ sudo chown hduser:hduser /home/hduser/sparksql
+~~~
+
+4.	Change directory to the sparksql folder, and review the code in wordcount.py
+~~~
+$ cd /home/hduser/sparksql/data
+$ hdfs dfs -mkdir data
+$ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
+~~~
+
+5.	Launch the PySpark interactive shell/interpreter, and try the following codes
+~~~
+>>> from pyspark.sql import SQLContext
+>>> sqlContext = SparkSession.builder.getOrCreate()
+>>> parking = sqlContext.read.json("hdfs://localhost:9000/user/hduser/data/sf_parking_clean.json")
+>>> parking.printSchema()
+>>> parking.first()
+>>> parking.createOrReplaceTempView("parking")
+>>> parking.show()
+>>> aggr_by_type = sqlContext.sql("SELECT primetype, secondtype, count(1) AS count, round(avg(regcap), 0) AS avg_spaces " +
+                              "FROM parking " +
+                              "GROUP BY primetype, secondtype " +
+                              "HAVING trim(primetype) != '' " +
+                              "ORDER BY count DESC")
+>>> aggr_by_type.show()
+>>> parking.describe("regcap", "valetcap", "mccap").show()
+>>> parking.stat.crosstab("owner", "primetype").show()
+
+>>> parking = parking.withColumnRenamed('regcap', 'regcap_old')
+>>> parking = parking.withColumn('regcap', parking['regcap_old'].cast('int'))
+>>> parking = parking.drop('regcap_old')
+>>> parking.printSchema()
+
+>>> def convert_column(df, col, new_type):
+...     old_col = '%s_old' % col
+...     df = df.withColumnRenamed(col, old_col)
+...     df = df.withColumn(col, df[old_col].cast(new_type))
+...     df = df.drop(old_col)
+...     return df
+...
+
+>>> parking = convert_column(parking, 'valetcap', 'int')
+>>> parking = convert_column(parking, 'mccap', 'int')
+>>> parking.printSchema()
+
+>>> import reverse_geocoder as rg
+>>> def to_city(location):
+...	name = 'N/A'
+...	r = rg.search((location.latitude, location.longitude))
+...	if r != None:
+...		name = r[0]['name']
+...	return name
+
+>>> from pyspark.sql.functions import udf
+>>> from pyspark.sql.types import StringType
+>>> location_to_city=udf(to_city, StringType())
+
+>>> sfmta_parking = parking.filter(parking.owner == 'SFMTA') \
+...	.select("location_1", "primetype", "landusetyp", "garorlot", "regcap", "valetcap", "mccap") \
+...	.withColumn("location_1", location_to_city("location_1")) \
+...	.sort("regcap", ascending=False)
+
+>>> sfmta_parking.show()
+>>> sfmta_pandas = sfmta_parking.filter(sfmta_parking.location_1 != 'N/A').toPandas()
+>>> sfmta_pandas.groupby(['location_1'])['regcap'].mean().nlargest(20)
 ~~~
 
 
