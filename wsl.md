@@ -3,12 +3,12 @@
 ## A. Remove/Setup WSL (tested Windows 10)
 
 1. Hardware requirements: your PC need to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.
-Suppose that your Windows has updated to latest patches (e.g., version 22H2 and later for Windows 10).  
+Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10).  
 Software reqirements:
    - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
    - Find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
 
-3. Click (for setup) or unclick (for remove) the following items (if available)
+3. Click (for setup) or unclick (for remove) the following items (if any available)
     - Hyper-V
     - Virtual Machine Platform
     - Windows Hypervisor Platform
