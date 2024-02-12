@@ -306,11 +306,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 >>> parking.first()
 >>> parking.createOrReplaceTempView("parking")
 >>> parking.show()
->>> aggr_by_type = sqlContext.sql("SELECT primetype, secondtype, count(1) AS count, round(avg(regcap), 0) AS avg_spaces " +
-                              "FROM parking " +
-                              "GROUP BY primetype, secondtype " +
-                              "HAVING trim(primetype) != '' " +
-                              "ORDER BY count DESC")
+>>> aggr_by_type = sqlContext.sql("SELECT primetype, secondtype, count(1) AS count, round(avg(regcap), 0) AS avg_spaces  FROM parking GROUP BY primetype, secondtype HAVING trim(primetype) != '' ORDER BY count DESC")
 ~~~
 ~~~bash
 >>> aggr_by_type.show()
