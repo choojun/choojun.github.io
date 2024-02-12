@@ -61,7 +61,7 @@ $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.propert
 ~~~
 
 3.	It applies the map, and then it applies the reduceByKey action to obtain the word counts before saving the results in file
-~~~
+~~~bash
 >>> wc = words.map(lambda x: (x, 1))
 >>> print(wc.toDebugString())
 >>> counts = wc.reduceByKey(add)
@@ -72,7 +72,7 @@ $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.propert
 > counts.saveAsTextFile("wc")
 
 4.	Check the HDFS current working directory for the newly created directory’s contents, and use the head command to view one of the part files
-~~~
+~~~bash
 $ hdfs dfs -ls wc
 $ hdfs dfs -head wc/part-00000
 ~~~
@@ -82,13 +82,13 @@ $ hdfs dfs -head wc/part-00000
 
 ## G3. Using the PySpark Interactive Shell - Numerical 
 1.	Install numpy using user hduser, and launch numpy with 4 cores
-~~~
+~~~bash
 $ pip3 install numpy
 $ pyspark --executor-cores 4
 ~~~
 
 2.	Launch PySpark’s interactive shell and try the following codes. The codes generate a list of random integers and create an RDD by parallelizing num_list with library numpy.
-~~~
+~~~bash
 >>> import numpy as np
 >>> num_list = np.random.randint(0, 10, 20)
 >>> numbers_RDD = sc.parallelize(num_list)
@@ -96,14 +96,14 @@ $ pyspark --executor-cores 4
 ~~~
 
 3.	You may check the type for numbers_RDD, return all the elements of the RDD as an array, return an RDD created by consolidating all elements within each partition into a list
-~~~
+~~~bash
 >>> type(numbers_RDD)
 >>> numbers_RDD.collect()
 >>> numbers_RDD.glom().collect()
 ~~~
 
 4.	You may extract various elements of the RDD and extract the unique values of the RDD
-~~~
+~~~bash
 >>> numbers_RDD.first()
 >>> numbers_RDD.take(3)
 >>> numbers_RDD.take(5)
@@ -113,27 +113,27 @@ $ pyspark --executor-cores 4
 ~~~
 
 5.	You may sum all the elements in numbers_RDD and sum all the elements in numbers_RDD using reduce
-~~~
+~~~bash
 >>> numbers_RDD.collect()
 >>> numbers_RDD.sum()
 >>> numbers_RDD.reduce(lambda x, y: x+y)
 ~~~
 
 6.	You may find the max value in numbers_RDD and filter non-zero numbers that are divisible by 3
-~~~
+~~~bash
 >>> numbers_RDD.reduce(lambda x, y: x if x > y else y)
 >>> numbers_RDD.filter(lambda x:x%3==0 and x!=0).collect()
 ~~~
 
 7.	Create a new RDD with the squares of all the elements in numbers_RDD
-~~~
+~~~bash
 >>> numbers_RDD.collect()
 >>> squares_RDD = numbers_RDD.map(lambda x:x*x)
 >>> squares_RDD.collect()
 ~~~
 
 8.	Generate a histogram for the elements in squares_RDD and do mapping with a regular Python function
-~~~
+~~~bash
 >>> squares_RDD.histogram([x for x in range(0, 100, 10)])
 >>> def square_if_odd(x):
 ...     if x%2==1:
@@ -145,7 +145,7 @@ $ pyspark --executor-cores 4
 ~~~
 
 9. Extract the even and odd numbers from numbers_RDD. What is the type of the collection that is returned? Sort the resulting numbers for the odd and even numbers
-~~~
+~~~bash
 >>> results = numbers_RDD.groupBy(lambda x:x%2).collect()
 >>> results
 >>> type(results)
@@ -153,7 +153,7 @@ $ pyspark --executor-cores 4
 ~~~
 
 10. Prform the union(), intersection(), subtract(), cartesian()
-~~~
+~~~bash
 >>> squares_RDD.collect()
 >>> numbers_RDD.collect()
 >>> union_RDD = sc.union([numbers_RDD, squares_RDD])
@@ -161,7 +161,7 @@ $ pyspark --executor-cores 4
 ~~~
 
 11. cartesian() generates a Cartesian product of two collections and returns all the possible combinations of pairs between the elements in both collections
-~~~
+~~~bash
 >>> numbers_RDD.cartesian(numbers_RDD).collect()
 ~~~
 
@@ -169,14 +169,14 @@ $ pyspark --executor-cores 4
 
 ## G4. Using the PySpark Interactive Shell - Text Processing 
 1.	Find the longest word in a sentence
-~~~
+~~~bash
 >>> words = 'It is not that I am so smart but I stay with the questions much longer Albert Einstein'.split()
 >>> print(words)
 >>> words_RDD = sc.parallelize(words)
 >>> words_RDD.reduce(lambda w, v: w if len(w) > len(v) else v)
 ~~~
 or
-~~~
+~~~bash
 >>> def findLongestWord(x, y):
 ...     if len(x) > len(y):
 ...             return x
@@ -187,7 +187,7 @@ or
 ~~~
 
 2.	Find the lexicographically largest word in a sentence
-~~~
+~~~bash
 >>> def findLargestWord(x, y):
 ...     if x > y:
 ...             return x
@@ -198,12 +198,12 @@ or
 ~~~
 
 3.	Find the lexicographically smallest word in a sentence using lambda expression
-~~~
+~~~bash
 >>> words_RDD.reduce(lambda w, v: w if w < v else v)
 ~~~
 
 4.	Count the number of lines in a text file with certain letters. Note the cache() function pulls data sets into a cluster-wide in-memory cache, which is very useful when data is accessed repeatedly
-~~~
+~~~bash
 >>> logFile = "file:///home/hduser/shakespeare.txt"
 >>> logData = sc.textFile(logFile).cache()
 >>> number_of_w = logData.filter(lambda s:'w' in s).count()
@@ -216,24 +216,24 @@ or
 
 ## G5. Using the PySpark Interactive Shell - Word Count (SparkApp)
 1.	Make a copy of the C:\de\SparkApp folder in the local hduser’s home directory
-~~~
+~~~bash
 $ sudo cp -r /mnt/c/de/SparkApp /home/hduser
 $ sudo chown hduser:hduser /home/hduser/SparkApp
 ~~~
 
 2.	Change directory to the SparkApp folder, and review the code in wordcount.py
-~~~
+~~~bash
 $ cd /home/hduser/SparkApp
 $ cat wordcount.py | more
 ~~~
 
 3.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
-~~~
+~~~bash
 $ spark-submit wordcount.py shakespeare.txt hdfs://localhost:9000/user/hduser/spark_wc
 ~~~
 
 4.	You may check the results directory in the HDFS system and view the beginning portion of the output file part-00000
-~~~
+~~~bash
 $ hdfs dfs -ls spark_wc
 $ hdfs dfs -head spark_wc/part-00000 
 ~~~
@@ -241,30 +241,30 @@ $ hdfs dfs -head spark_wc/part-00000
 
 ## G6. Using the PySpark Interactive Shell - Flight Delay (SparkApp)
 1.	Change directory to the SparkApp folder, and review the code in app.py
-~~~
+~~~bash
 $ cd /home/hduser/SparkApp
 $ cat app.py | more
 ~~~
 
 2.	Copy the folder with the data files to the distributed file system, and make a copy of the source file 
-~~~
+~~~bash
 $ hdfs dfs -put SparkApp/ontime
 $ sudo cp app.py app2.py
 ~~~
 
 3.	Modify the file path in app.py, which has the codes of loading the airlines lookup dictionary and reading the CSV data into an RDD,  as follows
-~~~
+~~~bash
 airlines = dict(sc.textFile("file:///home/hduser/SparkApp/ontime/airlines.csv").map(split).collect())
 flights = sc.textFile("file:///home/hduser/SparkApp/ontime/flights.csv").map(split).map(parse)
 ~~~
 to
-~~~
+~~~bash
 airlines = dict(sc.textFile("ontime/airlines.csv").map(split).collect())
 flights = sc.textFile("ontime/flights.csv").map(split).map(parse)
 ~~~
 
 4.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
-~~~
+~~~bash
 $ spark-submit app.py
 ~~~
 
@@ -277,28 +277,28 @@ $ spark-submit app.py
 ![sparksql](https://github.com/choojun/choojun.github.io/assets/6356054/538f24de-c002-44a0-8b57-e17b107ce1c8)
 
 
-3. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
-~~~
+2. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
+~~~bash
 $ sudo apt install jupyter-notebook
 $ pip3 install pandas
 $ pip3 install reverse_geocoder
 ~~~
 
 3.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
-~~~
+~~~bash
 $ sudo cp -r /mnt/c/de/sparksql /home/hduser
 $ sudo chown hduser:hduser /home/hduser/sparksql
 ~~~
 
 4.	Change directory to the sparksql folder, and review the code in wordcount.py
-~~~
+~~~bash
 $ cd /home/hduser/sparksql/data
 $ hdfs dfs -mkdir data
 $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ~~~
 
 5.	Launch the PySpark interactive shell/interpreter, and try the following codes
-~~~
+~~~bash
 >>> from pyspark.sql import SQLContext
 >>> sqlContext = SparkSession.builder.getOrCreate()
 >>> parking = sqlContext.read.json("hdfs://localhost:9000/user/hduser/data/sf_parking_clean.json")
