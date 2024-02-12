@@ -1,6 +1,6 @@
 # Microsoft Windows Subsystem for Linux (WSL)
 
-## A. Remove/Setup WSL in Windows 10
+## A. Remove/Setup WSL (tested Windows 10)
 
 1. Hardware requirements: your PC need to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.  
 Software reqirements:
