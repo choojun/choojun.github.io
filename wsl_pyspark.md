@@ -356,7 +356,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
 2. Read more from URLs https://jupyter.org/ and https://en.wikipedia.org/wiki/Project_Jupyter
 
-3. Login as hduser, and install the Jupyter notebook, and PySpark (tested 3.5.0) packages 
+3. Login as hduser, and install the Jupyter notebook, PySpark (tested 3.5.0) and PyArrow packages 
 ~~~bash
 $ cd ~
 $ pip3 install jupyter
@@ -377,16 +377,8 @@ $ source ~/.bashrc
 
 6. Copy the Jupyter notebook /home/hduser/sparksql/Practical3c_SparkSQL_and_DataFrames.ipynb to the home directory of hduser
 ~~~bash
-$ source ~/.bashrc
+$ cp /home/hduser/sparksql/Practical3c_SparkSQL_and_DataFrames.ipynb ~/
 ~~~
-
-6.	Make the Jupyter notebook the C:\de\sparksql folder in the local hduser’s home directory
-~~~bash
-$ sudo cp -r /mnt/c/de/sparksql /home/hduser
-$ sudo chown hduser:hduser /home/hduser/sparksql
-~~~
-
-
 
 7. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
 ~~~bash
@@ -399,3 +391,7 @@ $ pip3 uninstall traitlets
 $ pip3 install traitlets==5.9.0
 ~~~
 > To terminate the Jupyter notebook server with Ctrl-C
+
+8. Open up the Practical3c_SparkSQL_and_DataFrames.ipynb notebook and do the exercises there.
+
+
