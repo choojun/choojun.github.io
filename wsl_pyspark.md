@@ -353,5 +353,6 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 >>> sfmta_pandas = sfmta_parking.filter(sfmta_parking.location_1 != 'N/A').toPandas()
 >>> sfmta_pandas.groupby(['location_1'])['regcap'].mean().nlargest(20)
 ~~~
-
+> Suppose that your Spark does not need to have the hdfs directory path (hdfs://localhost:9000/user/hduser/) explicitly indicated.
+E.g., the 3rd line in Step 6 below may be run as: parking = sqlContext.read.json("data/sf_parking_clean.json")
 
