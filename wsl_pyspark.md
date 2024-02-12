@@ -1,4 +1,4 @@
-# G. PySpark
+# G. Spark, PySpark and Spark SQL
  
 > 1. Spark is an in-memory distributed computing engine especially designed for the Hadoop cluster. 
 > 2. Read more on Apache Spark at URLs https://spark.apache.org and https://en.wikipedia.org/wiki/Apache_Spark
