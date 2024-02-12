@@ -215,8 +215,46 @@ or
 1.	Make a copy of the C:\de\SparkApp folder in the local hduser’s home directory
 ~~~
 $ sudo cp -r /mnt/c/de/SparkApp /home/hduser
+$ sudo chown hduser:hduser /home/hduser/SparkApp
 ~~~
 
+2.	Change directory to the SparkApp folder, and review the code in wordcount.py
+~~~
+$ cd /home/hduser/SparkApp
+$ cat wordcount.py | more
+~~~
+
+3.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
+~~~
+$ spark-submit wordcount.py shakespeare.txt hdfs://localhost:9000/user/hduser/spark_wc
+~~~
+
+4.	You may check the results directory in the HDFS system and view the beginning portion of the output file part-00000
+~~~
+$ hdfs dfs -ls spark_wc
+$ hdfs dfs -head spark_wc/part-00000 
+~~~
+
+
+## G6. Using the PySpark Interactive Shell - Flight Delay (SparkApp)
+1.	Change directory to the SparkApp folder, and review the code in app.py
+~~~
+$ cd /home/hduser/SparkApp
+$ cat app.py | more
+~~~
+
+2.	Copy the folder with the data files to the distributed file system, and make a copy of the source file 
+~~~
+$ hdfs dfs -put SparkApp/ontime
+$ sudo cp app.py app2.py
+~~~
+
+
+
+5.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
+~~~
+$ spark-submit app.py
+~~~
 
 
 
