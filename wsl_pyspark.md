@@ -260,10 +260,10 @@ airlines = dict(sc.textFile("ontime/airlines.csv").map(split).collect())
 flights = sc.textFile("ontime/flights.csv").map(split).map(parse)
 ~~~
 
-5.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
+4.	Submit the wordcount.py job to Spark (directly to the YARN resource manager)
 ~~~
 $ spark-submit app.py
 ~~~
 
-
+5.	You may check the results directory in the HDFS 
 
