@@ -269,3 +269,17 @@ $ spark-submit app.py
 
 5.	You may check the results directory in the HDFS 
 
+
+
+## G7. Spark SQL
+1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical covers the Spark SQL API, which runs as a library on top of Spark’s Core engine and APIs. The Spark SQL API may be accessed using the same programming interface that was used for Spark’s RDD APIs  
+![sparksql](https://github.com/choojun/choojun.github.io/assets/6356054/538f24de-c002-44a0-8b57-e17b107ce1c8)
+
+2. Login as hduser, and install the Jupyter notebook, pandas, and reverse geocoder (https://pypi.org/project/reverse_geocoder/) packages 
+~~~
+$ sudo apt install jupyter-notebook
+$ pip3 install pandas
+$ pip3 install reverse_geocoder
+~~~
+
+
