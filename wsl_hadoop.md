@@ -10,33 +10,33 @@
 
 ## E1. Setup User Environment
 1.	Create a new group named hadoop
-~~~
+~~~bash
 $ sudo addgroup hadoop
 ~~~
 
 2.	Create a new user account named hduser (if applicable)
 Add the new user:
-~~~
+~~~bash
 $ sudo adduser hduser
 ~~~
 
 3. Grant the user sudo privileges
-~~~
+~~~bash
 $ sudo usermod -aG sudo hduser
 ~~~
 
 4.	Add hduser to the hadoop group
-~~~
+~~~bash
 $ sudo usermod -a -G hadoop hduser
 ~~~
 
 5.	Switch to the user account hduser (if applicable)
-~~~
+~~~bash
 $ su - hduser
 ~~~
 
 6.	If you want to go back to your original user session
-~~~
+~~~bash
 $ exit
 ~~~
 
@@ -44,26 +44,26 @@ $ exit
 1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser
 
 2. Check if ssh has been installed
-~~~
+~~~bash
 $ service ssh status
 ~~~
 
 3. If ssh has not been installed, install ssh
-~~~
+~~~bash
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install ssh
 ~~~
 
 4. Install pdsh
-~~~
+~~~bash
 $ sudo apt update
 $ sudo apt upgrade
 $ sudo apt install pdsh
 ~~~
 
 5. Install Python (if necessary)
-~~~
+~~~bash
 $ python3 --version 
 $ sudo apt install software-properties-common
 $ sudo apt update
@@ -73,22 +73,22 @@ $ sudo apt install python3-wheel
 ~~~
 
 6. Check current python versions and symlinks
-~~~
+~~~bash
 $ ls -l /usr/bin/python* 
 ~~~
 
 7. Set environment variables by editing your ~/.bashrc file (for hduser):
-~~~
+~~~bash
 $ nano ~/.bashrc
 ~~~
 
 8. In ~/.bashrc file, set Python 3 as the default python version, add the following command to set Python 3 as the default python version:
-~~~
+~~~bash
 alias python=python3
 ~~~
 
 9. In ~/.bashrc file, add the following lines at the end of the file based on the python3.x from your installation:
-~~~
+~~~bash
 export CPATH=/usr/include/python3.10m:$CPATH
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 ~~~
@@ -96,12 +96,12 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 10. Save the ~/.bashrc file.
 
 11. Source the file:
-~~~
+~~~bash
 $ source ~/.bashrc
 ~~~
 
 12. Install pip (if necessary)
-~~~
+~~~bash
 $ sudo apt update
 $ sudo apt install python3-pip
 $ pip3 --version
@@ -109,12 +109,12 @@ $ sudo pip3 install --upgrade pip
 ~~~~
 
 13. Check which Java version is installed in the distro
-~~~
+~~~bash
 $ java -version
 ~~~
 
 14. Install targeted OpenJDK
-~~~
+~~~bash
 $ sudo apt-get install openjdk-8-jdk
 ~~~
 > After this, check if the correct version of Java is installed.
@@ -128,40 +128,40 @@ Run the following commands from Ubuntu with user hduser
 > Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
 
 1. Check if the SSH service is running
-~~~
+~~~bash
 $ service ssh status
 ~~~
 > WSL does not automatically start sshd.
 
 2. Start SSH
-~~~
+~~~bash
 $ sudo service ssh start
 ~~~
 > WSL does not automatically start sshd.
 
 3. Open the SSH port (if necessary)
-~~~
+~~~bash
 $ sudo ufw allow ssh
 ~~~
 > Ubuntu comes with a firewall configuration tool, known as UFW. If the firewall is enabled on your system, make sure to open the SSH port.
 
 4. Reload SSH
-~~~
+~~~bash
 $ sudo /etc/init.d/ssh reload
 ~~~
 
 5. Modify pdsh’s default rcmd to ssh, by checking your pdsh default rcmd rsh:
-~~~
+~~~bash
 $ pdsh -q -w localhost
 ~~~
 
 6. Modify pdsh’s default rcmd to ssh, by adding the following command  to ~/.bashrc file (for hduser)
-~~~
+~~~bash
 export PDSH_RCMD_TYPE=ssh
 ~~~
 
 7. Run the following command to ensure the settings applied.
-~~~
+~~~bash
 $ source ~/.bashrc
 ~~~
 
@@ -171,12 +171,12 @@ $ source ~/.bashrc
 Run the following commands from Ubuntu with user hduser
 
 1. Edit the /etc/sysctl.conf file with the following command.
-~~~
+~~~bash
 $ sudo nano /etc/sysctl.conf
 ~~~
 
 2. Add the following lines to the end of the sysctl.conf file:
-~~~
+~~~bash
 # disable ipv6
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
@@ -184,12 +184,12 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 ~~~
 
 3. To reload the /etc/sysctl.conf settings, issue the following command.
-~~~
+~~~bash
 $ sudo sysctl -p
 ~~~
 
 4. Check if IPv6 has been successfully disabled
-~~~
+~~~bash
 $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 ~~~
 > 0 means IPv6 is enabled; 1 means IPv6 is disabled.
@@ -197,18 +197,18 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 5. Suppose that IPv6 is still enabled after rebooting, you must carry out the following:
 
    - Create (with root privileges) the file /etc/rc.local 
-   ~~~
+   ~~~bash
    $ sudo nano /etc/rc.local
    ~~~
    - Insert the following into the file /etc/rc.local:
-   ~~~
+   ~~~bash
    #!/bin/bash
    /etc/sysctl.d
    /etc/init.d/procps restart
    exit 0
    ~~~
    - Make the file executable
-   ~~~
+   ~~~bash
    sudo chmod 755 /etc/rc.local
    ~~~
 
@@ -218,18 +218,18 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 
 2. Download the Hadoop binary by finding the appropriate Hadoop binary from the Hadoop releases page.
 > We will use Hadoop 3.3.6 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
-~~~
+~~~bash
 $ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
 ~~~
 > Or, you may copy the downloaded tar.gz file manually to destination ~/hduser/
 
 3.	Untar the file
-~~~
+~~~bash
 $ tar -xvzf hadoop-3.3.6.tar.gz
 ~~~
 
 4.	Rename the folder as hadoop3
-~~~
+~~~bash
 $ mv hadoop-3.3.6 hadoop3
 $ sudo chown -R hduser:hadoop hadoop3
 $ sudo chmod g+w -R hadoop3
@@ -241,14 +241,14 @@ $ sudo chmod g+w -R hadoop3
 2. Ensure that you can SSH to the localhost in Ubuntu
 
 3. To ssh to localhost without a passphrase, run the following command to initialize your private and public keys:
-~~~
+~~~bash
 $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 $ chmod 0600 ~/.ssh/authorized_keys
 ~~~
 
 4. Test the configuration
-~~~
+~~~bash
 $ ssh localhost
 ~~~
 > Exit the ssh by issuing command exit.
@@ -257,31 +257,31 @@ $ ssh localhost
 1. Ensure that you are login with the hduser 
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
- ~~~
+ ~~~bash
  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
  export HADOOP_HOME=/home/hduser/hadoop3
  export PATH=$PATH:$HADOOP_HOME/bin
  ~~~
 
 3. Source the file:
- ~~~
+ ~~~bash
  $ source ~/.bashrc
  ~~~
 
 4. Change directory to the Hadoop folder
- ~~~
+ ~~~bash
  $ cd hadoop3
  ~~~
 
 5. Edit the etc/hadoop/hadoop-env.sh file by uncomment and set the environment variables as follows.
- ~~~
+ ~~~bash
  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
  export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
  export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
  ~~~
 
 6. Verify if the installation was successful
- ~~~
+ ~~~bash
  $ hadoop
  ~~~
  > Running the above command should display various options.
@@ -339,17 +339,17 @@ $ ssh localhost
  ~~~
 
 11. Format the namenode 
- ~~~
+ ~~~bash
  $ bin/hdfs namenode -format
  ~~~
  > Running the above command should display information on formating the namenode of Hadoop with installed Java. You should observe the namenode formated and terminated without any error. 
 
 12. Start the Distributed File System (DFS) service
- ~~~
+ ~~~bash
  $ sbin/start-dfs.sh
  ~~~
  > Start the NameNode and DataNode daemons
- ~~~
+ ~~~bash
  $ jps
  ~~~
  > Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
@@ -362,11 +362,11 @@ $ ssh localhost
  > Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
 
 13. Start the Yarn service
- ~~~
+ ~~~bash
  $ sbin/start-yarn.sh
  ~~~
  > Start the Yarn daemon
- ~~~
+ ~~~bash
  $ jps
  ~~~
  > Check the status. If the Yarn services are initiated successfully, you should see six processes.
@@ -377,7 +377,7 @@ $ ssh localhost
  > Browse any web browser for the ResourceManager, by default, and it is available at URL http://localhost:8088/
 
 14. Create HDFS directories required to execute MapReduce jobs
- ~~~
+ ~~~bash
  $ hdfs dfs -mkdir /user
  $ hdfs dfs -mkdir /user/hduser
  ~~~
