@@ -156,3 +156,35 @@ $ pyspark --executor-cores 4
 >>> union_RDD = sc.union([numbers_RDD, squares_RDD])
 >>> union_RDD.collect()
 ~~~
+
+11. cartesian() generates a Cartesian product of two collections and returns all the possible combinations of pairs between the elements in both collections
+~~~
+>>> numbers_RDD.cartesian(numbers_RDD).collect()
+~~~
+
+
+
+## G4. Using the PySpark Interactive Shell - Text Processing 
+1.	Find the longest word in a sentence
+~~~
+>>> words = 'It is not that I am so smart but I stay with the questions much longer Albert Einstein'.split()
+>>> print(words)
+>>> words_RDD = sc.parallelize(words)
+>>> words_RDD.reduce(lambda w, v: w if len(w) > len(v) else v)
+~~~
+or
+~~~
+>>> def findLongestWord(x, y):
+...     if len(x) > len(y):
+...             return x
+...     else:
+...             return y
+...
+>>> words_RDD.reduce(findLongestWord)
+~~~
+
+2.	Find the lexicographically largest word in a sentence
+~~~
+
+
+~~~
