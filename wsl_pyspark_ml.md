@@ -26,14 +26,24 @@ $ hdfs dfs -ls /user/hduser/mllib
 $ hdfs dfs -cat /user/hduser/mllib/matchmaker.py | more
 $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 ~~~
+> Note that you need change the correct file paths inside the matchmaker.py, e.g.
+> from data/*.dat to hdfs://localhost:9000/user/hduser/mllib/data/*.dat
+
+5. Examine the output in the file matchmaking_recs.txt.
 
 ## H2. spark.mllib - Clustering
 1.	This example uses k-means clustering to determine which areas in the US have been most hit by earthquakes
-2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
+2. Ensure that the data file earthquakes.csv exists in HDFS’ data directory. You may review the contents of the mllib/data directory before proceeding to the next step
 ~~~bash
-$ sudo cp -r /mnt/c/de/mllib /home/hduser
-$ sudo chown hduser:hduser -R /home/hduser/mllib
+$ hdfs dfs -ls /user/hduser/mllib
 ~~~
+
+3. Review and understand the code in matchmaker.py before submitting the matchmaker.py job to Spark and piping the output to a file
+~~~bash
+$ hdfs dfs -cat /user/hduser/mllib/matchmaker.py | more
+$ $SPARK_HOME/bin/spark-submit mllib/earthquakes_clustering.py data/earthquakes.csv 6 > clusters.txt
+~~~
+
 
 ## H3. spark.ml - Multiclass Classification
 1.	This example uses the Naive Bayes classifier to perform multiclass classification
@@ -41,6 +51,12 @@ $ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~bash
 $ sudo cp -r /mnt/c/de/mllib /home/hduser
 $ sudo chown hduser:hduser -R /home/hduser/mllib
+~~~
+
+3. Copy all data files in the mllib/data directory to the data directory in the distributed file system. You may review the contents of the mllib/data directory before proceeding to the next step
+~~~bash
+$ hdfs dfs -put mllib /user/hduser
+$ hdfs dfs -ls /user/hduser/mllib
 ~~~
 
 ## H4. spark.ml - Recommender (Regression)
@@ -51,5 +67,9 @@ $ sudo cp -r /mnt/c/de/mllib /home/hduser
 $ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~
 
-
+3. Copy all data files in the mllib/data directory to the data directory in the distributed file system. You may review the contents of the mllib/data directory before proceeding to the next step
+~~~bash
+$ hdfs dfs -put mllib /user/hduser
+$ hdfs dfs -ls /user/hduser/mllib
+~~~
 
