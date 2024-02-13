@@ -29,7 +29,7 @@ $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 > Note that you need change the correct file paths inside the matchmaker.py, e.g.
 > from **data/\*.dat** to **hdfs://localhost:9000/user/hduser/mllib/data/\*.dat**
 
-5. Examine the output in the file matchmaking_recs.txt.
+5. Examine the output in the file matchmaking_recs.txt
 
 ## H2. spark.mllib - Clustering
 1.	This example uses k-means clustering to determine which areas in the US have been most hit by earthquakes
@@ -38,12 +38,14 @@ $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 $ hdfs dfs -ls /user/hduser/mllib
 ~~~
 
-3. Review and understand the code in matchmaker.py before submitting the matchmaker.py job to Spark and piping the output to a file
+3. Review and understand the code in earthquakes_clustering.py before submitting the earthquakes_clustering.py job to Spark and piping the output to a file
 ~~~bash
-$ hdfs dfs -cat /user/hduser/mllib/matchmaker.py | more
-$ $SPARK_HOME/bin/spark-submit mllib/earthquakes_clustering.py data/earthquakes.csv 6 > clusters.txt
+$ hdfs dfs -cat /user/hduser/mllib/earthquakes_clustering.py | more
+$ $SPARK_HOME/bin/spark-submit mllib/earthquakes_clustering.py hdfs://localhost:9000/user/hduser/mllib/data/earthquakes.csv 6 > clusters.txt
 ~~~
+> Note that this exercise takes the data file name, located in the distributed file system, as a parameter
 
+4. Examine the output in the file cluster.txt
 
 ## H3. spark.ml - Multiclass Classification
 1.	This example uses the Naive Bayes classifier to perform multiclass classification
