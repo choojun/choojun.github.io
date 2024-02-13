@@ -8,25 +8,25 @@
 
 
 ## H1. spark.mllib - Recommender Systems
-1.	Download
+1.	This example uses Alternating Least Squares (ALS) algorithm to obtain potential matches for an online dating service
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
 ## H2. spark.mllib - Clustering
-1.	Download
+1.	This example uses k-means clustering to determine which areas in the US have been most hit by earthquakes
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
 ## H3. spark.ml - Multiclass Classification
-1.	Download
+1.	This example uses the Naive Bayes classifier to perform multiclass classification
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
 ## H4. spark.ml - Recommender (Regression)
-1.	Download
+1.	This example uses Alternating Least Squares (ALS) algorithm for movie recommendations
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
