@@ -65,7 +65,7 @@ $ $SPARK_HOME/bin/spark-submit mllib/naive_bayes_example.py
 
 4. Examine the output in the terminal
 
-## H4. spark.ml - Recommender (Regression)
+## H4. spark.ml - Recommender (Regression based)
 1.	This example uses Alternating Least Squares (ALS) algorithm for movie recommendations
 2. Ensure that the data file sample_movielens_ratings.txt exists in HDFS’ data directory. You may review the contents of the mllib/data directory before proceeding to the next step
 ~~~bash
