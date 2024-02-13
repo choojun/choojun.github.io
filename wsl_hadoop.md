@@ -428,9 +428,12 @@ $ sudo service ssh start
 $ sbin/start-dfs.sh
 $ jps
 ~~~
-> Suppose you need to observe at least four (4) services, including both NameNode and DataNode, as stated in step 12 of G7. Otherwise, you may need to reformat the HDFS NameNode. If you choose to reformat, wait for the format process to complete without errors. Note that formatting the NameNode will result in loss of all data files in HDFS.
+> Suppose you need to observe at least four (4) services, including both NameNode and DataNode, as stated in step 12 of G7. Otherwise, you may need to reformat the HDFS NameNode. Wait for the format process to complete without errors before proceeding. Note that formatting the NameNode will result in loss of all data files in HDFS. You also need to recreate the directory /user and its sub-directory /user/hduser after starting the HDFS service and before moving on to the next steps.
 >  ~~~bash
 > $ bin/hdfs namenode -format
+> $ sbin/start-dfs.sh
+> $ hdfs dfs -mkdir /user
+> $ hdfs dfs -mkdir /user/hduser
 > ~~~
 
 4. Start the Yarn service
