@@ -9,24 +9,42 @@
 
 ## H1. spark.mllib - Recommender Systems
 1.	This example uses Alternating Least Squares (ALS) algorithm to obtain potential matches for an online dating service
+2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
 ~~~bash
-$ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
+$ sudo cp -r /mnt/c/de/mllib /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/mllib
+~~~
+
+3. Copy all the data files in the mllib/data directory to the data/ directory in the distributed file system.
+
+4. Submit the matchmaker.py job to Spark and pipe the output to a file
+~~~
+$ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 ~~~
 
 ## H2. spark.mllib - Clustering
 1.	This example uses k-means clustering to determine which areas in the US have been most hit by earthquakes
+2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
 ~~~bash
-$ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
+$ sudo cp -r /mnt/c/de/mllib /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~
 
 ## H3. spark.ml - Multiclass Classification
 1.	This example uses the Naive Bayes classifier to perform multiclass classification
+2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
 ~~~bash
-$ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
+$ sudo cp -r /mnt/c/de/mllib /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~
 
 ## H4. spark.ml - Recommender (Regression)
 1.	This example uses Alternating Least Squares (ALS) algorithm for movie recommendations
+2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
 ~~~bash
-$ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
+$ sudo cp -r /mnt/c/de/mllib /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~
+
+
+
