@@ -127,7 +127,7 @@ wsl –l -v
 ## F. [HDFS Basic File Operations](wsl_hdfs_basic)
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
-
+## I. [Spark and Visualization](wsl_pyspark_viz)
 -----------------------------------------------------------
 
 ## Reference:
@@ -136,4 +136,3 @@ wsl –l -v
 
 2. https://github.com/apache/spark/tree/master
 
-3. 
