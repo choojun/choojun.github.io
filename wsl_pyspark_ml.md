@@ -27,7 +27,7 @@ $ hdfs dfs -cat /user/hduser/mllib/matchmaker.py | more
 $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 ~~~
 > Note that you need change the correct file paths inside the matchmaker.py, e.g.
-> from data/*.dat to hdfs://localhost:9000/user/hduser/mllib/data/*.dat
+> from **data/\*.dat** to **hdfs://localhost:9000/user/hduser/mllib/data/\*.dat**
 
 5. Examine the output in the file matchmaking_recs.txt.
 
