@@ -15,10 +15,14 @@ $ sudo cp -r /mnt/c/de/mllib /home/hduser
 $ sudo chown hduser:hduser -R /home/hduser/mllib
 ~~~
 
-3. Copy all the data files in the mllib/data directory to the data/ directory in the distributed file system.
+3. Copy all the data files in the mllib/data directory to the data/ directory in the distributed file system. You may view the contents of the mllib before proceed to next step
+~~~bash
+$ hdfs dfs -put mllib mllib
+$ hdfs dfs -ls /user/hduser/mllib
+~~~
 
 4. Submit the matchmaker.py job to Spark and pipe the output to a file
-~~~
+~~~bash
 $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 ~~~
 
