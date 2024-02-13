@@ -20,4 +20,4 @@ $ jupyter notebook --port=8888 --no-browser
 ~~~
 > To terminate the Jupyter notebook server with Ctrl-C
 
-3. Open up the Practical8_Visualization_with_Pyspark.ipynb notebook and do the Spark SQL exercises there
+3. Open up the Practical8_Visualization_with_Pyspark.ipynb notebook and do the visualization exercises there
