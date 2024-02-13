@@ -20,6 +20,10 @@ $ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=122
 ~~~
 $ hdfs dfs -put shakespeare.txt shakespeare.txt
 ~~~
+> You may apply the option -f to force overwrite the destination file in the distributed file system, e.g.
+> ~~~
+> $ hdfs dfs -put -f shakespeare.txt shakespeare.txt
+> ~~~~
 
 3.	Make a directory named corpora in the HDFS file system
 ~~~
