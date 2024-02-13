@@ -1,6 +1,6 @@
 # I. Spark and Visualization
 
-## I1. spark.mllib - Recommender Systems
+## I1. Visualization with PySpark
 1.	Login as hduser, and install the seaborn package
 ~~~bash
 $ cd ~
