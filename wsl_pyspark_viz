@@ -1,0 +1,11 @@
+# I. Spark and Visualization
+
+## I1. spark.mllib - Recommender Systems
+1.	This example uses Alternating Least Squares (ALS) algorithm to obtain potential matches for an online dating service
+2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
+~~~bash
+$ sudo cp -r /mnt/c/de/mllib /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/mllib
+~~~
+
+
