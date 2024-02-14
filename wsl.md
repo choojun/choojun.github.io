@@ -57,14 +57,14 @@ wsl –d <distro name> -u <created user in distro>
 
 3. You may set the targeted distro as default with commands as follows.
 ~~~
-wsl –-set-default (distro name)
+wsl –-set-default <distro name>
     e.g. wsl –set-default Ubuntu-22.04
 wsl –l -v
 ~~~
 
 4. Even when issue ‘exit’ command, it does not turn off your WSL distro. You may terminate a running WSL distro with commands as follows.
 ~~~
-wsl –t (distro name)
+wsl –t <distro name>
     e.g. wsl –t Ubuntu-22.04
 ~~~
 
@@ -86,13 +86,13 @@ wsl –l -v
 
 2. Change the directory that you want to save your backup with command ‘cd’. At the destination of directory, perform the following command to export the distribution of distro with Power Shell.
 ~~~
-wsl --export (distribution) (filename.tar)
+wsl --export <distribution> <filename.tar>
     e.g. wsl --export Ubuntu-22.04 my-backup-Ubuntu-22.04.tar
 ~~~
 
 3. Alternatively, instead of using ‘cd’ to get to the destination directory, you may specify the file location and filename as part of export process in the Power Shell as follows.
 ~~~
-wsl --export (distribution) (file location with filename.tar)
+wsl --export <distribution> <file location with filename.tar>
     e.g. wsl --export Ubuntu-22.04 c:/Users/choojun/Documents/wsl/my-backup-Ubuntu-22.04.tar
 ~~~
 
@@ -104,12 +104,12 @@ wsl --export (distribution) (file location with filename.tar)
 1. In Power Shell, list the installed distro on WSL before removing the same / targeted instance. Note that you need to know the exact name for this process, especially those who wants to restore it at some point on the same PC or on those PC with the same name for distribution of distro. Note that the 'unregister' command will unregister the distribution from WSL and deletes the root filesystems.
 ~~~
 wsl –l –v
-wsl --unregister (targeted distribution)
+wsl --unregister <targeted distribution>
 ~~~
 
 2. Import the distribution of distro with Power Shell. Note that you may import the same distribution of distro into multiple install location, and this is good to facilitate your software development and testing purposes.
 ~~~
-wsl --import (distribution) (*install location) (filename.tar)
+wsl --import <distribution> <*install location> <filename.tar>
     e.g. wsl --import Ubuntu-22.04-test1 c:/Users/choojun/Documents/wsl/Ubuntu-22.04-test1 c:/Users/choojun/Documents/wsl/my-backup-Ubuntu-22.04.tar
 ~~~
 
