@@ -193,19 +193,31 @@ $ sudo cp -r /mnt/c/de/StreamingOn-time /home/hduser
 $ sudo chown hduser:hduser -R /home/hduser/StreamingOn-time
 ~~~
 
-2. Change directory to the StreamingOn-time directory
+2. Change directory to the StreamingOn-time directory. Test the scripts without the Hadoop overhead by simulating the MapReduce pipeline using Linux pipes and the sort command. 
 ~~~bash
 $ cd StreamingOn-time
-~~~
-
-3.  Test the scripts without the Hadoop overhead by simulating the MapReduce pipeline using Linux pipes and the sort command. 
-~~~bash
 $ cat flights.csv | ./mapper.py | sort | ./reducer.py
 ~~~
 > Suppose that you may issue the following commands if you have observed the error of /usr/bin/env: ‘python’: No such file or directory. Re-execute the same command to retrying
-> ~~~
+> ~~~bash
+> $ sudo apt update
 > $ sudo apt install python-is-python3
 > ~~~
 
+3. Create a required directory in the distributed file system, and you may review the created directory before copying the required file flights.csv to the destination directory
+~~~bash
+$ hdfs dfs -mkdir /user/hduser/StreamingOn-time
+$ hdfs dfs -ls /user/hduser
+$ hdfs dfs -ls /user/hduser/StreamingOn-time
+$ hdfs dfs -put flights.csv /user/hduser/StreamingOn-time
+$ hdfs dfs -ls /user/hduser/StreamingOn-time
+~~~
+
+4. Execute the Streaming job in the hadoop cluster, and examine the new created directory as well as output
+~~~bash
+$ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar -input StreamingOn-time/flights.csv -output StreamingOn-time/average_delay -mapper mapper.py -reducer reducer.py -file mapper.py -file reducer.py
+$ hdfs dfs -ls /user/hduser/StreamingOn-time
+$ hdfs dfs -ls /user/hduser/StreamingOn-time/average_delay
+~~~
 
 
