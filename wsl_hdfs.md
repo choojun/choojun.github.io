@@ -144,7 +144,8 @@ $ hdfs dfs -ls
 2.	Input and Output types of a MapReduce job:
 > (input) <k1, v1> -> map -> <k2, v2> -> combine -> <k2, v2> -> reduce -> <k3, v3> (output)
 
-3.	To view the contents of your current directory
+3.	Read more on MapReduce at URLs https://hadoop.apache.org/docs/r3.3.6/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html and https://en.wikipedia.org/wiki/MapReduce
+4.	
 ~~~
 $ hdfs dfs -ls
 ~~~
