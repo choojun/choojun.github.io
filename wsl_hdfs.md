@@ -139,7 +139,7 @@ $ hdfs dfs -ls
 > In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chown, cp, du, mkdir, stat, tail
 
 
-## F3. MapReduce with Java
+## F3. MapReduce with Java - Word Count
 1.	Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner. A MapReduce job splits the input data-set into independent chunks which are processed by the map tasks in a completely parallel manner. The framework sorts the outputs of the maps, which are then input to the reduce tasks. Typically both the input and the output of the job are stored in a file-system. The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks. The MapReduce framework operates exclusively on <key, value> pairs, that is, the framework views the input to the job as a set of <key, value> pairs and produces a set of <key, value> pairs as the output of the job, conceivably of different types.
 2.	Input and Output types of a MapReduce job:
 > (input) <k1, v1> -> map -> <k2, v2> -> combine -> <k2, v2> -> reduce -> <k3, v3> (output)
@@ -186,15 +186,26 @@ $ hdfs dfs -cat wordcounts/part-r-00000 | less
 $ mapred job -list
 ~~~
 
-## F4. MapReduce with Python
-1.	To view the contents of your current directory
+## F4. MapReduce with Python - On-time Performance of Flights
+1.	Login as hduser, and make a copy of the C:\de\StreamingOn-time folder in the local hduser’s home directory
 ~~~bash
-$ hdfs dfs -ls
+$ sudo cp -r /mnt/c/de/StreamingOn-time /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/StreamingOn-time
 ~~~
 
-
-4.	Login as hduser, and make a copy of the C:\de\WordCount folder in the local hduser’s home directory
+2. Change directory to the StreamingOn-time directory
 ~~~bash
-$ sudo cp -r /mnt/c/de/WordCount /home/hduser
-$ sudo chown hduser:hduser -R /home/hduser/WordCount
+$ cd StreamingOn-time
 ~~~
+
+3.  Test the scripts without the Hadoop overhead by simulating the MapReduce pipeline using Linux pipes and the sort command. 
+~~~bash
+$ cat flights.csv | ./mapper.py | sort | ./reducer.py
+~~~
+> Suppose that you may issue the following commands if you have observed the error of /usr/bin/env: ‘python’: No such file or directory. Re-execute the same command to retrying
+> ~~~
+> $ sudo apt install python-is-python3
+> ~~~
+
+
+
