@@ -1,14 +1,19 @@
 # F. HDFS File Operations and MapReduce
- 
-> 1. This practical introduces the basic Hadoop Distributed File System (HDFS) operations. 
-> 2. Login as hduser, and the HDFS shell can be invoked using 
-> ~~~bash
->  $ hdfs dfs <args>  
-> ~~~
-> 3. To see the available commands in the shell
-> ~~~bash
->  $ hdfs dfs -help
-> ~~~
+1. This practical introduces the basic Hadoop Distributed File System (HDFS) operations.
+2. Login as hduser, and the HDFS shell can be invoked using 
+~~~bash
+$ hdfs dfs <args>  
+~~~
+
+3. To see the available commands in the shell
+~~~bash
+$ hdfs dfs -help
+~~~
+
+4. [WordCount.zip](https://github.com/choojun/choojun.github.io/files/14274971/WordCount.zip)
+
+5. [StreamingOn-time.zip](https://github.com/choojun/choojun.github.io/files/14274973/StreamingOn-time.zip)
+
 
 ## F1. Basic File Operations
 1.	Download a file with file ID 122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v from Google Drive
