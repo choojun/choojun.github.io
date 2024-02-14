@@ -1,4 +1,4 @@
-# F. HDFS Basic File Operations
+# F. HDFS File Operations and MapReduce
  
 > 1. This practical introduces the basic Hadoop Distributed File System (HDFS) operations. 
 > 2. Login as hduser, and the HDFS shell can be invoked using 
