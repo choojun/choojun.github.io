@@ -10,7 +10,7 @@
 >  $ hdfs dfs -help
 > ~~~
 
-## F1. Exercise 1 - File Operations
+## F1. Basic File Operations
 1.	Download a file with file ID 122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v from Google Drive
 ~~~
 $ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v' -O shakespeare.txt
@@ -50,7 +50,7 @@ $ hdfs dfs -chmod 664 shakespeare.txt
 > 7 is 111, which means complete permissions.  
 > 4 is 100, which means read-only.  
 
-## F2. Exercise 2
+## F2. Advanced File Operations
 1.	To view the contents of your current directory
 ~~~
 $ hdfs dfs -ls
@@ -139,8 +139,21 @@ $ hdfs dfs -ls
 > In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chown, cp, du, mkdir, stat, tail
 
 
+## F3. MapReduce with Java
+1.	Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner. A MapReduce job splits the input data-set into independent chunks which are processed by the map tasks in a completely parallel manner. The framework sorts the outputs of the maps, which are then input to the reduce tasks. Typically both the input and the output of the job are stored in a file-system. The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks. The MapReduce framework operates exclusively on <key, value> pairs, that is, the framework views the input to the job as a set of <key, value> pairs and produces a set of <key, value> pairs as the output of the job, conceivably of different types.
+2.	Input and Output types of a MapReduce job:
+> (input) <k1, v1> -> map -> <k2, v2> -> combine -> <k2, v2> -> reduce -> <k3, v3> (output)
 
+3.	To view the contents of your current directory
+~~~
+$ hdfs dfs -ls
+~~~
 
+## F4. MapReduce with Python
+1.	To view the contents of your current directory
+~~~
+$ hdfs dfs -ls
+~~~
 
 
 
