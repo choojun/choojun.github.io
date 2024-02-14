@@ -153,7 +153,23 @@ $ sudo chown hduser:hduser -R /home/hduser/WordCount
 ~~~
 
 5. Change directory to the WordCount directory
+~~~bash
 $ cd WordCount
+~~~
+
+6. Compile WordCount.java and create a jar. Check the contents of the directory after each of the following statements
+~~~bash
+$ hadoop com.sun.tools.javac.Main WordCount.java
+$ jar cf wc.jar WordCount*.class
+~~~
+
+7. Review and understand the code in WordCount.java before submitting the job to the Hadoop cluster 
+~~~bash
+$ cat ~/WordCount/WordCount.java
+$ hadoop jar wc.jar WordCount shakespeare.txt wordcounts
+~~~
+
+
 
 ## F4. MapReduce with Python
 1.	To view the contents of your current directory
