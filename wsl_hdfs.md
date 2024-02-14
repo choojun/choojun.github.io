@@ -146,7 +146,7 @@ $ hdfs dfs -ls
 
 3.	Read more on MapReduce at URLs https://hadoop.apache.org/docs/r3.3.6/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html and https://en.wikipedia.org/wiki/MapReduce
 
-4.	Make a copy of the C:\de\WordCount folder in the local hduser’s home directory
+4.	Login as hduser, and make a copy of the C:\de\WordCount folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/WordCount /home/hduser
 $ sudo chown hduser:hduser -R /home/hduser/WordCount
@@ -157,19 +157,23 @@ $ sudo chown hduser:hduser -R /home/hduser/WordCount
 $ cd WordCount
 ~~~
 
-6. Compile WordCount.java and create a jar. Check the contents of the directory after each of the following statements
-~~~bash
-$ hadoop com.sun.tools.javac.Main WordCount.java
-$ jar cf wc.jar WordCount*.class
-~~~
-
-7. Review and understand the code in WordCount.java before submitting the job to the Hadoop cluster 
+6.  Review and understand the code in WordCount.java. Compile WordCount.java and create a jar file. Check the contents of the directory after each of the following statements
 ~~~bash
 $ cat ~/WordCount/WordCount.java
-$ hadoop jar wc.jar WordCount shakespeare.txt wordcounts
+$ hadoop com.sun.tools.javac.Main WordCount.java
+$ jar cf wc.jar WordCount*.class
+$ ls ~/WordCount
 ~~~
 
-
+7. Make sure file shakespeare.txt exist in the distributed file system before submitting the job to the Hadoop cluster 
+~~~bash
+$ hdfs dfs -ls /user/hduser
+$ hadoop jar wc.jar WordCount shakespeare.txt wordcounts
+~~~
+> You may copy the Linux local system to the distributed system using the following command
+> ~~~
+> $ hdfs dfs -put ~/WordCount/shakespeare.txt /user/hduser
+> ~~~
 
 ## F4. MapReduce with Python
 1.	To view the contents of your current directory
@@ -178,4 +182,8 @@ $ hdfs dfs -ls
 ~~~
 
 
-
+4.	Login as hduser, and make a copy of the C:\de\WordCount folder in the local hduser’s home directory
+~~~bash
+$ sudo cp -r /mnt/c/de/WordCount /home/hduser
+$ sudo chown hduser:hduser -R /home/hduser/WordCount
+~~~
