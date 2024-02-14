@@ -175,6 +175,17 @@ $ hadoop jar wc.jar WordCount shakespeare.txt wordcounts
 > $ hdfs dfs -put ~/WordCount/shakespeare.txt /user/hduser
 > ~~~
 
+8. Examine result of the job by running cat on the part file from the distributed file system and pipe it with the less 
+~~~bash
+$ hdfs dfs -cat wordcounts/part-r-00000 | less
+~~~
+> Exit the piped environment using Ctrl-z
+
+9. List all current running jobs (while and before the running job completed)
+~~~
+$ mapred job -list
+~~~
+
 ## F4. MapReduce with Python
 1.	To view the contents of your current directory
 ~~~bash
