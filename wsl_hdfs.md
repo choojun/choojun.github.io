@@ -10,7 +10,7 @@
 >  $ hdfs dfs -help
 > ~~~
 
-## F1. Exercise 1
+## F1. Exercise 1 - File Operations
 1.	Download a file with file ID 122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v from Google Drive
 ~~~
 $ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=122PnuKaSaA_OyYOKnxQOdlMc5awdyf5v' -O shakespeare.txt
@@ -90,7 +90,10 @@ $ cat testFile
 ~~~
 $ hdfs dfs -copyFromLocal testFile
 ~~~
-> Note that you have to use the command -copyFromLocal. The command -cp is used to copy files within HDFS.
+> To copy files from your local machine to HDFS, use the command -copyFromLocal. The command -cp is only used to copy files within HDFS. For more options and flexibility in copying files or directories to your desired destination within HDFS, consider using the alternative command shown below
+> ~~~
+> hdfs dfs -put <Linux local file system> <distributed file system>
+> ~~~
 
 9.	Now you need to confirm that the file has been copied over correctly
 ~~~
