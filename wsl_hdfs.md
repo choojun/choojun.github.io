@@ -209,7 +209,7 @@ $ cat flights.csv | ./mapper.py | sort | ./reducer.py
 $ hdfs dfs -mkdir /user/hduser/StreamingOn-time
 $ hdfs dfs -ls /user/hduser
 $ hdfs dfs -ls /user/hduser/StreamingOn-time
-$ hdfs dfs -put flights.csv /user/hduser/StreamingOn-time
+$ hdfs dfs -put /home/hduser/StreamingOn-time/flights.csv /user/hduser/StreamingOn-time
 $ hdfs dfs -ls /user/hduser/StreamingOn-time
 ~~~
 
@@ -220,4 +220,14 @@ $ hdfs dfs -ls /user/hduser/StreamingOn-time
 $ hdfs dfs -ls /user/hduser/StreamingOn-time/average_delay
 ~~~
 
+5. Copy the HDFS’ StreamingOn-time/average_delay directory to your Linux local directory, and list the contents of the local system’s directory to check if the folder from HDFS was copied successfully
+~~~
+$ hdfs dfs -copyToLocal /user/hduser/StreamingOn-time/average_delay
+$ ls /home/hduser/StreamingOn-time/average_delay
+~~~
+
+6. Check the contents of the average_delay folder by viewing the content of the beginning of the part-00000 file
+~~~
+$ head /home/hduser/StreamingOn-time/average_delay/part-00000
+~~~
 
