@@ -2,7 +2,7 @@
 
 ## A. Remove/Setup WSL (tested Windows 10 and WSL v2)
 
-1. Hardware requirements: your PC need to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.
+1. Hardware requirements: your PC is recommended to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.
 Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10).  
 Software reqirements:
    - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
