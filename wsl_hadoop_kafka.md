@@ -55,19 +55,58 @@ $ bin/zookeeper-server-stop.sh
 
 
 ## J3. Producing and Consuming Messages - using Terminal
-1.	Create a Topic
+1. Login as hduser. 
+2. Create a Topic
 ~~~bash
-$ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:2181 --replication-factor 1 --partitions 1 --topic test
+$ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
 ~~~
 
-2.	List all available topics
+3. List all available topics
 ~~~bash
-$ ~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+$ ~/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ~~~
 
-3. Create another topic known as automobile.
-4. List all available topics.
-5. To obtain information about a specific Kafka topic
+4. Create another topic known as automobile.
+5. List all available topics.
+6. To obtain information about a specific Kafka topic
 ~~~
-$ ~/kafka/bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic test
+$ ~/kafka/bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic test
 ~~~
+
+
+
+## J4. Producer - Consumer Terminals 
+1. To simulate a producer terminal, open another terminal of Ubuntu and login as hduser
+2. List all available topics, and carry out the following steps after your Consumer Terminal is ready to consume messages
+
+3. Producer terminal: Send a few messages under the topic test
+~~~
+$ ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+~~~
+> A prompt (>) should appear for you to input your messages. For example, type in the following messages
+> > This is the first test message
+> > 
+> > This is the second test message
+> 
+> To quit, press Ctrl-C. Note that messages are stored by default in the /tmp/kafka-logs/ directory or set as the value of log.dirs in the config/server.properties file.
+
+4. Producer terminal: To delete a specific topic
+~~~
+$ ~/kafka/bin/kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic test
+~~~
+
+5. To simulate a consumer terminal, open another terminal of Ubuntu and login as hduser
+6. Consumer terminal: To consume messages by start a console-based consumer with command as follow
+~~~
+$ ~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+~~~
+> At your Producer terminal, send some messages (refer to Steo 3)
+
+6. To examine the incoming messages
+~~~
+$ ~/kafka/bin/kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --print-data-log --files /tmp/kafka-logs/test-0/00000000000000000000.log
+~~~
+> Note that follow the file name of the *.log file that appears in your directory
+
+
+
