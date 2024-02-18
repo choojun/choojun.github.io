@@ -27,7 +27,7 @@ $ mv kafka_2.13-3.6.1 kafka
 $ chown hduser:hadoop -R kafka
 ~~~
 
-## J2. Starting and Stopping Kafka Broker
+## J2. Starting and Stopping Zookeeper and Kafka Broker
 1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
     - SSH (if using WSL). 
     - HDFS
@@ -52,3 +52,22 @@ $ bin/zookeeper-server-stop.sh
 > When you have finished running your exercises, you need stop the Kafka service
 
 
+
+
+## J3. Producing and Consuming Messages - using Terminal
+1.	Create a Topic
+~~~bash
+$ ~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:2181 --replication-factor 1 --partitions 1 --topic test
+~~~
+
+2.	List all available topics
+~~~bash
+$ ~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181
+~~~
+
+3. Create another topic known as automobile.
+4. List all available topics.
+5. To obtain information about a specific Kafka topic
+~~~
+$ ~/kafka/bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic test
+~~~
