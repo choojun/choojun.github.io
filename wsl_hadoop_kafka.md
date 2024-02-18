@@ -28,10 +28,27 @@ $ chown hduser:hadoop -R kafka
 ~~~
 
 ## J2. Starting and Stopping Kafka Broker
-1.	Login as hduser, and ensure the following services started
+1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
     - SSH (if using WSL). 
     - HDFS
     - YARN
 
+2.	Start Zookeeper and Kafka broker server in the background
+~~~bash
+$ cd kafka
+$ bin/zookeeper-server-start.sh config/zookeeper.properties &
+(Then, press the <enter> key and Zookeeper will continue running in the background.)
+$ bin/kafka-server-start.sh config/server.properties &
+(Then, press the <enter> key and Kafka broker will continue running in the background.)
+$ jps
+~~~
+> Note that you should observe the QuorumPeerMain (for Zookeeper) and Kafka processes with the command jps. You should observe a total of eight services, i.e. QuorumPeerMain, Jps, SecondaryNameNode, ResourceManager, NodeManager, DataNode, Kafka, NameNode
+
+3.	Stopping Kafka and Zookeeper
+~~~bash
+$ bin/kafka-server-stop.sh
+$ bin/zookeeper-server-stop.sh
+~~~
+> When you have finished running your exercises, you need stop the Kafka service
 
 
