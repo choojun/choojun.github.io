@@ -128,6 +128,7 @@ wsl –l -v
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
 ## I. [Spark and Visualization](wsl_pyspark_viz)
+## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
 -----------------------------------------------------------
 
 ## References
