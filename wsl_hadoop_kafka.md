@@ -54,7 +54,7 @@ $ bin/zookeeper-server-stop.sh
 
 
 
-## J3. Producing and Consuming Messages - using Terminal
+## J3. Producing and Examining Messages - using Terminal
 1. Login as hduser. 
 2. Create a Topic
 ~~~bash
