@@ -242,3 +242,49 @@ $ python send_messages.py
 ~~~
 
 
+
+
+
+## J8. Accessing Kafka in Python - Streaming Twitter Data [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1.	Login as hduser, and check the installed kafka-python package
+~~~bash
+$ cd ~
+$ pip install python-twitter
+$ pip install tweepy
+~~~
+
+2. Get your API access keys from your Twitter API account. If you do not have a Twitter Developer account yet, you may apply for one at URL https://developer.twitter.com/en/apply-for-access
+
+3. Create a python file with the following lines of code. Note that you have to replace access_token, access_token_secret, consumer_key, and consumer_secret in the code below with your own Twitter API account tokens and keys. 
+~~~python
+from tweepy.streaming import StreamListener
+from tweepy import OAuthHandler
+from tweepy import Stream
+from kafka import KafkaProducer
+import json
+
+access_token = "__"
+access_token_secret =  "__"
+consumer_key =  "__"
+consumer_secret =  "__"
+
+class StdOutListener(StreamListener):
+    def on_data(self, data):
+        json_ = json.loads(data)
+        producer.send("automobile", json_["text"].encode('utf-8'))
+        return True
+
+    def on_error(self, status):
+        print(status)
+
+producer = KafkaProducer(bootstrap_servers='localhost:9092')
+l = StdOutListener()
+auth = OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+stream = Stream(auth, l)
+stream.filter(track=["automobile", "car", "transport", "train", "LRT"])
+~~~
+
+4. Run your file and observe the messages that arrive at the Consumer terminal
+
