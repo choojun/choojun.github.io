@@ -169,3 +169,76 @@ By default, a buffer is available to send the messages immediately even if there
 ~~~
 > In the above example, the 8s delay will result in all three messages appearing at almost the same time to the consumer.
 
+
+## J6. Accessing Kafka in Python - by Specifying Partition [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1.	Use another terminal as producer by login as hduser, and invoke the Pyspark’s interactive shell with 4 executor cores
+~~~bash
+$ cd ~
+$ pyspark --executor-cores 4
+~~~
+
+2. In the producer terminal, enter the following Python statements to generate messages
+~~~python
+>>> from kafka import KafkaProducer
+>>> from json import dumps
+>>> import time
+>>> producer = KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=lambda x: dumps(x).encode('utf-8'))
+>>> i = 1
+>>> while True:
+...	  time.sleep(10)
+...	  print("i = ", i)
+...	  producer.send('test', str(i*10) + " seconds have passed", partition=0)
+...     i += 1
+~~~
+
+3.	Use another terminal as consumer by login as hduser, and invoke Pyspark’s interactive shell
+~~~python
+>>> from kafka import KafkaConsumer                                                  
+>>> from kafka import TopicPartition
+>>> consumer = KafkaConsumer(bootstrap_servers='localhost:9092')
+>>> consumer.assign([TopicPartition('test', 2)])
+>>> consumer.assign([TopicPartition('test', 0)])
+>>> for msg in consumer:
+...     print("msg in consumer ", msg)
+~~~
+
+
+## J7. Accessing Kafka in Python - with Serialized JSON Messages [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1. In producer terminal, update the following lines of code based on the copy of J6
+~~~python
+>>> i = 1                                               
+>>> while True:
+...     output = "Elapsed time: " + str(i * 10) + "s"
+...     producer.send('test', {'message':output})
+...     print('message ' + output + " sent")
+...     time.sleep(10)
+...     i += 1
+~~~
+
+2. Create a file named send_messages.py
+~~~bash
+$ cd ~
+$ nano send_messages.py
+~~~
+
+3. Add the following statements into send_messages.py and then save the file
+~~~python
+from kafka import KafkaProducer
+from json import dumps
+import time
+
+producer=KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=lambda x: dumps(x).encode('utf-8'))
+
+producer.send('automobile', value='The new Proton X70')
+producer.send('automobile', value='Proton X50')
+producer.flush()
+~~~
+
+4. Run the python file
+~~~bash
+$ python send_messages.py
+~~~
+
+
