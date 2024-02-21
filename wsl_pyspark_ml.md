@@ -1,4 +1,5 @@
-# H. Spark and Machine Learning
+# H. Spark and Machine Learning [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
  
 > 1. Spark has two machine learning libraries with different APIs, but including implementations of similar algorithms. These machine learning algorithms and utilities have been designed to scale across a cluster by way of inclusion of parallel algorithms in which operations can be applied in parallel across nodes.
 >> - **spark.mllib**: spark.mllib is the older built-in Spark machine learning library. It consists of learning algorithms using Spark’s RDD operations. To leverage this, you need to create data (as RDDs) and operate on data in a distributed, parallelizable manner to make them available to all nodes in the cluster.
@@ -7,7 +8,8 @@
 > 3. [mllib.zip](https://github.com/choojun/choojun.github.io/files/14240398/mllib.zip)
 
 
-## H1. spark.mllib - Recommender Systems
+## H1. spark.mllib - Recommender Systems [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	This example uses Alternating Least Squares (ALS) algorithm to obtain potential matches for an online dating service
 2. Make a copy of the C:\de\mllib folder in the local hduser’s home directory
 ~~~bash
@@ -32,7 +34,8 @@ $ $SPARK_HOME/bin/spark-submit mllib/matchmaker.py 1 M > matchmaking_recs.txt
 
 5. Examine the output in the file matchmaking_recs.txt
 
-## H2. spark.mllib - Clustering
+## H2. spark.mllib - Clustering [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	This example uses k-means clustering to determine which areas in the US have been most hit by earthquakes
 2. Ensure that the data file earthquakes.csv exists in HDFS’ data directory. You may review the contents of the mllib/data directory before proceeding to the next step
 ~~~bash
@@ -48,7 +51,8 @@ $ $SPARK_HOME/bin/spark-submit mllib/earthquakes_clustering.py hdfs://localhost:
 
 4. Examine the output in the file cluster.txt
 
-## H3. spark.ml - Multiclass Classification
+## H3. spark.ml - Multiclass Classification [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	This example uses the Naive Bayes classifier to perform multiclass classification
 2. Ensure that the data file sample_libsvm_data.txt exists in HDFS’ data directory. You may review the contents of the mllib/data directory before proceeding to the next step
 ~~~bash
@@ -65,7 +69,8 @@ $ $SPARK_HOME/bin/spark-submit mllib/naive_bayes_example.py
 
 4. Examine the output in the terminal
 
-## H4. spark.ml - Recommender (Regression based)
+## H4. spark.ml - Recommender (Regression based) [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	This example uses Alternating Least Squares (ALS) algorithm for movie recommendations
 2. Ensure that the data file sample_movielens_ratings.txt exists in HDFS’ data directory. You may review the contents of the mllib/data directory before proceeding to the next step
 ~~~bash
