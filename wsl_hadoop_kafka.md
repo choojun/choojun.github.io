@@ -228,9 +228,7 @@ $ nano send_messages.py
 from kafka import KafkaProducer
 from json import dumps
 import time
-
 producer=KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=lambda x: dumps(x).encode('utf-8'))
-
 producer.send('automobile', value='The new Proton X70')
 producer.send('automobile', value='Proton X50')
 producer.flush()
@@ -263,12 +261,10 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from kafka import KafkaProducer
 import json
-
 access_token = "__"
 access_token_secret =  "__"
 consumer_key =  "__"
 consumer_secret =  "__"
-
 class StdOutListener(StreamListener):
     def on_data(self, data):
         json_ = json.loads(data)
@@ -277,7 +273,6 @@ class StdOutListener(StreamListener):
 
     def on_error(self, status):
         print(status)
-
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
 l = StdOutListener()
 auth = OAuthHandler(consumer_key, consumer_secret)
