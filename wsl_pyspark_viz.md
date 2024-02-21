@@ -1,6 +1,8 @@
-# I. Spark and Visualization
+# I. Spark and Visualization [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-## I1. Visualization with PySpark
+
+## I1. Visualization with PySpark [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Login as hduser, and install the seaborn package
 ~~~bash
 $ cd ~
