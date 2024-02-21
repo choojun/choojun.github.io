@@ -1,4 +1,5 @@
-# G. Spark, PySpark, Spark SQL and Jupyter Notebook
+# G. Spark, PySpark, Spark SQL and Jupyter Notebook [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
  
 > 1. Spark is an in-memory distributed computing engine especially designed for the Hadoop cluster. 
 > 2. Read more on Apache Spark at URLs https://spark.apache.org and https://en.wikipedia.org/wiki/Apache_Spark
@@ -6,7 +7,8 @@
 > 4. [sparksql.zip](https://github.com/choojun/choojun.github.io/files/14238380/sparksql.zip)
 
 
-## G1. Installation and Configuration
+## G1. Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
@@ -48,7 +50,8 @@ $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.propert
 > rootLogger.appenderRef.stdout.ref = console  
 
 
-## G2. Using the PySpark Interactive Shell - Word Count 
+## G2. Using the PySpark Interactive Shell - Word Count [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Launch PySpark’s interactive shell using user hduser
 2.	Create an Resilient Distributed Dataset (RDD) with data from a text file. It transforms the RDD to implement the word count application using Spark.
 ~~~bash
@@ -80,7 +83,8 @@ $ hdfs dfs -head wc/part-00000
 
 
 
-## G3. Using the PySpark Interactive Shell - Numerical 
+## G3. Using the PySpark Interactive Shell - Numerical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Install numpy using user hduser, and launch numpy with 4 cores
 ~~~bash
 $ pip3 install numpy
@@ -167,7 +171,8 @@ $ pyspark --executor-cores 4
 
 
 
-## G4. Using the PySpark Interactive Shell - Text Processing 
+## G4. Using the PySpark Interactive Shell - Text Processing [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Find the longest word in a sentence
 ~~~bash
 >>> words = 'It is not that I am so smart but I stay with the questions much longer Albert Einstein'.split()
@@ -214,7 +219,8 @@ or
 
 
 
-## G5. Using the PySpark Interactive Shell - Word Count (SparkApp)
+## G5. Using the PySpark Interactive Shell - Word Count (SparkApp) [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Make a copy of the C:\de\SparkApp folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/SparkApp /home/hduser
@@ -239,7 +245,8 @@ $ hdfs dfs -head spark_wc/part-00000
 ~~~
 
 
-## G6. Using the PySpark Interactive Shell - Flight Delay (SparkApp)
+## G6. Using the PySpark Interactive Shell - Flight Delay (SparkApp) [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Change directory to the SparkApp folder, and review the code in app.py
 ~~~bash
 $ cd /home/hduser/SparkApp
@@ -272,7 +279,8 @@ $ spark-submit app.py
 
 
 
-## G7. Spark SQL
+## G7. Spark SQL [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical covers the Spark SQL API, which runs as a library on top of Spark’s Core engine and APIs. The Spark SQL API may be accessed using the same programming interface that was used for Spark’s RDD APIs  
 ![sparksql](https://github.com/choojun/choojun.github.io/assets/6356054/538f24de-c002-44a0-8b57-e17b107ce1c8)
 2. Read more on Apache Spark at URLs https://spark.apache.org/sql/ and https://en.wikipedia.org/wiki/Apache_Spark#Spark_SQL
@@ -352,7 +360,8 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 
 
-## G8. Spark SQL and Jupyter Notebook
+## G8. Spark SQL and Jupyter Notebook [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
 2. Read more from URLs https://jupyter.org , https://en.wikipedia.org/wiki/Project_Jupyter and https://spark.apache.org/docs/latest/sql-programming-guide.html
 
