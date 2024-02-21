@@ -1,7 +1,9 @@
-# J. Kafka Installation and Configuration
+# J. Kafka Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Read more on Kafka at URL https://kafka.apache.org/36/documentation.html
 
-## J1. Install Kafka
+## J1. Install Kafka [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Login as hduser, and check the installed scala package
 ~~~bash
 $ cd ~
@@ -27,7 +29,8 @@ $ mv kafka_2.13-3.6.1 kafka
 $ chown hduser:hadoop -R kafka
 ~~~
 
-## J2. Starting and Stopping Zookeeper and Kafka Broker
+## J2. Starting and Stopping Zookeeper and Kafka Broker [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
     - SSH (if using WSL). 
     - HDFS
@@ -54,7 +57,8 @@ $ bin/zookeeper-server-stop.sh
 
 
 
-## J3. Producing and Examining Messages - using Terminal
+## J3. Producing and Examining Messages - using Terminal [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Login as hduser. 
 2. Create a Topic
 ~~~bash
@@ -75,7 +79,8 @@ $ ~/kafka/bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --top
 
 
 
-## J4. Producer - Consumer Terminals 
+## J4. Producer - Consumer Terminals [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. To simulate a producer terminal, open another terminal of Ubuntu and login as hduser
 2. List all available topics, and carry out the following steps after your Consumer Terminal is ready to consume messages
 
