@@ -1,4 +1,5 @@
-# E. Hadoop Installation and Configuration ![home] ![(https://github.com/choojun/choojun.github.io/assets/6356054/09f0f662-97ba-40c3-a59d-bd2ef5625d13)](wsl)
+# E. Hadoop Installation and Configuration ![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)
+
 
  
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
