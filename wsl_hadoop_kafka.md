@@ -114,4 +114,58 @@ $ ~/kafka/bin/kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --
 > Note that follow the file name of the *.log file that appears in your directory
 
 
+## J5. Accessing Kafka in Python [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1.	Login as hduser, and check the installed kafka-python package
+~~~bash
+$ cd ~
+$ pip install kafka-python
+~~~
+
+2.	Use another terminal as consumer by login as hduser, and start the python interpreter
+~~~bash
+$ cd ~
+$ python
+~~~
+
+3. In the consumer terminal, enter the following Python statements to consume messages
+~~~python
+>>> from kafka import KafkaConsumer
+>>> consumer = KafkaConsumer(bootstrap_servers='localhost:9092')
+>>> 
+>>> for msg in consumer:
+...     print("msg: ", msg)
+~~~
+
+4.	Use another terminal as producer by login as hduser, and start the python interpreter
+~~~bash
+$ cd ~
+$ python
+~~~
+
+5. In the producer terminal, enter the following Python statements to generate messages
+~~~python
+>>> from kafka import KafkaProducer
+>>> from json import dumps
+>>> producer = KafkaProducer(bootstrap_servers=['localhost:9092'],value_serializer=lambda x: dumps(x).encode('utf-8'))
+>>> producer.send('automobile', value='The new Ford Ranger')
+>>> import time
+>>> i = 1
+>>> while True:
+...     time.sleep(10)
+...     print("i = ", i)
+...     producer.send('test', str(i*10) + " seconds have passed")
+...     i += 1
+~~~
+
+6. Further configure delay in sending out messages from producer terminal.
+By default, a buffer is available to send the messages immediately even if there is still unused space in the buffer. To reduce the number of requests, you may set the linger_ms parameter of the KafkaProducer constructor to instruct the producer to wait up to the given number of ms before sending a request in order to enable more records to arrive for batch sending of the messages, thus leading to fewer and more efficient requests handling when not under the maximal load at the cost of a small amount of latency.
+~~~python
+>>> producer=KafkaProducer(linger_ms=8000, bootstrap_servers=['localhost:9092'], value_serializer=lambda x:dumps(x).encode('utf-8'))
+>>> producer.flush()
+>>> future=producer.send('test','test message 1')
+>>> future=producer.send('test','test message 2')
+>>> future=producer.send('test','test message 3')
+~~~
+> In the above example, the 8s delay will result in all three messages appearing at almost the same time to the consumer.
 
