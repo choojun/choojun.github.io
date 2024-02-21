@@ -1,7 +1,5 @@
 # E. Hadoop Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-
- 
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
 >    * name the default user account as tarumt, and 
@@ -10,7 +8,8 @@
 > 4. The HDFS file system consists of a set of Master services (NameNode, secondary NameNode, and DataNodes). The NameNode and secondary NameNode manage the HDFS metadata. The DataNodes host the underlying HDFS data. The NameNode tracks which DataNodes contain the contents of a given file in HDFS. HDFS divides files into blocks and stores each block on a DataNode. Multiple DataNodes are linked to the cluster. The NameNode then distributes replicas of these data blocks across the cluster. It also instructs the user or application where to locate wanted information.
 > 5. Read more on Hadoop at URL https://en.wikipedia.org/wiki/Apache_Hadoop
 
-## E1. Setup User Environment
+## E1. Setup User Environment [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Create a new group named hadoop
 ~~~bash
 $ sudo addgroup hadoop
@@ -42,7 +41,8 @@ $ su - hduser
 $ exit
 ~~~
 
-## E2. Setup Operating System Environment
+## E2. Setup Operating System Environment [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1.	Reboot/terminate Ubuntu in WSL, and run the following commands from Ubuntu with user hduser
 
 2. Check if ssh has been installed
@@ -125,7 +125,8 @@ $ sudo apt-get install openjdk-8-jdk
 
 
 
-## E3. Setup SSH and PDSH
+## E3. Setup SSH and PDSH [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 Run the following commands from Ubuntu with user hduser
 > Secure Shell (SSH), also sometimes called Secure Socket Shell, is a protocol for securely accessing your site’s server over an unsecured network. In other words, it’s a way to safely log in to your server remotely using your preferred command-line interface.
 
@@ -169,7 +170,8 @@ $ source ~/.bashrc
 
 
 
-## E4. Disable IPv6
+## E4. Disable IPv6 [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 Run the following commands from Ubuntu with user hduser
 
 1. Edit the /etc/sysctl.conf file with the following command.
@@ -215,7 +217,8 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
    ~~~
 
 
-## E5. Install Hadoop
+## E5. Install Hadoop [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Switch to the hduser account
 
 2. Download the Hadoop binary by finding the appropriate Hadoop binary from the Hadoop releases page.
@@ -237,7 +240,8 @@ $ sudo chown -R hduser:hadoop hadoop3
 $ sudo chmod g+w -R hadoop3
 ~~~
 
-## E6. Configure passphraseless ssh for Hadoop
+## E6. Configure passphraseless ssh for Hadoop [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Ensure that you are login with the hduser 
 
 2. Ensure that you can SSH to the localhost in Ubuntu
@@ -255,7 +259,8 @@ $ ssh localhost
 ~~~
 > Exit the ssh by issuing command exit.
 
-## E7. Configure Pseudo-distributed Mode for Hadoop
+## E7. Configure Pseudo-distributed Mode for Hadoop [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Ensure that you are login with the hduser 
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
@@ -384,7 +389,8 @@ $ ssh localhost
  $ hdfs dfs -mkdir /user/hduser
  ~~~
 
-## E8. Run a sample MapReduce Job in Hadoop
+## E8. Run a sample MapReduce Job in Hadoop [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Ensure that you are login with the hduser 
 
 2. Copy the input files into the distributed file system
@@ -414,7 +420,8 @@ $ sbin/stop-dfs.sh
 
 6. Logout from the hduser account and your tarumt account.
 
-## E9. Attention: At the beginning of all future practical
+## E9. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Login as hduser or switch account to hduser
 ~~~bash
 $ su - hduser
@@ -446,7 +453,8 @@ $ jps
 ~~~
 > Suppose you need to observe at least six (6) services in the total, refer steps 12 and 13 of G7.
 
-## E10. Attention: At the end of all future practical
+## E10. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
 1. Stop the YARN service
 ~~~bash
 $ sbin/stop-yarn.sh
