@@ -1,4 +1,5 @@
-# E. Hadoop Installation and Configuration
+# E. Hadoop Installation and Configuration ![home] ![(https://github.com/choojun/choojun.github.io/assets/6356054/09f0f662-97ba-40c3-a59d-bd2ef5625d13)](wsl)
+
  
 > 1. Throughout our practical, we will assume that the Hadoop user name is **hduser**.
 > 2. The first time that you launch your WSL Linux distro, you will be prompted to create a default user account. You may choose to either 
