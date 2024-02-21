@@ -1,7 +1,7 @@
 ![WSLHome](https://github.com/choojun/choojun.github.io/assets/6356054/213b5f1f-0c3b-4e6e-9bc4-13c1f8977ba9)
 # Microsoft Windows Subsystem for Linux (WSL)
 
-## A. Remove/Setup WSL (tested Windows 10 and WSL v2)
+## A. Remove/Setup WSL (tested on Windows 10 and WSL v2)
 
 1. Hardware requirements: your PC is recommended to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.
 Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10).  
