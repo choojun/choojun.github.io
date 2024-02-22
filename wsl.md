@@ -3,8 +3,8 @@
 
 ## A. Remove/Setup WSL (tested on Windows 10 and WSL v2)
 
-1. Hardware requirements: your PC is recommended to have at least **16GB RAM (or more)** and **CPU virtualization enabled** with **internet access** for the rest of exercises.
-Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10).  
+1. Hardware requirements: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **internet constantly access** during exercises.
+Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10) too!  
 Software reqirements:
    - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
    - Find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
@@ -125,11 +125,29 @@ wsl –l -v
 -----------------------------------------------------------
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
+1. Hardware requirement: Recommended requirements of WSL or better with internet access constantly ready
+2. Software requirement: WSL 2 with Ubuntu 22.04 distro, Hadoop 3.3.6
+
 ## F. [HDFS File Operations and MapReduce](wsl_hdfs)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready
+
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready, Spark 3.5.0, web broweser
+
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6 and Spark 3.5.0 installed, SSH, DFS and YARN services ready, 
+
 ## I. [Spark and Visualization](wsl_pyspark_viz)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6, Spark 3.5.0 and Jupyter notebook installed, SSH, DFS and YARN services ready
+
 ## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6, Spark 3.5.0 and Jupyter notebook installed, SSH, DFS and YARN services ready, Scala 2.13, Kafka 3.6.1
+
 -----------------------------------------------------------
 
 ## References
