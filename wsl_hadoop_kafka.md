@@ -38,7 +38,7 @@ $ chown hduser:hadoop -R kafka
 
 2.	Start Zookeeper and Kafka broker server in the background
 ~~~bash
-$ cd kafka
+$ cd ~/kafka
 $ bin/zookeeper-server-start.sh config/zookeeper.properties &
 (Then, press the <enter> key and Zookeeper will continue running in the background.)
 $ bin/kafka-server-start.sh config/server.properties &
