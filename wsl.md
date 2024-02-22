@@ -134,7 +134,7 @@ wsl –l -v
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
-2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready, Spark 3.5.0 (for Scala 2.13), web broweser
+2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready, Spark 3.5.0 (for Scala 2.13), web browser
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
