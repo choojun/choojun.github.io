@@ -32,7 +32,7 @@ $ chown hduser:hadoop -R kafka
 ## J2. Starting and Stopping Zookeeper and Kafka Broker [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
-    - SSH (if using WSL). 
+    - SSH
     - HDFS
     - YARN
 
