@@ -139,8 +139,100 @@ hbase(main):003:0> exit
 
 
 
+## K4. Running HBase Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-## K4. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+1. Create a table named linkshare in the default namespace with one column-family called link
+~~~bash
+hbase> create 'linkshare', 'link'
+~~~
+
+2. Add a new column-family named statistics to the table. 
+~~~bash
+hbase> disable 'linkshare'
+hbase> alter 'linkshare', 'statistics'
+hbase> enable 'linkshare'
+~~~
+> Note that to alter the table (e.g. change column-family, add column-family, etc) after it has been created, you need to first disable the table to prevent clients from assessing the table during the alter operation.
+
+3. Verify that the new column-family has been added to the table
+~~~bash
+hbase> describe 'linkshare'
+~~~
+
+4. Insert a value in a cell at the specified table/row/column, use the command put. In the following examples, we use the unique reversed URL link for the row keys
+~~~bash
+hbase> put 'linkshare', 'org.hbase.www', 'link:title', 'Apache HBase'
+hbase> put 'linkshare', 'org.hadoop.www', 'link:title', 'Apache Hadoop'
+hbase> put 'linkshare', 'com.oreilly.www', 'link:title', 'O\'Reilly.com'
+~~~
+
+
+5. For incrementing frequency counters, use the command incr. In the examples below, we indicate that the counter should be incremented by 1
+~~~bash
+hbase> incr 'linkshare', 'org.hbase.www', 'statistics:share', 1
+hbase> incr 'linkshare', 'org.hbase.www', 'statistics:like', 1
+hbase> incr 'linkshare', 'org.hbase.www', 'statistics:share', 1
+~~~
+
+6. To access a counter’s current value, use the get_counter command, specifying the table name, row key, and column
+~~~bash
+hbase> get_counter 'linkshare', 'org.hbase.www', 'statistics:share'
+~~~
+
+7. To perform lookups by row key to retrieve attributes for a specific row, use the get command
+~~~bash
+hbase> get 'linkshare', 'org.hbase.www'
+~~~
+> The get command also accepts an optional dictionary of parameters to specify the column(s), timestamp, timerange, and version of the cell values to be retrieved. e.g.
+~~~bash
+hbase> get 'linkshare', 'org.hbase.www', 'link:title'
+hbase> get 'linkshare', 'org.hbase.www', 'link:title', 'statistics:share'
+hbase> get 'linkshare', 'org.hbase.www', ['link:title', 'statistics:share']
+hbase> get 'linkshare', 'org.hbase.www', {TIMERANGE => [1399887705673, 1400133976734]}
+hbase> get 'linkshare', 'org.hbase.www', {COLUMN => 'statistics:share', VERSIONS => 2}
+~~~
+
+8. Display all the contents of a table
+~~~bash
+hbase> scan 'linkshare'
+~~~
+
+
+9. Limit scan to the rows starting with a specific row key
+~~~bash
+hbase> scan 'linkshare', {COLUMNS => ['link:title'], STARTROW => 'org.hbase.www'}
+hbase> scan 'linkshare', {COLUMNS => ['link:title'], STARTROW => 'org'}
+~~~
+
+
+10. Import the necessary classes
+~~~bash
+hbase> import org.apache.hadoop.hbase.util.Bytes
+hbase> import org.apache.hadoop.hbase.filter.SingleColumnValueFilter
+hbase> import org.apache.hadoop.hbase.filter.BinaryComparator
+hbase> import org.apache.hadoop.hbase.filter.CompareFilter
+~~~
+> Create a filter that limits the results to rows where the statistics:like counter column value is less than or equal to 10
+~~~
+     likeFilter = SingleColumnValueFilter.new(Bytes.toBytes('statistics'),
+     Bytes.toBytes('like'),
+     CompareFilter::CompareOp.valueOf('GREATER_OR_EQUAL'),
+     BinaryComparator.new(Bytes.toBytes(10)))
+~~~
+> Set a flag for the filter to skip any rows without a value in this column
+~~~bash
+hbase> likeFilter.setFilterIfMissing(true)
+~~~
+> Run a scan with the configured filter
+~~~bash
+hbase> scan 'linkshare', { FILTER => likeFilter }
+~~~
+
+
+
+
+
+## K5. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. Login as hduser or switch account to hduser
 ~~~bash
@@ -198,7 +290,7 @@ $ jps
 
 
 
-## K5. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+## K6. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 
 1. Stop the HBase service
