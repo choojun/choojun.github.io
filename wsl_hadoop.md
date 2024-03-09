@@ -317,8 +317,8 @@ $ ssh localhost
  ~~~xml
     <configuration>
       <property>
-   	    <name>mapreduce.framework.name</name>
-    	   <value>yarn</value>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
       </property>
       <property>  
         <name>mapreduce.application.classpath</name>      
