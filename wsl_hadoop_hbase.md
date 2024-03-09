@@ -314,6 +314,7 @@ $ bin/zookeeper-server-stop.sh
 
 3. Stop the YARN and HDFS services
 ~~~bash
+$ cd ~/hadoop3
 $ sbin/stop-yarn.sh
 $ sbin/stop-dfs.sh
 ~~~
