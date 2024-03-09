@@ -17,20 +17,20 @@ $ cd ~
 $ cd ~
 $ hadoop version
 ~~~
-Reinstall the Hadoop if it is not version 3.3.6. Remember to delete the existing hadoop3 directory before begin your setup.
+> Reinstall the Hadoop if it is not version 3.3.6. Remember to delete the existing hadoop3 directory before begin your setup.
 
 3.	Check the installed version of PySpark
 ~~~bash
 $ pyspark --version
 ~~~
-Reinstall the Spark if it the PySpark not version 3.5.0 (for Hadoop 3.3.6 and later). Remember to delete the existing spark directory before begin your setup.
+> Reinstall the Spark if it the PySpark not version 3.5.0 (for Hadoop 3.3.6 and later). Remember to delete the existing spark directory before begin your setup.
 
 4.	Check the installed version of Scala
 ~~~bash
 $ scala -version
 $ ll ~/kafka/libs | grep kafka
 ~~~
-Reinstall the Kafka if it is not those version of your install Scala, say 2.13.x as shown in file kafka_<Scala-version>-<Kafka-version>.*. Remember to delete the existing kafka directory before begin your setup.
+> Reinstall the Kafka if it is not those version of your install Scala, say 2.13.x as shown in file kafka_<Scala-version>-<Kafka-version>.*. Remember to delete the existing kafka directory before begin your setup.
 
 
 5.	Download HBase
@@ -40,7 +40,7 @@ $ wget https://archive.apache.org/dist/hbase/2.5.7/hbase-2.5.7-bin.tar.gz
 $ tar -xvzf hbase-2.5.7-bin.tar.gz
 $ mv hbase-2.5.7 hbase
 ~~~
-Find the current stable release of HBase that is compatible with your version of Hadoop at here (https://hbase.apache.org/book.html#hadoop), and you may find a list of releases at Apache Hbase download page (https://hbase.apache.org/downloads.html). For example, you may adopt version Hbase 2.5.x for the installed Hadoop 3.3.6.
+> Find the current stable release of HBase that is compatible with your version of Hadoop at here (https://hbase.apache.org/book.html#hadoop), and you may find a list of releases at Apache Hbase download page (https://hbase.apache.org/downloads.html). For example, you may adopt version Hbase 2.5.x for the installed Hadoop 3.3.6.
 
 
 ## K2. Configure HBase [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
@@ -59,8 +59,8 @@ export HBASE_CLASSPATH=${HBASE_HOME}/lib
 export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
 export HBASE_MANAGES_ZK=false
 ~~~
-Please start both zookeeper and kafka servers before this step.
-If you are planning to run the Kafka service as well, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false, i.e.: export HBASE_MANAGES_ZK=false
+> Please start both zookeeper and kafka servers before this step.
+> If you are planning to run the Kafka service as well, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false, i.e. export HBASE_MANAGES_ZK=false
 
 3. Add/Edit the properties in the configuration file $HBASE_HOME/conf/hbase-site.xml
 ~~~xml
@@ -85,17 +85,17 @@ If you are planning to run the Kafka service as well, then in hbase-env.sh chang
 $ jps
 ~~~
 
-5. Start / Restart (if running) the Zookeeper and Kafka:
+5. Start / Restart (if running) the Zookeeper and Kafka services
 ~~~bash
-$ cd kafka
+$ cd ~/kafka
 $ bin/kafka-server-stop.sh
 $ bin/zookeeper-server-stop.sh
 $ bin/zookeeper-server-start.sh config/zookeeper.properties &
 $ bin/kafka-server-start.sh config/server.properties &
 ~~~
-Attention! Please wait at least 30 seconds after issuing each command. Responses may be slow to start following your recent configuration.
+> Attention! Please wait at least 30 seconds after issuing each command. Responses may be slow to start following your recent configuration.
 
-6. Warning! Please verify that Zookeeper and Kafka are running by running the jps command, i.e. you should  see the process: **HQuorumPeer** and **Kafka**, before proceed to the next step. 
+6. Warning! Please verify that Zookeeper and Kafka are running by running the jps command, i.e. you should see the process: **HQuorumPeer** and **Kafka**, before proceed to the next step. 
 
 7. Start the HBase
 ~~~bash
@@ -103,7 +103,7 @@ $ cd ~
 $ $HBASE_HOME/bin/start-hbase.sh
 $ jps
 ~~~
-Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following:
+> Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following commands
 ~~~bash
 $ cd ~
 $ $HBASE_HOME/bin/stop-hbase.sh
@@ -117,22 +117,120 @@ $ jps
 $ $HBASE_HOME/bin/hbase shell
 ~~~
 
-2.	Get a listing of commands:
+2.	Get a listing of commands
 ~~~bash
 hbase(main):003:0> help
 ~~~
 
-3.	Check the status of the HBase cluster: 
+3.	Check the status of the HBase cluster
 ~~~bash
 hbase(main):003:0> status
 ~~~
 
-4.	To view all tables: 
+4.	To view all tables
 ~~~bash
 hbase(main):003:0> list
 ~~~
 
-5.	To exit the HBase Shell: 
+5.	To exit the HBase Shell
 ~~~bash
 hbase(main):003:0> exit
 ~~~
+
+
+
+
+## K4. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1. Login as hduser or switch account to hduser
+~~~bash
+$ su - hduser
+~~~
+
+2. Start ssh,
+~~~bash
+$ sudo service ssh start
+~~~
+
+3. Start the HDFS service
+~~~bash
+$ sbin/start-dfs.sh
+$ jps
+~~~
+> Suppose you need to observe at least four (4) services, including both NameNode and DataNode, as stated in step 12 of G7. Otherwise, you may need to reformat the HDFS NameNode.
+>  ~~~bash
+> $ cd ~/hadoop3
+> $ bin/hdfs namenode -format
+> $ sbin/start-dfs.sh
+> $ hdfs dfs -mkdir /user
+> $ hdfs dfs -mkdir /user/hduser
+> ~~~
+
+4. Start the Yarn service
+~~~bash
+$ sbin/start-yarn.sh
+$ jps
+~~~
+> Suppose you need to observe at least six (6) services in the total, refer steps 12 and 13 of G7.
+
+5. Start the Zookeeper and Kafka services
+~~~bash
+$ cd ~/kafka
+$ bin/kafka-server-stop.sh
+$ bin/zookeeper-server-stop.sh
+$ bin/zookeeper-server-start.sh config/zookeeper.properties &
+$ bin/kafka-server-start.sh config/server.properties &
+~~~
+> Please wait at least 30 seconds after issuing each command. Note that responses may be slow.
+> Suppose you need to observe at least eight (8) services in the total, including both HQuorumPeer and Kafka, as stated in step 6 of K2.
+
+6. Start the HBase
+~~~bash
+$ cd ~
+$ $HBASE_HOME/bin/start-hbase.sh
+$ jps
+~~~
+> Suppose you need to observe at least ten (10) services in the total, including both HMaster and HRegionServer, as stated in step 7 of K2.
+
+
+
+
+
+
+
+## E10. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+
+1. Stop the HBase service
+~~~bash
+$ cd ~
+$ $HBASE_HOME/bin/stop-hbase.sh
+$ jps
+~~~
+> Suppose the two services will be terminated, i.e. HMaster and HRegionServer.
+
+
+2. Stop (if running) the Zookeeper and Kafka services
+~~~bash
+$ cd ~/kafka
+$ bin/kafka-server-stop.sh
+$ bin/zookeeper-server-stop.sh
+~~~
+> Attention! Please wait at least 30 seconds after issuing each command. Responses may be slow.
+> Suppose the two services will be terminated, i.e. HQuorumPeer and Kafka
+
+
+1. Stop the YARN and HDFS services
+~~~bash
+$ sbin/stop-yarn.sh
+$ sbin/stop-dfs.sh
+~~~
+
+3. Exit from your user account(s) 
+~~~bash
+exit
+~~~
+
+4. Issue command top to examine all expected services terminated
+
+
