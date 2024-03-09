@@ -151,6 +151,8 @@ wsl –l -v
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.0 and Jupyter notebook installed, SSH, DFS and YARN services ready, Scala 2.13, Kafka 3.6.1 and HBase 2.5.7
+
+
 -----------------------------------------------------------
 
 ## References
