@@ -198,7 +198,7 @@ $ jps
 
 
 
-## E10. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+## K5. Attention: At the end of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 
 1. Stop the HBase service
@@ -220,17 +220,17 @@ $ bin/zookeeper-server-stop.sh
 > Suppose the two services will be terminated, i.e. HQuorumPeer and Kafka
 
 
-1. Stop the YARN and HDFS services
+3. Stop the YARN and HDFS services
 ~~~bash
 $ sbin/stop-yarn.sh
 $ sbin/stop-dfs.sh
 ~~~
 
-3. Exit from your user account(s) 
+4. Exit from your user account(s) 
 ~~~bash
 exit
 ~~~
 
-4. Issue command top to examine all expected services terminated
+5. Issue command top to examine all expected services terminated
 
 
