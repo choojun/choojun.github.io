@@ -95,7 +95,7 @@ $ bin/kafka-server-start.sh config/server.properties &
 ~~~
 Attention! Please wait at least 30 seconds after issuing each command. Responses may be slow to start following your recent configuration.
 
-6. Warning! Please verify that Zookeeper and Kafka are running by running the jps command, i.e. you should  see the process: HQuorumPeer and Kafka, before proceed to the next step. 
+6. Warning! Please verify that Zookeeper and Kafka are running by running the jps command, i.e. you should  see the process: **HQuorumPeer** and **Kafka**, before proceed to the next step. 
 
 7. Start the HBase
 ~~~bash
@@ -103,7 +103,7 @@ $ cd ~
 $ $HBASE_HOME/bin/start-hbase.sh
 $ jps
 ~~~
-Verify that HBase is running - you should see the HBase processes with jps command, i.e. HMaster and HRegionServer. When you want to stop HBase, type the following:
+Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following:
 ~~~bash
 $ cd ~
 $ $HBASE_HOME/bin/stop-hbase.sh
