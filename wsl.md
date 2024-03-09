@@ -126,7 +126,7 @@ wsl –l -v
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
 1. Hardware requirement: Recommended requirements of WSL or better with internet access constantly ready
-2. Software requirement: WSL 2 with Ubuntu 22.04 distro, Hadoop 3.3.6
+2. Software requirement: WSL 2 with Ubuntu 22.04 distro with **Hadoop 3.3.6**
 
 ## F. [HDFS File Operations and MapReduce](wsl_hdfs)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
@@ -134,7 +134,7 @@ wsl –l -v
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
-2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready, Spark 3.5.0 (for Scala 2.13), web browser
+2. Software requirement: Hadoop 3.3.6 and any web browser installed, SSH, DFS and YARN services ready with **Spark 3.5.0 (for Scala 2.13)**
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
@@ -146,11 +146,15 @@ wsl –l -v
 
 ## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.0 and Jupyter notebook installed, SSH, DFS and YARN services ready, Scala 2.13, Kafka 3.6.1
+2. Software requirement: Hadoop 3.3.6, Spark 3.5.0, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready with **Scala 2.13**, **Kafka 3.6.1**
 
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.0 and Jupyter notebook installed, SSH, DFS and YARN services ready, Scala 2.13, Kafka 3.6.1 and HBase 2.5.7
+2. Software requirement: Hadoop 3.3.6, Spark 3.5.0, Scala 2.13, Kafka 3.6.1 installed and SSH, DFS and YARN services ready with **HBase 2.5.7**
+
+## L. [HappyBase Installation and Configuration](wsl)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6, Spark 3.5.0, Scala 2.13, Kafka 3.6.1, HBase 2.5.7, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready
 
 
 -----------------------------------------------------------
