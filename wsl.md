@@ -71,7 +71,7 @@ wsl –t <distro name>
 
 5. Alternatively, you may issue the following command to terminate a running Linux, e.g. Ubuntu, as follows. Note that you need to provide a valid password (current user) when prompt. The WSL distro may terminate a few minutes later.
 ~~~
-sudo shutdown –r 0
+sudo shutdown now
 ~~~
 
 
