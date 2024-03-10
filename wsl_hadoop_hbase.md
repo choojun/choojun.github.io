@@ -70,7 +70,7 @@ export HBASE_MANAGES_ZK=false
 ~~~
 > Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false, i.e. export HBASE_MANAGES_ZK=false
 
-4. Add/Edit the properties in the configuration file $HBASE_HOME/conf/hbase-site.xml
+4. Add/Edit the properties in the configuration file $HBASE_HOME/conf/hbase-site.xml .
 ~~~xml
 <configuration>
   <property>
