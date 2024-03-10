@@ -32,7 +32,6 @@ $ ll ~/kafka/libs | grep kafka
 ~~~
 > Reinstall the Kafka if it is not those version of your install Scala, say 2.13.x as shown in file kafka_<Scala-version>-<Kafka-version>.*. Remember to delete the existing kafka directory before begin your setup.
 
-
 5.	Download HBase
 ~~~bash
 $ cd ~
@@ -71,6 +70,9 @@ export HBASE_MANAGES_ZK=false
 > Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false
 
 4. Add/Edit the properties of conf/hbase-site.xml 
+~~~bash
+$ pyspark --version
+~~~
 > 123
 
 5. Start / Restart (if running) the Zookeeper and Kafka services
