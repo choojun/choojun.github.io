@@ -68,7 +68,7 @@ export HBASE_CLASSPATH=${HBASE_HOME}/lib
 export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
 export HBASE_MANAGES_ZK=false
 ~~~
-> Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false, i.e. export HBASE_MANAGES_ZK=false
+> Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false
 
 4. Add/Edit the properties of conf/hbase-site.xml 
 ~~~bash
