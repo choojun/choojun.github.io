@@ -52,6 +52,7 @@ export PATH=$HBASE_HOME/bin:$PATH
 ~~~
 
 2.	Set environment variables in $HBASE_HOME/conf/hbase-env.sh by uncomment and edit the environment variables
+
 ~~~bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HBASE_HOME=/home/hduser/hbase
@@ -59,10 +60,12 @@ export HBASE_CLASSPATH=${HBASE_HOME}/lib
 export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
 export HBASE_MANAGES_ZK=false
 ~~~
+
 > Please start both zookeeper and kafka servers before this step.
 > If you are planning to run the Kafka service as well, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false, i.e. export HBASE_MANAGES_ZK=false
 
 3. Add/Edit the properties in the configuration file $HBASE_HOME/conf/hbase-site.xml
+
 ~~~xml
 <configuration>
   <property>
@@ -87,6 +90,7 @@ $ jps
 ~~~
 
 5. Start / Restart (if running) the Zookeeper and Kafka services
+
 ~~~bash
 $ cd ~/kafka
 $ bin/kafka-server-stop.sh
@@ -94,6 +98,7 @@ $ bin/zookeeper-server-stop.sh
 $ bin/zookeeper-server-start.sh config/zookeeper.properties &
 $ bin/kafka-server-start.sh config/server.properties &
 ~~~
+
 > Attention! Please wait at least 30 seconds after issuing each command. Responses may be slow to start following your recent configuration.
 
 6. Warning! Please verify that Zookeeper and Kafka are running by running the jps command, i.e. you should see the process: **HQuorumPeer** and **Kafka**, before proceed to the next step. 
