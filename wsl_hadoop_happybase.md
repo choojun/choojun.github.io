@@ -78,8 +78,158 @@ $ python
 ~~~
 
 
+## L3. Creating Tables in HBase [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+1.	Open another session in terminal, and login as hduser. Then, launch the python command-line interpreter
+~~~bash
+$ python
+~~~
+
+2. Create a new HBase table with a single column-family
+~~~bash
+>>> connection.create_table('mytable', {'cf1':dict()})
+~~~
+> If you encounter the following exception,
+>> **thriftpy2.transport.base.TTransportException:
+>> TTransportException(type=4, message='TSocket read 0 bytes')**
+>> 
+> Run the statement to create a connection to the localhost again and then the statement to create the table once again. List all the available HBase tables to confirm that the table has been successfully created.
+
+3. Create a HBase table with 3 column families as described below
+   - cf1	:	maximum 10 columns
+   - cf2	:	maximum 2 columns with the data blocks resident in memory after they are read
+   - cf3	:	no setting of columns/attributes.
+~~~bash
+>>> connection.create_table('mytable2', {'cf1':dict(max_versions=10),'cf2':dict(max_versions=2, block_cache_enabled=False), 'cf3':dict()})
+~~~
+> List all the available HBase tables to confirm that the table has been successfully created.
+
+4. Create a tables with table namespace
+~~~bash
+>>> connection2 = happybase.Connection(host='localhost', port=9090, table_prefix='prj_pfx')
+>>> connection2.create_table('mytable3', {'cf1':dict(max_versions=5),'cf2':dict(max_versions=2)})
+~~~
+> List all the available HBase tables to confirm that the table has been successfully created.
+
+5. Invoke the HBase shell to check the tables that were created using HappyBase
+~~~bash
+$ cd ~/hbase
+$ bin/hbase shell
+~~~
+
+6. List all the HBase tables
+~~~bash
+hbase(main):003:0> list
+~~~
+
+7. Show the description of the newly created tables
+~~~bash
+hbase(main):003:0> describe 'mytable'
+hbase(main):003:0> describe 'mytable2'
+hbase(main):003:0> describe 'prj_pfx_mytable3'
+~~~
+
+
+## L4. Inserting Values into the HBase Table [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+1.	Identify a table instance, i.e. mytable, for data insertion after the required connection
+~~~bash
+>>> c = happybase.Connection(host='localhost', port=9090)
+>>> t = c.table('mytable') # get a Table instance
+~~~
+
+2.	Insert values into mytable cell by cell
+~~~bash
+>>> t.put('k1', {'cf1:c1':'v1'})
+>>> t.put('k1', {'cf1:c2':'v2'})
+>>> t.put('k1', {'cf1:c3':'v3'})
+>>> t.put('k2', {'cf1:c1':'vv1', 'cf1:c2':'vv2', 'cf1:c3':'vv3'})
+~~~
+
+3.	Insert values into table with the namespace prefix
+~~~bash
+>>> c = happybase.Connection(port=9090)
+>>> t3 = c.table('prj_pfx_mytable3')
+>>> t3.put('rk1', {'cf1:country':'UK'})
+>>> t3.put('rk1', {'cf1:city':'London'})
+>>> t3.put('rk1', {'cf1:industry':'Manufacturing'})
+>>> t3.put('rk1', {'cf2:department':'Production', 'cf2:title':'Senior Manager'})
+>>> t3.put('rk2', {'cf1:country':'Malaysia', 'cf1:city':'KL', 'cf1:industry':'Software Development', 'cf2:department':'QA', 'cf2:title':'Test Engineer'})
+~~~
+> If you encounter a socket.error: [Errno 32] Broken pipe error, make sure that you have obtained the Table instance. If the error still exists, then kill the Thrift process and re-start it.
 
 
 
+
+## L5. Retrieving Values from the HBase Tables [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+1.	Retrieve values by individual data fields of row-key
+~~~bash
+>>> row = t3.row(b'rk1')
+>>> print(row[b'cf1:industry'])
+>>> print(row[b'cf1:country'])
+>>> print(row[b'cf1:city'])
+>>> print(row[b'cf2:department'])
+>>> print(row[b'cf2:title'])
+
+>>> row = t3.row(b'rk2')
+>>> print(row[b'cf1:country'])
+>>> print(row[b'cf1:city'])
+>>> print(row[b'cf1:industry'])
+>>> print(row[b'cf2:department'])
+>>> print(row[b'cf2:title'])
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
+
+2.	Retrieve valu
+~~~bash
+>>> row = 
+~~~
 
 
