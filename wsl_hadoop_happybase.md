@@ -177,59 +177,124 @@ hbase(main):003:0> describe 'prj_pfx_mytable3'
 >>> print(row[b'cf2:title'])
 ~~~
 
-2.	Retrieve valu
+2.	Retrieve all the data fields of  row-key 'rk2'
 ~~~bash
->>> row = 
+>>> print("data for row-key 'rk2':\n", row)
 ~~~
 
-2.	Retrieve valu
+3.	Process multiple rows
 ~~~bash
->>> row = 
+>>> m_rows = t3.rows(['rk1', 'rk2'])
+>>> for r in m_rows:
+...     print("data in current row: ", r)
 ~~~
 
-2.	Retrieve valu
+4.	Extract the column-families of each row as a dictionary
 ~~~bash
->>> row = 
+>>> for r in m_rows:
+...     r_as_dict = dict(r[1])
+...     print("\nr: ", r)
+...     print("\tAs dict: ", r_as_dict)
 ~~~
 
-2.	Retrieve valu
+5.	Extract all the cities from the rows
 ~~~bash
->>> row = 
+>>> city_list = []
+>>> for r in m_rows:
+...     r_as_dict = dict(r[1])
+...     city_list.append(r_as_dict[b'cf1:city'])
+...
+>>> print(city_list)
 ~~~
 
-2.	Retrieve valu
+6.	Fine-grained selections - multiple cell retrieval
 ~~~bash
->>> row = 
+>>> c = happybase.Connection(port=9090)
+>>> t3 = c.table('prj_pfx_mytable3')
+>>> row = t3.row(b'rk1', columns=[b'cf1:country', b'cf2:title'])
+>>> print(row)
+>>> print(row[b'cf1:country'])
+>>> print(row[b'cf2:title'])
 ~~~
 
-2.	Retrieve valu
+7.	Fine-grained selections - all columns belonging to a column-family
 ~~~bash
->>> row = 
+>>> c = happybase.Connection(port=9090)
+>>> t3 = c.table('prj_pfx_mytable3')
+>>> row = t3.row(b'rk1', columns=[b'cf1'])
+>>> print(row)
 ~~~
 
-2.	Retrieve valu
+8.	Retrieve with timestamps
 ~~~bash
->>> row = 
+>>> c = happybase.Connection(port=9090)
+>>> t3 = c.table('prj_pfx_mytable3')
+>>> row = t3.row(b'rk1', columns=[b'cf1:country'], include_timestamp=True)
+>>> value, timestamp = row[b'cf1:country']
+>>> print(value)
+>>> print(timestamp)
 ~~~
 
-2.	Retrieve valu
+9.	Retrieve cells based on versions
 ~~~bash
->>> row = 
+>>> cells = t3.cells(b'rk1', b'cf1:country', versions=3, include_timestamp=True)
+>>> for value, timestamp in cells:
+...  print("Cell data at {}:{}".format(timestamp, value))
 ~~~
 
-2.	Retrieve valu
+10.	Iterating through rows and extracting data fields
 ~~~bash
->>> row = 
+>>> for key, data in t3.scan():
+...    print("\nCompany record key: ", key.decode())
+...    print("\tCompany info:")
+...    print("\t\tLocation: {}, {}".format(data[b'cf1:city'].decode(), data[b'cf1:country'].decode()))
+...    print("\t\tIndustry: {}".format(data[b'cf1:industry'].decode()))
+...    print("\tContact person info:")
+...    print("\t\tTitle & Department: {}, {}".format(data[b'cf2:title'].decode(), data[b'cf2:department'].decode()))
+...
 ~~~
 
-2.	Retrieve valu
+11.	Select range of rows starting from row_start
 ~~~bash
->>> row = 
+>>> for key, data in t3.scan(row_start=b'rk2'):
+...     print(key, data)
 ~~~
 
-2.	Retrieve valu
+12.	Select range of rows up to row_stop
 ~~~bash
->>> row = 
+>>> for key, data in t3.scan(row_stop=b'rk2'):
+...     print(key, data)
+~~~
+
+13.	Select range based on specified key range
+~~~bash
+>>> for key, data in t3.scan(row_start=b'rk1', row_stop=b'rk3'):
+...     print(key, data)
+...
+~~~
+> Have a look from hbase shell
+~~~bash
+hbase> scan 'prj_pfx_mytable3'
+~~~
+
+14.	Select range based on key prefix
+~~~bash
+>>> t3.put('kr4', {'cf1:country':'Australia', 'cf1:city':'Sydney', 'cf1:industry':'Tourism', 'cf2:department':'Human Resource', 'cf2:title':'Manager'})
+>>> for key, data in t3.scan(row_prefix=b'k'):
+...     print(key, data)
+...
 ~~~
 
 
+
+
+## L6. Deleting Values from the HBase Tables [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+1.	Delete a row
+~~~bash
+>>> t3.delete(b'rk2')
+~~~
+
+2.	Delete specific cells of a row
+~~~bash
+>>> t3.delete(b'rk1', columns=[b'cf1:city', b'cf2:title'])
+~~~
