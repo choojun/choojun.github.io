@@ -102,11 +102,17 @@ $ cd ~
 $ $HBASE_HOME/bin/start-hbase.sh
 $ jps
 ~~~
-> Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following commands
+> Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following commands 
 ~~~bash
 $ cd ~
 $ $HBASE_HOME/bin/stop-hbase.sh
 $ jps
+~~~
+> You may choose to clear all the HBase data with following commands
+~~~bash
+$ hdfs dfs -ls /
+$ hdfs dfs -rm -r /hbase
+$ hdfs dfs -ls /
 ~~~
 
 ## K3. Using HBase Shell [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
