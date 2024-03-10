@@ -108,7 +108,7 @@ $ cd ~
 $ $HBASE_HOME/bin/stop-hbase.sh
 $ jps
 ~~~
-> You may choose to clear all the HBase data with following commands
+> You may choose to clear all the HBase data, after stopped both HMaster and HRegionServer, using the following commands
 ~~~bash
 $ hdfs dfs -ls /
 $ hdfs dfs -rm -r /hbase
