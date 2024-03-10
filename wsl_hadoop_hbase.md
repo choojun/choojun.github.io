@@ -102,7 +102,8 @@ $ cd ~
 $ $HBASE_HOME/bin/start-hbase.sh
 $ jps
 ~~~
-> Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. When you want to stop HBase, type the following commands 
+> Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. Note that you may ignore the errors due to SLF4J during HBase startup, as it will eventually perform logging to a plain text in local file system.
+> When you want to stop HBase, type the following commands 
 ~~~bash
 $ cd ~
 $ $HBASE_HOME/bin/stop-hbase.sh
