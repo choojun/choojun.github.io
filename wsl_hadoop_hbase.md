@@ -30,7 +30,7 @@ $ pyspark --version
 $ scala -version
 $ ll ~/kafka/libs | grep kafka
 ~~~
-> Reinstall the Kafka if it is not those version of your install Scala, say 2.13.x as shown in file kafka_(Scala-version)-<(Kafka-version).*. Remember to delete the existing kafka directory before begin your setup.
+> Reinstall the Kafka if it is not those version of your install Scala, say 2.13.x as shown in file kafka_(Scala-version)-(Kafka-version).*. Remember to delete the existing kafka directory before begin your setup.
 
 5.	Download HBase
 ~~~bash
