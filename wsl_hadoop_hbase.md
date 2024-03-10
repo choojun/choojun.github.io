@@ -71,20 +71,22 @@ export PATH=$HBASE_HOME/bin:$PATH
 
 4. Add/Edit the properties of conf/hbase-site.xml 
 ~~~xml
-  <configuration>
-    <property>
-      <name>hbase.cluster.distributed</name>
-      <value>true</value>
-    </property>
-    <property>
-      <name>hbase.rootdir</name>
-      <value>hdfs://localhost:9000/hbase</value>
-    </property>
-    <property>
-      <name>hbase.wal.provider</name>
-      <value>filesystem</value>
-    </property>
-  </configuration>
+
+    <configuration>
+      <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+      </property>
+      <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://localhost:9000/hbase</value>
+      </property>
+      <property>
+        <name>hbase.wal.provider</name>
+        <value>filesystem</value>
+      </property>
+    </configuration>
+
 ~~~
 
 5. Start / Restart (if running) the Zookeeper and Kafka services
