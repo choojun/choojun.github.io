@@ -81,6 +81,7 @@ export HBASE_MANAGES_ZK=false
 ~~~
 
 4. Ensure that HDFS and YARN processes are already running, and you may check the required six services with following command
+
 ~~~bash
 $ jps
 ~~~
