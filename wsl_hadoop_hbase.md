@@ -71,7 +71,20 @@ export HBASE_MANAGES_ZK=false
 
 4. Add/Edit the properties of conf/hbase-site.xml 
 ~~~bash
-$ pyspark --version
+<configuration>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://localhost:9000/hbase</value>
+  </property>
+  <property>
+    <name>hbase.wal.provider</name>
+    <value>filesystem</value>
+  </property>
+</configuration>
 ~~~
 > 123
 
