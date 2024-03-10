@@ -61,11 +61,11 @@ export PATH=$HBASE_HOME/bin:$PATH
 
 3.	Set environment variables in $HBASE_HOME/conf/hbase-env.sh by uncomment and edit the environment variables
 ~~~bash
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export HBASE_HOME=/home/hduser/hbase
-export HBASE_CLASSPATH=${HBASE_HOME}/lib
-export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
-export HBASE_MANAGES_ZK=false
+  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+  export HBASE_HOME=/home/hduser/hbase
+  export HBASE_CLASSPATH=${HBASE_HOME}/lib
+  export HBASE_REGIONSERVERS=${HBASE_HOME}/conf/regionservers
+  export HBASE_MANAGES_ZK=false
 ~~~
 > Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false
 
