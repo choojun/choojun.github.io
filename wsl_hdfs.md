@@ -141,7 +141,7 @@ $ hdfs dfs -ls testHDFS/
 
 15.	You will observe that you still have the testHDFS directory and testFile2 leftover that you created. Remove the directory with the following command
 ~~~bash
-$ hdfs dfs -rm -r testhdfs
+$ hdfs dfs -rm -r testHDFS
 $ hdfs dfs -ls
 ~~~
 > In addition to the above commands, there are a number of POSIX-like commands (https://en.wikipedia.org/wiki/List_of_POSIX_commands) which include chgrp, chown, cp, du, mkdir, stat, tail
