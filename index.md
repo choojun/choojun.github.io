@@ -1,6 +1,6 @@
 # Hello World!
 
-To date, my research interest is in the design and development of computational intelligence models, especially the evolutionary algorithms of evolutionary computation, and their applications.
+To date, my research interest is in the design and development of computational intelligence (https://en.wikipedia.org/wiki/Computational_intelligence) models, especially the evolutionary algorithms of evolutionary computation (https://en.wikipedia.org/wiki/Evolutionary_computation), and their applications.
 
 Happy reading!
 
