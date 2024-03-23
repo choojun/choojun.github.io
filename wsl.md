@@ -3,7 +3,7 @@
 
 ## A. Remove/Setup WSL (tested on Windows 10 and WSL v2)
 
-1. Hardware requirement: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **internet constantly access** during exercises.
+1. Hardware requirement: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **constant internet access** during exercises.
 Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10) too!  
 Software reqirement:
    - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
@@ -129,39 +129,39 @@ wsl –l -v
 -----------------------------------------------------------
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
-1. Hardware requirement: Recommended requirements of WSL or better with internet access constantly ready
+1. Hardware requirement: Recommended requirements of WSL or better with constant internet access ready
 2. Software requirement: WSL 2 with Ubuntu 22.04 distro with **Hadoop 3.3.6**
 
 ## F. [HDFS File Operations and MapReduce](wsl_hdfs)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and any web browser installed, SSH, DFS and YARN services ready with **Spark 3.5.1 (for Scala 2.13)**
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and Spark 3.5.1 installed, SSH, DFS and YARN services ready, 
 
 ## I. [Spark and Visualization](wsl_pyspark_viz)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1 and Jupyter notebook installed, SSH, DFS and YARN services ready
 
 ## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready with **Scala 2.13** and **Kafka 3.7.0**
 
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0 installed and SSH, DFS and YARN services ready with **HBase 2.5.7**
 
 ## L. [HappyBase Installation and Configuration](wsl_hadoop_happybase)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0, HBase 2.5.7, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready
 
 ## M. [Hive Installation and Configuration](wsl)
-1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 installed and SSH, DFS and YARN services ready with **Hive 3.1.3**
 
 -----------------------------------------------------------
