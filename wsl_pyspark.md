@@ -9,39 +9,44 @@
 
 ## G1. Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-1.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
+1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
+    - SSH
+    - HDFS
+    - YARN
+
+2.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
 ~~~bash
 $ wget https://downloads.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
-2.	Uncompress the file
+3.	Uncompress the file
 ~~~bash
 $ tar -xvzf spark-3.5.0-bin-hadoop3-scala2.13.tgz
 ~~~
 
-3.	Rename the Spark folder as spark
+4.	Rename the Spark folder as spark
 ~~~bash
 $ mv spark-3.5.0-bin-hadoop3-scala2.13 spark
 ~~~
 
-4.	Edit the file ~/.bashrc with the the following lines
+5.	Edit the file ~/.bashrc with the the following lines
 ~~~bash
 export SPARK_HOME=/home/hduser/spark
 export PATH=$SPARK_HOME/bin:$PATH
 ~~~
 
-5.	Re-load the environment
+6.	Re-load the environment
 ~~~bash
 source ~/.bashrc
 ~~~
 
-5.	Launch the PySpark interactive shell/interpreter
+7.	Launch the PySpark interactive shell/interpreter
 ~~~bash
 pyspark
 ~~~
 > To exit the pyspark shell with command exit()
 
-6. To minimize the verbosity of Spark , you need to configure the settings of log4j after duplicating the template file (optional).
+8. To minimize the verbosity of Spark , you need to configure the settings of log4j after duplicating the template file (optional).
 ~~~bash
 $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.properties
 ~~~
