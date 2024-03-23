@@ -4,13 +4,10 @@
 
 ## K1. Install HBase [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-1.	Login as hduser, and check the installed scala package
-~~~bash
-$ cd ~/hadoop3
-$ sbin/start-dfs.sh
-$ sbin/start-yarn.sh
-$ cd ~
-~~~
+1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
+    - SSH
+    - HDFS
+    - YARN
 
 2.	Check the installed version of Hadoop
 ~~~bash
