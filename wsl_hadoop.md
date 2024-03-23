@@ -456,7 +456,7 @@ $ jps
 > $ hdfs dfs -mkdir /user/hduser
 > ~~~
 
-4. Start the Yarn service
+4. Start the Yet Another Resource Negotiator (YARN) service
 ~~~bash
 $ sbin/start-yarn.sh
 $ jps
