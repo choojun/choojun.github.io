@@ -310,6 +310,11 @@ $ ssh localhost
         <name>dfs.replication</name>
         <value>1</value>
       </property>
+      <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/home/hduser/hadoopData/dfs/data</value>
+        <final>true</final>
+       </property>
     </configuration>
  ~~~
 
