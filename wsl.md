@@ -160,6 +160,9 @@ wsl –l -v
 1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.0, Scala 2.13, Kafka 3.7.0, HBase 2.5.7, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready
 
+## M. [Hive Installation and Configuration](wsl)
+1. Hardware requirement: Requirements as for the WSL or better with internet access constantly ready
+2. Software requirement: Hadoop 3.3.6 installed and SSH, DFS and YARN services ready with **Hive 3.1.3**
 
 -----------------------------------------------------------
 
