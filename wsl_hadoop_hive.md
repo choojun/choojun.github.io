@@ -62,7 +62,7 @@ $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
 ~~~
 
-7. Change mode of access for hadoop's data and namenode, which are created in Section 
+7. Change mode of access for hadoop's data and namenode, which are created in Section E
 ~~~bash
 $ chmod -R g+w /home/hduser/hadoopData
 $ chmod -R g+w /home/hduser/hadoopName
@@ -75,7 +75,11 @@ $ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
-
+9. Run the following command to initialize Derby as the Metastore database for Hive
+~~~bash
+$ cd $HIVE_HOME
+$ bin/schematool -initSchema -dbType derby
+~~~
 
 ### Steps 7 - 10 are useful to setup the Derby in Server Mode. 
 > For pseudo-distributed mode, kindly refer to the Hive-Installation section at this link: https://www.tutorialspoint.com/hive/hive_installation.htm
