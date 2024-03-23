@@ -378,7 +378,7 @@ $ ssh localhost
  > ~~~
  > Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
 
-13. Start the Yarn service
+13. Start the Yet Another Resource Negotiator (YARN) service
  ~~~bash
  $ sbin/start-yarn.sh
  ~~~
@@ -456,7 +456,7 @@ $ jps
 > $ hdfs dfs -mkdir /user/hduser
 > ~~~
 
-4. Start the Yet Another Resource Negotiator (YARN) service
+4. Start the YARN service
 ~~~bash
 $ sbin/start-yarn.sh
 $ jps
