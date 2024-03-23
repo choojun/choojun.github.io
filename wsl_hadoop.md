@@ -372,9 +372,9 @@ $ ssh localhost
  > Check the status. If the NameNode and DataNode services are initiated successfully, you should see these four processes
  > ~~~
  > DataNode
- > SecondaryNameNode
  > Jps
  > NameNode
+ > SecondaryNameNode
  > ~~~
  > Browse any web browser for the NameNode, by default, and it is available at URL http://localhost:9870/
 
@@ -386,7 +386,7 @@ $ ssh localhost
  ~~~bash
  $ jps
  ~~~
- > Check the status. If the Yarn services are initiated successfully, you should see six processes.
+ > Check the status. If the Yarn services are initiated successfully, you should see a total of six processes (included these two).
  > ~~~
  > ResourceManager
  > NodeManager
