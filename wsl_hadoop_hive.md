@@ -12,12 +12,43 @@
 
 2.	Install Hive
 ~~~bash
+$ cd ~
 $ wget  https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
 $ tar -xvzf apache-hive-3.1.3-bin.tar.gz
 $ mv apache-hive-3.1.3-bin hive
 ~~~
 
+3.	Edit the file ~/.bashrc with the the following lines 
+~~~bash
+ export HIVE_HOME=/home/hduser/hive
+ export PATH=$PATH:$HIVE_HOME/bin
+~~~
 
+4. Re-load the environment
+~~~bash
+$ source ~/.bashrc
+~~~
 
+5. Create Hive directories in the HDFS
+~~~bash
+$ hdfs dfs -mkdir /tmp
+$ hdfs dfs -mkdir /user
+$ hdfs dfs -mkdir /user/hduser
+$ hdfs dfs -mkdir /user/hduser/warehouse
+$ hdfs dfs -mkdir /user/hduser/lib
+$ hdfs dfs -chmod g+w /tmp
+$ hdfs dfs -chmod g+w /user
+$ hdfs dfs -chmod g+w /user/hduser
+$ hdfs dfs -chmod g+w /user/hduser/warehouse
+$ hdfs dfs -chmod 777 /user/hduser/lib
+~~~
 
+6. Delete the log4j-slf4j-impl-2.17.1.jar file
+~~~bash
+$ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
+~~~
+> We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
+
+### Steps 7 - 10 are useful to setup the Derby in Server Mode. 
+> For pseudo-distributed mode, kindly refer to the Hive-Installation section at this link: https://www.tutorialspoint.com/hive/hive_installation.htm
 
