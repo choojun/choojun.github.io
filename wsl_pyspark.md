@@ -224,7 +224,7 @@ or
 1.	Make a copy of the C:\de\SparkApp folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/SparkApp /home/hduser
-$ sudo chown hduser:hduser /home/hduser/SparkApp
+$ sudo chown -r hduser:hduser /home/hduser/SparkApp
 ~~~
 
 2.	Change directory to the SparkApp folder, and review the code in wordcount.py
@@ -295,7 +295,7 @@ $ pip3 install reverse_geocoder
 4.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory
 ~~~bash
 $ sudo cp -r /mnt/c/de/sparksql /home/hduser
-$ sudo chown hduser:hduser -R /home/hduser/sparksql
+$ sudo chown -r hduser:hduser -R /home/hduser/sparksql
 ~~~
 
 5.	Change directory to the sparksql folder, and review the code in wordcount.py
@@ -387,7 +387,7 @@ $ source ~/.bashrc
 6.	Make a copy of the C:\de\sparksql folder in the local hduser’s home directory (optional)
 ~~~bash
 $ sudo cp -r /mnt/c/de/sparksql /home/hduser
-$ sudo chown hduser:hduser -R /home/hduser/sparksql
+$ sudo chown -r hduser:hduser -R /home/hduser/sparksql
 ~~~
 
 7. To start the Jupyter notebook server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
