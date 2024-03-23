@@ -52,7 +52,7 @@ $ jps
 $ bin/kafka-server-stop.sh
 $ bin/zookeeper-server-stop.sh
 ~~~
-> When you have finished running your exercises, you need stop the Kafka service
+> **Attention**: When you have finished your exercises (before shutdown your Windows), you need stop the Kafka and Zookeeper services
 
 
 
