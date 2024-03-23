@@ -237,6 +237,7 @@ $ cat wordcount.py | more
 ~~~bash
 $ spark-submit wordcount.py shakespeare.txt hdfs://localhost:9000/user/hduser/spark_wc
 ~~~
+> May always re-submit the same job by using different directory name, e.g. give a new name instead of **spark_wc**
 
 4.	You may check the results directory in the HDFS system and view the beginning portion of the output file part-00000
 ~~~bash
