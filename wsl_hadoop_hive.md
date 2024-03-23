@@ -49,6 +49,24 @@ $ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
+
+
 ### Steps 7 - 10 are useful to setup the Derby in Server Mode. 
 > For pseudo-distributed mode, kindly refer to the Hive-Installation section at this link: https://www.tutorialspoint.com/hive/hive_installation.htm
+
+## M2. Install and COnfigure Derby [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1. Install and configure Derby
+~~~bash
+$ cd ~
+$ wget https://archive.apache.org/dist/db/derby/db-derby-10.14.2.0/db-derby-10.14.2.0-bin.tar.gz
+$ tar -xzf db-derby-10.14.2.0-bin.tar.gz
+$ mv db-derby-10.14.2.0-bin derby 
+$ mkdir derby/data
+~~~
+
+2. Edit the file /etc/profile.d/derby.sh with the the following lines
+~~~bash
+$ cd ~
+~~~
 
