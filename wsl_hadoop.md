@@ -315,6 +315,11 @@ $ ssh localhost
         <value>/home/hduser/hadoopData/dfs/data</value>
         <final>true</final>
        </property>
+       <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/home/hduser/hadoopName/dfs/data</value>
+        <final>true</final>
+       </property>
     </configuration>
  ~~~
 
