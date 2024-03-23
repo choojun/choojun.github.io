@@ -1,6 +1,6 @@
 # Hello World!
 
-To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications. I have published several indexed articles, as listed in the [Web of Science (WOS)](https://www.webofscience.com/wos/author/rid/O-6251-2014).
+To date, my research interest is in the design and development of computational intelligence models, especially evolutionary algorithms, and their applications.
 
 Happy reading!
 
