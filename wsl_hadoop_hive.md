@@ -25,8 +25,9 @@ $ mv apache-hive-3.1.3-bin hive
  export HADOOP_HDFS_HOME=${HADOOP_HOME}
  export YARN_HOME=${HADOOP_HOME}
  export HIVE_HOME=/home/hduser/hive
+ export HIVE_CONF_DIR=$HIVE_HOME/conf
  export PATH=$PATH:$HIVE_HOME/bin
- export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:$HIVE_HOME/lib/*
+ export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:$HADOOP_HOME/lib/native/*:$HIVE_HOME/lib/*
 ~~~
 
 4. Re-load the environment
@@ -34,7 +35,7 @@ $ mv apache-hive-3.1.3-bin hive
 $ source ~/.bashrc
 ~~~
 
-5. Duplicate the file $HIVE_HOME/conf/hive-site.xml 
+5. Duplicate for the file $HIVE_HOME/conf/hive-site.xml 
 ~~~bash
 $ cd $HIVE_HOME
 $ cp conf/hive-default.xml.template conf/hive-site.xml
@@ -46,7 +47,18 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 * Replace all occurrences of /user/hive tp /user/hduser
 > You may want to use nano's search (Ctrl-w with Enter) to find the targeted keyword, and replace them one by one with typing.
 
-7. Create Hive directories in the HDFS
+7. Edit the file $HIVE_HOME/conf/hive-config.sh with the the following lines 
+~~~bash
+ export HADOOP_HOME=/home/hduser/hadoop3
+~~~
+
+8. Duplicate for the file $HIVE_HOME/conf/hive-??.xml 
+~~~bash
+$ cd $xxx
+~~~
+
+
+8. Create Hive directories in the HDFS
 ~~~bash
 $ hdfs dfs -mkdir /tmp
 $ hdfs dfs -mkdir /tmp/hduser
@@ -62,26 +74,22 @@ $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
 ~~~
 
-7. Change mode of access for hadoop's data and namenode, which are created in Section E
+9. Change mode of access for hadoop's data and namenode, which are created in Section E
 ~~~bash
 $ chmod -R g+w /home/hduser/hadoopData
 $ chmod -R g+w /home/hduser/hadoopName
 ~~~
 
 
-8. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
+xxxx. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
 ~~~bash
 $ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
-9. Run the following command to initialize Derby as the Metastore database for Hive
-~~~bash
-$ cd $HIVE_HOME
-$ bin/schematool -initSchema -dbType derby
-~~~
 
-### Steps 7 - 10 are useful to setup the Derby in Server Mode. 
+
+### xxxx Steps 7 - 10 are useful to setup the Derby in Server Mode. 
 > For pseudo-distributed mode, kindly refer to the Hive-Installation section at this link: https://www.tutorialspoint.com/hive/hive_installation.htm
 
 ## M2. Install and Configure Derby [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
@@ -95,8 +103,58 @@ $ mv db-derby-10.14.2.0-bin derby
 $ mkdir derby/data
 ~~~
 
-2. Edit the file /etc/profile.d/derby.sh with the the following lines
+2. Edit the file ~/.bashrc with the the following lines 
 ~~~bash
-$ cd ~
+ export DERBY_INSTALL=/home/hduser/derby
+ export DERBY_HOME=/home/hduser/derby
+ export PATH=$PATH:$DERBY_HOME/bin
 ~~~
 
+3. Re-load the environment
+~~~bash
+$ source ~/.bashrc
+~~~
+
+4. Configure Hive to Use Local/Network Derby by changing the property values 
+~~~xml
+<property>
+  <name>javax.jdo.option.ConnectionURL</name>
+  <value>jdbc:derby://localhost:1527;databaseName=metastore_db;create=true</value>
+  <description>JDBC connect string for a JDBC metastore</description>
+</property>
+<property>
+  <name>javax.jdo.option.ConnectionDriverName</name>
+  <value>org.apache.derby.jdbc.ClientDriver</value>
+  <description>Driver class name for a JDBC metastore</description>
+</property>
+<property>
+  <name>hive.exec.local.scratchdir</name>
+  <value>/tmp/${user.name}</value>
+  <description>Local scratch space for Hive jobs</description>
+</property>
+<property>
+  <name>hive.downloaded.resources.dir</name>
+  <value>/tmp/${hive.session.id}_resources</value>
+  <description>Temporary local directory for added resources in the remote file system.</descri>  </property>
+<property>
+  <name>hive.querylog.location</name>
+  <value>/tmp/${user.name}</value>
+  <description>Location of Hive run time structured log file</description>
+</property>
+<property>
+  <name>hive.server2.logging.operation.log.location</name>
+  <value>/tmp/${user.name}/operation_logs</value>
+  <description>Top level directory where operation logs are stored if logging functionality is >  </property>
+<property>
+  <name>hive.downloaded.resources.dir</name>
+  <value>/tmp/${user.name}_resources</value>
+  <description>Temporary local directory for added resources in the remote file system.</description>
+</property>
+~~~
+
+
+Last last. Run the following command to initialize Derby as the Metastore database for Hive
+~~~bash
+$ cd $HIVE_HOME
+$ bin/schematool -initSchema -dbType derby
+~~~
