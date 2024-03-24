@@ -260,3 +260,8 @@ Transaction isolation: TRANSACTION_REPEATABLE_READ
 > !q
 > ~~~~
 
+## M4. Guided Tutorials on Hive [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1. https://cwiki.apache.org/confluence/display/hive/tutorial
+2. https://sparkbyexamples.com/apache-hive-tutorial/
+3. https://www.simplilearn.com/tutorials/hadoop-tutorial/hive
