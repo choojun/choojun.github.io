@@ -89,7 +89,7 @@ $ chmod -R g+w /home/hduser/hadoopName
 
 12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
 ~~~bash
-$ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
+$ rm $HIVE_HOME/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
