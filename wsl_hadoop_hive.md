@@ -154,7 +154,7 @@ $ source ~/.bashrc
 </property>
 ~~~
 
-3. Add the following proxy in file $HADOOP_HOME/etc/hadoop/core-site.xml of hadoop, and restart hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
+5. To allow Hive to connect to Derby through JDBC, add the following lines to the core-site.xml file located at $HADOOP_HOME/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
  ~~~xml
     <configuration>
       <property>
@@ -179,8 +179,15 @@ $ source ~/.bashrc
 > $ jps
 > ~~~
 
+6. To allow PySpark to connect to hive cluster, duplicate (by overwriting) the following files to destination Spark
+~~~bash
+$ cp -f $HADOOP_HOME/etc/hadoop/core-site.xml $SPARK_HOME/conf/
+$ cp -f $HADOOP_HOME/etc/hadoop/hdfs-site.xml $SPARK_HOME/conf/
+$ cp -f $HIVE_HOME/hive/conf/hive-site.xml $SPARK_HOME/conf/
+~~~
+> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if any changes in the involved three files in nearly future.
 
-3. Run the Derby. It will create databases in the current directory by default
+7. Run the Derby. Note that it will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
 $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
@@ -196,6 +203,9 @@ $ jps
 ~~~bash
 $ kill -9 25410
 ~~~
+
+
+
 
 Last last. Run the following command to initialize Derby as the Metastore database for Hive
 ~~~bash
