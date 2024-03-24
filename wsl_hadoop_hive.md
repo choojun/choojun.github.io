@@ -1,7 +1,7 @@
 # M. Hive Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. It is a distributed, fault-tolerant data warehouse system that enables analytics at a massive scale and facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL
-2. Read more on Hive at URL [https://hbase.apache.org/book.html](https://cwiki.apache.org/confluence/display/Hive/GettingStarted)
+2. Read more on Hive at URL https://cwiki.apache.org/confluence/display/Hive/GettingStarted and https://cwiki.apache.org/confluence/display/Hive/Home
 
 ## M1. Install and Configure Hive [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
@@ -190,7 +190,8 @@ $ cp -f $HIVE_HOME/conf/hive-site.xml $SPARK_HOME/conf/
 $ cp -f $DERBY_HOME/lib/derbyclient.jar $SPARK_HOME/jars/
 $ cp -f $DERBY_HOME/lib/derbytools.jar $SPARK_HOME/jars/
 ~~~
-> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if any changes in the involved files in nearly future.
+> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step.
+> You need to redo this step if any changes in the involved files in nearly future.
 
 
 7. Run the Derby. Note that it will create databases in the current directory by default
@@ -211,8 +212,6 @@ $ kill -9 25410
 ~~~
 
 
-
-
 8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
 ~~~bash
 $ cp ~
@@ -220,3 +219,23 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/
 $
 ~~~
 > You may have corrupted characters in file $HIVE_HOME/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
+
+
+## M3. Running HiveServer2 and Beeline [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1. HiveServer2 (HS2) is a service that enables clients to execute queries against Hive. HS2 supports multi-client concurrency and authentication. It is designed to provide better support for open API clients like JDBC and ODBC. Read more on HiveServer2 at URL https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Overview
+
+2. HiveServer2 supports a command shell Beeline that works with HiveServer2. It's a JDBC client that is based on the SQLLine CLI (http://sqlline.sourceforge.net/). Read more on Beeline at URL https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
+
+3. Run HiveServer2 from shell
+~~~bash
+$ cd ~
+$ $HIVE_HOME/bin/hiveserver2
+~~~
+
+4. Run Beeline from shell
+~~~bash
+$ cd ~
+$ $HIVE_HOME/bin/beeline
+~~~
+
