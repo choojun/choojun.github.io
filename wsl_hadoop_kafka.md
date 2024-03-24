@@ -1,3 +1,5 @@
+![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
+
 # J. Kafka Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. Read more on Kafka at URL https://kafka.apache.org/36/documentation.html
