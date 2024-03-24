@@ -117,7 +117,7 @@ $ mkdir derby/data
 $ source ~/.bashrc
 ~~~
 
-4. Configure the Hive to use Local/Network Derby by changing the following property values 
+4. Configure the Hive to use Local/Network Derby by changing the following property values in file $HIVE_HOME/conf/hive-site.xml
 ~~~xml
 <property>
   <name>javax.jdo.option.ConnectionURL</name>
