@@ -232,10 +232,17 @@ $
 $ cd ~
 $ $HIVE_HOME/bin/hiveserver2
 ~~~
+> You may observe addition service has activated namely as RunJar, if it gives error to us
+> Ctrl-c to terminate the RunJar service of HiveServer2
 
 4. Run Beeline from shell
 ~~~bash
 $ cd ~
 $ $HIVE_HOME/bin/beeline
 ~~~
+> To quit from the command shell Beeline
+> ~~~bash
+> !q
+> ~~~~
 
+5. 
