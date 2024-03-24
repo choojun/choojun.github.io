@@ -240,7 +240,6 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/hduser/hive/lib/*:/home
 $ cd ~
 $ $HIVE_HOME/bin/hiveserver2
 ~~~
-
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
 
