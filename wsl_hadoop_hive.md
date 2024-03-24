@@ -204,7 +204,6 @@ $ jps
 9115 ...
 8428 ...
 ~~~
-> You may have corrupted characters in file $HIVE_HOME/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error.
 > To stop Derby (replace 25410 with your process id):
 ~~~bash
 $ kill -9 25410
@@ -213,10 +212,10 @@ $ kill -9 25410
 
 
 
-Last last. Run the following command to initialize Derby as the Metastore database for Hive
+8. Run the following command to initialize Derby as the Metastore database for Hive
 ~~~bash
-$ cp $HIVE_HOME/lib/hive-common-3.1.3.jar $HADOOP_HOME/lib/
-$ cd $HIVE_HOME
-$ bin/schematool -initSchema -dbType derby
+$ cp ~
 $ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
+$
 ~~~
+> You may have corrupted characters in file $HIVE_HOME/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
