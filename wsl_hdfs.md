@@ -1,3 +1,5 @@
+![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
+
 # F. HDFS File Operations and MapReduce [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. This practical introduces the basic Hadoop Distributed File System (HDFS) operations.
