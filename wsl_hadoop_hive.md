@@ -233,7 +233,7 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/hduser/hive/lib/*:/home
 
 ~~~
 
-3. Run HiveServer2 from shell
+4. Run HiveServer2 from shell
 ~~~bash
 $ cd ~
 $ $HIVE_HOME/bin/hiveserver2
@@ -241,7 +241,7 @@ $ $HIVE_HOME/bin/hiveserver2
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
 
-4. Run Beeline from shell
+5. Run Beeline from shell
 ~~~bash
 $ cd ~
 $ $HIVE_HOME/bin/beeline
@@ -251,4 +251,3 @@ $ $HIVE_HOME/bin/beeline
 > !q
 > ~~~~
 
-5. 
