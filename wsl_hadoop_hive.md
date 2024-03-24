@@ -121,7 +121,6 @@ $ source ~/.bashrc
 ~~~xml
     <property>
       <name>javax.jdo.option.ConnectionURL</name>
-      <value>jdbc:derby://localhost:1527;databaseName=metastore_db;create=true</value>
       <value>jdbc:derby://localhost:1527/metastore_db;create=true</value>
       <description>JDBC connect string for a JDBC metastore</description>
     </property>
@@ -205,6 +204,7 @@ $ jps
 9115 ...
 8428 ...
 ~~~
+> You may have corrupted characters in file $HIVE_HOME/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error.
 > To stop Derby (replace 25410 with your process id):
 ~~~bash
 $ kill -9 25410
@@ -218,5 +218,5 @@ Last last. Run the following command to initialize Derby as the Metastore databa
 $ cp $HIVE_HOME/lib/hive-common-3.1.3.jar $HADOOP_HOME/lib/
 $ cd $HIVE_HOME
 $ bin/schematool -initSchema -dbType derby
-$ java -cp $HIVE_HOME/lib/hive-beeline-3.1.3.jar org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
+$ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
 ~~~
