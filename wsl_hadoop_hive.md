@@ -45,7 +45,7 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 * Replace all occurrences of ${system:java.io.tmpdir} to /tmp/hive and this location is the new location for Hive storing all its temporary files.
 * Replace all occurrences of ${system:user.name} to ${user.name} which should be the user name you log in with
 * Replace all occurrences of /user/hive tp /user/hduser
-> You may want to use nano's search (Ctrl-w with Enter) to find the targeted keyword, and replace them one by one with typing.
+> You may want to use the nano's search (Ctrl-w with Enter) to find the targeted keyword, and replace them one by one.
 
 7. Edit the file $HIVE_HOME/conf/hive-config.sh with the the following lines 
 ~~~bash
@@ -86,16 +86,12 @@ $ chmod -R g+w /home/hduser/hadoopName
 ~~~
 
 
-xxxx. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
+12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
 ~~~bash
 $ rm $HIVE_HOME/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
-
-
-### xxxx Steps 7 - 10 are useful to setup the Derby in Server Mode. 
-> For pseudo-distributed mode, kindly refer to the Hive-Installation section at this link: https://www.tutorialspoint.com/hive/hive_installation.htm
 
 ## M2. Install and Configure Derby [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
@@ -121,7 +117,7 @@ $ mkdir derby/data
 $ source ~/.bashrc
 ~~~
 
-4. Configure Hive to Use Local/Network Derby by changing the property values 
+4. Configure the Hive to use Local/Network Derby by changing the following property values 
 ~~~xml
 <property>
   <name>javax.jdo.option.ConnectionURL</name>
@@ -158,6 +154,22 @@ $ source ~/.bashrc
 </property>
 ~~~
 
+3. Run the Derby. It will create databases in the current directory by default
+~~~bash
+$ cd ~/derby/data
+$ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
+$ jps
+25410 NetworkServerControl
+8711 ...
+9561 ...
+26699 Jps
+9115 ...
+8428 ...
+~~~
+> To stop Derby (replace 25410 with your process id):
+~~~bash
+$ kill -9 25410
+~~~
 
 Last last. Run the following command to initialize Derby as the Metastore database for Hive
 ~~~bash
