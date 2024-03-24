@@ -130,57 +130,66 @@ wsl –l -v
 
 -----------------------------------------------------------
 
-![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
+
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
+![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
 1. Hardware requirement: Recommended requirements of WSL or better with constant internet access ready
 2. Software requirement: WSL 2 with Ubuntu 22.04 distro with **Hadoop 3.3.6**
 
-![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
+
 
 ## F. [HDFS File Operations and MapReduce](wsl_hdfs)
+![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready
 
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and any web browser installed, SSH, DFS and YARN services ready with **Spark 3.5.1 (for Scala 2.13)**
 
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and Spark 3.5.1 installed, SSH, DFS and YARN services ready, 
 
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+
 
 ## I. [Spark and Visualization](wsl_pyspark_viz)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1 and Jupyter notebook installed, SSH, DFS and YARN services ready
 
-![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
+
 
 ## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
+![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready with **Scala 2.13** and **Kafka 3.7.0**
 
-![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
+
 
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
+![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0 installed and SSH, DFS and YARN services ready with **HBase 2.5.7**
 
-![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
+
 
 ## L. [HappyBase Installation and Configuration](wsl_hadoop_happybase)
+![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0, HBase 2.5.7, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready
 
-![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
+
 
 ## M. [Hive Installation and Configuration](wsl_hadoop_hive)
+![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 installed and SSH, DFS and YARN services ready with **Hive 3.1.3**
 
