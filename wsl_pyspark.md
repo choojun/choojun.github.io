@@ -1,3 +1,5 @@
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+
 # G. Spark, PySpark, Spark SQL and Jupyter Notebook [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
  
