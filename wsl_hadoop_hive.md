@@ -137,7 +137,8 @@ $ source ~/.bashrc
     <property>
       <name>hive.downloaded.resources.dir</name>
       <value>/tmp/${hive.session.id}_resources</value>
-      <description>Temporary local directory for added resources in the remote file system.</descri>  </property>
+      <description>Temporary local directory for added resources in the remote file system.</description>
+    </property>
     <property>
       <name>hive.querylog.location</name>
       <value>/tmp/${user.name}</value>
@@ -146,13 +147,13 @@ $ source ~/.bashrc
     <property>
       <name>hive.server2.logging.operation.log.location</name>
       <value>/tmp/${user.name}/operation_logs</value>
-      <description>Top level directory where operation logs are stored if logging functionality is >  </property>
+      <description>Top level directory where operation logs are stored if logging functionality is >
+    </property>
     <property>
       <name>hive.downloaded.resources.dir</name>
       <value>/tmp/${user.name}_resources</value>
-      <description>Temporary local directory for added resources in the remote file system.</description>
+      <description>Temporary local directory for added resources in the remote file system</description>
     </property>
-
 ~~~
 
 5. To allow Hive to connect to Derby through JDBC, add the following lines to the core-site.xml file located at $HADOOP_HOME/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
