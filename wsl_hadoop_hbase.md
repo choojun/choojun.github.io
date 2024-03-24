@@ -1,3 +1,5 @@
+![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
+
 # K. HBase Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. HBase is a type of NoSQL database. NoSQL is a general term meaning that the database isn’t an RDBMS which supports SQL as its primary access language, but there are many types of NoSQL databases: BerkeleyDB (https://en.wikipedia.org/wiki/Berkeley_DB) is an example of a local NoSQL database, whereas HBase is very much a distributed database. 
