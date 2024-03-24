@@ -183,9 +183,12 @@ $ source ~/.bashrc
 ~~~bash
 $ cp -f $HADOOP_HOME/etc/hadoop/core-site.xml $SPARK_HOME/conf/
 $ cp -f $HADOOP_HOME/etc/hadoop/hdfs-site.xml $SPARK_HOME/conf/
-$ cp -f $HIVE_HOME/hive/conf/hive-site.xml $SPARK_HOME/conf/
+$ cp -f $HIVE_HOME/conf/hive-site.xml $SPARK_HOME/conf/
+$ cp -f $DERBY_HOME/lib/derbyclient.jar $SPARK_HOME/jars/
+$ cp -f $DERBY_HOME/lib/derbytools.jar $SPARK_HOME/jars/
 ~~~
-> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if any changes in the involved three files in nearly future.
+> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if any changes in the involved files in nearly future.
+
 
 7. Run the Derby. Note that it will create databases in the current directory by default
 ~~~bash
@@ -209,6 +212,8 @@ $ kill -9 25410
 
 Last last. Run the following command to initialize Derby as the Metastore database for Hive
 ~~~bash
+$ cp $HIVE_HOME/lib/hive-common-3.1.3.jar $HADOOP_HOME/lib/
 $ cd $HIVE_HOME
 $ bin/schematool -initSchema -dbType derby
+$ java -cp $HIVE_HOME/lib/hive-beeline-3.1.3.jar org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
 ~~~
