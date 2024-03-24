@@ -28,7 +28,7 @@ $ mv apache-hive-3.1.3-bin hive
  export HIVE_CONF_DIR=/home/hduser/hive/conf
  export PATH=$PATH:/home/hduser/hive/bin
  export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
-
+ export HADOOP_CLASSPATH=$CLASSPATH
 ~~~
 
 4. Re-load the environment
