@@ -241,10 +241,19 @@ $ $HIVE_HOME/bin/hiveserver2
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
 
-5. Run Beeline from shell
+5. Run Beeline from shell with following inputs
 ~~~bash
 $ cd ~
 $ $HIVE_HOME/bin/beeline
+Beeline version 3.1.3 by Apache Hive
+beeline> !connect jdbc:hive2://
+Connecting to jdbc:hive2://
+Enter username for jdbc:hive2://: APP
+Enter password for jdbc:hive2://: mine
+Connected to: Apache Hive (version 3.1.3)
+Driver: Hive JDBC (version 3.1.3)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://>
 ~~~
 > To quit from the command shell Beeline
 > ~~~bash
