@@ -154,6 +154,32 @@ $ source ~/.bashrc
 </property>
 ~~~
 
+3. Add the following proxy in file $HADOOP_HOME/etc/hadoop/core-site.xml of hadoop, and restart hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
+ ~~~xml
+    <configuration>
+      <property>
+       <name>hadoop.proxyuser.hadoop.hosts</name>
+       <value>*</value>
+      </property>
+      <property>
+       <name>hadoop.proxyuser.hadoop.groups</name>
+       <value>*</value>
+      </property>
+    </configuration>
+ ~~~
+> Tips to restart DFS and YARN services
+> ~~~bash
+> $ jps
+> $ cd ~/hadoop3
+> $ sbin/stop-yarn.sh
+> $ sbin/stop-dfs.sh
+> $ jps
+> $ sbin/start-dfs.sh
+> $ sbin/start-yarn.sh
+> $ jps
+> ~~~
+
+
 3. Run the Derby. It will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
