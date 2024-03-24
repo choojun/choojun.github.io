@@ -20,14 +20,14 @@ $ mv apache-hive-3.1.3-bin hive
 
 3. Edit the file ~/.bashrc with the the following lines 
 ~~~bash
- export HADOOP_MAPRED_HOME=${HADOOP_HOME}
- export HADOOP_COMMON_HOME=${HADOOP_HOME}
- export HADOOP_HDFS_HOME=${HADOOP_HOME}
- export YARN_HOME=${HADOOP_HOME}
+ export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+ export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+ export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+ export YARN_HOME=/home/hduser/hadoop3
  export HIVE_HOME=/home/hduser/hive
- export HIVE_CONF_DIR=$HIVE_HOME/conf
- export PATH=$PATH:$HIVE_HOME/bin
- export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:$HADOOP_HOME/lib/native/*:$HIVE_HOME/lib/*
+ export HIVE_CONF_DIR=/home/hduser/hive/conf
+ export PATH=$PATH:/home/hduser/hive/bin
+ export CLASSPATH=$CLASSPATH:/home/hduser/hadoop3/lib/*:/home/hduser/hadoop3/lib/native/*:/home/hduser/hive/lib/*
 ~~~
 
 4. Re-load the environment
@@ -52,13 +52,18 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
  export HADOOP_HOME=/home/hduser/hadoop3
 ~~~
 
-8. Duplicate for the file $HIVE_HOME/conf/hive-??.xml 
+8. Duplicate for the file $HIVE_HOME/conf/hive-env.sh 
 ~~~bash
-$ cd $xxx
+$ cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-env.sh
 ~~~
 
+9. Edit the file $HIVE_HOME/conf/hive-env.sh  with the the following lines 
+~~~bash
+ export HADOOP_HOME=/home/hduser/hadoop3
+ export HIVE_CONF_DIR=/home/hduser/hive/conf
+~~~
 
-8. Create Hive directories in the HDFS
+10. Create Hive directories in the HDFS
 ~~~bash
 $ hdfs dfs -mkdir /tmp
 $ hdfs dfs -mkdir /tmp/hduser
@@ -74,7 +79,7 @@ $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
 ~~~
 
-9. Change mode of access for hadoop's data and namenode, which are created in Section E
+11. Change mode of access for hadoop's data and namenode, which are created in Section E
 ~~~bash
 $ chmod -R g+w /home/hduser/hadoopData
 $ chmod -R g+w /home/hduser/hadoopName
@@ -107,7 +112,8 @@ $ mkdir derby/data
 ~~~bash
  export DERBY_INSTALL=/home/hduser/derby
  export DERBY_HOME=/home/hduser/derby
- export PATH=$PATH:$DERBY_HOME/bin
+ export PATH=$PATH:/home/hduser/derby/bin
+ export CLASSPATH=$CLASSPATH:/home/hduser/derby/lib/derby.jar:/home/hduser/derby/lib/derbytools.jar
 ~~~
 
 3. Re-load the environment
