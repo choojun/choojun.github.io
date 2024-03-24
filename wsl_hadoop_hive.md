@@ -212,7 +212,7 @@ $ kill -9 25410
 
 
 
-8. Run the following command to initialize Derby as the Metastore database for Hive
+8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
 ~~~bash
 $ cp ~
 $ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
