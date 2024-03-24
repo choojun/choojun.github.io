@@ -120,37 +120,37 @@ $ source ~/.bashrc
 4. Configure the Hive to use Local/Network Derby by changing the following property values in file $HIVE_HOME/conf/hive-site.xml
 ~~~xml
     <property>
-    <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:derby://localhost:1527;databaseName=metastore_db;create=true</value>
-    <description>JDBC connect string for a JDBC metastore</description>
+      <name>javax.jdo.option.ConnectionURL</name>
+      <value>jdbc:derby://localhost:1527;databaseName=metastore_db;create=true</value>
+      <description>JDBC connect string for a JDBC metastore</description>
     </property>
     <property>
-    <name>javax.jdo.option.ConnectionDriverName</name>
-    <value>org.apache.derby.jdbc.ClientDriver</value>
-    <description>Driver class name for a JDBC metastore</description>
+      <name>javax.jdo.option.ConnectionDriverName</name>
+      <value>org.apache.derby.jdbc.ClientDriver</value>
+      <description>Driver class name for a JDBC metastore</description>
     </property>
     <property>
-    <name>hive.exec.local.scratchdir</name>
-    <value>/tmp/${user.name}</value>
-    <description>Local scratch space for Hive jobs</description>
+      <name>hive.exec.local.scratchdir</name>
+      <value>/tmp/${user.name}</value>
+      <description>Local scratch space for Hive jobs</description>
     </property>
     <property>
-    <name>hive.downloaded.resources.dir</name>
-    <value>/tmp/${hive.session.id}_resources</value>
-    <description>Temporary local directory for added resources in the remote file system.</descri>  </property>
+      <name>hive.downloaded.resources.dir</name>
+      <value>/tmp/${hive.session.id}_resources</value>
+      <description>Temporary local directory for added resources in the remote file system.</descri>  </property>
     <property>
-    <name>hive.querylog.location</name>
-    <value>/tmp/${user.name}</value>
-    <description>Location of Hive run time structured log file</description>
+      <name>hive.querylog.location</name>
+      <value>/tmp/${user.name}</value>
+      <description>Location of Hive run time structured log file</description>
     </property>
     <property>
-    <name>hive.server2.logging.operation.log.location</name>
-    <value>/tmp/${user.name}/operation_logs</value>
-    <description>Top level directory where operation logs are stored if logging functionality is >  </property>
+      <name>hive.server2.logging.operation.log.location</name>
+      <value>/tmp/${user.name}/operation_logs</value>
+      <description>Top level directory where operation logs are stored if logging functionality is >  </property>
     <property>
-    <name>hive.downloaded.resources.dir</name>
-    <value>/tmp/${user.name}_resources</value>
-    <description>Temporary local directory for added resources in the remote file system.</description>
+      <name>hive.downloaded.resources.dir</name>
+      <value>/tmp/${user.name}_resources</value>
+      <description>Temporary local directory for added resources in the remote file system.</description>
     </property>
 
 ~~~
