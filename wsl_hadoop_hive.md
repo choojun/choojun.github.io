@@ -122,6 +122,7 @@ $ source ~/.bashrc
     <property>
       <name>javax.jdo.option.ConnectionURL</name>
       <value>jdbc:derby://localhost:1527;databaseName=metastore_db;create=true</value>
+      <value>jdbc:derby://localhost:1527/metastore_db;create=true</value>
       <description>JDBC connect string for a JDBC metastore</description>
     </property>
     <property>
