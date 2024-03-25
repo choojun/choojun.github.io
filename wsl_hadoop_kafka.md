@@ -7,7 +7,7 @@
   * To store streams of events durably and reliably for as long as you want
   * To process streams of events as they occur or retrospectively
 2. Kafka is a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol. As a server, Kafka is run as a cluster of one or more servers that can span multiple datacenters or cloud regions. As a clients, Kafka allows us to write distributed applications and microservices that read, write, and process streams of events in parallel, at scale, and in a fault-tolerant manner even in the case of network problems or machine failures
-3. Read more on Kafka at URL https://kafka.apache.org/documentation/
+3. Read more on Kafka at URL https://kafka.apache.org/documentation/ and https://kafka.apache.org/quickstart 
 
 ## J1. Install Kafka [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
