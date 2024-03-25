@@ -324,13 +324,13 @@ $ bin/zookeeper-server-stop.sh
 $ cd ~/hadoop3
 $ sbin/stop-yarn.sh
 $ sbin/stop-dfs.sh
+$ top
 ~~~
+> Ctrl-c to terminate the command top
 
 4. Exit from your user account(s) 
 ~~~bash
 exit
 ~~~
-
-5. Issue command top to examine all expected services terminated
 
 
