@@ -3,7 +3,7 @@
 # L. HappyBase Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1. HappyBase is a developer-friendly Python library to interact with Apache HBase. Read more on HappyBase at URL https://happybase.readthedocs.io/en/latest/
-2. To explore the HappyBase API, read more at URL https://happybase.readthedocs.io/en/latest/user.html , and tt should provides you with enough information to get you started
+2. To explore the HappyBase API, read more at URL https://happybase.readthedocs.io/en/latest/user.html , and it should provides you with enough information to get you started
 
 
 ## L1. Install HappyBase [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
