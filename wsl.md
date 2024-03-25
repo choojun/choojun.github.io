@@ -246,7 +246,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
       $ $HIVE_HOME/bin/beeline
 ~~~
 
-Remember to stop the DFS, YARN as well as other started services (in reversed sequence) to avoid data corruption in HDFS before shutdown your PC. Read the required details at URL https://choojun.github.io/wsl
+Remember to stop the DFS, YARN as well as other started services (in reversed sequence) to avoid data corruption in HDFS before shutdown your PC. Read the required details from sections E to M
 
 -----------------------------------------------------------
 
@@ -254,5 +254,73 @@ Remember to stop the DFS, YARN as well as other started services (in reversed se
 
 1. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-2. https://github.com/apache/spark/tree/master
+2. https://en.wikipedia.org/wiki/Apache_Hadoop
+
+3. https://hadoop.apache.org/
+
+4. https://hbase.apache.org/book.html#hadoop
+
+5. https://en.wikipedia.org/wiki/List_of_POSIX_commands
+
+6. https://hadoop.apache.org/docs/r3.3.6/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+
+7. https://en.wikipedia.org/wiki/MapReduce
+
+8. https://spark.apache.org
+
+9. https://en.wikipedia.org/wiki/Apache_Spark
+
+10. https://spark.apache.org/sql/
+
+11. https://en.wikipedia.org/wiki/Apache_Spark#Spark_SQL
+
+12. https://pypi.org/project/reverse_geocoder/
+
+13. https://jupyter.org
+
+14. https://en.wikipedia.org/wiki/Project_Jupyter
+
+15. https://spark.apache.org/docs/latest/sql-programming-guide.html
+
+16. https://spark.apache.org/docs/latest/rdd-programming-guide.html#resilient-distributed-datasets-rdds
+
+17. https://spark.apache.org/docs/latest/sql-programming-guide.html
+
+18. https://spark.apache.org/docs/latest/ml-guide.html#announcement-dataframe-based-api-is-primary-api
+
+19. https://seaborn.pydata.org/
+
+20. https://kafka.apache.org/documentation/
+
+21. https://kafka.apache.org/quickstart
+
+22. https://developer.twitter.com/en/apply-for-access
+
+23. https://en.wikipedia.org/wiki/Berkeley_DB
+
+24. https://hbase.apache.org/book.html
+
+25. https://hbase.apache.org/book.html#hadoop
+
+26. https://happybase.readthedocs.io/en/latest/
+
+27. https://happybase.readthedocs.io/en/latest/user.html
+
+28. https://cwiki.apache.org/confluence/display/Hive/GettingStarted
+
+29. https://cwiki.apache.org/confluence/display/Hive/Home
+
+30. https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Overview
+
+31. http://sqlline.sourceforge.net/
+
+32. https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
+
+33. https://cwiki.apache.org/confluence/display/hive/tutorial
+
+34. https://sparkbyexamples.com/apache-hive-tutorial/
+
+35. https://www.simplilearn.com/tutorials/hadoop-tutorial/hive
+
+
 
