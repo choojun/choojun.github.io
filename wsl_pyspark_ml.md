@@ -1,4 +1,4 @@
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 
 # H. Spark and Machine Learning [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
