@@ -231,7 +231,7 @@ $
 
 3. Edit the $HADOOP_HOME/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows.
 ~~~bash
-export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
+ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
 
 ~~~
 
