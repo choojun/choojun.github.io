@@ -195,6 +195,61 @@ wsl –l -v
 
 -----------------------------------------------------------
 
+## Z. What's Next? (After setup all above items)
+Suppose that both DFS and YARN services running, by ensuring both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Your WSL distro is ready for your daily practical exercises :D
+
+1. Run PySpark Interactive Shell
+~~~bash
+      $ cd ~
+      $ pyspark
+~~~
+2. Run jupyter notebook server after copying those required files from Windows (c:\de\sparkexercise) to Ubuntu (/home/hduser/sparkexercise) via the named directory sparkexercise. Then, copy and paste one of the URLs that are listed in any web browser
+~~~bash
+      $ sudo cp -r /mnt/c/de/sparkexercise /home/hduser
+      $ sudo chown -r hduser:hduser -R /home/hduser/sparkexercise
+      $ cd ~/sparkexercise
+      $ jupyter notebook --port=8888 --no-browser
+~~~
+3. Run Kafka. An additional two services can be observed using command jps in this step, i.e. QuorumPeerMain (for Zookeeper) and Kafka processes
+~~~bash
+      $ cd ~/kafka
+      $ bin/zookeeper-server-start.sh config/zookeeper.properties &
+      $ bin/kafka-server-start.sh config/server.properties &
+~~~
+4. Run HBase. An additional two services can be observed using command jps in this step, i.e. HMaster and HRegionServer processes
+~~~bash
+      $ cd ~
+      $ /home/hduser/hbase/bin/start-hbase.sh
+~~~
+5. Run HBase shell.
+~~~bash
+      $ /home/hduser/hbase/bin/hbase shell
+~~~
+6. Run HappyBase with Python. An additional one service can be observed using command jps in this step, i.e. ThriftServer process
+~~~bash
+      $ cd ~
+      $ hbase thrift start -p 9090 &
+~~~
+7. Run Derby for Hive use. An additional one service can be observed using command jps in this step, i.e. NetworkServerControl process
+~~~bash
+      $ cd ~/derby/data
+      $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
+~~~
+8. Run Hive. An additional one service can be observed using command jps in this step, i.e. RunJar process
+~~~bash
+      $ cd ~
+      $ /home/hduser/hive/bin/hiveserver2
+~~~
+9. Run Beeline shell. 
+~~~bash
+      $ cd ~
+      $ $HIVE_HOME/bin/beeline
+~~~
+
+Remember to stop the DFS, YARN as well as other started services (in reversed sequence) to avoid data corruption in HDFS before shutdown your PC. Read the required details at URL https://choojun.github.io/wsl
+
+-----------------------------------------------------------
+
 ## References
 
 1. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
