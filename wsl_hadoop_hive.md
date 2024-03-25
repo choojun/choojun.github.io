@@ -232,14 +232,14 @@ $
 3. Edit the $HADOOP_HOME/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows.
 
 ~~~bash
- export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
+ export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
 ~~~
 
 4. Run HiveServer2 from shell
 
 ~~~bash
 $ cd ~
-$ $HIVE_HOME/bin/hiveserver2
+$ /home/hduser/hive/bin/hiveserver2
 ~~~
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
