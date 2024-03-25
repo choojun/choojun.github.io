@@ -246,7 +246,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
       $ $HIVE_HOME/bin/beeline
 ~~~
 
-Remember to stop the DFS, YARN as well as other started services (in reversed sequence) to avoid data corruption in HDFS before shutdown your PC. Read the required details from sections E to M
+Remember to stop the DFS, YARN as well as other started services (in reversed sequence) to avoid data corruption in HDFS before shutdown your PC. Read the required details from above sections E to M
 
 -----------------------------------------------------------
 
