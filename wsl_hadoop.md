@@ -418,13 +418,11 @@ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep
 4. View the output files on the distributed system
 ~~~bash
 $ hdfs dfs -cat output/*
+
 Output:
 1       dfsadmin
 1       dfs.replication
 ~~~
-> Output:
-> 1       dfsadmin
-> 1       dfs.replication
 
 5. Stop all the daemons
 ~~~bash
