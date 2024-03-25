@@ -243,7 +243,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 9. Run Beeline shell. 
 ~~~bash
       $ cd ~
-      $ $HIVE_HOME/bin/beeline
+      $ /home/hduser/hive/bin/beeline
 ~~~
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above
