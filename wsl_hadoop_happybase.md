@@ -179,7 +179,7 @@ hbase(main):003:0> describe 'prj_pfx_mytable3'
 >>> print(row[b'cf2:title'])
 ~~~
 
-2.	Retrieve all the data fields of  row-key 'rk2'
+2.	Retrieve all the data fields of row-key 'rk2'
 ~~~bash
 >>> print("data for row-key 'rk2':\n", row)
 ~~~
