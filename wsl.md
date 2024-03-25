@@ -195,7 +195,7 @@ wsl –l -v
 
 -----------------------------------------------------------
 
-## Z. What's Next? (After setup all above items)
+## Z. What's Next? (After done the setup for above items)
 Suppose that both DFS and YARN services running, by ensuring both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Your WSL distro is ready for your daily practical exercises :D
 
 1. Run PySpark Interactive Shell
