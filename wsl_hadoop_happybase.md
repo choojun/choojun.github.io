@@ -163,6 +163,7 @@ hbase(main):003:0> describe 'prj_pfx_mytable3'
 
 ## L5. Retrieving Values from the HBase Tables [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 1.	Retrieve values by individual data fields of row-key
+
 ~~~bash
 >>> row = t3.row(b'rk1')
 >>> print(row[b'cf1:industry'])
@@ -170,7 +171,6 @@ hbase(main):003:0> describe 'prj_pfx_mytable3'
 >>> print(row[b'cf1:city'])
 >>> print(row[b'cf2:department'])
 >>> print(row[b'cf2:title'])
-
 >>> row = t3.row(b'rk2')
 >>> print(row[b'cf1:country'])
 >>> print(row[b'cf1:city'])
