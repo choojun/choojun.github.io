@@ -476,10 +476,10 @@ $ sbin/stop-yarn.sh
 ~~~bash
 $ sbin/stop-dfs.sh
 ~~~
+> Issue command top to examine all expected services terminated, and use Ctrl-c to exit from command top
 
 3. Exit from your user account(s) 
 ~~~bash
 exit
 ~~~
 
-4. Issue command top to examine all expected services terminated
