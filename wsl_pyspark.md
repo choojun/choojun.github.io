@@ -11,9 +11,9 @@
 ## G1. Installation and Configuration [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
-    * SSH
-    * HDFS
-    * YARN
+    - SSH
+    - HDFS
+    - YARN
 
 2.	Download the correct version of Spark from the Apache Spark downloads page (http://spark.apache.org/downloads.html), and check the compatible with your installed Hadoop
 ~~~bash
