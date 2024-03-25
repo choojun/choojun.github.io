@@ -7,10 +7,7 @@
 
 ## M1. Install and Configure Hive [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-1.	Login as hduser. Ensure the following services started sequentially and check them with command jps
-    - SSH
-    - HDFS
-    - YARN
+1.	Login as hduser. Ensure that the SSH, DFS, and YARN services are started sequentially. Then, examine them using the jps command
 
 2. Install Hive
 ~~~bash
