@@ -147,21 +147,21 @@ wsl –l -v
 
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and any web browser installed, SSH, DFS and YARN services ready with **Spark 3.5.1 (for Scala 2.13)**
 
 
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6 and Spark 3.5.1 installed, SSH, DFS and YARN services ready, 
 
 
 
 ## I. [Spark and Visualization](wsl_pyspark_viz)
-![spark](https://github.com/choojun/choojun.github.io/assets/6356054/c357a221-ebe5-426c-9d9e-1be022fcfda5)
+![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
 2. Software requirement: Hadoop 3.3.6, Spark 3.5.1 and Jupyter notebook installed, SSH, DFS and YARN services ready
 
