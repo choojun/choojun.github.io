@@ -215,6 +215,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above
 
 ## Summary of Software Requirements
+
 | Section  | Hadoop |  Spark |       Scala      | Jupyter Notebook |  Kafka |  HBase | HappyBase |   Derby   |  Hive | Web browser | SSH and PDSH |     Internet    |          WSL         |
 |:--------:|:------:|:------:|:----------------:|:----------------:|:------:|:------:|:---------:|:---------:|:-----:|:-----------:|:------------:|:---------------:|:--------------------:|
 |     E    |  3.3.6 |        |                  |                  |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
