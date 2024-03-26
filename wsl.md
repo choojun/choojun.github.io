@@ -134,64 +134,30 @@ wsl –l -v
 
 ## E. [Hadoop Installation and Configuration](wsl_hadoop)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
-1. Hardware requirement: Recommended requirements of WSL or better with constant internet access ready
-2. Software requirement: WSL 2 with Ubuntu 22.04 distro with **Hadoop 3.3.6**
-
-
 
 ## F. [HDFS File Operations and MapReduce](wsl_hdfs)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6 installed, SSH, DFS and YARN services ready
-
-
 
 ## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6 and any web browser installed, SSH, DFS and YARN services ready with **Spark 3.5.1 (for Scala 2.13)**
-
-
 
 ## H. [Spark and Machine Learning](wsl_pyspark_ml)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6 and Spark 3.5.1 installed, SSH, DFS and YARN services ready, 
-
-
 
 ## I. [Spark and Visualization](wsl_pyspark_viz)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.1 and Jupyter notebook installed, SSH, DFS and YARN services ready
-
-
 
 ## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
 ![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready with **Scala 2.13** and **Kafka 3.7.0**
-
-
 
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
 ![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0 installed and SSH, DFS and YARN services ready with **HBase 2.5.7**
-
-
 
 ## L. [HappyBase Installation and Configuration](wsl_hadoop_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6, Spark 3.5.1, Scala 2.13, Kafka 3.7.0, HBase 2.5.7, any web browser and Jupyter notebook installed, SSH, DFS and YARN services ready
-
-
 
 ## M. [Hive Installation and Configuration](wsl_hadoop_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
-1. Hardware requirement: Requirements as for the WSL or better with constant internet access ready
-2. Software requirement: Hadoop 3.3.6 installed and SSH, DFS and YARN services ready with **Hive 3.1.3**
 
 -----------------------------------------------------------
 
@@ -247,6 +213,19 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 ~~~
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above
+
+## Summary of Software Requirements
+| Section  | Hadoop |  Spark |       Scala      | Jupyter Notebook |  Kafka |  HBase | HappyBase |   Derby   |  Hive | Web browser | SSH and PDSH |     Internet    |          WSL         |
+|:--------:|:------:|:------:|:----------------:|:----------------:|:------:|:------:|:---------:|:---------:|:-----:|:-----------:|:------------:|:---------------:|:--------------------:|
+|     E    |  3.3.6 |        |                  |                  |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     F    | Needed |  3.5.1 |                  |                  |        |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     G    | Needed | Needed | Targeted on 2.13 |       6.4.8      |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     H    | Needed | Needed |                  |                  |        |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     I    | Needed | Needed |                  |      Needed      |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     J    | Needed |        |       2.13       |                  |  3.7.0 |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     K    | Needed | Needed | Targeted on 2.13 |                  |        |  2.5.7 |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     L    | Needed |        |                  |                  | Needed | Needed |   1.2.0   |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
+|     M    | Needed | Needed |                  |                  |        |        |           | 10.14.2.0 | 3.1.3 |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
 
 -----------------------------------------------------------
 
