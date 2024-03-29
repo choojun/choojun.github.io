@@ -184,7 +184,7 @@ wsl –l -v
 -----------------------------------------------------------
 
 ## Z. What's Next? (After done the setup for above items)
-1. Start both DFS and YARN services. Ensure both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Then, your WSL distro is ready for your daily practical exercises :D
+1. Start both DFS and YARN services. Ensure both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Six services can be observed using command jps in this step, i.e. Jps, DataNode, NameNode, SecondaryNameNode, NameManager and ResourceManager processes. Then, your WSL distro is ready for your daily practical exercises :D
 ~~~bash
       $ cd ~/hadoop3
       $ sbin/start-dfs.sh
