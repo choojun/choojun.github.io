@@ -216,7 +216,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 
 ## Summary of Software Requirements (and Tested Version)
 
-| Requirement\Section |           E          |           F          |           G          |           H          |           I          |           J          |           K          |           L          |           M          |
+| Requirement\Section |           [E](wsl_hadoop)          |           [F](wsl_hdfs)          |           [G](wsl_pyspark)          |           [H](wsl_pyspark_ml)          |           [I](wsl_pyspark_viz)          |           [J](wsl_hadoop_kafka)          |           [K](wsl_hadoop_hbase)          |           [L](wsl_hadoop_happybase)          |           [M](wsl_hadoop_hive)          |
 |---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Hadoop              |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
 | Spark               |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
