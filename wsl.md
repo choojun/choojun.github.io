@@ -161,6 +161,32 @@ wsl –l -v
 
 -----------------------------------------------------------
 
+## X. Summary and Tested Version
+
+| Requirement\Section |  [E](wsl_hadoop)  |  [F](wsl_hdfs) |  [G](wsl_pyspark) | [H](wsl_pyspark_ml)  |  [I](wsl_pyspark_viz)  |  [J](wsl_hadoop_kafka)  |  [K](wsl_hadoop_hbase)  |  [L](wsl_hadoop_happybase)  |  [M](wsl_hadoop_hive) |
+|---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Hadoop              |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Spark               |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
+| Scala               |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
+| Jupyter Notebook    |                      |                      |         6.4.8        |                      |        Needed        |                      |                      |                      |                      |
+| Kafka               |                      |                      |                      |                      |                      |         3.7.0        |                      |        Needed        |                      |
+| HBase               |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
+| HappyBase           |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
+| Derby               |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
+| Hive                |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
+| Web Browser         |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
+| SSH and PDSH        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Internet            |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
+| WSL                 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
+
+-----------------------------------------------------------
+
+## Y. Quick Start
+
+
+
+-----------------------------------------------------------
+
 ## Z. What's Next? (After done the setup for above items)
 Suppose that both DFS and YARN services running, by ensuring both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Your WSL distro is ready for your daily practical exercises :D
 
@@ -214,25 +240,7 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above
 
-## Summary of Software Requirements (and Tested Version)
 
-| Requirement\Section |           [E](wsl_hadoop)          |           [F](wsl_hdfs)          |           [G](wsl_pyspark)          |           [H](wsl_pyspark_ml)          |           [I](wsl_pyspark_viz)          |           [J](wsl_hadoop_kafka)          |           [K](wsl_hadoop_hbase)          |           [L](wsl_hadoop_happybase)          |           [M](wsl_hadoop_hive)          |
-|---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
-| Hadoop              |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Spark               |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
-| Scala               |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
-| Jupyter Notebook    |                      |                      |         6.4.8        |                      |        Needed        |                      |                      |                      |                      |
-| Kafka               |                      |                      |                      |                      |                      |         3.7.0        |                      |        Needed        |                      |
-| HBase               |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
-| HappyBase           |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
-| Derby               |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
-| Hive                |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
-| Web Browser         |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
-| SSH and PDSH        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Internet            |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
-| WSL                 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
-
------------------------------------------------------------
 
 ## References
 
