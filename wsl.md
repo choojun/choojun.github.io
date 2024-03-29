@@ -230,6 +230,24 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 
 -----------------------------------------------------------
 
+| Software\Section |           E          |           F          |           G          |           H          |           I          |           J          |           K          |           L          |           M          |
+|------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Hadoop           |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Spark            |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
+| Scala            |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
+| Jupyter Notebook |                      |                      |                      |                      |        Needed        |                      |                      |                      |                      |
+| Kafka            |                      |                      |                      |                      |                      |         3.7.0        |                      |        Needed        |                      |
+| HBase            |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
+| HappyBase        |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
+| Derby            |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
+| Hive             |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
+| Web Browser      |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
+| SSH and PDSH     |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Internet         |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
+| WSL              | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
+
+-----------------------------------------------------------
+
 ## References
 
 1. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
