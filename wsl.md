@@ -216,35 +216,21 @@ Suppose that both DFS and YARN services running, by ensuring both websites http:
 
 ## Summary of Software Requirements (and Tested Version)
 
-| Section  | Hadoop |  Spark |       Scala      | Jupyter Notebook |  Kafka |  HBase | HappyBase |   Derby   |  Hive | Web browser | SSH and PDSH |     Internet    |          WSL         |
-|:--------:|:------:|:------:|:----------------:|:----------------:|:------:|:------:|:---------:|:---------:|:-----:|:-----------:|:------------:|:---------------:|:--------------------:|
-|     E    |  3.3.6 |        |                  |                  |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     F    | Needed |  3.5.1 |                  |                  |        |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     G    | Needed | Needed | Targeted on 2.13 |       6.4.8      |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     H    | Needed | Needed |                  |                  |        |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     I    | Needed | Needed |                  |      Needed      |        |        |           |           |       |    Needed   |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     J    | Needed |        |       2.13       |                  |  3.7.0 |        |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     K    | Needed | Needed | Targeted on 2.13 |                  |        |  2.5.7 |           |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     L    | Needed |        |                  |                  | Needed | Needed |   1.2.0   |           |       |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-|     M    | Needed | Needed |                  |                  |        |        |           | 10.14.2.0 | 3.1.3 |             |    Needed    | Constant access | v2 with Ubuntu 22.04 |
-
------------------------------------------------------------
-
-| Software\Section |           E          |           F          |           G          |           H          |           I          |           J          |           K          |           L          |           M          |
-|------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
-| Hadoop           |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Spark            |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
-| Scala            |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
-| Jupyter Notebook |                      |                      |                      |                      |        Needed        |                      |                      |                      |                      |
-| Kafka            |                      |                      |                      |                      |                      |         3.7.0        |                      |        Needed        |                      |
-| HBase            |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
-| HappyBase        |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
-| Derby            |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
-| Hive             |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
-| Web Browser      |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
-| SSH and PDSH     |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Internet         |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
-| WSL              | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
+| Requirement\Section |           E          |           F          |           G          |           H          |           I          |           J          |           K          |           L          |           M          |
+|---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Hadoop              |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Spark               |                      |         3.5.1        |        Needed        |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
+| Scala               |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
+| Jupyter Notebook    |                      |                      |         6.4.8        |                      |        Needed        |                      |                      |                      |                      |
+| Kafka               |                      |                      |                      |                      |                      |         3.7.0        |                      |        Needed        |                      |
+| HBase               |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
+| HappyBase           |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
+| Derby               |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
+| Hive                |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
+| Web Browser         |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
+| SSH and PDSH        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
+| Internet            |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
+| WSL                 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
 
 -----------------------------------------------------------
 
