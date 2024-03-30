@@ -228,7 +228,7 @@ wsl –l -v
       $ cd ~/derby/data
       $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
 ~~~
-9. Run Hive. An additional one service can be observed using command jps in this step, i.e. RunJar process
+9. Run Hive. An additional one service can be observed using command jps in this step, i.e. RunJar process (observation from another terminal)
 ~~~bash
       $ cd ~
       $ /home/hduser/hive/bin/hiveserver2
@@ -239,9 +239,31 @@ wsl –l -v
       $ /home/hduser/hive/bin/beeline
 ~~~
 
-![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above
-
-
+![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above. Tips to stop running processes:
+1. Use Ctrl-c for the Beeline shell
+2. Use Ctrl-c for the RunJar of HiveServer2 (at the running terminal)
+3. Terminate the NetworkServerControl of Derby using its current process id (observed from command jps)
+4. Terminate the ThriftServer of HappyBase using its current process id (observed from command jps)
+5. Terminate the HMaster and HRegionServer of HBase using command
+   > ~~~bash
+   > $ cd ~
+   > $ ~/hbase/bin/stop-hbase.sh
+   > ~~~
+7. Use command exit for HBase shell
+8. Terminate the QuorumPeerMain (for Zookeeper) and Kafka using command
+   > ~~~bash
+   > $ cd ~/kafka
+   > $ bin/kafka-server-stop.sh
+   > $ bin/zookeeper-server-stop.sh
+   > ~~~
+8. Use command exit() for PySpark interactive shell
+9. Terminate the NodeManager, ResourceManager (from YARN) and DataNode, NameNode, SecondaryNameNode (from DFS) using command
+   > ~~~bash
+   > $ cd ~/hadopp3
+   > $ sbin/stop-yarn.sh
+   > $ sbin/stop-dfs.sh
+   > ~~~
+10. Use command jps to check remaining processes, and terminate each of them with its current process id (observed from command jps)
 
 ## References
 
