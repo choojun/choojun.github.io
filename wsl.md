@@ -250,7 +250,7 @@ wsl –l -v
    > $ ~/hbase/bin/stop-hbase.sh
    > ~~~
 7. Use command exit for **HBase shell**
-8. Terminate the QuorumPeerMain (for **Zookeeper**) and **Kafka** using command
+8. Terminate the QuorumPeerMain (from **Zookeeper**) and **Kafka** using command
    > ~~~bash
    > $ cd ~/kafka
    > $ bin/kafka-server-stop.sh
