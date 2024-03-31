@@ -63,7 +63,6 @@ $ chmod 744 ~/hive/conf/hive-env.sh
  export HADOOP_HOME=/home/hduser/hadoop3
  export HIVE_CONF_DIR=/home/hduser/hive/conf
  export CLASSPATH=/home/hduser/hive/lib/*
-
  export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
  export HADOOP_COMMON_HOME=/home/hduser/hadoop3
  export HADOOP_HDFS_HOME=/home/hduser/hadoop3
