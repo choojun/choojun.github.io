@@ -100,14 +100,14 @@ $ bin/kafka-server-start.sh config/server.properties &
 6. Start the HBase
 ~~~bash
 $ cd ~
-$ $HBASE_HOME/bin/start-hbase.sh
+$ ~/hbase/bin/start-hbase.sh
 $ jps
 ~~~
 > Verify that HBase is running - you should see the HBase processes with jps command, i.e. **HMaster** and **HRegionServer**. Note that you may ignore the errors due to SLF4J during HBase startup, as it will eventually perform logging to a plain text in local file system.
 > When you want to stop HBase, type the following commands 
 ~~~bash
 $ cd ~
-$ $HBASE_HOME/bin/stop-hbase.sh
+$ ~/hbase/bin/stop-hbase.sh
 $ jps
 ~~~
 > You may choose to clear all the HBase data, after stopped both HMaster and HRegionServer, using the following commands
@@ -121,7 +121,8 @@ $ hdfs dfs -ls /
 
 1.	Login as hduser, say in another session, after HBase started
 ~~~bash
-$ $HBASE_HOME/bin/hbase shell
+$ cd ~
+$ ~/hbase/bin/hbase shell
 ~~~
 
 2.	Get a listing of commands
