@@ -191,11 +191,11 @@ $ source ~/.bashrc
 
 6. To allow PySpark to connect to hive cluster, duplicate (by overwriting) the following files to destination Spark
 ~~~bash
-$ cp -f $HADOOP_HOME/etc/hadoop/core-site.xml $SPARK_HOME/conf/
-$ cp -f $HADOOP_HOME/etc/hadoop/hdfs-site.xml $SPARK_HOME/conf/
-$ cp -f $HIVE_HOME/conf/hive-site.xml $SPARK_HOME/conf/
-$ cp -f $DERBY_HOME/lib/derbyclient.jar $SPARK_HOME/jars/
-$ cp -f $DERBY_HOME/lib/derbytools.jar $SPARK_HOME/jars/
+$ cp -f /home/hduser/hadoop3/etc/hadoop/core-site.xml /home/hduser/spark/conf/
+$ cp -f /home/hduser/hadoop3/etc/hadoop/hdfs-site.xml /home/hduser/spark/conf/
+$ cp -f /home/hduser/hive/conf/hive-site.xml /home/hduser/spark/conf/
+$ cp -f /home/hduser/derby/lib/derbyclient.jar /home/hduser/spark/jars/
+$ cp -f /home/hduser/derby/lib/derbytools.jar /home/hduser/spark/jars/
 ~~~
 > Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step.
 > You need to redo this step if any changes in the involved files in nearly future.
