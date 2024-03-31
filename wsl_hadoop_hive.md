@@ -61,6 +61,7 @@ $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
 ~~~bash
  export HADOOP_HOME=/home/hduser/hadoop3
  export HIVE_CONF_DIR=/home/hduser/hive/conf
+ export CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
 10. Create Hive directories in the HDFS
