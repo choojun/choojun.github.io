@@ -223,6 +223,7 @@ wsl –l -v
       $ cd ~
       $ hbase thrift start -p 9090 &
 ~~~
+> Open another session in the terminal, and log in as hduser. Then, launch the Python command-line interpreter using the command python to explore the ability of HappyBase to interact with HBase using the Python programming language
 8. Run Derby for Hive use. An additional one service can be observed using command jps in this step, i.e. NetworkServerControl process
 ~~~bash
       $ cd ~/derby/data
