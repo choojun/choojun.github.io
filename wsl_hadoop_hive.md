@@ -55,6 +55,7 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 8. Duplicate for the file ~/hive/conf/hive-env.sh 
 ~~~bash
 $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
+$ chmod 744 ~/hive/conf/hive-env.sh
 ~~~
 
 9. Edit the file ~/hive/conf/hive-env.sh  with the the following lines 
@@ -62,6 +63,13 @@ $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
  export HADOOP_HOME=/home/hduser/hadoop3
  export HIVE_CONF_DIR=/home/hduser/hive/conf
  export CLASSPATH=/home/hduser/hive/lib/*
+
+ export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+ export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+ export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+ export YARN_HOME=/home/hduser/hadoop3
+ export HIVE_HOME=/home/hduser/hive
+ export HIVE_CONF_DIR=/home/hduser/hive/conf
 ~~~
 
 10. Create Hive directories in the HDFS
