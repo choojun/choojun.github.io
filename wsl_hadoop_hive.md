@@ -35,29 +35,29 @@ $ mv apache-hive-3.1.3-bin hive
 $ source ~/.bashrc
 ~~~
 
-5. Duplicate for the file $HIVE_HOME/conf/hive-site.xml 
+5. Duplicate for the file ~/hive/conf/hive-site.xml 
 ~~~bash
-$ cd $HIVE_HOME
+$ cd ~/hive
 $ cp conf/hive-default.xml.template conf/hive-site.xml
 ~~~
 
-6. Edit the file $HIVE_HOME/conf/hive-site.xml
+6. Edit the file ~/hive/conf/hive-site.xml
 * Replace all occurrences of ${system:java.io.tmpdir} to /tmp/hive and this location is the new location for Hive storing all its temporary files.
 * Replace all occurrences of ${system:user.name} to ${user.name} which should be the user name you log in with
 * Replace all occurrences of /user/hive tp /user/hduser
 > You may want to use the nano's search (Ctrl-w with Enter) to find the targeted keyword, and replace them one by one.
 
-7. Edit the file $HIVE_HOME/conf/hive-config.sh with the the following lines 
+7. Edit the file ~/hive/conf/hive-config.sh with the the following lines 
 ~~~bash
  export HADOOP_HOME=/home/hduser/hadoop3
 ~~~
 
-8. Duplicate for the file $HIVE_HOME/conf/hive-env.sh 
+8. Duplicate for the file ~/hive/conf/hive-env.sh 
 ~~~bash
-$ cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-env.sh
+$ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
 ~~~
 
-9. Edit the file $HIVE_HOME/conf/hive-env.sh  with the the following lines 
+9. Edit the file ~/hive/conf/hive-env.sh  with the the following lines 
 ~~~bash
  export HADOOP_HOME=/home/hduser/hadoop3
  export HIVE_CONF_DIR=/home/hduser/hive/conf
