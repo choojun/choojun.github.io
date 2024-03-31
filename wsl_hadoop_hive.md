@@ -47,7 +47,7 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 * Replace all occurrences of /user/hive tp /user/hduser
 > You may want to use the nano's search (Ctrl-w with Enter) to find the targeted keyword, and replace them one by one.
 
-7. Edit the file ~/hive/conf/hive-config.sh with the the following lines 
+7. Edit the file ~/hive/bin/hive-config.sh with the the following lines 
 ~~~bash
  export HADOOP_HOME=/home/hduser/hadoop3
 ~~~
