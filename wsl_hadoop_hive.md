@@ -132,27 +132,27 @@ $ source ~/.bashrc
     </property>
     <property>
       <name>hive.exec.local.scratchdir</name>
-      <value>/tmp/${user.name}</value>
+      <value>/tmp/hive/${user.name}</value>
       <description>Local scratch space for Hive jobs</description>
     </property>
     <property>
       <name>hive.downloaded.resources.dir</name>
-      <value>/tmp/${hive.session.id}_resources</value>
+      <value>/tmp/hive/${hive.session.id}_resources</value>
       <description>Temporary local directory for added resources in the remote file system.</description>
     </property>
     <property>
       <name>hive.querylog.location</name>
-      <value>/tmp/${user.name}</value>
+      <value>/tmp/hive/${user.name}</value>
       <description>Location of Hive run time structured log file</description>
     </property>
     <property>
       <name>hive.server2.logging.operation.log.location</name>
-      <value>/tmp/${user.name}/operation_logs</value>
+      <value>/tmp/hive/${user.name}/operation_logs</value>
       <description>Top level directory where operation logs are stored if logging functionality is >
     </property>
     <property>
       <name>hive.downloaded.resources.dir</name>
-      <value>/tmp/${user.name}_resources</value>
+      <value>/tmp/hive/${user.name}_resources</value>
       <description>Temporary local directory for added resources in the remote file system</description>
     </property>
 ~~~
