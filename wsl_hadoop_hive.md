@@ -118,7 +118,7 @@ $ mkdir derby/data
 $ source ~/.bashrc
 ~~~
 
-4. Configure the Hive to use Local/Network Derby by changing the following property values in file $HIVE_HOME/conf/hive-site.xml
+4. Configure the Hive to use Network Derby by changing the following property values in file /home/hduser/hive/conf/hive-site.xml
 ~~~xml
     <property>
       <name>javax.jdo.option.ConnectionURL</name>
@@ -157,7 +157,7 @@ $ source ~/.bashrc
     </property>
 ~~~
 
-5. To allow Hive to connect to Derby through JDBC, add the following lines to the core-site.xml file located at $HADOOP_HOME/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
+5. To allow Hive to connect to Derby through JDBC, add the following lines to the core-site.xml file located at /home/hduser/hadoop3/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
  ~~~xml
     <configuration>
       <property>
