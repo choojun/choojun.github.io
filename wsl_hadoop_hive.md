@@ -168,11 +168,11 @@ $ source ~/.bashrc
  ~~~xml
     <configuration>
       <property>
-       <name>hadoop.proxyuser.hadoop.hosts</name>
+       <name>hadoop.proxyuser.hduser.hosts</name>
        <value>*</value>
       </property>
       <property>
-       <name>hadoop.proxyuser.hadoop.groups</name>
+       <name>hadoop.proxyuser.hduser.groups</name>
        <value>*</value>
       </property>
     </configuration>
