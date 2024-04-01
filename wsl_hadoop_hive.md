@@ -96,7 +96,7 @@ $ chmod -R g+w /home/hduser/hadoopName
 
 12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
 ~~~bash
-$ rm $HIVE_HOME/lib/log4j-slf4j-impl-2.17.1.jar
+$ rm ~/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
@@ -221,11 +221,10 @@ $ kill -9 25410
 
 8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
 ~~~bash
-$ cp ~
+$ cd ~
 $ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
-$
 ~~~
-> You may have corrupted characters in file $HIVE_HOME/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
+> You may have corrupted characters in file ~/hive/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
 
 
 ## M3. Running HiveServer2 and Beeline [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
@@ -234,7 +233,7 @@ $
 
 2. HiveServer2 supports a command shell Beeline that works with HiveServer2. It's a JDBC client that is based on the SQLLine CLI (http://sqlline.sourceforge.net/). Read more on Beeline at URL https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
 
-3. Edit the $HADOOP_HOME/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
+3. Edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
 ~~~bash
  export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* 
 ~~~
@@ -250,7 +249,7 @@ $ /home/hduser/hive/bin/hiveserver2
 5. Run Beeline from shell with following inputs
 ~~~bash
 $ cd ~
-$ $HIVE_HOME/bin/beeline
+$ ~/hive/bin/beeline
 Beeline version 3.1.3 by Apache Hive
 beeline> !connect jdbc:hive2://
 Connecting to jdbc:hive2://
