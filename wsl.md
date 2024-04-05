@@ -155,6 +155,7 @@ wsl –l -v
 
 ## L. [HappyBase Installation and Configuration](wsl_hadoop_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
+Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases
 
 ## M. [Hive Installation and Configuration](wsl_hadoop_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
