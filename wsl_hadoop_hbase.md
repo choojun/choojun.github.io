@@ -70,20 +70,20 @@ export PATH=$HBASE_HOME/bin:$PATH
 ~~~
 > Please start both zookeeper and kafka servers before this step. If you are planning to run the Kafka service, then in hbase-env.sh change HBASE_MANAGES_ZK from true to false
 
-4. Add / Edit the properties of ~/hbase/conf/hbase-site.xml 
+4. Edit and add the properties of ~/hbase/conf/hbase-site.xml 
 ~~~xml
     <configuration>
       <property>
         <name>hbase.cluster.distributed</name>
-          <value>true</value>
+        <value>true</value>
       </property>
       <property>
         <name>hbase.rootdir</name>
-          <value>hdfs://localhost:9000/hbase</value>
+        <value>hdfs://localhost:9000/hbase</value>
       </property>
       <property>
         <name>hbase.wal.provider</name>
-          <value>filesystem</value>
+        <value>filesystem</value>
       </property>
     </configuration>
 ~~~
