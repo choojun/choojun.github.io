@@ -88,7 +88,7 @@ export PATH=$HBASE_HOME/bin:$PATH
     </configuration>
 ~~~
 
-5. Start / Restart (if running) the Zookeeper and Kafka services
+5. Start the Zookeeper and Kafka services
 ~~~bash
 $ cd ~/kafka
 $ bin/zookeeper-server-start.sh config/zookeeper.properties &
