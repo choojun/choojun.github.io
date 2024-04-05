@@ -13,7 +13,7 @@
 ~~~bash
 $ cd ~
 $ pip3 install happybase
-$ python3 -c 'import happybase'
+$ python -c 'import happybase'
 ~~~
 
 3. Ensure the following services started sequentially, and check them with command jps
