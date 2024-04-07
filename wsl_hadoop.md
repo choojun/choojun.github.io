@@ -418,10 +418,9 @@ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar grep
 4. View the output files on the distributed system
 ~~~bash
 $ hdfs dfs -cat output/*
-
 Output:
-1       dfsadmin
-1       dfs.replication
+1      dfsadmin
+1      dfs.replication
 ~~~
 
 5. Stop all the daemons
@@ -431,6 +430,8 @@ $ sbin/stop-dfs.sh
 ~~~
 
 6. Logout from the hduser account and your tarumt account.
+
+
 
 ## E9. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
