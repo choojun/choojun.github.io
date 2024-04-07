@@ -122,14 +122,14 @@ $ bin/hbase shell
 
 6. List all the HBase tables
 ~~~bash
-hbase(main):003:0> list
+hbase(main):001:0> list
 ~~~
 
 7. Show the description of the newly created tables
 ~~~bash
-hbase(main):003:0> describe 'mytable'
+hbase(main):002:0> describe 'mytable'
 hbase(main):003:0> describe 'mytable2'
-hbase(main):003:0> describe 'prj_pfx_mytable3'
+hbase(main):004:0> describe 'prj_pfx_mytable3'
 ~~~
 
 
