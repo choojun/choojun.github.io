@@ -112,7 +112,7 @@ $ ~/kafka/bin/kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic
 ~~~
 $ ~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 ~~~
-> At your Producer terminal, send more messages (refer to Steo 3) and observe corresponding effects. Note that new messages arriving in the Consumer terminal
+> At your Producer terminal, send more messages (refer to Step 3) and observe corresponding effects. Note that new messages arriving in the Consumer terminal
 
 6. To examine the incoming messages
 ~~~
