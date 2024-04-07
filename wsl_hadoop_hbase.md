@@ -132,12 +132,12 @@ $ ~/hbase/bin/hbase shell
 
 2.	Get a listing of commands
 ~~~bash
-hbase(main):003:0> help
+hbase(main):001:0> help
 ~~~
 
 3.	Check the status of the HBase cluster
 ~~~bash
-hbase(main):003:0> status
+hbase(main):002:0> status
 ~~~
 
 4.	To view all tables
@@ -147,7 +147,7 @@ hbase(main):003:0> list
 
 5.	To exit the HBase Shell
 ~~~bash
-hbase(main):003:0> exit
+hbase(main):004:0> exit
 ~~~
 
 
