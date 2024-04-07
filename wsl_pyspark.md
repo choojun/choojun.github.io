@@ -366,8 +366,8 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 ## G8. Spark SQL and Jupyter Notebook [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
-1.	Spark SQL is a module in Apache Spark that provides a relational interface to work with structured data using SQL-based operations in Spark through either JDBC/ODBC connectors, a built-in interactive Hive console, or Spark SQL API. This practical
-2. Read more from URLs https://jupyter.org , https://en.wikipedia.org/wiki/Project_Jupyter and https://spark.apache.org/docs/latest/sql-programming-guide.html
+1.	Apache Arrow is a development platform for in-memory analytics. It contains a set of technologies that enable big data systems to store, process and move data fast. Pyarrow has integred with NumPy, pandas, and built-in Python objects. They are based on the C++ implementation of Arrow (https://arrow.apache.org/).
+2. Read more from URL https://arrow.apache.org/docs/python/index.html 
 
 3. Login as hduser, and install the Jupyter notebook, PySpark and PyArrow packages 
 ~~~bash
