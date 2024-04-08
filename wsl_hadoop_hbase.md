@@ -243,6 +243,23 @@ hbase> scan 'linkshare', { FILTER => likeFilter }
 
 ## K5.  Data Definition Language (DDL) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
+1. Create a table named 't1' with a column family 'cf1'
+~~~bash
+hbase> create 't1', 'cf1'
+~~~
+
+2. Create a table named 'emp', with two column families: 'personal data' and 'professional data'
+~~~bash
+hbase> create 'emp', 'personal data', 'professional data'
+hbase> list
+~~~
+
+3. The describe command
+~~~bash
+hbase> describe 'emp'
+~~~
+
+
 
 ## K6.  Data Manipulation Language (DML) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
