@@ -300,10 +300,8 @@ hbase> alter 'emp', {NAME=>'personal data', VERSIONS=>5}
 ~~~
 
 ## K6.  Data Manipulation Language (DML) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
-> Inserting values into tables. Put a cell value at a specified table/row/column (and optionally timestamp) coordinates.
-> Note that HBase does not support insertion of multiple columns in a single statement.
 
-1. Put values into table 'ns1:t2'
+1. Inserting values into tables. Put a cell value at a specified table/row/column (and optionally timestamp) coordinates. Note that HBase does not support insertion of multiple columns in a single statement. Put values into table 'ns1:t2'
 ~~~bash
 hbase> put 'ns1:t2', 'key1', 'cf1:name', 'John'
 hbase> put 'ns1:t2', 'key1', 'cf1:id', 19191919  
