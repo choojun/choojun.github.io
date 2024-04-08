@@ -274,6 +274,7 @@ hbase> list
 ~~~bash
 hbase> create 'ns1:t2', 'cf1', 'cf2'
 hbase> list
+hbase> describe 'ns1:t2'
 ~~~
 
 7. The alter command. Add additional column families 'cf3', 'cf4,  and 'cf5' to the table 'n1:t2'
@@ -295,7 +296,7 @@ hbase> describe 'ns1:t2'
 
 10. Change the maximum number of versions of the columns in a column family
 ~~~bash
-hbase> alter 'ns1:t2', 'delete'=>'cf4'
+hbase> alter 'emp', {NAME=>'personal data', VERSIONS=>5}
 ~~~
 
 ## K6.  Data Manipulation Language (DML) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
