@@ -372,7 +372,6 @@ hbase> t.count
 ~~~bash
 hbase> delete 'ns1:t1', 'key1', 'cf1:city'
 hbase> scan 'ns1:t1'
-hbase> delete 'ns1:t1', 'key1', 'cf1:city' 
 ~~~
 
 12. Delete all cells for a specific row
