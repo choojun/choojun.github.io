@@ -300,35 +300,94 @@ hbase> alter 'emp', {NAME=>'personal data', VERSIONS=>5}
 ~~~
 
 ## K6.  Data Manipulation Language (DML) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+> Inserting values into tables. Put a cell value at a specified table/row/column (and optionally timestamp) coordinates.
+> Note that HBase does not support insertion of multiple columns in a single statement.
 
-1. Ch
+1. Put values into table 'ns1:t2'
 ~~~bash
-hbase> 
+hbase> put 'ns1:t2', 'key1', 'cf1:name', 'John'
+hbase> put 'ns1:t2', 'key1', 'cf1:id', 19191919  
+hbase> put 'ns1:t2', 'key1', 'cf2:city', 'London' 
+hbase> put 'ns1:t2', 'key1', 'cf2:country', 'UK'  
+hbase> scan 'ns1:t2'
 ~~~
 
-2. Ch
+2. Put values into table 'emp'
 ~~~bash
-hbase> 
+hbase> put 'emp', '1001', 'personal data:name', 'Thor'
+hbase> put 'emp', '1001', 'personal data:city', 'Kuala Lumpur'
+hbase> put 'emp', '1001', 'professional data:designation', 'manager'
+hbase> put 'emp', '1001', 'professional data:email', 'thor@mail.abc.com'
+hbase> scan 'emp'
 ~~~
 
-3. Ch
+3. Using table references. Get a table reference to the table 'ns1:t2'. The commands to be performed on that table can now be invoked directly on the table reference
 ~~~bash
-hbase> 
+hbase> t = get_table 'ns1:t2'
+hbase> t.scan
 ~~~
 
-4. Ch
+4. Get a table reference to the table 'ns1:t1', and insert values into the table “ns1:t1” using the table reference
 ~~~bash
-hbase> 
+hbase> t = get_table 'ns1:t1'
+hbase> t.put 'key2', 'cf1:city', 'KL'
+hbase> t.put 'key2', 'cf1:id', 87654321
+hbase> t.put 'key2', 'cf1:name', 'Minnie'
+hbase> scan 'ns1:t1'
 ~~~
 
-5. Ch
+5. Updating table values by putting '<table_name>', '<rowkey>', '<column_family>:<column>', '<new_value>'. Updating the value for 'cf1.name' to 'Jack'
 ~~~bash
-hbase> 
+hbase> put 'ns1:t2', 'key1', 'cf1:name', 'Jack'
 ~~~
 
-6. Ch
+6. Updating the value for 'cf1.city' using the table reference t
 ~~~bash
-hbase> 
+hbase> t.put 'key1', 'cf1:city', 'Manchester'
+hbase> t.scan
+~~~
+
+7. Reading row data / filtering data. Get a single row's data
+~~~bash
+hbase> get 'ns1:t1', 'key1'
+~~~
+
+8. Get a single column's data of a row
+~~~bash
+hbase> get 'ns1:t1', 'key2', {COLUMN=>'cf1:city'}
+~~~
+
+9. Filtering only certain columns
+~~~bash
+hbase> scan 'ns1:t1', {COLUMNS => ['cf1:name', 'cf1:city']}
+~~~
+
+10. Count the number of rows of a table
+~~~bash
+hbase> t.scan
+hbase> t.count
+~~~
+
+11. Deleting cells in a table with syntax delete '<table_name>', '<rowkey>', '<column_family>:<column>'. Delete a specific cell in a table
+~~~bash
+hbase> delete 'ns1:t1', 'key1', 'cf1:city'
+hbase> scan 'ns1:t1'
+hbase> delete 'ns1:t1', 'key1', 'cf1:city' 
+~~~
+
+12. Delete all cells for a specific row
+~~~bash
+hbase> deleteall 'ns1:t1', 'key1'
+hbase> scan 'ns1:t1'
+~~~
+
+13. Drop table
+~~~bash
+hbase> list
+hbase> drop 't1'
+hbase> disable 't1'
+hbase> drop 't1'
+hbase> list
 ~~~
 
 ## K7. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
