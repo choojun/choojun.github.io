@@ -270,37 +270,66 @@ hbase> create 'ns1:t1', {NAME=>'cf1', VERSIONS=>5}
 hbase> list
 ~~~
 
-6. Create a table named 't2' in the namespace 'ns1' with two column families 'cf1' and 'cf1'
+Create a table named 't2' in the namespace 'ns1' with two column families 'cf1' and 'cf1'
 ~~~bash
 hbase> create 'ns1:t2', 'cf1', 'cf2'
 hbase> list
 hbase> describe 'ns1:t2'
 ~~~
 
-7. The alter command. Add additional column families 'cf3', 'cf4,  and 'cf5' to the table 'n1:t2'
+6. The alter command. Add additional column families 'cf3', 'cf4,  and 'cf5' to the table 'n1:t2'
 ~~~bash
 hbase> alter 'ns1:t2', 'cf3', 'cf4', 'cf5'
 hbase> describe 'ns1:t2'
 ~~~
 
-8. Delete the  column family 'cf3' of the table 'ns1:t2''
+7. Delete the  column family 'cf3' of the table 'ns1:t2''
 ~~~bash
 hbase> alter 'ns1:t2', NAME=>'cf3', METHOD=>'delete'
 ~~~
 
-9. Delete the  column family 'cf4' of the table 'ns1:t2'
+Delete the  column family 'cf4' of the table 'ns1:t2'
 ~~~bash
 hbase> alter 'ns1:t2', 'delete'=>'cf4'
 hbase> describe 'ns1:t2'
 ~~~
 
-10. Change the maximum number of versions of the columns in a column family
+8. Change the maximum number of versions of the columns in a column family
 ~~~bash
 hbase> alter 'emp', {NAME=>'personal data', VERSIONS=>5}
 ~~~
 
 ## K6.  Data Manipulation Language (DML) Commands [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
+1. Ch
+~~~bash
+hbase> 
+~~~
+
+2. Ch
+~~~bash
+hbase> 
+~~~
+
+3. Ch
+~~~bash
+hbase> 
+~~~
+
+4. Ch
+~~~bash
+hbase> 
+~~~
+
+5. Ch
+~~~bash
+hbase> 
+~~~
+
+6. Ch
+~~~bash
+hbase> 
+~~~
 
 ## K7. Attention: At the beginning of all future practical [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
