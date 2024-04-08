@@ -269,7 +269,6 @@ hbase> create_namespace 'ns1'
 hbase> create 'ns1:t1', {NAME=>'cf1', VERSIONS=>5}
 hbase> list
 ~~~
-
 Create a table named 't2' in the namespace 'ns1' with two column families 'cf1' and 'cf1'
 ~~~bash
 hbase> create 'ns1:t2', 'cf1', 'cf2'
@@ -287,7 +286,6 @@ hbase> describe 'ns1:t2'
 ~~~bash
 hbase> alter 'ns1:t2', NAME=>'cf3', METHOD=>'delete'
 ~~~
-
 Delete the  column family 'cf4' of the table 'ns1:t2'
 ~~~bash
 hbase> alter 'ns1:t2', 'delete'=>'cf4'
