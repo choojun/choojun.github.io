@@ -364,7 +364,7 @@ hbase> t.scan
 hbase> t.count
 ~~~
 
-11. Deleting cells in a table with syntax delete '<table_name>', '<rowkey>', '<column_family>:<column>'. Delete a specific cell in a table
+11. Deleting cells in a table with syntax delete '\<table_name\>', '\<rowkey\>', '\<column_family\>:\<column\>'. Delete a specific cell in a table
 ~~~bash
 hbase> delete 'ns1:t1', 'key1', 'cf1:city'
 hbase> scan 'ns1:t1'
