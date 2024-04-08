@@ -332,7 +332,7 @@ hbase> t.put 'key2', 'cf1:name', 'Minnie'
 hbase> scan 'ns1:t1'
 ~~~
 
-5. Updating table values by putting '<table_name>', '<rowkey>', '<column_family>:<column>', '<new_value>'. Updating the value for 'cf1.name' to 'Jack'
+5. Updating table values by putting '\<table_name\>', '\<rowkey\>', '\<column_family\>:\<column\>', '\<new_value\>'. Updating the value for 'cf1.name' to 'Jack'
 ~~~bash
 hbase> put 'ns1:t2', 'key1', 'cf1:name', 'Jack'
 ~~~
