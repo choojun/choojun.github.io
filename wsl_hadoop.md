@@ -342,16 +342,16 @@ $ ssh localhost
  ~~~xml
     <configuration>
       <property>
-            <name>yarn.nodemanager.aux-services</name>
-            <value>mapreduce_shuffle</value>
+         <name>yarn.nodemanager.aux-services</name>
+         <value>mapreduce_shuffle</value>
       </property>
       <property>
-            <name>yarn.nodemanager.env-whitelist</name>    
-            <value>JAVA_HOME, HADOOP_COMMON_HOME, HADOOP_HDFS_HOME, HADOOP_CONF_DIR, CLASSPATH_PREPEND_DISTCACHE, HADOOP_YARN_HOME, HADOOP_MAPRED_HOME</value>
+         <name>yarn.nodemanager.env-whitelist</name>    
+         <value>JAVA_HOME, HADOOP_COMMON_HOME, HADOOP_HDFS_HOME, HADOOP_CONF_DIR, CLASSPATH_PREPEND_DISTCACHE, HADOOP_YARN_HOME, HADOOP_MAPRED_HOME</value>
       </property>
       <property>
-           <name>yarn.resourcemanager.address</name>
-           <value>127.0.0.1:8032</value>
+         <name>yarn.resourcemanager.address</name>
+         <value>127.0.0.1:8032</value>
       </property>
     </configuration>
  ~~~
