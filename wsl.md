@@ -166,21 +166,25 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 | Requirement\Section |  [E](wsl_hadoop)  |  [F](wsl_hdfs) |  [G](wsl_pyspark) | [H](wsl_pyspark_ml)  |  [I](wsl_pyspark_viz)  |  [J](wsl_hadoop_kafka)  |  [K](wsl_hadoop_hbase)  |  [L](wsl_hadoop_happybase)  |  [M](wsl_hadoop_hive) |
 |---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
-| Hadoop              |         3.3.6        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Spark               |                      |                      |        3.5.1         |        Needed        |        Needed        |                      |        Needed        |                      |        Needed        |
-| Scala               |                      |                      |  Targeted on 2.13.x  |                      |                      |        2.13.x        |  Targeted on 2.13.x  |                      |                      |
-| Jupyter Notebook    |                      |                      |         6.4.8        |                      |        Needed        |                      |                      |                      |                      |
-| Kafka               |                      |                      |                      |                      |                      |         3.7.0        |         Needed       |        Needed        |                      |
-| HBase               |                      |                      |                      |                      |                      |                      |         2.5.7        |        Needed        |                      |
-| HappyBase           |                      |                      |                      |                      |                      |                      |                      |         1.2.0        |                      |
-| Derby               |                      |                      |                      |                      |                      |                      |                      |                      |       10.14.2.0      |
-| Hive                |                      |                      |                      |                      |                      |                      |                      |                      |         3.1.3        |
-| Web Browser         |        Needed        |                      |        Needed        |                      |        Needed        |                      |                      |                      |                      |
-| SSH and PDSH        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |        Needed        |
-| Internet            |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |    Constant access   |
-| WSL                 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 | v2 with Ubuntu 22.04 |
+| Hadoop              | 3.3.6 | *1 | *1                  | *1 | *1 | *1     | *1                   | *1    | *1        |
+| Spark               |       |    | 3.5.1               | *1 | *1 |        | *1                   |       | *1        |
+| Scala               |       |    | Targeted on 2.13.x  |    |    | 2.13.x |  Targeted on 2.13.x  |       |           |
+| Jupyter Notebook    |       |    | 6.4.8               |    | *1 |        |                      |       |           |
+| Kafka               |       |    |                     |    |    | 3.7.0  | *1                   | *1    |           |
+| HBase               |       |    |                     |    |    |        | 2.5.7                | *1    |           |
+| HappyBase           |       |    |                     |    |    |        |                      | 1.2.0 |           |
+| Derby               |       |    |                     |    |    |        |                      |       | 10.14.2.0 |
+| Hive                |       |    |                     |    |    |        |                      |       | 3.1.3     |
+| Web Browser         | *1 |    | *1 |    | *1 |    |    |    |    |
+| SSH and PDSH        | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 |
+| Internet            | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 |
+| WSL                 | *3 | *3 | *3 | *3 | *3 | *3 | *3 | *3 | *3 |
 
-
+> *1 Needed
+> 
+> *2 Constant access
+>
+> *3 Version 2 with Ubuntu 22.04
 
 -----------------------------------------------------------
 
