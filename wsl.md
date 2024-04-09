@@ -188,7 +188,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 -----------------------------------------------------------
 
-## Z. What's Next? (After done the setup for above items)
+## Z. What's Next? (After setup above)
 1. Start both DFS and YARN services. Ensure both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Six services can be observed using command jps in this step, i.e. Jps, DataNode, NameNode, SecondaryNameNode, NameManager and ResourceManager processes. Then, your WSL distro is ready for your daily practical exercises :D
 ~~~bash
       $ cd ~/hadoop3
