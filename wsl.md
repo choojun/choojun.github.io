@@ -3,10 +3,10 @@
 
 # Microsoft Windows Subsystem for Linux (WSL)
 
-## A. Remove/Setup WSL (tested on Windows 10 and WSL v2)
+## A. Remove/Setup WSL
 
 1. Hardware requirement: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **constant internet access** during exercises.
-Suppose that your Windows has updated to the latest patches (e.g., version 22H2 and later for Windows 10) too!  
+Suppose that your Windows has updated to the latest patches too (tested Windows 10 with patch of 22H2)!  
 Software reqirement:
    - Find Settings --> Apps --> Apps & features --> Related Settings --> Programs and Features --> Turn Windows features on or off, **or**
    - Find Settings --> System -->  Optional features --> Related Settings --> More Windows features --> Turn Windows features on or off.
@@ -184,7 +184,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 > 
 > *2 Constant access
 >
-> *3 Version 2 with Ubuntu 22.04
+> *3 WSL Version 2 with distro Ubuntu 22.04
 
 -----------------------------------------------------------
 
