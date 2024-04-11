@@ -12,9 +12,9 @@
 2. Install Hive
 ~~~bash
 $ cd ~
-$ wget  https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
-$ tar -xvzf apache-hive-3.1.3-bin.tar.gz
-$ mv apache-hive-3.1.3-bin hive
+$ wget  https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-2.3.9-bin.tar.gz
+$ tar -xvzf apache-hive-2.3.9-bin.tar.gz
+$ mv apache-hive-2.3.9-bin hive
 ~~~
 
 3. Edit the file ~/.bashrc with the the following lines 
@@ -282,13 +282,13 @@ $ bin/hiveserver2
 ~~~bash
 $ cd ~/hive
 $ bin/beeline
-Beeline version 3.1.3 by Apache Hive
+Beeline version 2.3.9 by Apache Hive
 beeline> !connect jdbc:hive2://
 Connecting to jdbc:hive2://
 Enter username for jdbc:hive2://: APP
 Enter password for jdbc:hive2://: mine
-Connected to: Apache Hive (version 3.1.3)
-Driver: Hive JDBC (version 3.1.3)
+Connected to: Apache Hive (version 2.3.9)
+Driver: Hive JDBC (version 2.3.9)
 Transaction isolation: TRANSACTION_REPEATABLE_READ
 0: jdbc:hive2://>
 ~~~
