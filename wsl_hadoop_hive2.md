@@ -82,7 +82,7 @@ $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
   export HIVE_CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
-10. Create Hive directories in the HDFS
+10. Start both DFS and YARN services before create those required Hive directories in the HDFS. Stop both service after done the directories creation
 ~~~bash
 $ hdfs dfs -mkdir /tmp
 $ hdfs dfs -mkdir /tmp/hduser
@@ -97,6 +97,17 @@ $ hdfs dfs -chmod g+w /user/hduser
 $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
 ~~~
+> Tips to start-stop DFS and YARN services
+> ~~~bash
+> $ jps
+> $ cd ~/hadoop3
+> $ sbin/start-dfs.sh
+> $ sbin/start-yarn.sh
+> $ jps
+> $ sbin/stop-yarn.sh
+> $ sbin/stop-dfs.sh
+> $ jps
+> ~~~
 
 11. Change mode of access for hadoop's data and namenode, which are created in Section E
 ~~~bash
@@ -105,7 +116,7 @@ $ chmod -R g+w /home/hduser/hadoopName
 ~~~
 
 
-12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
+12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional for Hive 3.1.3 installation)
 ~~~bash
 $ rm ~/hive/lib/log4j-slf4j-impl-2.17.1.jar
 ~~~
@@ -125,10 +136,10 @@ $ mkdir derby/data
 
 2. Edit the file ~/.bashrc with the the following lines 
 ~~~bash
- export DERBY_INSTALL=/home/hduser/derby
- export DERBY_HOME=/home/hduser/derby
- export PATH=$PATH:/home/hduser/derby/bin
- export CLASSPATH=$CLASSPATH:/home/hduser/derby/lib/derby.jar:/home/hduser/derby/lib/derbytools.jar
+  export DERBY_INSTALL=/home/hduser/derby
+  export DERBY_HOME=/home/hduser/derby
+  export PATH=$PATH:/home/hduser/derby/bin
+  export CLASSPATH=$CLASSPATH:/home/hduser/derby/lib/derby.jar:/home/hduser/derby/lib/derbytools.jar
 ~~~
 
 3. Re-load the environment
@@ -136,7 +147,7 @@ $ mkdir derby/data
 $ source ~/.bashrc
 ~~~
 
-4. Configure the Hive to use Network Derby by changing the following property values in file /home/hduser/hive/conf/hive-site.xml
+4. Configure the Hive to use Network Derby by changing the following property values in file ~/hive/conf/hive-site.xml
 ~~~xml
     <property>
       <name>javax.jdo.option.ConnectionURL</name>
@@ -175,7 +186,7 @@ $ source ~/.bashrc
     </property>
 ~~~
 
-5. To allow Hive to connect to Derby through JDBC, add the following lines to the file /home/hduser/hadoop3/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
+5. To allow Hive to connect to Derby through JDBC, add the following lines to the file ~/hadoop3/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
  ~~~xml
     <configuration>
       <property>
@@ -188,17 +199,7 @@ $ source ~/.bashrc
       </property>
     </configuration>
  ~~~
-> Tips to restart DFS and YARN services
-> ~~~bash
-> $ jps
-> $ cd ~/hadoop3
-> $ sbin/stop-yarn.sh
-> $ sbin/stop-dfs.sh
-> $ jps
-> $ sbin/start-dfs.sh
-> $ sbin/start-yarn.sh
-> $ jps
-> ~~~
+
 
 6. To allow PySpark to connect to hive cluster, duplicate (by overwriting) the following files to destination Spark
 ~~~bash
