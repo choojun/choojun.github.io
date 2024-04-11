@@ -147,13 +147,13 @@ wsl –l -v
 ## I. [Spark and Visualization](wsl_pyspark_viz)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 
-## J. [Kafka Installation and Configuration](wsl_hadoop_kafka)
+## J. [Kafka Installation and Configuration](wsl_kafka)
 ![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
 
 ## K. [HBase Installation and Configuration](wsl_hadoop_hbase)
 ![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
 
-## L. [HappyBase Installation and Configuration](wsl_hadoop_happybase)
+## L. [HappyBase Installation and Configuration](wsl_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
 Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases 
 
@@ -164,7 +164,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 ## Y. Summary and Tested Version
 
-| Requirement\Section |  [E](wsl_hadoop)  |  [F](wsl_hdfs) |  [G](wsl_pyspark) | [H](wsl_pyspark_ml)  |  [I](wsl_pyspark_viz)  |  [J](wsl_hadoop_kafka)  |  [K](wsl_hadoop_hbase)  |  [L](wsl_hadoop_happybase)  |  [M](wsl_hadoop_hive) |
+| Requirement\Section |  [E](wsl_hadoop)  |  [F](wsl_hdfs) |  [G](wsl_pyspark) | [H](wsl_pyspark_ml)  |  [I](wsl_pyspark_viz)  |  [J](wsl_kafka)  |  [K](wsl_hadoop_hbase)  |  [L](wsl_happybase)  |  [M](wsl_hadoop_hive) |
 |---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Hadoop              | 3.3.6 | *1 | *1                  | *1 | *1 | *1     | *1                   | *1    | *1        |
 | Spark               |       |    | 3.5.1               | *1 | *1 |        | *1                   |       | *1        |
