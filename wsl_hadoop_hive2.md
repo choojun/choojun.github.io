@@ -51,7 +51,6 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
   export HADOOP_HOME=/home/hduser/hadoop3
   export SPARK_HOME=/home/hduser/spark
   export HBASE_HOME=/homehduser/hbase
-  
   export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
   export HADOOP_COMMON_HOME=/home/hduser/hadoop3
   export HADOOP_HDFS_HOME=/home/hduser/hadoop3
@@ -64,21 +63,23 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 
 8. Duplicate for the file ~/hive/conf/hive-env.sh 
 ~~~bash
+$ cd ~/hive
 $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
-$ chmod 744 ~/hive/conf/hive-env.sh
 ~~~
 
 9. Edit the file ~/hive/conf/hive-env.sh  with the the following lines 
 ~~~bash
- export HADOOP_HOME=/home/hduser/hadoop3
- export HIVE_CONF_DIR=/home/hduser/hive/conf
- export CLASSPATH=/home/hduser/hive/lib/*
- export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
- export HADOOP_COMMON_HOME=/home/hduser/hadoop3
- export HADOOP_HDFS_HOME=/home/hduser/hadoop3
- export YARN_HOME=/home/hduser/hadoop3
- export HIVE_HOME=/home/hduser/hive
- export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_HOME=/home/hduser/hadoop3
+  export SPARK_HOME=/home/hduser/spark
+  export HBASE_HOME=/homehduser/hbase
+  export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+  export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+  export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+  export YARN_HOME=/home/hduser/hadoop3
+  export HIVE_HOME=/home/hduser/hive
+  export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_CLASSPATH=/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/*
+  export HIVE_CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
 10. Create Hive directories in the HDFS
