@@ -212,7 +212,7 @@ $ cp -f ~/derby/lib/derbytools.jar ~/spark/jars/
 > Attention: ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if ANY CHANGES on the involved files in nearly future.
 
 
-7. Start DFS, YARN, Zookeeper, Kafka and HBase service before running the Derby as follows. Note that it will create databases in the current directory by default
+7. Start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that it will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
 $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
