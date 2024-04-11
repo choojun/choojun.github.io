@@ -271,16 +271,16 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop
 
 4. Run HiveServer2 from shell
 ~~~bash
-$ cd ~
-$ /home/hduser/hive/bin/hiveserver2
+$ cd ~/hive
+$ bin/hiveserver2
 ~~~
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
 
 5. Run Beeline from shell with following inputs
 ~~~bash
-$ cd ~
-$ ~/hive/bin/beeline
+$ cd ~/hive
+$ bin/beeline
 Beeline version 3.1.3 by Apache Hive
 beeline> !connect jdbc:hive2://
 Connecting to jdbc:hive2://
