@@ -174,7 +174,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 | HBase               |       |    |                     |    |    |        | 2.5.7                | *1    |           |
 | HappyBase           |       |    |                     |    |    |        |                      | 1.2.0 |           |
 | Derby               |       |    |                     |    |    |        |                      |       | 10.14.2.0 |
-| Hive                |       |    |                     |    |    |        |                      |       | 3.1.3     |
+| Hive                |       |    |                     |    |    |        |                      |       | 2.3.9     |
 | Web Browser         | *1 |    | *1 |    | *1 |    |    |    |    |
 | SSH and PDSH        | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 |
 | Internet            | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 |
