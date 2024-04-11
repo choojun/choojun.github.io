@@ -12,7 +12,7 @@
 2. Install Hive
 ~~~bash
 $ cd ~
-$ wget  https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-2.3.9-bin.tar.gz
+$ wget  https://dlcdn.apache.org/hive/hive-2.3.9/apache-hive-2.3.9-bin.tar.gz
 $ tar -xvzf apache-hive-2.3.9-bin.tar.gz
 $ mv apache-hive-2.3.9-bin hive
 ~~~
