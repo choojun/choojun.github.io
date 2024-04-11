@@ -266,7 +266,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 8. Use command exit() for **PySpark interactive shell**
 9. Terminate the NodeManager, ResourceManager (from **YARN**) and DataNode, NameNode, SecondaryNameNode (from **DFS**) using command
    > ~~~bash
-   > $ cd ~/hadopp3
+   > $ cd ~/hadoop3
    > $ sbin/stop-yarn.sh
    > $ sbin/stop-dfs.sh
    > ~~~
