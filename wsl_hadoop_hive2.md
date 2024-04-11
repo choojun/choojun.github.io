@@ -224,10 +224,27 @@ $ jps
 9115 ...
 8428 ...
 ~~~
+> Tips to start DFS, YARN, Zookeeper, Kafka, HBase and HappyBase (optional) services
+> ~~~bash
+> $ jps
+> $ cd ~/hadoop3
+> $ sbin/start-dfs.sh
+> $ sbin/start-yarn.sh
+> $ jps
+> $ cd ~/kafka
+> $ bin/zookeeper-server-start.sh config/zookeeper.properties &
+> $ bin/kafka-server-start.sh config/server.properties &
+> $ jps
+> $ cd ~/hbase
+> $ bin/start-hbase.sh
+> $ jps
+> $ bin/hbase thrift start -p 9090 &
+> $ jps
+> ~~~
 > To stop Derby (replace 25410 with your process id):
-~~~bash
-$ kill -9 25410
-~~~
+> ~~~bash
+> $ kill -9 25410
+> ~~~
 
 
 8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
