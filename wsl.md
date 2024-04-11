@@ -270,7 +270,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
    > $ sbin/stop-yarn.sh
    > $ sbin/stop-dfs.sh
    > ~~~
-10. Use command jps to check remaining processes, and terminate each of them with its current process id (observed from command jps)
+10. Use command jps to check remaining processes. Terminate each of them with its current process id, if any (observed from command jps)
 
 ## References
 
