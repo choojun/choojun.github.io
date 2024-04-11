@@ -216,17 +216,18 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 ~~~
 5. Run HBase. An additional two services can be observed using command jps in this step, i.e. HMaster and HRegionServer processes
 ~~~bash
-      $ cd ~
-      $ /home/hduser/hbase/bin/start-hbase.sh
+      $ cd ~/hbase
+      $ bin/start-hbase.sh
 ~~~
 6. Run HBase shell.
 ~~~bash
-      $ /home/hduser/hbase/bin/hbase shell
+      $ cd ~/hbase
+      $ bin/hbase shell
 ~~~
 7. Run HappyBase with Python. An additional one service can be observed using command jps in this step, i.e. ThriftServer process
 ~~~bash
-      $ cd ~
-      $ hbase thrift start -p 9090 &
+      $ cd ~/hbase
+      $ bin/hbase thrift start -p 9090 &
 ~~~
 > Open another session in the terminal, and log in as hduser. Then, launch the Python command-line interpreter using the command python to explore the ability of HappyBase to interact with HBase using the Python programming language
 8. Run Derby for Hive use. An additional one service can be observed using command jps in this step, i.e. NetworkServerControl process
@@ -236,13 +237,13 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 ~~~
 9. Run Hive. An additional one service can be observed using command jps in this step, i.e. RunJar process (observation from another terminal)
 ~~~bash
-      $ cd ~
-      $ /home/hduser/hive/bin/hiveserver2
+      $ cd ~/hive
+      $ bin/hiveserver2
 ~~~
 10. Run Beeline shell. 
 ~~~bash
-      $ cd ~
-      $ /home/hduser/hive/bin/beeline
+      $ cd ~/hive
+      $ bin/beeline
 ~~~
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above. Tips to stop running processes:
@@ -250,13 +251,13 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 2. Use Ctrl-c for the RunJar of **HiveServer2** (at the running terminal)
 3. Terminate the NetworkServerControl of **Derby** using its current process id (observed from command jps)
 4. Terminate the ThriftServer of **HappyBase** using its current process id (observed from command jps)
-5. Terminate the HMaster and HRegionServer of **HBase** using command
+5. Use command exit for **HBase shell**
+6. Terminate the HMaster and HRegionServer of **HBase** using command
    > ~~~bash
-   > $ cd ~
-   > $ ~/hbase/bin/stop-hbase.sh
+   > $ cd ~/hbase
+   > $ bin/stop-hbase.sh
    > ~~~
-7. Use command exit for **HBase shell**
-8. Terminate the QuorumPeerMain (from **Zookeeper**) and **Kafka** using command
+7. Terminate the QuorumPeerMain (from **Zookeeper**) and **Kafka** using command
    > ~~~bash
    > $ cd ~/kafka
    > $ bin/kafka-server-stop.sh
