@@ -228,7 +228,7 @@ $ jps
 > ~~~bash
 > $ kill -9 25410
 > ~~~
-> Tips to start DFS, YARN, Zookeeper, Kafka, HBase and HappyBase (optional) services
+> Tips to start DFS, YARN, Zookeeper, Kafka, HBase and HappyBase (optional) services. Note that a total of elevan (11) services can be observed eventually, included HappyBase and Jps
 > ~~~bash
 > $ jps
 > $ cd ~/hadoop3
