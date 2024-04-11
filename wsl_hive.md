@@ -12,22 +12,22 @@
 2. Install Hive
 ~~~bash
 $ cd ~
-$ wget  https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
-$ tar -xvzf apache-hive-3.1.3-bin.tar.gz
-$ mv apache-hive-3.1.3-bin hive
+$ wget  https://dlcdn.apache.org/hive/hive-2.3.9/apache-hive-2.3.9-bin.tar.gz
+$ tar -xvzf apache-hive-2.3.9-bin.tar.gz
+$ mv apache-hive-2.3.9-bin hive
 ~~~
 
 3. Edit the file ~/.bashrc with the the following lines 
 ~~~bash
- export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
- export HADOOP_COMMON_HOME=/home/hduser/hadoop3
- export HADOOP_HDFS_HOME=/home/hduser/hadoop3
- export YARN_HOME=/home/hduser/hadoop3
- export HIVE_HOME=/home/hduser/hive
- export HIVE_CONF_DIR=/home/hduser/hive/conf
- export PATH=$PATH:/home/hduser/hive/bin
- export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*
- export HADOOP_CLASSPATH=$CLASSPATH
+  export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+  export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+  export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+  export YARN_HOME=/home/hduser/hadoop3
+  export HIVE_HOME=/home/hduser/hive
+  export PATH=$HIVE_HOME/bin:$PATH
+  export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_CLASSPATH=/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/*
+  export HIVE_CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
 4. Re-load the environment
@@ -49,29 +49,41 @@ $ cp conf/hive-default.xml.template conf/hive-site.xml
 
 7. Edit the file ~/hive/bin/hive-config.sh with the the following lines 
 ~~~bash
- export HADOOP_HOME=/home/hduser/hadoop3
+  export HADOOP_HOME=/home/hduser/hadoop3
+  export SPARK_HOME=/home/hduser/spark
+  export HBASE_HOME=/homehduser/hbase
+  export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+  export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+  export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+  export YARN_HOME=/home/hduser/hadoop3
+  export HIVE_HOME=/home/hduser/hive
+  export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_CLASSPATH=/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/*
+  export HIVE_CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
 8. Duplicate for the file ~/hive/conf/hive-env.sh 
 ~~~bash
+$ cd ~/hive
 $ cp ~/hive/conf/hive-env.sh.template ~/hive/conf/hive-env.sh
-$ chmod 744 ~/hive/conf/hive-env.sh
 ~~~
 
 9. Edit the file ~/hive/conf/hive-env.sh  with the the following lines 
 ~~~bash
- export HADOOP_HOME=/home/hduser/hadoop3
- export HIVE_CONF_DIR=/home/hduser/hive/conf
- export CLASSPATH=/home/hduser/hive/lib/*
- export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
- export HADOOP_COMMON_HOME=/home/hduser/hadoop3
- export HADOOP_HDFS_HOME=/home/hduser/hadoop3
- export YARN_HOME=/home/hduser/hadoop3
- export HIVE_HOME=/home/hduser/hive
- export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_HOME=/home/hduser/hadoop3
+  export SPARK_HOME=/home/hduser/spark
+  export HBASE_HOME=/homehduser/hbase
+  export HADOOP_MAPRED_HOME=/home/hduser/hadoop3
+  export HADOOP_COMMON_HOME=/home/hduser/hadoop3
+  export HADOOP_HDFS_HOME=/home/hduser/hadoop3
+  export YARN_HOME=/home/hduser/hadoop3
+  export HIVE_HOME=/home/hduser/hive
+  export HIVE_CONF_DIR=/home/hduser/hive/conf
+  export HADOOP_CLASSPATH=/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/*
+  export HIVE_CLASSPATH=/home/hduser/hive/lib/*
 ~~~
 
-10. Create Hive directories in the HDFS
+10. Start both DFS and YARN services before create those required Hive directories in the HDFS. Stop both service after done the directories creation
 ~~~bash
 $ hdfs dfs -mkdir /tmp
 $ hdfs dfs -mkdir /tmp/hduser
@@ -86,6 +98,17 @@ $ hdfs dfs -chmod g+w /user/hduser
 $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
 ~~~
+> Tips to start-stop DFS and YARN services
+> ~~~bash
+> $ jps
+> $ cd ~/hadoop3
+> $ sbin/start-dfs.sh
+> $ sbin/start-yarn.sh
+> $ jps
+> $ sbin/stop-yarn.sh
+> $ sbin/stop-dfs.sh
+> $ jps
+> ~~~
 
 11. Change mode of access for hadoop's data and namenode, which are created in Section E
 ~~~bash
@@ -94,11 +117,11 @@ $ chmod -R g+w /home/hduser/hadoopName
 ~~~
 
 
-12. Delete the log4j-slf4j-impl-2.17.1.jar file (optional)
+12. Delete the log4j-slf4j-impl-2.6.2.jar file (optional)
 ~~~bash
-$ rm ~/hive/lib/log4j-slf4j-impl-2.17.1.jar
+$ rm ~/hive/lib/log4j-slf4j-impl-2.6.2.jar
 ~~~
-> We delete the file log4j-slf4j-impl-2.17.1.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
+> We delete the file log4j-slf4j-impl-2.6.2.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
 
 
 ## M2. Install and Configure Derby [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
@@ -114,10 +137,10 @@ $ mkdir derby/data
 
 2. Edit the file ~/.bashrc with the the following lines 
 ~~~bash
- export DERBY_INSTALL=/home/hduser/derby
- export DERBY_HOME=/home/hduser/derby
- export PATH=$PATH:/home/hduser/derby/bin
- export CLASSPATH=$CLASSPATH:/home/hduser/derby/lib/derby.jar:/home/hduser/derby/lib/derbytools.jar
+  export DERBY_INSTALL=/home/hduser/derby
+  export DERBY_HOME=/home/hduser/derby
+  export PATH=$PATH:/home/hduser/derby/bin
+  export CLASSPATH=$CLASSPATH:/home/hduser/derby/lib/derby.jar:/home/hduser/derby/lib/derbytools.jar
 ~~~
 
 3. Re-load the environment
@@ -125,7 +148,7 @@ $ mkdir derby/data
 $ source ~/.bashrc
 ~~~
 
-4. Configure the Hive to use Network Derby by changing the following property values in file /home/hduser/hive/conf/hive-site.xml
+4. Configure the Hive to use Network Derby by changing the following property values in file ~/hive/conf/hive-site.xml
 ~~~xml
     <property>
       <name>javax.jdo.option.ConnectionURL</name>
@@ -164,7 +187,7 @@ $ source ~/.bashrc
     </property>
 ~~~
 
-5. To allow Hive to connect to Derby through JDBC, add the following lines to the file /home/hduser/hadoop3/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
+5. To allow Hive to connect to Derby through JDBC, add the following lines to the file ~/hadoop3/etc/hadoop/core-site.xml of your Hadoop installation. Then restart your hadoop, i.e. DFS and YARN services. Note that your hive SHOULD NOT running at this step
  ~~~xml
     <configuration>
       <property>
@@ -177,31 +200,20 @@ $ source ~/.bashrc
       </property>
     </configuration>
  ~~~
-> Tips to restart DFS and YARN services
-> ~~~bash
-> $ jps
-> $ cd ~/hadoop3
-> $ sbin/stop-yarn.sh
-> $ sbin/stop-dfs.sh
-> $ jps
-> $ sbin/start-dfs.sh
-> $ sbin/start-yarn.sh
-> $ jps
-> ~~~
+
 
 6. To allow PySpark to connect to hive cluster, duplicate (by overwriting) the following files to destination Spark
 ~~~bash
-$ cp -f /home/hduser/hadoop3/etc/hadoop/core-site.xml /home/hduser/spark/conf/
-$ cp -f /home/hduser/hadoop3/etc/hadoop/hdfs-site.xml /home/hduser/spark/conf/
-$ cp -f /home/hduser/hive/conf/hive-site.xml /home/hduser/spark/conf/
-$ cp -f /home/hduser/derby/lib/derbyclient.jar /home/hduser/spark/jars/
-$ cp -f /home/hduser/derby/lib/derbytools.jar /home/hduser/spark/jars/
+$ cp -f ~/hadoop3/etc/hadoop/core-site.xml ~/spark/conf/
+$ cp -f ~/hadoop3/etc/hadoop/hdfs-site.xml ~/spark/conf/
+$ cp -f ~/hive/conf/hive-site.xml ~/spark/conf/
+$ cp -f ~/derby/lib/derbyclient.jar ~/spark/jars/
+$ cp -f ~/derby/lib/derbytools.jar ~/spark/jars/
 ~~~
-> Ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step.
-> You need to redo this step if any changes in the involved files in nearly future.
+> Attention: ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if ANY CHANGES on the involved files in nearly future.
 
 
-7. Run the Derby. Note that it will create databases in the current directory by default
+7. Start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that it will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
 $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
@@ -214,17 +226,37 @@ $ jps
 8428 ...
 ~~~
 > To stop Derby (replace 25410 with your process id):
-~~~bash
-$ kill -9 25410
-~~~
+> ~~~bash
+> $ kill -9 25410
+> ~~~
+> Tips to start DFS, YARN, Zookeeper, Kafka, HBase and HappyBase (optional) services. Note that a total of elevan (11) services can be observed eventually, included HappyBase and Jps
+> ~~~bash
+> $ jps
+> $ cd ~/hadoop3
+> $ sbin/start-dfs.sh
+> $ sbin/start-yarn.sh
+> $ jps
+> $ cd ~/kafka
+> $ bin/zookeeper-server-start.sh config/zookeeper.properties &
+> $ bin/kafka-server-start.sh config/server.properties &
+> $ jps
+> $ cd ~/hbase
+> $ bin/start-hbase.sh
+> $ jps
+> $ bin/hbase thrift start -p 9090 &
+> $ jps
+> ~~~
+
 
 
 8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
 ~~~bash
 $ cd ~
-$ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
+$ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
 ~~~
-> You may have corrupted characters in file ~/hive/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
+> In the setup of Derby 10.14.2.0 with Hive 2.3.9, you need to stop-start the Derby after this step
+> 
+> In setup of Hive 3.3.1, you may have corrupted characters in file ~/hive/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
 
 
 ## M3. Running HiveServer2 and Beeline [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
@@ -240,23 +272,23 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/hive/lib/*:/home/hduser/hadoop3/
 
 4. Run HiveServer2 from shell
 ~~~bash
-$ cd ~
-$ /home/hduser/hive/bin/hiveserver2
+$ cd ~/hive
+$ bin/hiveserver2
 ~~~
 > You may observe addition service has activated namely as RunJar, if it gives error to us
 > Ctrl-c to terminate the RunJar service of HiveServer2
 
 5. Run Beeline from shell with following inputs
 ~~~bash
-$ cd ~
-$ ~/hive/bin/beeline
-Beeline version 3.1.3 by Apache Hive
+$ cd ~/hive
+$ bin/beeline
+Beeline version 2.3.9 by Apache Hive
 beeline> !connect jdbc:hive2://
 Connecting to jdbc:hive2://
 Enter username for jdbc:hive2://: APP
 Enter password for jdbc:hive2://: mine
-Connected to: Apache Hive (version 3.1.3)
-Driver: Hive JDBC (version 3.1.3)
+Connected to: Apache Hive (version 2.3.9)
+Driver: Hive JDBC (version 2.3.9)
 Transaction isolation: TRANSACTION_REPEATABLE_READ
 0: jdbc:hive2://>
 ~~~
