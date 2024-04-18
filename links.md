@@ -7,7 +7,7 @@
 |   |   |   |   | 
 |---|---|---|---|
 | [TEC](https://mc.manuscriptcentral.com/tevc-ieee)  | [EC](https://www.editorialmanager.com/ecj)  |  [CYB](https://mc.manuscriptcentral.com/cyb-ieee) |  [ASOC](https://www.editorialmanager.com/asoc)  |
-| [NC](https://ees.elsevier.com/neucom/)  | [SOCO](https://www.editorialmanager.com/soco)  | [NPL](https://www.editorialmanager.com/nepl) | [KnoSys](https://www.editorialmanager.com/knosys/)  |  
+| [NC](https://ees.elsevier.com/neucom/)  | [SOCO](https://www.editorialmanager.com/soco)  | [EXSY](https://submission.wiley.com/journal/EXSY?) | [KnoSys](https://www.editorialmanager.com/knosys/)  |  
 |   |   |   |   |  
 
 
@@ -20,6 +20,7 @@
 7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
 8. [JIFS](https://www.editorialmanager.com/jifs)
 9. [Springer KAIS](https://www.editorialmanager.com/kais/)
+10. [NPL](https://www.editorialmanager.com/nepl)
 
 ### Programming and Database:
 
