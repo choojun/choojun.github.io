@@ -344,5 +344,9 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 35. https://www.simplilearn.com/tutorials/hadoop-tutorial/hive
 
+36. https://cwiki.apache.org/confluence/display/hive/tutorial
 
+37. https://sparkbyexamples.com/apache-hive-tutorial/
+
+38. https://www.simplilearn.com/tutorials/hadoop-tutorial/hive
 
