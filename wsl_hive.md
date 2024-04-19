@@ -213,7 +213,7 @@ $ cp -f ~/derby/lib/derbytools.jar ~/spark/jars/
 > Attention: ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if ANY CHANGES on the involved files in nearly future.
 
 
-7. Start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that it will create databases in the current directory by default
+7. Use existing session (named as **session 1**) to start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that it will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
 $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
@@ -249,7 +249,7 @@ $ jps
 
 
 
-8. Run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
+8. Use the **session 1** to run the following command to initialize Derby as the Metastore database for Hive. It might take a few minutes. Please be patient while you wait for its completion
 ~~~bash
 $ cd ~
 $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/*:/home/hduser/hadoop3/share/hadoop/hdfs/lib/*:/home/hduser/hadoop3/share/hadoop/hdfs/*:/home/hduser/hadoop3/share/hadoop/tools/lib/*:/home/hduser/hadoop3/share/hadoop/mapreduce/*:/home/hduser/hadoop3/share/hadoop/yarn/*:/home/hduser/hadoop3/share/hadoop/yarn/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/*:/home/hduser/hadoop3/share/hadoop/yarn/timelineservice/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/lib/*:/home/hduser/hadoop3/share/hadoop/yarn/csi/* org.apache.hive.beeline.HiveSchemaTool -initSchema -dbType derby
@@ -265,20 +265,20 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop
 
 2. HiveServer2 supports a command shell Beeline that works with HiveServer2. It's a JDBC client that is based on the SQLLine CLI (http://sqlline.sourceforge.net/). Read more on Beeline at URL https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
 
-3. Edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
+3. Use another session (named as **session 2**) to edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
 ~~~bash
  export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* 
 ~~~
 
-4. Run HiveServer2 from shell
+4. Run the HiveServer2 from the shell of **session 2**
 ~~~bash
 $ cd ~/hive
 $ bin/hiveserver2
 ~~~
-> You may observe addition service has activated namely as RunJar, if it gives error to us
-> Ctrl-c to terminate the RunJar service of HiveServer2
+> In **session 1**, issue command jps and you may observe addition service has activated namely as RunJar
+> In **session 2**, use ctrl-c to terminate the RunJar service of HiveServer2, if it gives error to us. Always need to terminate the running RunJar service/s BEFORE re-run the HiveServer2
 
-5. Run Beeline from shell with following inputs
+5. Use another session (named as **session 3**) ro run Beeline from shell with following inputs
 ~~~bash
 $ cd ~/hive
 $ bin/beeline
