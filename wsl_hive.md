@@ -256,7 +256,7 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop
 ~~~
 > In the setup of Derby 10.14.2.0 with Hive 2.3.9, you need to stop-start the Derby after this step
 > 
-> In setup of Hive 3.3.1, you may have corrupted characters in file ~/hive/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
+> Note that in the setup of Hive 3.3.1, you may have corrupted characters in file ~/hive/conf/hive-site.xml, which is inherited from its template (duplicated in Section M1), particularlly under the description of 'hive.txn.xlock.iow'. Just delete it if there is an error, and re-run above command
 
 
 ## M3. Running HiveServer2 and Beeline [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
