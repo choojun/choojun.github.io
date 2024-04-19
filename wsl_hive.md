@@ -276,6 +276,7 @@ $ cd ~/hive
 $ bin/hiveserver2
 ~~~
 > In **session 1**, issue command jps and you may observe addition service has activated namely as RunJar
+> 
 > In **session 2**, use ctrl-c to terminate the RunJar service of HiveServer2, if it gives error to us. Always need to terminate the running RunJar service/s BEFORE re-run the HiveServer2
 
 5. Use another session (named as **session 3**) ro run Beeline from shell with following inputs
