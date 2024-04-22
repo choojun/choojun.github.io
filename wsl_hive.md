@@ -213,7 +213,7 @@ $ cp -f ~/derby/lib/derbytools.jar ~/spark/jars/
 > Attention: ensure Hadoop, Spark, and Hive are successfully installed BEFORE proceeding with this step. You need to redo this step if ANY CHANGES on the involved files in nearly future.
 
 
-7. Use existing session (named as **session 1**) to start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that it will create databases in the current directory by default
+7. Use existing session (named as **session 1**) to start DFS, YARN, Zookeeper, Kafka and HBase services before running the Derby as follows. Note that you need to press Enter key upon the execution of second of command. It will create databases in the current directory by default
 ~~~bash
 $ cd ~/derby/data
 $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
@@ -270,7 +270,7 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop
  export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* 
 ~~~
 
-4. Run the HiveServer2 from the shell of **session 2**
+4. Run the HiveServer2 from the shell of **session 2**. Leave the session running and DO NOT CLOSE the session  after the execution of following command. 
 ~~~bash
 $ cd ~/hive
 $ bin/hiveserver2
