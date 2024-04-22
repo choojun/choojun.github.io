@@ -159,6 +159,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 ## M. [Hive Installation and Configuration](wsl_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
+Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases 
 
 -----------------------------------------------------------
 
