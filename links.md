@@ -8,7 +8,6 @@
 |---|---|---|---|
 | IEEE      | [TEC](https://mc.manuscriptcentral.com/tevc-ieee)  | [EC](https://www.editorialmanager.com/ecj)  |  [CYB](https://mc.manuscriptcentral.com/cyb-ieee) |
 | Elsevier  | [ASOC](https://www.editorialmanager.com/asoc)        | [NC](https://ees.elsevier.com/neucom/)         | [KNOSYS](https://www.editorialmanager.com/knosys/) | 
-| Wiley     | [EXSY](https://submission.wiley.com/journal/EXSY?)  |   |   | 
 | Springer  | [NCAA](https://www.editorialmanager.com/ncaa/)      | [SOCO](https://www.editorialmanager.com/soco)  |   | 
 |   |   |   |   |  
 
@@ -19,10 +18,11 @@
 4. [IJAIT](https://www.editorialmanager.com/ijait/)
 5. [AI EDAM](https://mc.manuscriptcentral.com/aie)
 6. [COIN](https://mc.manuscriptcentral.com/coin)
-7. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
-8. [JIFS](https://www.editorialmanager.com/jifs)
-9. [Springer KAIS](https://www.editorialmanager.com/kais/)
-10. [NPL](https://www.editorialmanager.com/nepl)
+7. [EXSY](https://submission.wiley.com/journal/EXSY?) 
+8. [MTAP](https://www.editorialmanager.com/mtap/Default.aspx)
+9. [JIFS](https://www.editorialmanager.com/jifs)
+10. [Springer KAIS](https://www.editorialmanager.com/kais/)
+11. [NPL](https://www.editorialmanager.com/nepl)
 
 ### Programming and Database:
 
