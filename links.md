@@ -69,6 +69,7 @@
 * [Deep Learning - Ian Goodfellow, Yoshua Bengio and Aaron Courville](http://www.deeplearningbook.org/)
 * [Neural Networks and Deep Learning - Michael Nielsen](http://neuralnetworksanddeeplearning.com/)
 * [Code of Predictive Analytics with TensorFlow](https://github.com/PacktPublishing/Predictive-Analytics-with-TensorFlow)
+* [Statistics and Geodata Analysis using Python (SOGA-Py)](https://www.geo.fu-berlin.de/en/v/soga-py/index.html)
 
 
 ### Links 
