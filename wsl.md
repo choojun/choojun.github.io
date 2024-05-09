@@ -1,9 +1,9 @@
 ![WSLHome](https://github.com/choojun/choojun.github.io/assets/6356054/213b5f1f-0c3b-4e6e-9bc4-13c1f8977ba9)
 ![wsl](https://github.com/choojun/choojun.github.io/assets/6356054/80aae18a-def8-453d-bb99-e6b629dcc5ae)
 
-# Microsoft Windows Subsystem for Linux (WSL)
+# Data Engineering with Distributed Environment for Data Analytics
 
-## A. Remove/Setup WSL
+## A. Remove/Setup Microsoft Windows Subsystem for Linux (WSL)
 
 1. Hardware requirement: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **constant internet access** during exercises.
 Suppose that your Windows has updated to the latest patches too (tested Windows 10 Pro with version 22H2)!  
