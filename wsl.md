@@ -1,7 +1,7 @@
 ![WSLHome](https://github.com/choojun/choojun.github.io/assets/6356054/213b5f1f-0c3b-4e6e-9bc4-13c1f8977ba9)
 ![wsl](https://github.com/choojun/choojun.github.io/assets/6356054/80aae18a-def8-453d-bb99-e6b629dcc5ae)
 
-# Data Engineering with Distributed Environment for Data Analytics
+# Data Engineering with Distributed Environment for Data Analytics: A One-Stop of Setup and Configuration
 
 ## A. Remove/Setup Microsoft Windows Subsystem for Linux (WSL)
 
