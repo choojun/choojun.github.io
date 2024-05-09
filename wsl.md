@@ -1,9 +1,9 @@
 ![WSLHome](https://github.com/choojun/choojun.github.io/assets/6356054/213b5f1f-0c3b-4e6e-9bc4-13c1f8977ba9)
 ![wsl](https://github.com/choojun/choojun.github.io/assets/6356054/80aae18a-def8-453d-bb99-e6b629dcc5ae)
 
-# Data Engineering with Distributed Environment for Data Analytics: An One-Stop of Setup and Configuration
+## Data Engineering with Distributed Environment for Data Analytics: An One-Stop of Setup and Configuration in Microsoft Windows Subsystem for Linux (WSL)
 
-## A. Remove/Setup Microsoft Windows Subsystem for Linux (WSL)
+### A. Remove/Setup WSL
 
 1. Hardware requirement: recommended **16GB RAM (or more)** and **CPU virtualization enabled** with **constant internet access** during exercises.
 Suppose that your Windows has updated to the latest patches too (tested Windows 10 Pro with version 22H2)!  
@@ -44,7 +44,7 @@ Software reqirement:
 
 
 
-## B. Running Ubuntu on WSL
+### B. Running Ubuntu on WSL
 
 1. Suppose that the required distro as default, run the following command with Power Shell.
 ~~~bash
@@ -84,7 +84,7 @@ sudo shutdown now
 
 
 
-## C. Backup the Distro on WSL
+### C. Backup the Distro on WSL
 
 1. In Power Shell, list the installed distro on WSL with the following command. Note that you need to know the exact name to create a backup
 ~~~bash
@@ -106,7 +106,7 @@ wsl --export <distribution> <file location with filename.tar>
 
 
 
-## D. Restore (Import) the Distro on WSL
+### D. Restore (Import) the Distro on WSL
 
 1. In Power Shell, list the installed distro on WSL before removing the same / targeted instance. Note that you need to know the exact name for this process, especially those who wants to restore it at some point on the same PC or on those PC with the same name for distribution of distro. Note that the 'unregister' command will unregister the distribution from WSL and deletes the root filesystems.
 ~~~bash
@@ -132,38 +132,38 @@ wsl –l -v
 
 
 
-## E. [Hadoop Installation and Configuration](wsl_hadoop)
+### E. [Hadoop Installation and Configuration](wsl_hadoop)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
 
-## F. [HDFS File Operations and MapReduce](wsl_hdfs)
+### F. [HDFS File Operations and MapReduce](wsl_hdfs)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
 
-## G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
+### G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 
-## H. [Spark and Machine Learning](wsl_pyspark_ml)
+### H. [Spark and Machine Learning](wsl_pyspark_ml)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 
-## I. [Spark and Visualization](wsl_pyspark_viz)
+### I. [Spark and Visualization](wsl_pyspark_viz)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
 
-## J. [Kafka Installation and Configuration](wsl_kafka)
+### J. [Kafka Installation and Configuration](wsl_kafka)
 ![kafka](https://github.com/choojun/choojun.github.io/assets/6356054/9e24ef13-f41f-4d8a-a731-889cdb9f76df)
 
-## K. [HBase Installation and Configuration](wsl_hbase)
+### K. [HBase Installation and Configuration](wsl_hbase)
 ![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
 
-## L. [HappyBase Installation and Configuration](wsl_happybase)
+### L. [HappyBase Installation and Configuration](wsl_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
 Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases 
 
-## M. [Hive Installation and Configuration](wsl_hive)
+### M. [Hive Installation and Configuration](wsl_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
 Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases 
 
 -----------------------------------------------------------
 
-## Y. Summary and Tested Version
+### Y. Summary and Tested Version
 
 | Requirement\Section |  [E](wsl_hadoop)  |  [F](wsl_hdfs) |  [G](wsl_pyspark) | [H](wsl_pyspark_ml)  |  [I](wsl_pyspark_viz)  |  [J](wsl_kafka)  |  [K](wsl_hbase)  |  [L](wsl_happybase)  |  [M](wsl_hive) |
 |---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
@@ -189,7 +189,7 @@ Access the accumulated setup distro (release 1.0.0.20240422) at URL https://gith
 
 -----------------------------------------------------------
 
-## Z. What's Next? (After setup above)
+### Z. What's Next? (After setup above)
 1. Start both DFS and YARN services. Ensure both websites http://localhost:9870/ and http://localhost:8088/ are up and ready. Six services can be observed using command jps in this step, i.e. Jps, DataNode, NameNode, SecondaryNameNode, NameManager and ResourceManager processes. Then, your WSL distro is ready for your daily practical exercises :D
 ~~~bash
       $ cd ~/hadoop3
@@ -273,7 +273,7 @@ Access the accumulated setup distro (release 1.0.0.20240422) at URL https://gith
    > ~~~
 10. Use command jps to check remaining processes. Terminate each of them with its current process id, if any (observed from command jps)
 
-## References
+### References
 
 1. https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
