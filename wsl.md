@@ -128,7 +128,7 @@ wsl –l -v
 4. The beauty of using both export and import commands is that you can quickly and easily setup the same environment on multiple machines or setup multiple distros in the same machine. Your users and passwords will be retained, including anything you have installed using the package manager.
 
 ### Note for Apple users
-If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon processor), you may need to install Fusion Pro (Free for personal use - https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html ) to virtualize Ubuntu 22.04.x. You can find the specific OS installer at https://ubuntu.com/download/alternative-downloads. After completing the OS setup, follow the same instructions in Sections E to Z to set up the required environment.
+If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon processor), you may need to install VMware Fusion Pro (Free for personal use - https://blogs.vmware.com/teamfusion/2024/05/fusion-pro-now-available-free-for-personal-use.html ) to virtualize Ubuntu 22.04.x. You can find the specific 22.04.x installer at https://ubuntu.com/download/alternative-downloads. After completing the Ubuntu setup, follow the same instructions in Sections E to Z to set up the required environment.
 
 -----------------------------------------------------------
 
