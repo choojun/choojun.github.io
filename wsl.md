@@ -142,7 +142,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 
 ### F. [HDFS File Operations and MapReduce](wsl_hdfs)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
---> HDFS is a distributed file system that provides high-throughput access to application data.
+--> HDFS is a Distributed File System (DFS) that provides high-throughput access to application data.
 
 ### G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
@@ -164,7 +164,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 
 ### L. [HappyBase Installation and Configuration](wsl_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
---> is a developer-friendly Python library to interact with Apache HBase.
+--> It is a developer-friendly Python library to interact with Apache HBase.
 
 Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases 
 
