@@ -65,8 +65,7 @@ wsl –d <distro name> -u <created user in distro>
 ~~~
 
 You need to configure your Windows if you failed to update the WSL.
-![wsl_firewall](https://github.com/user-attachments/assets/98854840-1824-494a-90fb-e7bcb13c35b0)
-
+![wsl_firewall](https://github.com/user-attachments/assets/192025eb-3c2b-452d-8298-37134f9e8b73)
 
 
 3. You may set the targeted distro as default with commands as follows.
