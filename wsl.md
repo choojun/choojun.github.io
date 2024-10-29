@@ -64,6 +64,11 @@ wsl –d <distro name> -u <created user in distro>
 > wsl --update
 ~~~
 
+You need to configure your Windows if you failed to update the WSL.
+![wsl_firewall](https://github.com/user-attachments/assets/98854840-1824-494a-90fb-e7bcb13c35b0)
+
+
+
 3. You may set the targeted distro as default with commands as follows.
 ~~~bash
 wsl –-set-default <distro name>
