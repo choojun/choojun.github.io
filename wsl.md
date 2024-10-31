@@ -275,7 +275,7 @@ $ bin/hiveserver2
       $ cd ~/hive
       $ bin/beeline
 ~~~
-> To stop the Beeline, use command !q
+> To stop the Beeline, use either command !q (after login) or Ctrl-c (before login).
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above. Tips to stop running processes:
 1. Use Ctrl-c for the **Beeline shell**
