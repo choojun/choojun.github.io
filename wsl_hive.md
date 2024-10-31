@@ -267,38 +267,39 @@ $ java -cp /home/hduser/hive/lib/*:/home/hduser/spark/jars/*:/home/hduser/hadoop
 
 2. HiveServer2 supports a command shell Beeline that works with HiveServer2. It's a JDBC client that is based on the SQLLine CLI (http://sqlline.sourceforge.net/). Read more on Beeline at URL https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients
 
-3. Use another session (named as **session 2**) to edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
+3. Assume other neccessary services have been executed in the **session 1**.
+
+4. Use another session (named as **session 2**) to edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
 ~~~bash
  export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* 
 ~~~
+> Comment out the above line after stopping HiveServer2 to prevent HBase errors in the next round.
 
-4. Run the HiveServer2 from the shell of **session 2**. Leave the session running and DO NOT CLOSE the session  after the execution of following command. 
+5. Switch back to shell **session 1**, and run the Hive over there. Leave the session running and DO NOT CLOSE the session after the execution of following command. 
 ~~~bash
 $ cd ~/hive
 $ bin/hiveserver2
 ~~~
-> In **session 1**, issue command jps and you may observe addition service has activated namely as RunJar
-> 
-> In **session 2**, use ctrl-c to terminate the RunJar service of HiveServer2, if it gives error to us. Always need to terminate the running RunJar service/s BEFORE re-run the HiveServer2
+> To stop the Hive, use Ctrl-C.
 
-5. Use another session (named as **session 3**) ro run Beeline from shell with following inputs
+6. Switch back to shell **session 2**, and ensure an additional one service is observed using command jps, i.e. RunJar process before run Beeline shell. 
 ~~~bash
-$ cd ~/hive
-$ bin/beeline
-Beeline version 2.3.9 by Apache Hive
-beeline> !connect jdbc:hive2://
-Connecting to jdbc:hive2://
-Enter username for jdbc:hive2://: APP
-Enter password for jdbc:hive2://: mine
-Connected to: Apache Hive (version 2.3.9)
-Driver: Hive JDBC (version 2.3.9)
-Transaction isolation: TRANSACTION_REPEATABLE_READ
-0: jdbc:hive2://>
+      $ jps
+      $ cd ~/hive
+      $ bin/beeline
+      Beeline version 2.3.9 by Apache Hive
+      beeline> !connect jdbc:hive2://
+      Connecting to jdbc:hive2://
+      Enter username for jdbc:hive2://: APP
+      Enter password for jdbc:hive2://: mine
+      Connected to: Apache Hive (version 2.3.9)
+      Driver: Hive JDBC (version 2.3.9)
+      Transaction isolation: TRANSACTION_REPEATABLE_READ
+      0: jdbc:hive2://>
+
 ~~~
-> To quit from the command shell Beeline
-> ~~~bash
-> !q
-> ~~~~
+> To stop the Beeline, use either command !q (after login) or Ctrl-c (before login).
+> Note that we always need to terminate the running RunJar service/s BEFORE re-run the HiveServer2.
 
 ## M4. Quick start with Hive [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
