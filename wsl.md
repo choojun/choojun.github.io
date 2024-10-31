@@ -262,14 +262,14 @@ Access the accumulated setup distro (release 1.0.0.20240422) at URL https://gith
 ~~~
 > Comment out the above line after stopping HiveServer2 to prevent HBase errors in the next round.
 
-11. Swicth back to shell **session 1**, and run the Hive over there. Leave the session running and DO NOT CLOSE the session after the execution of following command. 
+11. Switch back to shell **session 1**, and run the Hive over there. Leave the session running and DO NOT CLOSE the session after the execution of following command. 
 ~~~bash
 $ cd ~/hive
 $ bin/hiveserver2
 ~~~
 > To stop the Hive, use Ctrl-C.
 
-12. Swicth back to shell **session 2**, and ensure an additional one service is observed using command jps, i.e. RunJar process before run Beeline shell. 
+12. Switch back to shell **session 2**, and ensure an additional one service is observed using command jps, i.e. RunJar process before run Beeline shell. 
 ~~~bash
       $ jps
       $ cd ~/hive
