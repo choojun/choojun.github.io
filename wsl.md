@@ -278,7 +278,7 @@ $ bin/hiveserver2
 > To stop the Beeline, use either command !q (after login) or Ctrl-c (before login).
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above. Tips to stop running processes:
-1. Use Ctrl-c for the **Beeline shell**
+1. Use Ctrl-c (before login) or !q (after login) for the **Beeline shell**
 2. Use Ctrl-c for the RunJar of **HiveServer2** (at the running terminal)
 3. Terminate the NetworkServerControl of **Derby** using its current process id (observed from command jps)
 4. Terminate the ThriftServer of **HappyBase** using its current process id (observed from command jps)
