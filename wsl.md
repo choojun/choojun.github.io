@@ -142,7 +142,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 
 ### E. [Hadoop Installation and Configuration](wsl_hadoop)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
---> Hadoop is referred as an acronym for High Availability Distributed Object Oriented Platform. It is an open source framework based on Java that manages the storage and processing of large amounts of data for applications. Hadoop uses distributed storage and parallel processing to handle big data and analytics jobs, breaking workloads down into smaller workloads that can be run at the same time.
+--> Hadoop is referred as an acronym for High Availability Distributed Object Oriented Platform. It is an open source framework based on Java that manages the storage and processing of large amounts of data for applications. Hadoop uses distributed storage and parallel processing to handle big data and analytics jobs, breaking workloads down into smaller workloads that can be run at the same time. It is also calimed as a mature batch-processing platform for the petabyte scale environment.
 
 ### F. [HDFS File Operations and MapReduce](wsl_hdfs)
 ![hadoop](https://github.com/choojun/choojun.github.io/assets/6356054/0233d690-e03c-4699-a0e9-e9f932139de3)
@@ -150,7 +150,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 
 ### G. [Spark, PySpark, Spark SQL and Jupyter Notebook](wsl_pyspark)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
---> It is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.
+--> Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters. It is also known as a high-performance in-memory data-processing framework.
 
 ### H. [Spark and Machine Learning](wsl_pyspark_ml)
 ![spark](https://github.com/choojun/choojun.github.io/assets/6356054/ed7bd2cd-1ce6-43db-8ebd-18d56f351a43)
@@ -164,7 +164,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 
 ### K. [HBase Installation and Configuration](wsl_hbase)
 ![hbase](https://github.com/choojun/choojun.github.io/assets/6356054/bb45df8d-cfca-4cf2-abf1-9520ee683a4e)
---> It is an open-source, distributed, time-series, non-relational database modeled after Google's Bigtable: A Distributed Storage System for Structured Data. You need it when you require random, real-time access to your big data, including very large tables with billions of rows and millions of columns, running on clusters of commodity hardware and Hadoop (with HDFS).
+--> It is an open-source, distributed, time-series, non-relational database modeled after Google's Bigtable: A Distributed Storage System for Structured Data. It is also known as an NoSQL key/value database on Hadoop. You need it when you require random, real-time access to your big data, including very large tables with billions of rows and millions of columns, running on clusters of commodity hardware and Hadoop (with HDFS).
 
 ### L. [HappyBase Installation and Configuration](wsl_happybase)
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
@@ -174,7 +174,7 @@ Access the accumulated setup distro (release 1.0.0.20240405) at URL https://gith
 
 ### M. [Hive Installation and Configuration](wsl_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
---> It is a distributed, fault-tolerant data warehouse system enabling large-scale analytics. It facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL
+--> It is a distributed, fault-tolerant data warehouse system enabling large-scale analytics. It facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL.
 
 Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases 
 
