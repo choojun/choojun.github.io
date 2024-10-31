@@ -117,8 +117,10 @@ $ chmod -R g+w /home/hduser/hadoopName
 ~~~
 
 
-12. Delete the log4j-slf4j-impl-2.6.2.jar file (optional)
+12. Find the targeted jar file. Delete the log4j-slf4j-impl-2.6.2.jar file if found multiple copies (optional)
 ~~~bash
+$ cd ~
+$ find . -name log4j-slf4j-impl-*.jar
 $ rm ~/hive/lib/log4j-slf4j-impl-2.6.2.jar
 ~~~
 > We delete the file log4j-slf4j-impl-2.6.2.jar because the similar file is also presented in the Hadoop directory, and it gives error to us occasionally
