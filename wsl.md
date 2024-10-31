@@ -253,16 +253,29 @@ Access the accumulated setup distro (release 1.0.0.20240422) at URL https://gith
       $ cd ~/derby/data
       $ nohup ~/derby/bin/startNetworkServer -h 0.0.0.0 &
 ~~~
-9. Run Hive. An additional one service can be observed using command jps in this step, i.e. RunJar process (observation from another terminal)
+
+9. Assume previous steps 1 to 8 are done in **session 1**.
+
+10. Use another session (named as **session 2**) to edit the ~/hadoop3/etc/hadoop/hadoop-env.sh file by including additional paths into the HADOOP_CLASSPATH as follows
 ~~~bash
-      $ cd ~/hive
-      $ bin/hiveserver2
+ export HADOOP_CLASSPATH=/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/hduser/hive/lib/*:/home/hduser/hadoop3/share/hadoop/common/*:/home/hduser/hadoop3/share/hadoop/common/lib/*:/home/hduser/hadoop3/share/hadoop/client/* 
 ~~~
-10. Run Beeline shell. 
+> Comment out the above line after stopping HiveServer2 to prevent HBase errors in the next round.
+
+11. Swicth back to shell **session 1**, and run the Hive over there. Leave the session running and DO NOT CLOSE the session after the execution of following command. 
 ~~~bash
+$ cd ~/hive
+$ bin/hiveserver2
+~~~
+> To stop the Hive, use Ctrl-C.
+
+12. Swicth back to shell **session 2**, and ensure an additional one service is observed using command jps, i.e. RunJar process before run Beeline shell. 
+~~~bash
+      $ jps
       $ cd ~/hive
       $ bin/beeline
 ~~~
+> To stop the Beeline, use command !q
 
 ![exclamation_mark](https://github.com/choojun/choojun.github.io/assets/6356054/dd0eeedb-feac-476d-a69c-6a0aa31d4159) Remember to stop the DFS, YARN, and other started services (in reverse order) to avoid data corruption in HDFS before shutting down your PC. Read the required details from sections E to M above. Tips to stop running processes:
 1. Use Ctrl-c for the **Beeline shell**
