@@ -284,19 +284,18 @@ $ bin/hiveserver2
 
 6. Switch back to shell **session 2**, and ensure an additional one service is observed using command jps, i.e. RunJar process before run Beeline shell. 
 ~~~bash
-      $ jps
-      $ cd ~/hive
-      $ bin/beeline
-      Beeline version 2.3.9 by Apache Hive
-      beeline> !connect jdbc:hive2://
-      Connecting to jdbc:hive2://
-      Enter username for jdbc:hive2://: APP
-      Enter password for jdbc:hive2://: mine
-      Connected to: Apache Hive (version 2.3.9)
-      Driver: Hive JDBC (version 2.3.9)
-      Transaction isolation: TRANSACTION_REPEATABLE_READ
-      0: jdbc:hive2://>
-
+$ jps
+$ cd ~/hive
+$ bin/beeline
+Beeline version 2.3.9 by Apache Hive
+beeline> !connect jdbc:hive2://
+Connecting to jdbc:hive2://
+Enter username for jdbc:hive2://: APP
+Enter password for jdbc:hive2://: mine
+Connected to: Apache Hive (version 2.3.9)
+Driver: Hive JDBC (version 2.3.9)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://>
 ~~~
 > To stop the Beeline, use either command !q (after login) or Ctrl-c (before login).
 > Note that we always need to terminate the running RunJar service/s BEFORE re-run the HiveServer2.
