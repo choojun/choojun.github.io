@@ -21,21 +21,25 @@ $ sudo addgroup hadoop
 Add the new user:
 ~~~bash
 $ sudo adduser hduser
+$ sudo adduser student
 ~~~
 
 3. Grant the user sudo privileges
 ~~~bash
 $ sudo usermod -aG sudo hduser
+$ sudo usermod -aG sudo student
 ~~~
 
 4.	Add hduser to the hadoop group
 ~~~bash
 $ sudo usermod -a -G hadoop hduser
+$ sudo usermod -a -G hadoop student
 ~~~
 
 5.	Switch to the user account hduser (if applicable)
 ~~~bash
 $ su - hduser
+$ su - student
 ~~~
 
 6.	If you want to go back to your original user session
