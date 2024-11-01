@@ -367,6 +367,7 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 ## G8. Spark SQL and Jupyter Notebook [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
 
 1.	Apache Arrow is a development platform for in-memory analytics. It contains a set of technologies that enable big data systems to store, process and move data fast. Pyarrow has integred with NumPy, pandas, and built-in Python objects. They are based on the C++ implementation of Arrow (https://arrow.apache.org/).
+
 2. Read more from URL https://arrow.apache.org/docs/python/index.html 
 
 3. Login as hduser, and install the Jupyter notebook, PySpark and PyArrow packages 
@@ -408,4 +409,17 @@ $ pip3 install traitlets==5.9.0
 
 8. Open up the Practical3c_SparkSQL_and_DataFrames.ipynb notebook and do the Spark SQL exercises there.
 > Suppose that you have learned some essential codes in G4 to G7 before attempting the G8
+
+
+## G9. JupyterLab [![home](https://github.com/choojun/choojun.github.io/assets/6356054/947da4b4-f259-4b82-8961-07ca48b2811a)](wsl)
+
+1.	JupyterLab is a highly extensible, feature-rich notebook authoring application and editing environment, and is a part of Project Jupyter, a large umbrella project centered around the goal of providing tools (and standards) for interactive computing with computational notebooks. It is a sibling to other notebook authoring applications under the Project Jupyter umbrella, like Jupyter Notebook and Jupyter Desktop. JupyterLab offers a more advanced, feature rich, customizable experience compared to Jupyter Notebook.
+
+2. Read more from URL https://jupyterlab.readthedocs.io/en/latest/
+
+3. Login as hduser, and install the JupyterLab
+~~~bash
+$ cd ~
+$ pip3 install jupyterlab 
+~~~
 
