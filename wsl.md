@@ -23,8 +23,6 @@ Software reqirement:
 
 5. Suppose that your PC accessible to the Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in the Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.
 
-![wsl_setup](https://github.com/user-attachments/assets/fae87c59-097a-43f4-bea1-1febbaf5e16a)
-
 > To set up the required Ubuntu distro (same version), run the following commands in PowerShell as administrator.
 >
 > ~~~bash
@@ -38,6 +36,8 @@ Software reqirement:
 > ~~~
 >
 > You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. Then, locate your administrator username and password, after reboot and before first use.
+>
+> ![wsl_setup](https://github.com/user-attachments/assets/fae87c59-097a-43f4-bea1-1febbaf5e16a)
 >
 
 
@@ -56,13 +56,12 @@ wsl –l -v
 wsl –d <distro name> -u <created user in distro>
     e.g. wsl –d Ubuntu-22.04 –u tarumt
 ~~~
-> You need to run the following command to update your WSL after performing the Windows Update, regardless Windows 10 or Windows 11
+> You need to run the following command to update your WSL (mandatory) after performing the Windows Update, regardless Windows 10 or Windows 11
 ~~~bash
 > wsl --update
 ~~~
-
-You need to configure your Windows if you failed to update the WSL.
-![wsl_firewall](https://github.com/user-attachments/assets/192025eb-3c2b-452d-8298-37134f9e8b73)
+> Note that you need to configure your Windows (on Domain, Public and Private Profiles) if you failed to update the WSL.
+> ![wsl_firewall](https://github.com/user-attachments/assets/192025eb-3c2b-452d-8298-37134f9e8b73)
 
 
 3. You may set the targeted distro as default with commands as follows.
