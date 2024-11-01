@@ -420,6 +420,7 @@ $ pip3 install traitlets==5.9.0
 3. Login as hduser, and install the JupyterLab
 ~~~bash
 $ cd ~
-$ pip3 install jupyterlab 
+$ pip3 install jupyterlab
+$ pip3 install venv
 ~~~
 
