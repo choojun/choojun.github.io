@@ -21,8 +21,10 @@ Software reqirement:
 
 4. Restart PC
 
-5. Suppose that your PC accessible to the Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in the Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.   
-![ubuntu](https://github.com/choojun/choojun.github.io/assets/6356054/d2a117c5-2471-4834-8cf2-d461ed3fbb5c)
+5. Suppose that your PC accessible to the Internet (for huge files downloading), perform the search of required keyword, e.g., Ubuntu, in the Microsoft Store. Click on the Get button to download and intall the required distro, e.g., UBuntu-xx.xx, and laumch the installed distro via the created link in the Windows Start. A sudoer user will be created during the initial launching.
+
+![wsl_setup](https://github.com/user-attachments/assets/fae87c59-097a-43f4-bea1-1febbaf5e16a)
+
 > To set up the required Ubuntu distro (same version), run the following commands in PowerShell as administrator.
 >
 > ~~~bash
@@ -37,11 +39,8 @@ Software reqirement:
 >
 > You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. 
 >
-> ![image](https://github.com/choojun/choojun.github.io/assets/6356054/e6259ec4-76fa-48a4-ab5f-0ba0b0b524c4)
+> Then, locate your administrator username and password, after reboot and before first use.
 >
-> Locate your administrator username and password, after reboot and before first use.
->
-> ![image](https://github.com/choojun/choojun.github.io/assets/6356054/7c24254b-a6c5-45a4-9973-6bace4969717)
 
 
 
