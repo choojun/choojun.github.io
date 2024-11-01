@@ -372,6 +372,8 @@ $ hdfs dfs -put sf_parking_clean.json /user/hduser/data/
 
 3. Login as hduser, and install the Jupyter notebook, PySpark and PyArrow packages 
 ~~~bash
+$ pip3 --version
+$ sudo pip3 install --upgrade pip
 $ cd ~
 $ pip3 install jupyter
 $ pip3 install jupyter-server
@@ -419,6 +421,8 @@ $ pip3 install traitlets==5.9.0
 
 3. Login as hduser, and install the JupyterLab
 ~~~bash
+$ pip3 --version
+$ sudo pip3 install --upgrade pip
 $ cd ~
 $ pip3 install jupyterlab
 $ pip3 install venv
