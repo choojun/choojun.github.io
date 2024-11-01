@@ -37,9 +37,7 @@ Software reqirement:
 > (restart PC)
 > ~~~
 >
-> You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. 
->
-> Then, locate your administrator username and password, after reboot and before first use.
+> You may install a specific version of distro under the PowerShell as Administrator, e.g., the adopted version as PC either in lab or your course mate. Then, locate your administrator username and password, after reboot and before first use.
 >
 
 
