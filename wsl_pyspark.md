@@ -428,3 +428,8 @@ $ pip3 install jupyterlab
 $ pip3 install venv
 ~~~
 
+4. To start the Jupyter server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
+~~~bash
+$ cd ~
+$ jupyter-lab
+~~~
