@@ -419,18 +419,17 @@ $ pip3 install traitlets==5.9.0
 
 2. Read more from URL https://jupyterlab.readthedocs.io/en/latest/
 
-3. Login as student, and install the JupyterLab
+3. Login as hduser, and install the JupyterLab
 ~~~bash
 $ pip3 --version
 $ sudo pip3 install --upgrade pip
-$ sudo apt install jupyterlab
+$ sudo pip3 install jupyterlab
 $ sudo apt install python3-venv
-$ cd ~
-$ python -m venv myenv1
 ~~~
 
-4. To start the Jupyter server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser. You should able to observe the create myenv1 in your web browser.
+4. Login as student to start the Jupyter server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser. You should able to observe the create myenv1 in your web browser.
 ~~~bash
 $ cd ~
+$ python -m venv myenv1
 $ jupyter-lab
 ~~~
