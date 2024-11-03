@@ -423,6 +423,7 @@ $ pip3 install traitlets==5.9.0
 ~~~bash
 $ pip3 --version
 $ sudo pip3 install --upgrade pip
+$ sudo apt install python3-venv
 $ cd ~
 $ pip3 install jupyterlab
 $ pip3 install venv
