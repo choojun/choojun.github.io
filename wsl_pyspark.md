@@ -425,11 +425,10 @@ $ pip3 --version
 $ sudo pip3 install --upgrade pip
 $ sudo apt install python3-venv
 $ cd ~
-$ pip3 install jupyterlab
-$ pip3 install venv
+$ python -m venv myenv1
 ~~~
 
-4. To start the Jupyter server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser
+4. To start the Jupyter server by issuing the following command. Then, copy and paste one of the URLs that are listed in any web browser. You should able to observe the create myenv1 in your web browser.
 ~~~bash
 $ cd ~
 $ jupyter-lab
