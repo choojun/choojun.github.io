@@ -419,7 +419,7 @@ $ pip3 install traitlets==5.9.0
 
 2. Read more from URL https://jupyterlab.readthedocs.io/en/latest/
 
-3. Login as hduser, and install the JupyterLab
+3. Login as student, and install the JupyterLab
 ~~~bash
 $ pip3 --version
 $ sudo pip3 install --upgrade pip
