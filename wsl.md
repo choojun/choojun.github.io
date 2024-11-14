@@ -173,6 +173,7 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 --> It is a distributed, fault-tolerant data warehouse system enabling large-scale analytics. It facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL.
 
 ~~Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases~~ 
+
 Access the accumulated setup distro (release 1.0.0.20241114) at URL https://github.com/choojun/wsl/releases 
 
 -----------------------------------------------------------
