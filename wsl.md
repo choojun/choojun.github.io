@@ -166,13 +166,14 @@ If you are using Apple machines (MacBooks and iMacs with Intel/Apple Silicon pro
 ![happybase](https://github.com/choojun/choojun.github.io/assets/6356054/b4fa6fea-61a0-44e4-b62e-a97584cfe798)
 --> It is a developer-friendly Python library to interact with Apache HBase.
 
-Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases 
+~~Access the accumulated setup distro (release 1.0.0.20240405) at URL https://github.com/choojun/wsl/releases~~ 
 
 ### M. [Hive Installation and Configuration](wsl_hive)
 ![hive](https://github.com/choojun/choojun.github.io/assets/6356054/18bc2a47-52bc-4e0c-a0c2-5c373b9db3d3)
 --> It is a distributed, fault-tolerant data warehouse system enabling large-scale analytics. It facilitates reading, writing, and managing petabytes of data residing in distributed storage using SQL.
 
-Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases 
+~~Access the accumulated setup distro (release 1.0.0.20240422) at URL https://github.com/choojun/wsl/releases~~ 
+Access the accumulated setup distro (release 1.0.0.20241114) at URL https://github.com/choojun/wsl/releases 
 
 -----------------------------------------------------------
 
