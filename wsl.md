@@ -200,7 +200,7 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 > 
 > *2 Constant access
 >
-> *3 WSL Version 2 with distro Ubuntu 22.04
+> *3 WSL Version 2 with distro Ubuntu 22.04.x
 
 -----------------------------------------------------------
 
