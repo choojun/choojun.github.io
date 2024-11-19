@@ -36,9 +36,9 @@ $ ll ~/kafka/libs | grep kafka
 5.	Download HBase
 ~~~bash
 $ cd ~
-$ wget https://archive.apache.org/dist/hbase/2.5.7/hbase-2.5.7-bin.tar.gz
-$ tar -xvzf hbase-2.5.7-bin.tar.gz
-$ mv hbase-2.5.7 hbase
+$ wget https://archive.apache.org/dist/hbase/2.5.7/hbase-2.5.10-bin.tar.gz
+$ tar -xvzf hbase-2.5.10-bin.tar.gz
+$ mv hbase-2.5.10 hbase
 ~~~
 > Find the current stable release of HBase that is compatible with your version of Hadoop at here (https://hbase.apache.org/book.html#hadoop), and you may find a list of releases at Apache Hbase download page (https://hbase.apache.org/downloads.html). For example, you may adopt version Hbase 2.5.x for the installed Hadoop 3.3.6.
 
