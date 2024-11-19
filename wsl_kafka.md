@@ -23,16 +23,16 @@ $ cd ~
 $ sudo apt install zip unzip
 $ curl -s "https://get.sdkman.io" | bash
 $ source "/home/hduser/.sdkman/bin/sdkman-init.sh"
-$ sdk install scala 2.13.12
+$ sdk install scala 2.13.15
 $ scala -version
 ~~~
 
 3.	Download and setup the respective version of Kafka based on the installed version of Scala. The available Kafka versions may be found at the Kafka download page - https://kafka.apache.org/downloads
 ~~~bash
 $ cd ~
-$ wget https://downloads.apache.org/kafka/3.7.0/kafka_2.13-3.7.0.tgz
-$ tar -xvzf kafka_2.13-3.7.0.tgz  
-$ mv kafka_2.13-3.7.0 kafka
+$ wget https://downloads.apache.org/kafka/3.7.1/kafka_2.13-3.7.1.tgz
+$ tar -xvzf kafka_2.13-3.7.1.tgz  
+$ mv kafka_2.13-3.7.1 kafka
 $ chown hduser:hadoop -R kafka
 ~~~
 
