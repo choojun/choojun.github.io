@@ -2,7 +2,7 @@
 
 1. in [Evolutionary Computing](http://scholar.google.com.hk/citations?hl=en&view_op=search_venues&vq=Evolutionary+computing)
 2. in [Computer Vision and Pattern Recognition](http://scholar.google.com.hk/citations?view_op=top_venues&hl=en&vq=eng_computervisionpatternrecognition)
-
+3. in [Web of Science](https://wos-journal.info/)
 
 | Publisher  | 1  | 2  | 3  | 
 |---|---|---|---|
