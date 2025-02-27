@@ -9,7 +9,7 @@
 | IEEE      | [TEC](https://mc.manuscriptcentral.com/tevc-ieee)  | [EC](https://www.editorialmanager.com/ecj)  |  [CYB](https://mc.manuscriptcentral.com/cyb-ieee) |
 | Elsevier  | [ASOC](https://www.editorialmanager.com/asoc)        | [NC](https://ees.elsevier.com/neucom/)         | [KNOSYS](https://www.editorialmanager.com/knosys/) | 
 | Springer  | [NCAA](https://www.editorialmanager.com/ncaa/)      | [SOCO](https://www.editorialmanager.com/soco)  |   | 
-|   |   |   |   |  
+| WorlsScientific  | [IJCIA](https://www.editorialmanager.com/ijcia/)  |   |   |  
 
 
 1. [TETC](https://mc.manuscriptcentral.com/tetc-cs)
