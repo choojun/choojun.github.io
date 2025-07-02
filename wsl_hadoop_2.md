@@ -240,7 +240,7 @@ $ tar -xvzf hadoop-3.4.1.tar.gz
 
 4.	Rename the folder as hadoop3
 ~~~bash
-$ mv hadoop-3.3.6 hadoop3
+$ mv hadoop-3.4.1 hadoop3
 $ sudo chown -R hduser:hadoop hadoop3
 $ sudo chmod g+w -R hadoop3
 ~~~
@@ -270,7 +270,7 @@ $ ssh localhost
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
  ~~~bash
- export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
  export HADOOP_HOME=/home/hduser/hadoop3
  export PATH=$PATH:$HADOOP_HOME/bin
  ~~~
@@ -287,7 +287,7 @@ $ ssh localhost
 
 5. Edit the etc/hadoop/hadoop-env.sh file by adding the following environment variables at the end of file
  ~~~bash
- export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
  export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
  export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
  ~~~
