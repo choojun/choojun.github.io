@@ -235,7 +235,7 @@ $ wget https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.
 
 3.	Untar the file
 ~~~bash
-$ tar -xvzf hadoop-3.3.6.tar.gz
+$ tar -xvzf hadoop-3.4.1.tar.gz
 ~~~
 
 4.	Rename the folder as hadoop3
