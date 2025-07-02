@@ -210,8 +210,8 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | Hadoop              | 3.4.1 | *1 | *1                  | *1 | *1 | *1     | *1                   | *1    | *1        |
 | Spark               |       |    | 4.0.0               | *1 | *1 |        | *1                   |       | *1        |
 | Scala               |       |    | Targeted on 2.13.x  |    |    | 2.13.x |  Targeted on 2.13.x  |       |           |
-| Jupyter Notebook    |       |    | x6.4.8               |    | *1 |        |                      |       |           |
-| Kafka               |       |    |                     |    |    | x3.7.1  | *1                   | *1    |           |
+| Jupyter Notebook    |       |    | x6.4.8              |    | *1 |        |                      |       |           |
+| Kafka               |       |    |                     |    |    | 4.0.0  | *1                   | *1    |           |
 | HBase               |       |    |                     |    |    |        | x2.5.10                | *1    |           |
 | HappyBase           |       |    |                     |    |    |        |                      | x1.2.0 |           |
 | Derby               |       |    |                     |    |    |        |                      |       | x10.14.2.0 |
