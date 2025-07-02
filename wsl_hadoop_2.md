@@ -227,9 +227,9 @@ $ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 1. Switch to the hduser account
 
 2. Download the Hadoop binary by finding the appropriate Hadoop binary from the Hadoop releases page.
-> We will use Hadoop 3.3.6 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
+> We will use Hadoop 3.4.1 to avoid problems with HBase in a later practical. Read more at URL https://hbase.apache.org/book.html#hadoop
 ~~~bash
-$ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
+$ wget https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
 ~~~
 > Or, you may copy the downloaded tar.gz file manually to destination ~/hduser/
 
