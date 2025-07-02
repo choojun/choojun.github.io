@@ -215,7 +215,7 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | HBase               |       |    |                     |    |    |        | x2.5.x or 2.6        | *1    |           |
 | HappyBase           |       |    |                     |    |    |        |                      | x1.2.0 |           |
 | Derby               |       |    |                     |    |    |        |                      |       | x10.14.2.0 |
-| Hive                |       |    |                     |    |    |        |                      |       | x2.3.9     |
+| Hive                |       |    |                     |    |    |        |                      |       | x2.3.9 or 4.0.1     |
 
 > Needed WSL2, Web browser and Internet connection, SSH and PDSH, OpenJDK 11, Python 3.?.?
 > 
