@@ -195,6 +195,7 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | SSH and PDSH        | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 | *1 |
 | Internet            | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 | *2 |
 | WSL                 | *3 | *3 | *3 | *3 | *3 | *3 | *3 | *3 | *3 |
+>
 > With OpenJDK 8, Python 3.10.12
 > 
 > *1 Needed
