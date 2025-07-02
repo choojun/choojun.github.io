@@ -212,7 +212,7 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | Scala               |       |    | Targeted on 2.13.x  |    |    | 2.13.x |  Targeted on 2.13.x  |       |           |
 | Jupyter Notebook    |       |    | x6.4.8              |    | *1 |        |                      |       |           |
 | Kafka               |       |    |                     |    |    | 4.0.0  | *1                   | *1    |           |
-| HBase               |       |    |                     |    |    |        | x2.5.10                | *1    |           |
+| HBase               |       |    |                     |    |    |        | x2.5.x or 2.6        | *1    |           |
 | HappyBase           |       |    |                     |    |    |        |                      | x1.2.0 |           |
 | Derby               |       |    |                     |    |    |        |                      |       | x10.14.2.0 |
 | Hive                |       |    |                     |    |    |        |                      |       | x2.3.9     |
