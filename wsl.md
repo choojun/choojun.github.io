@@ -208,7 +208,7 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | Requirement\Section |  [E](wsl_hadoop_2)  |  [F](wsl_hdfs_2) |  [G](wsl_pyspark_2) | [H](wsl_pyspark_ml_2)  |  [I](wsl_pyspark_viz_2)  |  [J](wsl_kafka_2)  |  [K](wsl_hbase_2)  |  [L](wsl_happybase_2)  |  [M](wsl_hive_2) |
 |---------------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Hadoop              | 3.4.1 | *1 | *1                  | *1 | *1 | *1     | *1                   | *1    | *1        |
-| Spark               |       |    | 4.0.0               | *1 | *1 |        | *1                   |       | *1        |
+| Spark               |       |    | 4.0.0 (need jdk17)  | *1 | *1 |        | *1                   |       | *1        |
 | Scala               |       |    | Targeted on 2.13.x  |    |    | 2.13.x |  Targeted on 2.13.x  |       |           |
 | Jupyter Notebook    |       |    | x6.4.8              |    | *1 |        |                      |       |           |
 | Kafka               |       |    |                     |    |    | 4.0.0  | *1                   | *1    |           |
