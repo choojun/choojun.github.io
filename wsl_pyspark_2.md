@@ -43,6 +43,7 @@ source ~/.bashrc
 
 7.	Launch the PySpark interactive shell/interpreter
 ~~~bash
+pip3 install grpcio-status
 pyspark
 ~~~
 > To exit the pyspark shell with command exit()
