@@ -287,7 +287,7 @@ $ ssh localhost
 
 5. Edit the etc/hadoop/hadoop-env.sh file by adding the following environment variables at the end of file
  ~~~bash
- export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
  export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
  export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
  ~~~
