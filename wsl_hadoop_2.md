@@ -123,7 +123,7 @@ $ java -version
 
 14. Install targeted OpenJDK
 ~~~bash
-$ sudo apt-get install openjdk-11-jdk
+$ sudo apt-get install openjdk-17-jdk
 ~~~
 > After this, check if the correct version of Java is installed.
 
