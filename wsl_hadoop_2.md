@@ -270,7 +270,7 @@ $ ssh localhost
 
 2. Setup the environment variables in the ~/.bashrc file (for hduser) by adding the environment variables to the end of the file
  ~~~bash
- export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
  export HADOOP_HOME=/home/hduser/hadoop3
  export PATH=$PATH:$HADOOP_HOME/bin
  ~~~
