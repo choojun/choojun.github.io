@@ -66,7 +66,7 @@ $ cp $SPARK_HOME/conf/log4j2.properties.template $SPARK_HOME/conf/log4j2.propert
 >>> words = text.flatMap(tokenize)
 ~~~
 
-3.	It applies the map, and then it applies the reduceByKey action to obtain the word counts before saving the results in file
+3.	Apply the map, and then apply the reduceByKey action to obtain the word counts before saving the results in file
 ~~~bash
 >>> wc = words.map(lambda x: (x, 1))
 >>> print(wc.toDebugString())
