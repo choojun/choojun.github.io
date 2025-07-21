@@ -93,7 +93,7 @@ $ hdfs dfs -mkdir /user/hduser/warehouse
 $ hdfs dfs -mkdir /user/hduser/lib
 $ hdfs dfs -chmod g+w /tmp
 $ hdfs dfs -chmod g+w /tmp/hduser
-$ hdfs dfs -chmod g+w /user
+$ hdfs dfs -chmod 777 /user
 $ hdfs dfs -chmod g+w /user/hduser
 $ hdfs dfs -chmod g+w /user/hduser/warehouse
 $ hdfs dfs -chmod 777 /user/hduser/lib
