@@ -12,8 +12,8 @@ Please visit
 [Google Scholar](http://scholar.google.com.my/citations?user=bSb37M8AAAAJ&hl=en),
 [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55655843600),
 [Web of Science](https://www.webofscience.com/wos/author/record/O-6251-2014),
-[dblp](http://dblp.dagstuhl.de/pers/hd/t/Tan:Choo_Jun),
-[dblp](http://dblp2.uni-trier.de/pers/hd/t/Tan:Choo_Jun),
+[dblp](https://dblp.org/pid/128/3968.html),
+[Semantic Scholar](https://www.semanticscholar.org/author/Choo-Jun-Tan/32883699)
 [ResearchGate](https://www.researchgate.net/profile/Choo_Tan2),
 [Academia](https://independent.academia.edu/ChooJunTan),
 [YouTube](https://www.youtube.com/channel/UClZRxIwKOqbYVWntRAPA2xA)
