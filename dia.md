@@ -1,4 +1,4 @@
-To install Dia in MacOS (Venture)), the steps are as follows:
+To install Dia in the MacOS (Venture)), the steps are as follows:
 
 1. Install XQuartz
 2. Install Dia (since they website because the brew and port package there it's not anymore here, download the last .dmg)
