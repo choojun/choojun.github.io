@@ -7,3 +7,6 @@
 2. input document should be latex-safe, i.e. eps figures
 3. need a working java installation
 4. commands like \onehalfspacing or begin{singlespace}...end{singlespace} may not work (setspace package) 
+
+
+https://md2mathml.uuuu.site/ 
