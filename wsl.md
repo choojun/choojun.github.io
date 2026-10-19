@@ -213,8 +213,9 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | Jupyter Notebook    |                |    | x6.4.8              |    | *1 |                           |                      |        |           |
 | Kafka               |                |    |                     |    |    | kafka_2.13-4.3.1 (jdk17)  | *1                   | *1     |           |
 | HBase               |                |    |                     |    |    |                           | 3.x (jdk17)          | *1     |           |
-| HappyBase           |                |    |                     |    |    |                           |                      | x1.2.0 |           |
-| Derby               |                |    |                     |    |    |                           |                      |        | 10.15.2.0 or 10.15.1.3 |
+| HappyBase           |                |    |                     |    |    |                           |                      | ?1.2.0 |           |
+| aiohappybase        |                |    |                     |    |    |                           |                      | 1.4.0  |           |
+| Derby               |                |    |                     |    |    |                           |                      |        | 10.16.x (jdk17) |
 | Hive                |                |    |                     |    |    |                           |                      |        | 4.2.1 (matched Hadoop 3.4.1) |
 
 > Needed WSL2, Web browser and Internet connection, SSH and PDSH, OpenJDK 11, Python 3.?.?
