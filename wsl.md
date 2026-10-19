@@ -210,10 +210,10 @@ Access the accumulated setup distro (release 1.0.0.20241114) at URL https://gith
 | Hadoop              | 3.4.1 (> JDK8) | *1 | *1                  | *1 | *1 | *1                        | *1                   | *1     | *1        |
 | Spark               |                |    | 4.0.0 (must jdk17)  | *1 | *1 |                           | *1                   |        | *1        |
 | Scala               |                |    | Targeted on 2.13.x  |    |    | 2.13.x                    | Targeted on 2.13.x   |        |           |
-| Jupyter Notebook    |                |    | x6.4.8              |    | *1 |                           |                      |        |           |
+| Jupyter Lab         |                |    |                     |    | *1 |                           |                      |        |           |
 | Kafka               |                |    |                     |    |    | kafka_2.13-4.3.1 (jdk17)  | *1                   | *1     |           |
 | HBase               |                |    |                     |    |    |                           | 3.x (jdk17)          | *1     |           |
-| HappyBase           |                |    |                     |    |    |                           |                      | ?1.2.0 |           |
+| ?HappyBase          |                |    |                     |    |    |                           |                      | ?1.2.0 |           |
 | aiohappybase        |                |    |                     |    |    |                           |                      | 1.4.0  |           |
 | Derby               |                |    |                     |    |    |                           |                      |        | 10.16.x (jdk17) |
 | Hive                |                |    |                     |    |    |                           |                      |        | 4.2.1 (matched Hadoop 3.4.1) |
